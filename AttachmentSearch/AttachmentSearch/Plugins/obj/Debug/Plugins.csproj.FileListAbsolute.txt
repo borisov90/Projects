@@ -1,0 +1,7 @@
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\bin\Debug\AttachmentSearch.Plugins.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\bin\Debug\AttachmentSearch.Plugins.pdb
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\obj\Debug\Plugins.csprojResolveAssemblyReference.cache
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\obj\Debug\AttachmentSearch.Plugins.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\AttachmentSearch\AttachmentSearch\Plugins\obj\Debug\AttachmentSearch.Plugins.pdb

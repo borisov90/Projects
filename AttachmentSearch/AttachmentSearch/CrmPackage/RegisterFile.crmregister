@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="AttachmentSearch.Plugins.dll" Id="a0d06d0a-ee89-e411-b41e-00155d0a4e33" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <Plugin Description="Plug-in to PostAttachmentSearchUpdate" FriendlyName="PostAttachmentSearchUpdate" Name="AttachmentSearch.Plugins.PostAttachmentSearchUpdate" Id="a3d06d0a-ee89-e411-b41e-00155d0a4e33" TypeName="AttachmentSearch.Plugins.PostAttachmentSearchUpdate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PostAttachmentSearchUpdate" Description="Post-Operation of Attachment Search Update" FilteringAttributes="new_countperpage,new_numberofpages,new_searchword" Id="a4d06d0a-ee89-e411-b41e-00155d0a4e33" MessageName="Update" Mode="Synchronous" PrimaryEntityName="new_attachmentsearch" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to AttachmentSearchInText" FriendlyName="AttachmentSearchInText" Name="AttachmentSearch.Plugins.AttachmentSearchInText" Id="00000000-0000-0000-0000-000000000000" TypeName="AttachmentSearch.Plugins.AttachmentSearchInText">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="AttachmentSearchInText" Description="Post-Operation of Attachment Search Update" FilteringAttributes="new_searchword" Id="00000000-0000-0000-0000-000000000000" MessageName="Update" Mode="Synchronous" PrimaryEntityName="new_attachmentsearch" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+</Register>
