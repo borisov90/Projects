@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\@Deploy_CRM\20141204" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="12/04/2014 15:13:38" />
+    <file relUrl="bin/Microsoft.IdentityModel.dll" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/Microsoft.Xrm.Sdk.dll" publishTime="11/13/2014 14:17:56" />
+    <file relUrl="bin/coretools/Microsoft.Xrm.Sdk.dll" publishTime="11/13/2014 14:17:56" />
+    <file relUrl="WebService1.asmx" publishTime="11/18/2014 17:01:44" />
+    <file relUrl="packages.config" publishTime="11/14/2014 17:44:42" />
+    <file relUrl="bin/Microsoft.Xrm.Sdk.Deployment.dll" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/coretools/SolutionPackager.exe" publishTime="11/13/2014 14:17:56" />
+    <file relUrl="bin/Microsoft.Xrm.Sdk.Workflow.xml" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/Microsoft.Xrm.Tooling.WebResourceUtility.dll" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/Microsoft.Xrm.Tooling.CrmConnectControl.dll" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/CrmSupportLink.pdb" publishTime="12/04/2014 15:04:09" />
+    <file relUrl="bin/Xrm.Framework.Core.dll" publishTime="11/13/2014 14:16:37" />
+    <file relUrl="bin/coretools/CrmSvcUtil.xml" publishTime="11/13/2014 14:17:56" />
+    <file relUrl="bin/Microsoft.Xrm.Tooling.CrmConnectControl.xml" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/Microsoft.Xrm.Tooling.Connector.xml" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/Microsoft.Xrm.Tooling.Connector.dll" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/coretools/CrmSvcUtil.exe" publishTime="11/13/2014 14:17:56" />
+    <file relUrl="bin/Microsoft.Xrm.Sdk.Workflow.dll" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/CrmSupportLink.dll" publishTime="12/04/2014 15:04:10" />
+    <file relUrl="bin/microsoft.xrm.client.dll" publishTime="11/13/2014 14:55:35" />
+    <file relUrl="bin/microsoft.crm.sdk.proxy.dll" publishTime="11/14/2014 17:44:42" />
+    <file relUrl="bin/Microsoft.Xrm.Sdk.Deployment.xml" publishTime="11/13/2014 14:17:54" />
+    <file relUrl="bin/Microsoft.Xrm.Tooling.WebResourceUtility.xml" publishTime="11/13/2014 14:17:54" />
+  </publishProfile>
+</publishData>

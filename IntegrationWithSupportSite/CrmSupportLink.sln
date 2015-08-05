@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmSupportLink", "CrmSupportLink\CrmSupportLink.csproj", "{C2A85B23-69C6-4C58-BD15-AB5B3B8C1CBA}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CrmSupportLink\\CrmSupportLink.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = CrmSupportLink\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2A85B23-69C6-4C58-BD15-AB5B3B8C1CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A85B23-69C6-4C58-BD15-AB5B3B8C1CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A85B23-69C6-4C58-BD15-AB5B3B8C1CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A85B23-69C6-4C58-BD15-AB5B3B8C1CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
