@@ -1,0 +1,4 @@
+D:\Work\EmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.exe
+D:\Work\EmailSender\EmailSender\EmailSender\bin\Debug\EmailSender.pdb
+D:\Work\EmailSender\EmailSender\EmailSender\obj\x86\Debug\EmailSender.exe
+D:\Work\EmailSender\EmailSender\EmailSender\obj\x86\Debug\EmailSender.pdb
