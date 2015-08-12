@@ -1,0 +1,92 @@
+<html><head>
+	<meta charset="UTF-8">
+	<title>My Quote Button</title>
+
+<meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta></head>
+<body style="-ms-word-wrap: break-word;">
+<style>
+	select {
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 5px;
+	}
+
+</style>
+<script>
+
+function getData()
+{
+	var quoteId = window.parent.Xrm.Page.data.entity.getId();
+	var pathArray = window.location.pathname.split( '/' );
+	var entityName = window.parent.Xrm.Page.data.entity.getEntityName();
+	var selectBox = document.getElementById("selectBox");
+                     var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                     selectBox.options[selectBox.selectedIndex].selected = false;
+	var linkToOpen = 'http://'+document.domain+'/smrd/rd.aspx?DocumentName='+selectedValue+'&DocumentID='+quoteId+'&Instance='+pathArray[1]+'&Entity='+entityName.toString();
+	window.open(linkToOpen,'_blank','resizable=yes');	
+	}
+function loadSelectBox(options)
+{
+		var select = document.getElementById('selectBox');
+		for (var i = 0; i < options.length; i++) {
+			var select = document.getElementById('selectBox');
+			select.options[select.options.length] = new Option(options[i][1], options[i][0], false, false);
+		}
+}
+function populate()
+        {
+
+            var pathArray = window.location.pathname.split( '/' );
+            var options;
+
+            var optionsPleaseSelect = [['-1', 'Please select!']];
+
+            var optionsBG = [
+                                ['Candidate_personal_data_Engl', 'Candidate Personal Data Engl.'],
+                                ['Data_Privacy_notice_Bg', 'Data Privacy Notice BG'],
+                                ['Data_privacy_notice_Engl', 'Data Privacy Notice Engl.'],
+                                ['Bi_lingual_Dogovor_kandidati_2013', 'Bi lingual Dogovor kandidati'],
+				['Candidate_personal_data_Bg', 'Candidate personal data Bg'],
+                                ['Temp_labor_agreement_2013_M', 'Temp labor agreement 2013 M']
+                            ];
+            var optionsSR = [
+                                ['Internship_Contract', 'Internship Contract']
+                            ];  
+
+            var optionsHR =  [['','']];
+
+            //var currentCase = 'Manpower2013';
+            var currentCase = pathArray[1];
+
+			if (currentCase == 'Manpower2013' ){
+
+                loadSelectBox(optionsPleaseSelect); 
+				loadSelectBox(optionsBG); 
+				loadSelectBox(optionsSR); 
+				loadSelectBox(optionsHR); 				
+
+		    }else if (currentCase == 'ManpowerDB' ){
+
+				loadSelectBox(optionsPleaseSelect); 
+				loadSelectBox(optionsBG); 		  
+
+            } 
+            else if (currentCase == 'ManpowerSRB')
+			{
+				loadSelectBox(optionsPleaseSelect); 			
+				loadSelectBox(optionsSR);			           
+            } 
+            else if (currentCase == 'ManpowerHR'){
+                loadSelectBox(optionsPleaseSelect); 
+				loadSelectBox(optionsHR);
+            }
+        }
+        window.onload = function() {
+            populate();
+        }
+
+</script>
+    <select id="selectBox" onchange="getData()">               
+    </select>
+	
+</body></html>
