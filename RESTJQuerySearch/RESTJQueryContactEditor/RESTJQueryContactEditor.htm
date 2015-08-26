@@ -1,0 +1,263 @@
+﻿<!DOCTYPE HTML LANG="en-us">
+
+<head>
+    <title>REST JQuery Attachment Editor</title>
+    
+    <script type="text/javascript" src="../ClientGlobalContext.js.aspx"></script>
+    <script src="Scripts/jquery_1.9.1.min.js"></script>
+    <script src="Scripts/RESTJQueryContactEditor.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        var TMP_ROW = null;
+
+        $(document).ready(SearchButton_onclick);
+
+        //*************************** EVENT HANDLERS ******************************
+
+        function SearchButton_onclick() {
+
+            var searchValue = $("#txtSearch").val();
+
+            //Search where new_documentbody contains search text
+            if (searchValue != "") {
+                searchValue = encodeURIComponent(searchValue);
+               
+                $.get("http://emo/WebWindowsSearch/WebServiceSearch.asmx/GetGetFilesNameJSON?term=" + searchValue, function (data, status) {
+                    //var input = '["D:\\Work\\VS2013\\Kendo.Mvc.Examples\\Scripts\\messages\\kendo.messages.tr-TR.min.js;", "D:\\Work\\Projects\\Toepfer\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\Toepfer\\aspnet_client\\system_web\\4_0_30319\\crystalreportviewers13\\allStrings_sk.js;", "D:\\Work\\Projects\\Toepfer\\aspnet_client\\system_web\\4_0_30319\\crystalreportviewers13\\js\\dhtmllib\\language\\sk\\labels.js;", "D:\\Work\\Projects\\Toepfer\\aspnet_client\\system_web\\2_0_50727\\crystalreportviewers13\\allStrings_sk.js;", "D:\\Work\\Projects\\Toepfer\\aspnet_client\\system_web\\2_0_50727\\crystalreportviewers13\\js\\dhtmllib\\language\\sk\\labels.js;", "D:\\Work\\Projects\\SMC\\SMCELearning\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\SMC\\SMCDL2008\\SMCDL\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\SMC\\SMCDL\\SMCDL\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\SMC\\SMCDL\\DB\\SMCDL_20130226 20130226 1337.sql;", "D:\\Work\\Projects\\SMC\\SMCDL\\DB\\SMCDL_20130226 20130226 1403.sql;", "D:\\Work\\Projects\\SMC\\SMCDL\\DB\\SMCDL_20130226 20130226 1409.sql;", "D:\\Work\\Projects\\SMC\\SMCDL\\DB\\SMCDL_20130226 20130226 1410.sql;", "D:\\Work\\Projects\\SMC\\SMCDL\\DB\\SMCDL_20130226 20130226 1433_DEPLOY.sql;", "D:\\Work\\Projects\\SMC\\SMCDL\\DB\\SMCDL_20130226 20130226 1534.sql;", "D:\\Work\\Projects\\PAPO_CGM_2010\\PAPO_CGM\\vssver.scc;", "D:\\Work\\Projects\\NHA_UMS\\UMS\\UMS\\aspnet_client\\system_web\\4_0_30319\\crystalreportviewers13\\allStrings_sk.js;", "D:\\Work\\Projects\\NHA_UMS\\UMS\\UMS\\aspnet_client\\system_web\\4_0_30319\\crystalreportviewers13\\js\\dhtmllib\\language\\sk\\labels.js;", "D:\\Work\\Projects\\NHA\\SMCDL\\obj\\Debug\\Package\\PackageTmp\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\NHA\\SMCDL\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\NHA\\SMCDL\\aspnet_client\\system_web\\4_0_30319\\crystalreportviewers13\\allStrings_sk.js;", "D:\\Work\\Projects\\NHA\\SMCDL\\aspnet_client\\system_web\\4_0_30319\\crystalreportviewers13\\js\\dhtmllib\\language\\sk\\labels.js;", "D:\\Work\\Projects\\NCOZA\\DL\\NCOZA\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\MVR\\DL_MVR10\\DL_MVR\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\MVR\\DL_MVR\\DL_MVR\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\BAPZG\\BAPZG\\DB\\SMCDL_20130226 20130226 1337.sql;", "D:\\Work\\Projects\\BAPZG\\BAPZG\\DB\\SMCDL_20130226 20130226 1403.sql;", "D:\\Work\\Projects\\BAPZG\\BAPZG\\DB\\SMCDL_20130226 20130226 1409.sql;", "D:\\Work\\Projects\\BAPZG\\BAPZG\\DB\\SMCDL_20130226 20130226 1410.sql;", "D:\\Work\\Projects\\BAPZG\\BAPZG\\DB\\SMCDL_20130226 20130226 1433_DEPLOY.sql;", "D:\\Work\\Projects\\BAPZG\\BAPZG\\BAPZG\\fckeditor\\editor\\lang\\fi.js;", "D:\\Work\\Projects\\API\\RegImots_API\\RegImots_API\\Reports\\vssver.scc;", "C:\\Users\\emo\\My Documents\\Visual Studio 2013\\Projects\\WebApplication1\\WebApplication1\\bin\\itextsharp.xml;", "C:\\Users\\emo\\My Documents\\Visual Studio 2013\\Projects\\TrackServiceActivity\\TrackServiceActivity\\Scripts\\kendo\\messages\\kendo.messages.tr-TR.min.js;", "D:\\Documents\\ckeditor_4.0.1_for_drupal_7.zip;", "D:\\Documents\\Резултати на обучаемия_files\\ckeditor_4.0.1_for_drupal_7\\ckeditor\\ckeditor\\plugins\\docprops\\lang\\fi.js;", "D:\\Documents\\Резултати на обучаемия_files\\ckeditor_4.0.1_for_drupal_7\\ckeditor\\ckeditor\\lang\\eo.js;", "D:\\Documents\\Резултати на обучаемия_files\\ckeditor_4.0.1_for_drupal_7\\ckeditor\\ckeditor\\lang\\et.js;", "D:\\Documents\\Резултати на обучаемия_files\\ckeditor_4.0.1_for_drupal_7\\ckeditor\\ckeditor\\lang\\hu.js;"]';
+
+                    var obj = jQuery.parseJSON(data.documentElement.textContent);
+                    SearchCompleted(obj);
+                });
+            }
+                //Retrieve all Contacts
+            else {
+                $.get("http://emo/WebWindowsSearch/WebServiceSearch.asmx/GetGetFilesNameJSON?term=", function (data, status) {
+                    var obj = jQuery.parseJSON(data.documentElement.textContent);
+                    SearchCompleted(obj);
+                });
+
+                //retrieveMultiple("new_annotationtextSet", null, SearchCompleted, null);
+                //retrieveFromWebService(searchValue, SearchCompleted, null);
+            }
+        }
+        //New Button Event Handler
+
+        //*************************** CALLBACK FUNCTIONS ******************************
+
+        //Callback - Search Success
+        //function SearchCompleted(data, textStatus, XmlHttpRequest) {
+        function SearchCompleted(data) {
+            
+            var resultsperpage = 50;
+            var totalnumberofresults = data.length;
+            var numberofpages = totalnumberofresults / resultsperpage;
+            var startIndex = 0;
+            var endIndex = startIndex + resultsperpage;
+
+            //Clears the grid.
+            EmptyTable();
+
+            //Re-populate the grid with results, if any
+            if (data && data.length > 0) {
+
+                HideEmptyRow();
+
+                for (var i = startIndex; i < endIndex; i++) {
+                    CreateRow(data[i]);
+                }
+                for (var i = 1; i <= numberofpages; i++) {
+                    var row = $("<a class='pageLink'>" + i +"</a>");
+                }
+                alert(data.length + " Results(s) found.");
+            }
+                //Or display the empty table message if no results
+            else {
+
+                ShowEmptyRow();
+                alert("No Contact record(s) retrieved.");
+            }
+        }
+
+        function CreateNewRow(contact, fromNewButton) {
+
+            if (contact) {
+                //Hide the "Empty Message" row
+                $("TR.EmptyRow").hide();
+
+                //Generate a new row
+                ;
+
+                var row = $("<tr class='RecordRow' />");
+                row.append($("<td><span id='RecordLink'>N/A</span></td>"));
+                row.append($("<td><input type='text' id='new_useremail' style='width: 200px;' /></td>"));
+                row.append($("<td><input type='date' id='CreatedOn' style='width: 200px;' /></td>"));
+                row.append($("<td><span id='candidateLink'>N/A</span></td>"));
+                
+
+                if (fromNewButton && $("#ContactTableBody").children().first())
+                {
+                    //Add it to the top
+                    $("#ContactTableBody").children().first().before(row);
+
+                }
+                else
+                {
+                    //Add it to the bottom
+                    $("#ContactTableBody").append(row);
+                }
+
+               
+                if (contact.new_annotationtextId)
+                {
+                    //row.find("#DocumentBody").attr("value", contact.new_documentbody);
+                    //Set the Link column
+                    row.find("#RecordLink").html("<a target=\"_blank\" href=\"" +
+                                       clientUrl + "/main.aspx?etn=new_annotationtext&id=%7b" + contact.new_annotationtextId +
+                                       "%7d&pagetype=entityrecord\">View</a>");
+                }
+                if (contact.new_documentbody) {
+                    row.find("#new_useremail").attr("value", contact.new_useremail);
+                }
+                if (contact.CreatedOn) {
+                    row.find("#CreatedOn").attr("value", contact.CreatedOn);
+                }
+                if (contact.new_candidate) {
+                    row.find("#candidateLink").html("<a target=\"_blank\" href=\"" +
+                                       clientUrl + "/main.aspx?etn=Contact&id=%7b" + contact.new_candidate + "%7d&pagetype=EntityReference\">View</a>");
+                }
+            }
+        }
+
+        function CreateRow(annotation) {
+
+            if (annotation) {
+                //Hide the "Empty Message" row
+                $("TR.EmptyRow").hide();
+
+                //Generate a new row
+                ;
+
+                var row = $("<tr class='RecordRow' />");
+                //row.append($("<td><span id='RecordLink'>N/A</span></td>"));
+                row.append($("<td><input type='text' id='annotationName' style='width: 200px;' /></td>"));
+                //row.append($("<td><span id='candidateLink'>N/A</span></td>"));
+                //Add it to the bottom
+                $("#ContactTableBody").append(row);
+
+                //if (contact.new_annotationtextId) {
+                //    //row.find("#DocumentBody").attr("value", contact.new_documentbody);
+                //    //Set the Link column
+                //    row.find("#RecordLink").html("<a target=\"_blank\" href=\"" +
+                //                       clientUrl + "/main.aspx?etn=new_annotationtext&id=%7b" + contact.new_annotationtextId +
+                //                       "%7d&pagetype=entityrecord\">View</a>");
+                //}
+                
+                row.find("#annotationName").attr("value", annotation);
+                //if (contact.new_candidate) {
+                //    row.find("#candidateLink").html("<a target=\"_blank\" href=\"" +
+                //                       clientUrl + "/main.aspx?etn=Contact&id=%7b" + contact.new_candidate + "%7d&pagetype=EntityReference\">View</a>");
+                //}
+            }
+        }
+
+        //Hides the row with the empty message in Contacts table
+        function HideEmptyRow() {
+
+            if ($("TR.EmptyRow")[0]) {
+                $("TR.EmptyRow").hide();
+            }
+        }
+
+        //Shows the row with the empty message in Contacts table
+        function ShowEmptyRow() {
+            if ($("TR.EmptyRow")[0]) {
+                $("TR.EmptyRow").show();
+            }
+            else {
+                var emptyRow = $("<tr id='EmptyRow' class='EmptyRow'><td colspan='12' style='text-align:center;'><span>No Contact records are available in this view.</span></td></tr>")
+                $("#ContactTableBody").append(emptyRow);
+
+            }
+
+        }
+
+        //Removes all the Contact rows from the table
+        function EmptyTable() {
+
+            //Clear out the Contact table's rows that have attribute class=RecordRow
+            //These are the ones that contain Contact record data.
+            $("TR.RecordRow").remove();
+        }
+
+
+    </script>
+    <style type="text/css">
+        #ContactTable {
+            border: none;
+            border-spacing: 0px;
+            border-width: 0px;
+            font-family: Arial;
+            font-size: 10px;
+            margin-top: 10px;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+
+            #ContactTable td {
+                border-width: 1px;
+                border-style: none;
+                margin: 1px;
+            }
+
+            #ContactTable th {
+                border-width: 1px;
+                padding: 1px;
+                border-style: none;
+                margin: 1px;
+                font-family: Arial;
+            }
+
+            #ContactTable INPUT[type="text"] {
+                border-width: 1px;
+                padding: 1px;
+                border-style: none;
+                margin: 0;
+            }
+
+            #ContactTable INPUT[type="button"] {
+                border-width: 1px;
+                border-style: outset;
+            }
+
+        body {
+            background: white;
+            font-family: Segoe UI;
+        }
+    </style>
+</head>
+<body>
+    <h1>Just Search</h1>
+    
+    <h3 style="font-family: Arial;">
+        for Attachments
+    </h3>
+    <div>
+        <label for="txtSearch" style="font-family: Arial;">
+            Name:
+        </label>
+        <input type="text" style="width: 200px;" id="txtSearch" />
+        <input type="button" id="SearchButton" value="Search" title="Click to search contacts by name" style="width: 80px;" onclick="return SearchButton_onclick()" />
+    </div>
+    <div>
+        <table id="ContactTable" summary="This table will generate the Attachments that contain the specific search word.">
+            <thead>
+                
+            </thead>
+            <tbody id="ContactTableBody"></tbody>
+        </table>
+        <input type='hidden' id='current_page' />
+        <input type='hidden' id='show_per_page' /> 
+        <div id='page_navigation'></div>  
+    </div>
+</body>
+</html>
