@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="Quotes.Plugins.dll" Id="51f59f0c-0bc7-e411-ad99-00155d0a4e33" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <Plugin Description="Plug-in to PostQuoteUpdate" FriendlyName="PostQuoteUpdate" Name="Quotes.Plugins.PostQuoteUpdate" Id="97be8710-90c9-e411-ac32-00155d0a4e33" TypeName="Quotes.Plugins.PostQuoteUpdate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PostQuoteUpdate" Description="Post-Operation of Quote Update" FilteringAttributes="new_createinvoice" Id="98be8710-90c9-e411-ac32-00155d0a4e33" MessageName="Update" Mode="Synchronous" PrimaryEntityName="quote" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to PricingOrderCreate" FriendlyName="PricingOrderCreate" Name="Quotes.Plugins.PricingOrderCreate" Id="abe5e00e-b1cb-e411-ac32-00155d0a4e33" TypeName="Quotes.Plugins.PricingOrderCreate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PricingOrderCreate" Description="Post-Operation of Order Product Create" Id="ace5e00e-b1cb-e411-ac32-00155d0a4e33" MessageName="Create" Mode="Synchronous" PrimaryEntityName="salesorderdetail" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to PostOrderProductUpdate" FriendlyName="PostOrderProductUpdate" Name="Quotes.Plugins.PostOrderProductUpdate" Id="2a5f9aef-b1cb-e411-ac32-00155d0a4e33" TypeName="Quotes.Plugins.PostOrderProductUpdate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PostInvoiceRequestUpdate" Description="Post-Operation of Invoice Request Update" Id="2b5f9aef-b1cb-e411-ac32-00155d0a4e33" MessageName="Update" Mode="Synchronous" PrimaryEntityName="salesorder" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to PricingOrderUpdate" FriendlyName="PricingOrderUpdate" Name="Quotes.Plugins.PricingOrderUpdate" Id="00000000-0000-0000-0000-000000000000" TypeName="Quotes.Plugins.PricingOrderUpdate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PricingOrderUpdate" Description="Post-Operation of Invoice Request Update" FilteringAttributes="new_pricingtype" Id="00000000-0000-0000-0000-000000000000" MessageName="Update" Mode="Synchronous" PrimaryEntityName="salesorder" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+</Register>

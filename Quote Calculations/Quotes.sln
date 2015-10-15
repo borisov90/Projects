@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{88A30576-7583-4F75-8136-5EFD2C14ADFF}") = "CrmPackage", "Quotes\CrmPackage\CrmPackage.csproj", "{953AA683-A7CD-486B-A809-BF01589C2C13}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22} = {2A9020FC-30C4-47B5-9205-B49BC3CF2C22}
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22} = {2A9020FC-30C4-47B5-9205-B49BC3CF2C22}
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22} = {2A9020FC-30C4-47B5-9205-B49BC3CF2C22}
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22} = {2A9020FC-30C4-47B5-9205-B49BC3CF2C22}
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22} = {2A9020FC-30C4-47B5-9205-B49BC3CF2C22}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins", "Quotes\Plugins\Plugins.csproj", "{2A9020FC-30C4-47B5-9205-B49BC3CF2C22}"
+EndProject
+Global
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{953AA683-A7CD-486B-A809-BF01589C2C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953AA683-A7CD-486B-A809-BF01589C2C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953AA683-A7CD-486B-A809-BF01589C2C13}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{953AA683-A7CD-486B-A809-BF01589C2C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953AA683-A7CD-486B-A809-BF01589C2C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953AA683-A7CD-486B-A809-BF01589C2C13}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9020FC-30C4-47B5-9205-B49BC3CF2C22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

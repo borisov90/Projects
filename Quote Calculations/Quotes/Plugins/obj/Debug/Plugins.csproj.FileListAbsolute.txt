@@ -1,0 +1,7 @@
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\bin\Debug\Quotes.Plugins.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\bin\Debug\Quotes.Plugins.pdb
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\obj\Debug\Plugins.csprojResolveAssemblyReference.cache
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\obj\Debug\Quotes.Plugins.dll
+D:\Work\CRM\CRM 2013 Plugins & Tools\Plugins Not Completed\Quotes\Quotes\Plugins\obj\Debug\Quotes.Plugins.pdb
