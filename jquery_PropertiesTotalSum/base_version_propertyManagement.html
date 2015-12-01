@@ -1,0 +1,171 @@
+<html><head>
+    <meta charset="utf-8">
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+</head>
+<body style="-ms-word-wrap: break-word;">
+
+    <script src="../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <!--<script src="Scripts/jquery_1.9.1.min.js"></script>-->
+    <script src="Scripts/SDK.REST.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--<script src="Scripts/RESTJQueryContactEditor.js" type="text/javascript"></script>-->
+
+    <script language="javascript" type="text/javascript">
+
+        //Variable to hold reference to a table row between ajax call and callback
+        var TMP_ROW = null;
+        var context = GetGlobalContext();
+        var clientUrl = context.getClientUrl();
+        var constructionStage = {};
+        var constructionStages = new Array();
+        var expenditures = {};
+        var expendituresSumArray = new Array();
+        var totalSumActual = 0;
+        var totalSumExpected = 0;
+        var counter = 0;
+        var ConstructionStageIDs = new Array();
+        var EntityID = window.parent.Xrm.Page.data.entity.getId();
+        var actualAmount = 0;
+        var actualAmountBase = 0;
+        var plannedAmount = 0;
+        var plannedAmountBase = 0;
+
+        $(document).ready(SearchButton_onclick);
+
+
+        //*************************** EVENT HANDLERS ******************************
+
+        //Search Button Event Handler
+        function SearchButton_onclick() {
+
+            var parsedID = EntityID.substring(1, 37);
+            var options = "$filter=" + "smc_ProjectId/Id eq (Guid'" + parsedID + "') ";
+            SDK.REST.retrieveMultipleRecords("smc_projectconstructionstages", options, retrievePropertiesCallBack, function (error) { alert("No results"); }, propertiesRetrieveComplete);
+
+            //for (var i = 0; i < ConstructionStageIDs.length; i++) {
+            //    var underlevelID = ConstructionStageIDs[i];
+            //    //console.log(underlevelID);
+            //    var underlevelOptions = "$filter=smc_ProjectActivityId/Id eq (Guid'" + underlevelID + "') ";
+            //    SDK.REST.retrieveMultipleRecords("smc_projectactivities", underlevelOptions, retrievePropertyActivityCallback, function (error) { console.log("No results"); }, propertyActivitiesOnCompleteCallback);
+            //}
+
+            ////This should calculate the final figures
+            //for (var i = 0; i < constructionStages.length; i++) {
+            //    var currentConstructionStage = constructionStages[i];
+            //    actualAmount += currentConstructionStage._actualAmount;
+            //    //actualAmountBase += currentConstructionStage._actualAmountBase;
+            //    plannedAmount += currentConstructionStage._plannedAmount;
+            //    //plannedAmountBase += currentConstructionStage._plannedAmountBase;
+            //}
+
+            //window.parent.Xrm.Page.getAttribute("smc_totalamounteurwithoutvat").setValue(parseFloat(eval(actualAmount)));
+            //window.parent.Xrm.Page.getAttribute("new_expectedamountwithoutvat").setValue(parseFloat(eval(plannedAmount)));
+        }
+
+
+        //*************************** CALLBACK FUNCTIONS ******************************
+
+        //the property activity callback
+        function retrievePropertyActivityCallback(retrievedActivityProperties) {
+
+            
+            for (var i = 0; i < retrievedActivityProperties.length; i++) {
+                expenditures = {
+                    _actualAmmount: parseInt((retrievedActivityProperties[i].smc_ActualAmount.Value == null) ? 0 : retrievedActivityProperties[i].smc_ActualAmount.Value),
+                    _plannedAmmount: parseInt((retrievedActivityProperties[i].smc_PaymentAmount.Value == null) ? 0 : retrievedActivityProperties[i].smc_PaymentAmount.Value)
+                }
+                expendituresSumArray.push(expenditures);
+            }
+        }
+        //the property callback
+        function retrievePropertiesCallBack(retrievedProperties) {
+
+            //Re-populate the grid with results, if any
+            if (retrievedProperties && retrievedProperties.length > 0) {
+
+                //Hide the empty message
+
+                for (var i = 0; i < retrievedProperties.length; i++) {
+                    //ConstructionStageIDs.push(retrievedProperties[i].smc_projectconstructionstagesId);
+                    constructionStage = {
+                        _actualAmount: parseInt((retrievedProperties[i].smc_ActualAmount.Value == null) ? 0 : retrievedProperties[i].smc_ActualAmount.Value),
+                        _actualAmountBase: parseInt((retrievedProperties[i].smc_actualamount_Base.Value == null) ? 0 : retrievedProperties[i].smc_actualamount_Base.Value),
+                        _name: retrievedProperties[i].smc_name,
+                        _plannedAmount: parseInt((retrievedProperties[i].smc_PlannedAmount.Value == null) ? 0 : retrievedProperties[i].smc_PlannedAmount.Value),
+                        _plannedAmountBase: parseInt((retrievedProperties[i].smc_plannedamount_Base.Value == null) ? 0 : retrievedProperties[i].smc_plannedamount_Base.Value),
+                        _propertyId: retrievedProperties[i].smc_ConstructionStagesId.Id,
+                        _constructionStageID: retrievedProperties[i].smc_projectconstructionstagesId
+                    }
+                    var underlevelID = retrievedProperties[i].smc_projectconstructionstagesId;
+                    //console.log(underlevelID);
+                    var underlevelOptions = "$filter=smc_ProjectActivityId/Id eq (Guid'" + underlevelID + "') ";
+                    SDK.REST.retrieveMultipleRecords("smc_projectactivities", underlevelOptions, retrievePropertyActivityCallback, function (error) { console.log("No results"); }, propertyActivitiesOnCompleteCallback);
+                    constructionStages.push(constructionStage);
+                }
+                
+            }
+        }
+        //reset the sum of the calculated figures;
+        function resetTotals() {
+            totalSumActual = 0;
+            totalSumExpected = 0;
+            expendituresSumArray = new Array();
+        }
+        //ONComplete callback for the second level function. 
+        function propertyActivitiesOnCompleteCallback() {
+
+            
+            console.log("Enteres the Project Activity Complete Callback");
+            //Sums the amount of all the activities for a specific construction stage, and pushes the value to an array with all the constructionStages.
+            if (expendituresSumArray && expendituresSumArray.length > 0) {
+                for (var i = 0; i < expendituresSumArray.length; i++) {
+                    totalSumActual += expendituresSumArray[i]._actualAmmount;
+                    totalSumExpected += expendituresSumArray[i]._plannedAmmount;
+                }
+            }
+            constructionStage = {
+                _actualAmount: totalSumActual,
+                _plannedAmount: totalSumExpected
+            }
+            console.log(totalSumActual);
+            console.log(totalSumExpected);
+            constructionStages.push(constructionStage);
+            //resets the value of the constructionStage item to 0
+            resetTotals();
+        }
+        //OnComplete callback for the first level function.
+        function propertiesRetrieveComplete() {
+            //console.log("Enteres the Project Complete Callback");
+            alert("Properties loaded");
+            var actualAmount = 0;
+            var actualAmountBase = 0;
+            var plannedAmount = 0;
+            var plannedAmountBase = 0;
+
+            
+            //This should calculate the final figures
+            for (var i = 0; i < constructionStages.length; i++) {
+                var currentConstructionStage = constructionStages[i];
+                actualAmount += currentConstructionStage._actualAmount;
+                //actualAmountBase += currentConstructionStage._actualAmountBase;
+                plannedAmount += currentConstructionStage._plannedAmount;
+                //plannedAmountBase += currentConstructionStage._plannedAmountBase;
+            }
+           
+            window.parent.Xrm.Page.getAttribute("smc_totalamounteurwithoutvat").setValue(parseFloat(eval(actualAmount)));
+            window.parent.Xrm.Page.getAttribute("new_expectedamountwithoutvat").setValue(parseFloat(eval(plannedAmount)));
+        }
+
+        function errorHandler(error) {
+            alert("Oops! Couldn't create Opportunity! - {0}", error.message);
+        }
+
+    </script>
+    <div class="page-header">
+        <!--<h3>Match requirements</h3>-->
+    </div>
+
+</body></html>
