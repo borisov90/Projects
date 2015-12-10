@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="QuoteCreatesOrders.Plugins.dll" Id="5bd4d23c-111c-e511-bfc5-00155d0a4e33" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <Plugin Description="Plug-in to QuoteCreateOrder" FriendlyName="QuoteCreateOrder" Name="QuoteCreatesOrders.Plugins.QuoteCreateOrder" Id="5ed4d23c-111c-e511-bfc5-00155d0a4e33" TypeName="QuoteCreatesOrders.Plugins.QuoteCreateOrder">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PostQuoteUpdate" Description="Plugin that creates orders from quotes" FilteringAttributes="new_createinvoice" Id="5fd4d23c-111c-e511-bfc5-00155d0a4e33" MessageName="Update" Mode="Synchronous" PrimaryEntityName="quote" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+</Register>
