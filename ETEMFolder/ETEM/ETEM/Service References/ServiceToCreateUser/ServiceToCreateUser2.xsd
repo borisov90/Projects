@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SMCDL.WebServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SMCDL.WebServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfUserDataView">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserDataView" nillable="true" type="tns:UserDataView" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserDataView" nillable="true" type="tns:ArrayOfUserDataView" />
+  <xs:complexType name="UserDataView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BirthPlace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Course" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiplomaNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EGN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="E_mail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacultyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FacultyNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMasterLikeBachelor" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OKC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpecialityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Specialty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StudentStatusIntCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StudentStatusName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="University" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserSex" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idStudentStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserDataView" nillable="true" type="tns:UserDataView" />
+</xs:schema>

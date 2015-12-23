@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42EB67E5-C906-4FAC-8B02-3824E6217232}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETEMModel</RootNamespace>
+    <AssemblyName>ETEMModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ASNS.ZipComponent, Version=1.0.1276.29350, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\ASNS.ZipComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="DocX, Version=1.0.1.13, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MoreLinq, Version=1.0.16006.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=3.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>DLLS\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\AbstractSearchBLHolder\AbstractSearch.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\BooleanSearch.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\DateSearch.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\DecimalSearch.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\NumericSearch.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\OrderByHelper.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\SearchExtensions.cs" />
+    <Compile Include="Helpers\AbstractSearchBLHolder\TextSearch.cs" />
+    <Compile Include="Helpers\Admin\AllowIPBL.cs" />
+    <Compile Include="Helpers\Admin\GroupBL.cs" />
+    <Compile Include="Helpers\Admin\GroupPersonLinkBL.cs" />
+    <Compile Include="Helpers\Admin\ModuleBL.cs" />
+    <Compile Include="Helpers\Admin\PersonHistoryBL.cs" />
+    <Compile Include="Helpers\Admin\SequenceBL.cs" />
+    <Compile Include="Helpers\Common\RandomImage.cs" />
+    <Compile Include="Helpers\CostCalculation\AverageOutturnOverTimeBL.cs" />
+    <Compile Include="Helpers\CostCalculation\CommissionsByAgentBL.cs" />
+    <Compile Include="Helpers\CostCalculation\DieFormulaBL.cs" />
+    <Compile Include="Helpers\CostCalculation\DiePriceListBL.cs" />
+    <Compile Include="Helpers\CostCalculation\DiePriceListDetailBL.cs" />
+    <Compile Include="Helpers\CostCalculation\ExpenseCalculationBL.cs" />
+    <Compile Include="Helpers\CostCalculation\MaterialPriceListBL.cs" />
+    <Compile Include="Helpers\CostCalculation\OfferBL.cs" />
+    <Compile Include="Helpers\CostCalculation\OfferDataExpenseGroupBL.cs" />
+    <Compile Include="Helpers\CostCalculation\OfferOverviewBL.cs" />
+    <Compile Include="Helpers\CostCalculation\OfferProducitivityBL.cs" />
+    <Compile Include="Helpers\CostCalculation\ProductCostBL.cs" />
+    <Compile Include="Helpers\CostCalculation\ProductivityAndScrapBL.cs" />
+    <Compile Include="Helpers\CostCalculation\ProductivityAndScrapDetailBL.cs" />
+    <Compile Include="Helpers\CostCalculation\ProfileSettingBL.cs" />
+    <Compile Include="Helpers\CostCalculation\ProfileSettingValidationBL.cs" />
+    <Compile Include="Helpers\CostCalculation\SAPDataBL.cs" />
+    <Compile Include="Helpers\CostCalculation\SAPDataCostCenterTotalBL.cs" />
+    <Compile Include="Helpers\CostCalculation\SAPDataExpensesBL.cs" />
+    <Compile Include="Helpers\CostCalculation\SAPDataQuantityBL.cs" />
+    <Compile Include="Helpers\EvaluateExpression.cs" />
+    <Compile Include="Helpers\IProtocolable.cs" />
+    <Compile Include="Helpers\IModifiable.cs" />
+    <Compile Include="Helpers\PartialHelpers\BaseHelper.cs" />
+    <Compile Include="Helpers\PartialHelpers\CommonBL.cs" />
+    <Compile Include="Helpers\Share\AttachmentBL.cs" />
+    <Compile Include="Helpers\BaseGenericHelper.cs" />
+    <Compile Include="Helpers\Common\ExamCalendarHelper.cs" />
+    <Compile Include="Helpers\Common\MultipleIdKey.cs" />
+    <Compile Include="Helpers\Common\MultipleSortingClass.cs" />
+    <Compile Include="Helpers\Common\SendMailHelper.cs" />
+    <Compile Include="Helpers\Common\SortDirectionClass.cs" />
+    <Compile Include="Helpers\Common\SourseActualData.cs" />
+    <Compile Include="Helpers\Common\ThreadCheckForWrongEmails.cs" />
+    <Compile Include="Helpers\Common\UploadedFileBL.cs" />
+    <Compile Include="Helpers\Compator\AlphanumComparatorFast.cs" />
+    <Compile Include="Helpers\ComplexResultContext.cs" />
+    <Compile Include="Helpers\CustomLinq.cs" />
+    <Compile Include="Helpers\Employees\EmployeBL.cs" />
+    <Compile Include="Helpers\Exceptions\UMSCustomException.cs" />
+    <Compile Include="Helpers\Extentions\Extentions.cs" />
+    <Compile Include="Helpers\Interfaces\Idisciplinable.cs" />
+    <Compile Include="Helpers\Interfaces\Iperiodable.cs" />
+    <Compile Include="Helpers\Admin\CronProcessHistoryBL.cs" />
+    <Compile Include="Helpers\Admin\KeyTypeBL.cs" />
+    <Compile Include="Helpers\Admin\KeyValueBL.cs" />
+    <Compile Include="Helpers\Admin\LocationBL.cs" />
+    <Compile Include="Helpers\Admin\MenuNodeBL.cs" />
+    <Compile Include="Helpers\Admin\NavUrlBL.cs" />
+    <Compile Include="Helpers\Admin\PermittedActionBL.cs" />
+    <Compile Include="Helpers\Admin\PersonBL.cs" />
+    <Compile Include="Helpers\Admin\RoleBL.cs" />
+    <Compile Include="Helpers\Admin\RoleMenuNodeBL.cs" />
+    <Compile Include="Helpers\Admin\SettingBL.cs" />
+    <Compile Include="Helpers\Admin\UserBL.cs" />
+    <Compile Include="Helpers\BaseClassBL.cs" />
+    <Compile Include="Helpers\Common\CommonBL.cs" />
+    <Compile Include="Helpers\Common\NotificationBL.cs" />
+    <Compile Include="Helpers\Compator\EqualityComparer.cs" />
+    <Compile Include="Helpers\Identifiable.cs" />
+    <Compile Include="Helpers\RequestMeasure.cs" />
+    <Compile Include="Helpers\Settings\BaseSettingHelper.cs" />
+    <Compile Include="Helpers\Settings\BaseSettings.cs" />
+    <Compile Include="Helpers\Settings\SettingAttribute.cs" />
+    <Compile Include="Helpers\XMLLogHelper.cs" />
+    <Compile Include="ICustomLoggable.cs" />
+    <Compile Include="Models\DataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataView\Admin\AllowIPDataView.cs" />
+    <Compile Include="Models\DataView\Admin\GroupDataView.cs" />
+    <Compile Include="Models\DataView\Admin\GroupPersonLinkDataView.cs" />
+    <Compile Include="Models\DataView\Admin\ModuleDataView.cs" />
+    <Compile Include="Models\DataView\Common\PersonByTypeDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\AverageOutturnOverTimeDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\CommissionsByAgentDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\DieFormulaDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\DiePriceListDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\DiePriceListDetailDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\MaterialPriceListDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\OfferDataExpenseGroupView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\OfferDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\OfferOverviewDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\ProductCostDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\ProductivityAndScrapDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\ProductivityAndScrapDetailDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\ProfileSettingDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\SAPDataDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\SAPDataExpenseDataView.cs" />
+    <Compile Include="Models\DataView\CostCalculation\SAPDataQuantityDataView.cs" />
+    <Compile Include="Models\DataView\Employees\EmployeDataView.cs" />
+    <Compile Include="Models\DataView\KeyValueDataView.cs" />
+    <Compile Include="Models\DataView\PersonHistoryDataView.cs" />
+    <Compile Include="Models\LogModel\Partials\EventFullLog.cs" />
+    <Compile Include="Models\LogModel\UMS_LOG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMS_LOG.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Partial\Attachment.cs" />
+    <Compile Include="Models\Partial\AttachmentDataView.cs" />
+    <Compile Include="Models\Partial\CostCalculation\AverageOutturnOverTime.cs" />
+    <Compile Include="Models\Partial\CostCalculation\CommissionsByAgent.cs" />
+    <Compile Include="Models\Partial\CostCalculation\DieFormula.cs" />
+    <Compile Include="Models\Partial\CostCalculation\DiePriceList.cs" />
+    <Compile Include="Models\Partial\CostCalculation\DiePriceListDetail.cs" />
+    <Compile Include="Models\Partial\CostCalculation\MaterialPriceList.cs" />
+    <Compile Include="Models\Partial\CostCalculation\Offer.cs" />
+    <Compile Include="Models\Partial\CostCalculation\OfferDataExpenseGroup.cs" />
+    <Compile Include="Models\Partial\CostCalculation\OfferProducitivity.cs" />
+    <Compile Include="Models\Partial\CostCalculation\ProductivityAndScrap.cs" />
+    <Compile Include="Models\Partial\CostCalculation\ProductivityAndScrapDetail.cs" />
+    <Compile Include="Models\Partial\CostCalculation\ProfileSetting.cs" />
+    <Compile Include="Models\Partial\CostCalculation\ProfileSettingValidation.cs" />
+    <Compile Include="Models\Partial\CostCalculation\SAPData.cs" />
+    <Compile Include="Models\Partial\CostCalculation\SAPDataCostCenterTotal.cs" />
+    <Compile Include="Models\Partial\CostCalculation\SAPDataExpenses.cs" />
+    <Compile Include="Models\Partial\CostCalculation\SAPDataQuantity.cs" />
+    <Compile Include="Models\Partial\EventLog.cs" />
+    <Compile Include="Models\Partial\PersonHistory.cs" />
+    <Compile Include="Models\Partial\Admin\AllowIP.cs" />
+    <Compile Include="Models\Partial\Admin\Group.cs" />
+    <Compile Include="Models\Partial\Admin\GroupPersonLink.cs" />
+    <Compile Include="Models\Partial\Admin\Modulecs.cs" />
+    <Compile Include="Models\Partial\Employees\Employe.cs" />
+    <Compile Include="Helpers\ETEMModelException.cs" />
+    <Compile Include="Models\DataView\SpecialityCourseOKCDataView.cs" />
+    <Compile Include="Models\DataView\DataViewInterface.cs" />
+    <Compile Include="Helpers\BaseSetting.cs" />
+    <Compile Include="Models\DataView\KeyTypeDataView.cs" />
+    <Compile Include="Models\DataView\MenuNodeDataView.cs" />
+    <Compile Include="Models\DataView\NotificationDataView.cs" />
+    <Compile Include="Models\DataView\PermittedActionDataView.cs" />
+    <Compile Include="Models\Partial\Common\UploadedFile.cs" />
+    <Compile Include="Models\Partial\Sequence.cs" />
+    <Compile Include="Models\Partial\Admin\MenuNode.cs" />
+    <Compile Include="Models\Partial\Admin\NavURL.cs" />
+    <Compile Include="Models\Partial\Admin\RoleMenuNode.cs" />
+    <Compile Include="Models\Partial\Common\Notification.cs" />
+    <Compile Include="Models\Partial\CronProcessHistory.cs" />
+    <Compile Include="Models\Partial\Location.cs" />
+    <Compile Include="Models\Partial\PermittedAction.cs" />
+    <Compile Include="Models\Partial\Person.cs" />
+    <Compile Include="Models\Partial\Role.cs" />
+    <Compile Include="Models\Partial\Setting.cs" />
+    <Compile Include="Models\DataView\PersonDataView.cs" />
+    <Compile Include="Models\DataView\UserDataView.cs" />
+    <Content Include="Default.aspx" />
+    <Compile Include="App_GlobalResources\captions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>captions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\captions.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>captions.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DLLS\AjaxControlToolkit.dll" />
+    <Content Include="DLLS\ASNS.ZipComponent.dll" />
+    <Content Include="DLLS\DocX.dll" />
+    <Content Include="DLLS\EPPlus.dll" />
+    <Content Include="DLLS\EPPlus.XML" />
+    <Content Include="DLLS\Ionic.Zip.dll" />
+    <Content Include="DLLS\log4net.dll" />
+    <Content Include="DLLS\MoreLinq.dll" />
+    <Content Include="DLLS\Newtonsoft.Json.dll" />
+    <Content Include="DLLS\NLog.dll" />
+    <Content Include="DLLS\OpenPop.dll" />
+    <Content Include="Global.asax" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Content Include="Services\Admin\Administration.svc" />
+    <Content Include="Services\Common\Common.svc" />
+    <Content Include="Services\CostCalculation\CostCalculationRef.svc" />
+    <Content Include="Services\Employe\EmployeRef.svc" />
+    <Content Include="Site.css" />
+    <Content Include="Site.master" />
+    <Compile Include="Helpers\BaseHelper.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Helpers\ResultContext.cs" />
+    <Compile Include="Helpers\SystemError.cs" />
+    <Compile Include="Helpers\SystemMessage.cs" />
+    <Compile Include="Helpers\ETEMEnums.cs" />
+    <Compile Include="Models\Partial\KeyType.cs" />
+    <Compile Include="Models\Partial\KeyValue.cs" />
+    <Compile Include="Models\Partial\User.cs" />
+    <Compile Include="Services\Admin\Administration.svc.cs">
+      <DependentUpon>Administration.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Admin\IAdministration.cs" />
+    <Compile Include="Services\Base\BaseClassService.cs" />
+    <Compile Include="Services\Common\Common.svc.cs">
+      <DependentUpon>Common.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Common\ICommon.cs" />
+    <Compile Include="Services\CostCalculation\CostCalculationRef.svc.cs">
+      <DependentUpon>CostCalculationRef.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CostCalculation\ICostCalculation.cs" />
+    <Compile Include="Services\Employe\EmployeRef.svc.cs">
+      <DependentUpon>EmployeRef.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Employe\IEmployeRef.cs" />
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Content Include="web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="DynamicData\web.config" />
+    <Content Include="DynamicData\Content\GridViewPager.ascx" />
+    <Compile Include="DynamicData\Content\GridViewPager.ascx.cs">
+      <DependentUpon>GridViewPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Content\GridViewPager.ascx.designer.cs">
+      <DependentUpon>GridViewPager.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Content\Images\Back.gif" />
+    <Content Include="DynamicData\Content\Images\header_back.gif" />
+    <Content Include="DynamicData\Content\Images\PgFirst.gif" />
+    <Content Include="DynamicData\Content\Images\PgLast.gif" />
+    <Content Include="DynamicData\Content\Images\PgNext.gif" />
+    <Content Include="DynamicData\Content\Images\PgPrev.gif" />
+    <Content Include="DynamicData\Content\Images\plus.gif" />
+    <Content Include="DynamicData\EntityTemplates\Default.ascx" />
+    <Compile Include="DynamicData\EntityTemplates\Default.ascx.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\Default.ascx.designer.cs">
+      <DependentUpon>Default.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\EntityTemplates\Default_Edit.ascx" />
+    <Compile Include="DynamicData\EntityTemplates\Default_Edit.ascx.cs">
+      <DependentUpon>Default_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\Default_Edit.ascx.designer.cs">
+      <DependentUpon>Default_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\EntityTemplates\Default_Insert.ascx" />
+    <Compile Include="DynamicData\EntityTemplates\Default_Insert.ascx.cs">
+      <DependentUpon>Default_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\EntityTemplates\Default_Insert.ascx.designer.cs">
+      <DependentUpon>Default_Insert.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean.ascx.designer.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Boolean_Edit.ascx.cs">
+      <DependentUpon>Boolean_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Boolean_Edit.ascx.designer.cs">
+      <DependentUpon>Boolean_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Children.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Children.ascx.cs">
+      <DependentUpon>Children.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children.ascx.designer.cs">
+      <DependentUpon>Children.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Children_Insert.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Children_Insert.ascx.cs">
+      <DependentUpon>Children_Insert.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Children_Insert.ascx.designer.cs">
+      <DependentUpon>Children_Insert.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\DateTime.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\DateTime.ascx.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime.ascx.designer.cs">
+      <DependentUpon>DateTime.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\DateTime_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\DateTime_Edit.ascx.cs">
+      <DependentUpon>DateTime_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\DateTime_Edit.ascx.designer.cs">
+      <DependentUpon>DateTime_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Decimal_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Decimal_Edit.ascx.cs">
+      <DependentUpon>Decimal_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Decimal_Edit.ascx.designer.cs">
+      <DependentUpon>Decimal_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\EmailAddress.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress.ascx.cs">
+      <DependentUpon>EmailAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\EmailAddress.ascx.designer.cs">
+      <DependentUpon>EmailAddress.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Enumeration.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Enumeration.ascx.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration.ascx.designer.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx.cs">
+      <DependentUpon>Enumeration_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Enumeration_Edit.ascx.designer.cs">
+      <DependentUpon>Enumeration_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ForeignKey.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey.ascx.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey.ascx.designer.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx.cs">
+      <DependentUpon>ForeignKey_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ForeignKey_Edit.ascx.designer.cs">
+      <DependentUpon>ForeignKey_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Integer_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Integer_Edit.ascx.cs">
+      <DependentUpon>Integer_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Integer_Edit.ascx.designer.cs">
+      <DependentUpon>Integer_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ManyToMany.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany.ascx.cs">
+      <DependentUpon>ManyToMany.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany.ascx.designer.cs">
+      <DependentUpon>ManyToMany.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\ManyToMany_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany_Edit.ascx.cs">
+      <DependentUpon>ManyToMany_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\ManyToMany_Edit.ascx.designer.cs">
+      <DependentUpon>ManyToMany_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx.cs">
+      <DependentUpon>MultilineText_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\MultilineText_Edit.ascx.designer.cs">
+      <DependentUpon>MultilineText_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Text.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Text.ascx.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text.ascx.designer.cs">
+      <DependentUpon>Text.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Text_Edit.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Text_Edit.ascx.cs">
+      <DependentUpon>Text_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Text_Edit.ascx.designer.cs">
+      <DependentUpon>Text_Edit.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\FieldTemplates\Url.ascx" />
+    <Compile Include="DynamicData\FieldTemplates\Url.ascx.cs">
+      <DependentUpon>Url.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\FieldTemplates\Url.ascx.designer.cs">
+      <DependentUpon>Url.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Filters\Boolean.ascx" />
+    <Compile Include="DynamicData\Filters\Boolean.ascx.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Boolean.ascx.designer.cs">
+      <DependentUpon>Boolean.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Filters\Enumeration.ascx" />
+    <Compile Include="DynamicData\Filters\Enumeration.ascx.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\Enumeration.ascx.designer.cs">
+      <DependentUpon>Enumeration.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\Filters\ForeignKey.ascx" />
+    <Compile Include="DynamicData\Filters\ForeignKey.ascx.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\Filters\ForeignKey.ascx.designer.cs">
+      <DependentUpon>ForeignKey.ascx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\Details.aspx" />
+    <Compile Include="DynamicData\PageTemplates\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\Edit.aspx" />
+    <Compile Include="DynamicData\PageTemplates\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\Insert.aspx" />
+    <Compile Include="DynamicData\PageTemplates\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\List.aspx" />
+    <Compile Include="DynamicData\PageTemplates\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Content Include="DynamicData\PageTemplates\ListDetails.aspx" />
+    <Compile Include="DynamicData\PageTemplates\ListDetails.aspx.cs">
+      <DependentUpon>ListDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynamicData\PageTemplates\ListDetails.aspx.designer.cs">
+      <DependentUpon>ListDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+    </Compile>
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="DynamicData\CustomPages\" />
+    <Folder Include="SQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\captions.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>captions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\captions.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>captions.en.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <Content Include="ClassDiagram2.cd" />
+    <None Include="Diagram\ClassDiagram1.cd" />
+    <EntityDeploy Include="Models\DataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\DataView\ViewClassDiagram.cd" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\LogModel\UMS_LOG.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UMS_LOG.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="nvelocity.properties" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53276</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ETEMModel</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

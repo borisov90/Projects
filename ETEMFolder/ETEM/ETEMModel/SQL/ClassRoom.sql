@@ -1,0 +1,2 @@
+﻿delete ClassRoomDisciplineName;
+delete ClassRoom;

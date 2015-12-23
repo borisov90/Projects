@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CImage.aspx.cs" Inherits="ETEM.Controls.Common.CImage" %>

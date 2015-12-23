@@ -1,0 +1,1488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETEM</RootNamespace>
+    <AssemblyName>ETEM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DocX, Version=1.0.1.13, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MoreLinq">
+      <HintPath>DLLS\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UMSModel\DLLS\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=3.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLS\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AllowIPList.aspx" />
+    <Content Include="Admin\AppSetting.aspx" />
+    <Content Include="Admin\DownloadLogFile.aspx" />
+    <Content Include="Admin\GroupList.aspx" />
+    <Content Include="Admin\KeyTypeList.aspx" />
+    <Content Include="Admin\MenuNodePage.aspx" />
+    <Content Include="Admin\ModuleList.aspx" />
+    <Content Include="Admin\OnlineUsersList.aspx" />
+    <Content Include="Admin\PermittedActionList.aspx" />
+    <Content Include="Admin\RoleList.aspx" />
+    <Content Include="Admin\SessionClear.aspx" />
+    <Content Include="Admin\TestShowAllSessions.aspx" />
+    <Content Include="Admin\PersonList.aspx" />
+    <Content Include="Admin\UserList.aspx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="css\foundation-icons\.DS_Store" />
+    <None Include="css\foundation-icons\.fontcustom-data" />
+    <None Include="css\foundation-icons\foundation-icons.eot" />
+    <None Include="css\foundation-icons\foundation-icons.ttf" />
+    <None Include="css\foundation-icons\foundation-icons.woff" />
+    <None Include="fonts\fontawesome.eot" />
+    <None Include="fonts\fontawesome.ttf" />
+    <None Include="fonts\fontawesome.woff" />
+    <Content Include="Controls\Admin\AllowIPMainData.ascx" />
+    <Content Include="Controls\Admin\GroupData.ascx" />
+    <Content Include="Controls\Admin\ModuleMainData.ascx" />
+    <Content Include="Controls\Admin\PersonalDataReduced.ascx" />
+    <Content Include="Controls\Common\AttachmentDocument.ascx" />
+    <Content Include="Controls\Common\CImage.aspx" />
+    <Content Include="Controls\Common\SMCCaptcha.ascx" />
+    <Content Include="Controls\Common\SMCMultiCheckCombo.ascx" />
+    <Content Include="Controls\CostCalculation\AverageOutturnOverTimeData.ascx" />
+    <Content Include="Controls\CostCalculation\BilletScrapData.ascx" />
+    <Content Include="Controls\CostCalculation\CommissionsByAgentData.ascx" />
+    <Content Include="Controls\CostCalculation\DieFormulaData.ascx" />
+    <Content Include="Controls\CostCalculation\DiePriceListData.ascx" />
+    <Content Include="Controls\CostCalculation\DiePriceListDetailsData.ascx" />
+    <Content Include="Controls\CostCalculation\DiesData.ascx" />
+    <Content Include="Controls\CostCalculation\ExpensesByCostCentersData.ascx" />
+    <Content Include="Controls\CostCalculation\ExpensesByCostCentersDataTon.ascx" />
+    <Content Include="Controls\CostCalculation\InquiryData.ascx" />
+    <Content Include="Controls\CostCalculation\MaterialPriceListData.ascx" />
+    <Content Include="Controls\CostCalculation\OfferMainData.ascx" />
+    <Content Include="Controls\CostCalculation\OfferOverviewData.ascx" />
+    <Content Include="Controls\CostCalculation\ProducitivityData.ascx" />
+    <Content Include="Controls\CostCalculation\ProductCostData.ascx" />
+    <Content Include="Controls\CostCalculation\ProductivityAndScrapData.ascx" />
+    <Content Include="Controls\CostCalculation\ProductivityAndScrapDetailData.ascx" />
+    <Content Include="Controls\CostCalculation\Profile.ascx" />
+    <Content Include="Controls\CostCalculation\ProfilesListCtrl.ascx" />
+    <Content Include="Controls\CostCalculation\ProfilesListCtrlChooseOffer.ascx" />
+    <Content Include="Controls\CostCalculation\SAPDataData.ascx" />
+    <Content Include="Controls\CostCalculation\SAPDataExpenseData.ascx" />
+    <Content Include="Controls\CostCalculation\SAPDataQuantityData.ascx" />
+    <Content Include="Controls\CostCalculation\TotalCostPerTonPC.ascx" />
+    <Content Include="CostCalculation\AverageOutturnOverTimeList.aspx" />
+    <Content Include="CostCalculation\CommissionsByAgentsList.aspx" />
+    <Content Include="CostCalculation\DieFormulaList.aspx" />
+    <Content Include="CostCalculation\DiePriceListDetailsList.aspx" />
+    <Content Include="CostCalculation\DiePricesList.aspx" />
+    <Content Include="CostCalculation\MaterialPricesList.aspx" />
+    <Content Include="CostCalculation\OffersList.aspx" />
+    <Content Include="CostCalculation\ProductivityAndScrapDetailList.aspx" />
+    <Content Include="CostCalculation\ProductivityAndScrapList.aspx" />
+    <Content Include="CostCalculation\ProfilesList.aspx" />
+    <Content Include="CostCalculation\SAPDataExpensesList.aspx" />
+    <Content Include="CostCalculation\SAPDataList.aspx" />
+    <Content Include="CostCalculation\SAPDataQuantitiesList.aspx" />
+    <Content Include="DLLS\MoreLinq.dll" />
+    <Content Include="Images\formulas.jpg" />
+    <Content Include="Images\hat.png" />
+    <Content Include="Images\imageFormula.png" />
+    <Content Include="Images\logo_white.png" />
+    <Content Include="Images\martenica.png" />
+    <Content Include="Images\red_asterisk_2.png" />
+    <Content Include="Images\snow3.gif" />
+    <Content Include="Images\test.jpg" />
+    <Content Include="Images\User-hat.png" />
+    <Content Include="js\snowstorm.js" />
+    <None Include="Properties\PublishProfiles\ETEM 10.10.10.196.pubxml" />
+    <None Include="Service References\ServiceToCreateUser\ServiceToCreateUser.disco" />
+    <None Include="Service References\ServiceToCreateUser\configuration91.svcinfo" />
+    <None Include="Service References\ServiceToCreateUser\configuration.svcinfo" />
+    <None Include="Service References\ServiceToCreateUser\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Share\AttachmentList.aspx" />
+    <Content Include="Styles\Media\layout.css" />
+    <Content Include="Styles\Media\layout\header-in.png" />
+    <Content Include="Styles\Media\layout\header.png" />
+    <Content Include="Styles\Media\layout\home\event-calendar-asp.net-open-source-400plus.png" />
+    <Content Include="Styles\Media\layout\home\scheduler-asp.net-open-source-400.png" />
+    <Content Include="Styles\Media\layout\li.png" />
+    <Content Include="Styles\Media\layout\main.png" />
+    <Content Include="Styles\Media\layout\shadow.png" />
+    <Content Include="Styles\Media\linked\ajax-loader-round.gif" />
+    <Content Include="Styles\Themes\calendar_green.css" />
+    <Content Include="Styles\Themes\calendar_transparent.css" />
+    <Content Include="Styles\Themes\calendar_white.css" />
+    <Content Include="Styles\Themes\scheduler_8.css" />
+    <Content Include="Styles\Themes\scheduler_blue.css" />
+    <Content Include="Styles\Themes\scheduler_green.css" />
+    <Content Include="Styles\Themes\scheduler_transparent.css" />
+    <Content Include="Styles\Themes\scheduler_white.css" />
+    <Content Include="DLLS\NLog.dll" />
+    <Content Include="Images\logo - Copy.png" />
+    <Content Include="Images\logo-red.png" />
+    <Content Include="Images\req-triangle.png" />
+    <Content Include="Images\required-red-star.gif" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nvelocity.properties" />
+    <Content Include="packages.config" />
+    <None Include="Properties\DataSources\UMSModel.Helpers.CallContext.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Helpers.ResultContext.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Affiliate.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Country.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.CronProcessHistory.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.DataView.MenuNodeDataView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.DataView.PermittedActionDataView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.DataView.PersonDataView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.DataView.SpecialityDataView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.DataView.UserDataView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.District.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.EKATTE.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Faculty.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.KeyType.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.KeyValue.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Location.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.LocationView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Municipality.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.PermittedAction.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Person.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Role.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Setting.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.Speciality.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.SpecialityCode.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.UNI.datasource" />
+    <None Include="Properties\DataSources\UMSModel.Models.User.datasource" />
+    <None Include="Properties\DataSources\UMSModel.PersonDataView.datasource" />
+    <None Include="Properties\DataSources\UMSModel.UserDataView.datasource" />
+    <Content Include="Controls\Admin\PermittedActionMainData.ascx" />
+    <Content Include="Controls\Admin\PersonalData.ascx" />
+    <Content Include="Controls\Admin\PersonList.ascx" />
+    <Content Include="Controls\Admin\RoleList.ascx" />
+    <Content Include="Controls\Admin\RoleMainData.ascx" />
+    <Content Include="Controls\Admin\SettingMainData.ascx" />
+    <Content Include="Controls\Admin\UserData.ascx" />
+    <Content Include="Controls\Admin\UserMainData.ascx" />
+    <Content Include="Controls\Common\AlphaBetCtrl.ascx" />
+    <Content Include="Controls\Common\MultipleSorting.ascx" />
+    <Content Include="Controls\Common\ProfileData.ascx" />
+    <Content Include="Controls\Common\SMCCheckBoxRadioButtons.ascx" />
+    <Content Include="Controls\Common\SMCCheckBoxRadioButtonsThree.ascx" />
+    <Content Include="Controls\Common\SMCErrorPnl.ascx" />
+    <Content Include="Controls\Common\SMCFileUploder.ascx" />
+    <Content Include="Controls\Common\MenuNode.ascx" />
+    <Content Include="Controls\Common\SMCAutoCompleteTextBox.ascx" />
+    <Content Include="Controls\Common\SMCCalendar.ascx" />
+    <Content Include="Controls\Common\SMCDropDownList.ascx" />
+    <Content Include="Controls\Admin\KeyType.ascx" />
+    <Content Include="Controls\Admin\PersonMainData.ascx" />
+    <Content Include="Controls\Common\SMCFooter.ascx" />
+    <Content Include="Controls\Common\SMCMainHeader.ascx" />
+    <Content Include="Controls\Common\SMCModelPictureWindow.ascx" />
+    <Content Include="Controls\Common\SMCNotification.ascx" />
+    <Content Include="Controls\Common\SMCTextArea.ascx" />
+    <Content Include="css\bootstrap\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap\bootstrap.css" />
+    <Content Include="css\component.css" />
+    <Content Include="css\css3buttons\css3buttons.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\foundation-icons\foundation-icons.css" />
+    <Content Include="css\foundation-icons\foundation-icons.svg" />
+    <Content Include="css\foundation-icons\preview.html" />
+    <Content Include="css\foundation-icons\svgs\fi-address-book.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-alert.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-align-center.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-align-justify.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-align-left.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-align-right.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-anchor.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-annotate.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-archive.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrow-down.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrow-left.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrow-right.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrow-up.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrows-compress.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrows-expand.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrows-in.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-arrows-out.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-asl.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-asterisk.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-at-sign.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-background-color.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-battery-empty.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-battery-full.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-battery-half.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-bitcoin-circle.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-bitcoin.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-blind.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-bluetooth.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-bold.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-book-bookmark.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-book.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-bookmark.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-braille.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-burst-new.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-burst-sale.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-burst.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-calendar.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-camera.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-check.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-checkbox.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-clipboard-notes.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-clipboard-pencil.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-clipboard.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-clock.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-closed-caption.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-cloud.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-comment-minus.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-comment-quotes.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-comment-video.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-comment.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-comments.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-compass.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-contrast.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-credit-card.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-crop.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-crown.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-css3.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-database.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-die-five.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-die-four.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-die-one.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-die-six.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-die-three.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-die-two.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-dislike.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-dollar-bill.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-dollar.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-download.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-eject.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-elevator.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-euro.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-eye.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-fast-forward.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-female-symbol.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-female.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-filter.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-first-aid.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-flag.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-folder-add.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-folder-lock.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-folder.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-foot.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-foundation.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-graph-bar.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-graph-horizontal.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-graph-pie.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-graph-trend.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-guide-dog.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-hearing-aid.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-heart.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-home.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-html5.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-indent-less.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-indent-more.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-info.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-italic.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-key.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-laptop.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-layout.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-lightbulb.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-like.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-link.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-list-bullet.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-list-number.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-list-thumbnails.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-list.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-lock.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-loop.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-magnifying-glass.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-mail.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-male-female.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-male-symbol.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-male.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-map.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-marker.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-megaphone.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-microphone.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-minus-circle.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-minus.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-mobile-signal.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-mobile.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-monitor.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-mountains.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-music.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-next.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-no-dogs.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-no-smoking.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-add.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-copy.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-csv.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-delete.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-doc.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-edit.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-export-csv.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-export-doc.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-export-pdf.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-export.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-filled.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-multiple.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-pdf.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-remove.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page-search.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-page.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-paint-bucket.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-paperclip.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-pause.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-paw.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-paypal.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-pencil.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-photo.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-play-circle.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-play-video.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-play.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-plus.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-pound.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-power.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-previous.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-price-tag.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-pricetag-multiple.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-print.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-prohibited.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-projection-screen.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-puzzle.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-quote.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-record.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-refresh.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-results-demographics.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-results.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-rewind-ten.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-rewind.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-rss.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-safety-cone.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-save.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-share.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-sheriff-badge.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-shield.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-shopping-bag.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-shopping-cart.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-shuffle.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-skull.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-500px.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-adobe.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-amazon.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-android.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-apple.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-behance.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-bing.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-blogger.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-delicious.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-designer-news.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-deviant-art.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-digg.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-dribbble.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-drive.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-dropbox.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-evernote.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-facebook.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-flickr.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-forrst.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-foursquare.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-game-center.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-github.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-google-plus.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-hacker-news.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-hi5.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-instagram.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-joomla.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-lastfm.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-linkedin.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-medium.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-myspace.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-orkut.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-path.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-picasa.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-pinterest.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-rdio.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-reddit.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-skillshare.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-skype.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-smashing-mag.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-snapchat.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-spotify.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-squidoo.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-stack-overflow.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-steam.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-stumbleupon.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-treehouse.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-tumblr.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-twitter.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-vimeo.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-windows.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-xbox.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-yahoo.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-yelp.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-youtube.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-zerply.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-social-zurb.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-sound.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-star.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-stop.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-strikethrough.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-subscript.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-superscript.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-tablet-landscape.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-tablet-portrait.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-target-two.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-target.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-telephone-accessible.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-telephone.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-text-color.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-thumbnails.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-ticket.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torso-business.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torso-female.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torso.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torsos-all-female.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torsos-all.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torsos-female-male.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torsos-male-female.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-torsos.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-trash.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-trees.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-trophy.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-underline.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-universal-access.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-unlink.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-unlock.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-upload-cloud.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-upload.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-usb.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-video.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-volume-none.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-volume-strike.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-volume.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-web.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-wheelchair.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-widget.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-wrench.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-x-circle.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-x.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-yen.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-zoom-in.svg" />
+    <Content Include="css\foundation-icons\svgs\fi-zoom-out.svg" />
+    <Content Include="css\foundation-icons\test.html" />
+    <Content Include="css\img\css3buttons_icons.png" />
+    <Content Include="css\img\glyphicons-halflings-white.png" />
+    <Content Include="css\img\glyphicons-halflings.png" />
+    <Content Include="css\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\ui-lightness\jquery-ui-1.10.4.custom.css" />
+    <Content Include="css\ui-lightness\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="css\uploadify.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DLLS\AjaxControlToolkit.dll" />
+    <Content Include="DLLS\ASNS.ZipComponent.dll" />
+    <Content Include="DLLS\CustomServerControls.dll" />
+    <Content Include="DLLS\DayPilot.dll" />
+    <Content Include="DLLS\DocX.dll" />
+    <Content Include="DLLS\EPPlus.dll" />
+    <Content Include="DLLS\EPPlus.XML" />
+    <Content Include="DLLS\log4net.dll" />
+    <Content Include="fonts\fontawesome.svg" />
+    <Content Include="Images\User.png" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\close1.png" />
+    <Content Include="Images\close2.png" />
+    <Content Include="Images\close3.png" />
+    <Content Include="Images\close4.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\ECFGerb.png" />
+    <Content Include="Images\EUGerb.png" />
+    <Content Include="Images\exit.png" />
+    <Content Include="Images\fav-logo.ico" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\file.png" />
+    <Content Include="Images\FileXPtest.png" />
+    <Content Include="Images\Folder.png" />
+    <Content Include="Images\Level Up.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\person-clip-art-2.png" />
+    <Content Include="Images\tab_active.gif" />
+    <Content Include="Images\tab_hover.gif" />
+    <Content Include="Images\tab_Inactive.gif" />
+    <Content Include="Images\tab_left_active.gif" />
+    <Content Include="Images\tab_left_hover.gif" />
+    <Content Include="Images\tab_left_inactive.gif" />
+    <Content Include="Images\tab_right_active.gif" />
+    <Content Include="Images\tab_right_hover.gif" />
+    <Content Include="Images\tab_right_inactive.gif" />
+    <Content Include="Images\uploadify-cancel.png" />
+    <Content Include="Images\uploadify.swf" />
+    <Content Include="js\cbpHorizontalMenu.js" />
+    <Content Include="js\cbpHorizontalMenu.min.js" />
+    <Content Include="js\common-scripts.js" />
+    <Content Include="js\custom-scripts.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\reloadParentPage.js" />
+    <Content Include="js\ResponsiveDesingTest.js" />
+    <Content Include="js\textarea.js" />
+    <Content Include="Scripts\bootsrap-js\bootstrap.js" />
+    <Content Include="Scripts\bootsrap-js\bootstrap.min.js" />
+    <Content Include="Scripts\custom-js\keep-page-scroll-state.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.custom.js" />
+    <Content Include="Scripts\jquery.uploadify-3.1.js" />
+    <Content Include="Scripts\jquery.uploadify-3.1.min.js" />
+    <None Include="Service References\CommonServiceReference\Common.disco" />
+    <None Include="Service References\CommonServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\CommonServiceReference\configuration.svcinfo" />
+    <None Include="Service References\CommonServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\slidebars\slidebars.min.css" />
+    <Content Include="Scripts\slidebars\slidebars.min.js" />
+    <Content Include="Scripts\slidebars\sliderbars-custom-styles.css" />
+    <Content Include="Services\Common\Common.svc" />
+    <Content Include="Share\DownloadFile.aspx" />
+    <Content Include="Controls\Common\FileExplorer.ascx" />
+    <Content Include="Share\Login.aspx" />
+    <Content Include="Share\Logout.aspx" />
+    <Content Include="Share\MultiFilesUpload.aspx" />
+    <Content Include="Share\UnderConstruction.aspx" />
+    <Content Include="Share\UploadFile.aspx" />
+    <Content Include="Share\Welcome.aspx" />
+    <Content Include="Styles\design.css" />
+    <Content Include="Styles\Site-Print-screen.css" />
+    <Content Include="Styles\Site-Print.css" />
+    <Content Include="Styles\mediaQueries.css" />
+    <Content Include="Styles\scheduler_white.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Test.aspx" />
+    <Content Include="UI\InternalPageInfo.aspx" />
+    <Content Include="UI\NoPermission.aspx" />
+    <Content Include="UI\NoPermissionWithoutMasterPage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\CommonServiceReference\Common.wsdl" />
+    <None Include="Service References\CommonServiceReference\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonServiceReference\Common1.wsdl" />
+    <None Include="Service References\CommonServiceReference\Common1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommonServiceReference\Common2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceToCreateUser\ServiceToCreateUser.wsdl" />
+    <None Include="Service References\ServiceToCreateUser\ServiceToCreateUser.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceToCreateUser\ServiceToCreateUser1.wsdl" />
+    <None Include="Service References\ServiceToCreateUser\ServiceToCreateUser1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceToCreateUser\ServiceToCreateUser2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="WebHandlers\FilesUploadHandler.ashx" />
+    <Content Include="Templates\Template_DiePriceListDetails.xlsx" />
+    <Content Include="Templates\Template_SAP_ExpensesAndQuantities.xlsx" />
+    <Content Include="Templates\Template_SAP_ProductivityAndScrap.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AllowIPList.aspx.cs">
+      <DependentUpon>AllowIPList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AllowIPList.aspx.designer.cs">
+      <DependentUpon>AllowIPList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AppSetting.aspx.cs">
+      <DependentUpon>AppSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AppSetting.aspx.designer.cs">
+      <DependentUpon>AppSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DownloadLogFile.aspx.cs">
+      <DependentUpon>DownloadLogFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DownloadLogFile.aspx.designer.cs">
+      <DependentUpon>DownloadLogFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GroupList.aspx.cs">
+      <DependentUpon>GroupList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GroupList.aspx.designer.cs">
+      <DependentUpon>GroupList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MenuNodePage.aspx.cs">
+      <DependentUpon>MenuNodePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MenuNodePage.aspx.designer.cs">
+      <DependentUpon>MenuNodePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModuleList.aspx.cs">
+      <DependentUpon>ModuleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModuleList.aspx.designer.cs">
+      <DependentUpon>ModuleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OnlineUsersList.aspx.cs">
+      <DependentUpon>OnlineUsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OnlineUsersList.aspx.designer.cs">
+      <DependentUpon>OnlineUsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PermittedActionList.aspx.cs">
+      <DependentUpon>PermittedActionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PermittedActionList.aspx.designer.cs">
+      <DependentUpon>PermittedActionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SessionClear.aspx.cs">
+      <DependentUpon>SessionClear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SessionClear.aspx.designer.cs">
+      <DependentUpon>SessionClear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TestShowAllSessions.aspx.cs">
+      <DependentUpon>TestShowAllSessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TestShowAllSessions.aspx.designer.cs">
+      <DependentUpon>TestShowAllSessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\AllowIPMainData.ascx.cs">
+      <DependentUpon>AllowIPMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\AllowIPMainData.ascx.designer.cs">
+      <DependentUpon>AllowIPMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\GroupData.ascx.cs">
+      <DependentUpon>GroupData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\GroupData.ascx.designer.cs">
+      <DependentUpon>GroupData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\ModuleMainData.ascx.cs">
+      <DependentUpon>ModuleMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\ModuleMainData.ascx.designer.cs">
+      <DependentUpon>ModuleMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PermittedActionMainData.ascx.cs">
+      <DependentUpon>PermittedActionMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PermittedActionMainData.ascx.designer.cs">
+      <DependentUpon>PermittedActionMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonalData.ascx.cs">
+      <DependentUpon>PersonalData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonalData.ascx.designer.cs">
+      <DependentUpon>PersonalData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonalDataReduced.ascx.cs">
+      <DependentUpon>PersonalDataReduced.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonalDataReduced.ascx.designer.cs">
+      <DependentUpon>PersonalDataReduced.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonList.ascx.cs">
+      <DependentUpon>PersonList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonList.ascx.designer.cs">
+      <DependentUpon>PersonList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleList.ascx.cs">
+      <DependentUpon>RoleList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleList.ascx.designer.cs">
+      <DependentUpon>RoleList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleMainData.ascx.cs">
+      <DependentUpon>RoleMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\RoleMainData.ascx.designer.cs">
+      <DependentUpon>RoleMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\SettingMainData.ascx.cs">
+      <DependentUpon>SettingMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\SettingMainData.ascx.designer.cs">
+      <DependentUpon>SettingMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserData.ascx.cs">
+      <DependentUpon>UserData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserData.ascx.designer.cs">
+      <DependentUpon>UserData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\UserMainData.ascx.cs">
+      <DependentUpon>UserMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\UserMainData.ascx.designer.cs">
+      <DependentUpon>UserMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\AlphaBetCtrl.ascx.cs">
+      <DependentUpon>AlphaBetCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\AlphaBetCtrl.ascx.designer.cs">
+      <DependentUpon>AlphaBetCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\AttachmentDocument.ascx.cs">
+      <DependentUpon>AttachmentDocument.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\AttachmentDocument.ascx.designer.cs">
+      <DependentUpon>AttachmentDocument.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\CImage.aspx.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\CImage.aspx.designer.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\MultipleSorting.ascx.cs">
+      <DependentUpon>MultipleSorting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\MultipleSorting.ascx.designer.cs">
+      <DependentUpon>MultipleSorting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\ProfileData.ascx.cs">
+      <DependentUpon>ProfileData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\ProfileData.ascx.designer.cs">
+      <DependentUpon>ProfileData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCaptcha.ascx.cs">
+      <DependentUpon>SMCCaptcha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCaptcha.ascx.designer.cs">
+      <DependentUpon>SMCCaptcha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCheckBoxRadioButtons.ascx.cs">
+      <DependentUpon>SMCCheckBoxRadioButtons.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCheckBoxRadioButtons.ascx.designer.cs">
+      <DependentUpon>SMCCheckBoxRadioButtons.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCheckBoxRadioButtonsThree.ascx.cs">
+      <DependentUpon>SMCCheckBoxRadioButtonsThree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCheckBoxRadioButtonsThree.ascx.designer.cs">
+      <DependentUpon>SMCCheckBoxRadioButtonsThree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCErrorPnl.ascx.cs">
+      <DependentUpon>SMCErrorPnl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCErrorPnl.ascx.designer.cs">
+      <DependentUpon>SMCErrorPnl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCFileUploder.ascx.cs">
+      <DependentUpon>SMCFileUploder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCFileUploder.ascx.designer.cs">
+      <DependentUpon>SMCFileUploder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\MenuNode.ascx.cs">
+      <DependentUpon>MenuNode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\MenuNode.ascx.designer.cs">
+      <DependentUpon>MenuNode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCAutoCompleteTextBox.ascx.cs">
+      <DependentUpon>SMCAutoCompleteTextBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCAutoCompleteTextBox.ascx.designer.cs">
+      <DependentUpon>SMCAutoCompleteTextBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCFooter.ascx.cs">
+      <DependentUpon>SMCFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCFooter.ascx.designer.cs">
+      <DependentUpon>SMCFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCMainHeader.ascx.cs">
+      <DependentUpon>SMCMainHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCMainHeader.ascx.designer.cs">
+      <DependentUpon>SMCMainHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCModelPictureWindow.ascx.cs">
+      <DependentUpon>SMCModelPictureWindow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCModelPictureWindow.ascx.designer.cs">
+      <DependentUpon>SMCModelPictureWindow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCMultiCheckCombo.ascx.cs">
+      <DependentUpon>SMCMultiCheckCombo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCMultiCheckCombo.ascx.designer.cs">
+      <DependentUpon>SMCMultiCheckCombo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCNotification.ascx.cs">
+      <DependentUpon>SMCNotification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCNotification.ascx.designer.cs">
+      <DependentUpon>SMCNotification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCTextArea.ascx.cs">
+      <DependentUpon>SMCTextArea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCTextArea.ascx.designer.cs">
+      <DependentUpon>SMCTextArea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\AverageOutturnOverTimeData.ascx.cs">
+      <DependentUpon>AverageOutturnOverTimeData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\AverageOutturnOverTimeData.ascx.designer.cs">
+      <DependentUpon>AverageOutturnOverTimeData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\BilletScrapData.ascx.cs">
+      <DependentUpon>BilletScrapData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\BilletScrapData.ascx.designer.cs">
+      <DependentUpon>BilletScrapData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\CommissionsByAgentData.ascx.cs">
+      <DependentUpon>CommissionsByAgentData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\CommissionsByAgentData.ascx.designer.cs">
+      <DependentUpon>CommissionsByAgentData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DieFormulaData.ascx.cs">
+      <DependentUpon>DieFormulaData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DieFormulaData.ascx.designer.cs">
+      <DependentUpon>DieFormulaData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DiePriceListData.ascx.cs">
+      <DependentUpon>DiePriceListData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DiePriceListData.ascx.designer.cs">
+      <DependentUpon>DiePriceListData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DiePriceListDetailsData.ascx.cs">
+      <DependentUpon>DiePriceListDetailsData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DiePriceListDetailsData.ascx.designer.cs">
+      <DependentUpon>DiePriceListDetailsData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DiesData.ascx.cs">
+      <DependentUpon>DiesData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\DiesData.ascx.designer.cs">
+      <DependentUpon>DiesData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ExpensesByCostCentersData.ascx.cs">
+      <DependentUpon>ExpensesByCostCentersData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ExpensesByCostCentersData.ascx.designer.cs">
+      <DependentUpon>ExpensesByCostCentersData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ExpensesByCostCentersDataTon.ascx.cs">
+      <DependentUpon>ExpensesByCostCentersDataTon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ExpensesByCostCentersDataTon.ascx.designer.cs">
+      <DependentUpon>ExpensesByCostCentersDataTon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\InquiryData.ascx.cs">
+      <DependentUpon>InquiryData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\InquiryData.ascx.designer.cs">
+      <DependentUpon>InquiryData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\MaterialPriceListData.ascx.cs">
+      <DependentUpon>MaterialPriceListData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\MaterialPriceListData.ascx.designer.cs">
+      <DependentUpon>MaterialPriceListData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\OfferMainData.ascx.cs">
+      <DependentUpon>OfferMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\OfferMainData.ascx.designer.cs">
+      <DependentUpon>OfferMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\OfferOverviewData.ascx.cs">
+      <DependentUpon>OfferOverviewData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\OfferOverviewData.ascx.designer.cs">
+      <DependentUpon>OfferOverviewData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProducitivityData.ascx.cs">
+      <DependentUpon>ProducitivityData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProducitivityData.ascx.designer.cs">
+      <DependentUpon>ProducitivityData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProductCostData.ascx.cs">
+      <DependentUpon>ProductCostData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProductCostData.ascx.designer.cs">
+      <DependentUpon>ProductCostData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProductivityAndScrapData.ascx.cs">
+      <DependentUpon>ProductivityAndScrapData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProductivityAndScrapData.ascx.designer.cs">
+      <DependentUpon>ProductivityAndScrapData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProductivityAndScrapDetailData.ascx.cs">
+      <DependentUpon>ProductivityAndScrapDetailData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProductivityAndScrapDetailData.ascx.designer.cs">
+      <DependentUpon>ProductivityAndScrapDetailData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\Profile.ascx.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\Profile.ascx.designer.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProfilesListCtrl.ascx.cs">
+      <DependentUpon>ProfilesListCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProfilesListCtrl.ascx.designer.cs">
+      <DependentUpon>ProfilesListCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProfilesListCtrlChooseOffer.ascx.cs">
+      <DependentUpon>ProfilesListCtrlChooseOffer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\ProfilesListCtrlChooseOffer.ascx.designer.cs">
+      <DependentUpon>ProfilesListCtrlChooseOffer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\SAPDataData.ascx.cs">
+      <DependentUpon>SAPDataData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\SAPDataData.ascx.designer.cs">
+      <DependentUpon>SAPDataData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\SAPDataExpenseData.ascx.cs">
+      <DependentUpon>SAPDataExpenseData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\SAPDataExpenseData.ascx.designer.cs">
+      <DependentUpon>SAPDataExpenseData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\SAPDataQuantityData.ascx.cs">
+      <DependentUpon>SAPDataQuantityData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\SAPDataQuantityData.ascx.designer.cs">
+      <DependentUpon>SAPDataQuantityData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\TotalCostPerTonPC.ascx.cs">
+      <DependentUpon>TotalCostPerTonPC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CostCalculation\TotalCostPerTonPC.ascx.designer.cs">
+      <DependentUpon>TotalCostPerTonPC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\AverageOutturnOverTimeList.aspx.cs">
+      <DependentUpon>AverageOutturnOverTimeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\AverageOutturnOverTimeList.aspx.designer.cs">
+      <DependentUpon>AverageOutturnOverTimeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\CommissionsByAgentsList.aspx.cs">
+      <DependentUpon>CommissionsByAgentsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\CommissionsByAgentsList.aspx.designer.cs">
+      <DependentUpon>CommissionsByAgentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\DieFormulaList.aspx.cs">
+      <DependentUpon>DieFormulaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\DieFormulaList.aspx.designer.cs">
+      <DependentUpon>DieFormulaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\DiePriceListDetailsList.aspx.cs">
+      <DependentUpon>DiePriceListDetailsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\DiePriceListDetailsList.aspx.designer.cs">
+      <DependentUpon>DiePriceListDetailsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\DiePricesList.aspx.cs">
+      <DependentUpon>DiePricesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\DiePricesList.aspx.designer.cs">
+      <DependentUpon>DiePricesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\MaterialPricesList.aspx.cs">
+      <DependentUpon>MaterialPricesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\MaterialPricesList.aspx.designer.cs">
+      <DependentUpon>MaterialPricesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\OffersList.aspx.cs">
+      <DependentUpon>OffersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\OffersList.aspx.designer.cs">
+      <DependentUpon>OffersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\ProductivityAndScrapDetailList.aspx.cs">
+      <DependentUpon>ProductivityAndScrapDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\ProductivityAndScrapDetailList.aspx.designer.cs">
+      <DependentUpon>ProductivityAndScrapDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\ProductivityAndScrapList.aspx.cs">
+      <DependentUpon>ProductivityAndScrapList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\ProductivityAndScrapList.aspx.designer.cs">
+      <DependentUpon>ProductivityAndScrapList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\ProfilesList.aspx.cs">
+      <DependentUpon>ProfilesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\ProfilesList.aspx.designer.cs">
+      <DependentUpon>ProfilesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\SAPDataExpensesList.aspx.cs">
+      <DependentUpon>SAPDataExpensesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\SAPDataExpensesList.aspx.designer.cs">
+      <DependentUpon>SAPDataExpensesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\SAPDataList.aspx.cs">
+      <DependentUpon>SAPDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\SAPDataList.aspx.designer.cs">
+      <DependentUpon>SAPDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculation\SAPDataQuantitiesList.aspx.cs">
+      <DependentUpon>SAPDataQuantitiesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCalculation\SAPDataQuantitiesList.aspx.designer.cs">
+      <DependentUpon>SAPDataQuantitiesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Freamwork\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KeyTypeList.aspx.cs">
+      <DependentUpon>KeyTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KeyTypeList.aspx.designer.cs">
+      <DependentUpon>KeyTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PersonList.aspx.cs">
+      <DependentUpon>PersonList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PersonList.aspx.designer.cs">
+      <DependentUpon>PersonList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCalendar.ascx.cs">
+      <DependentUpon>SMCCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCCalendar.ascx.designer.cs">
+      <DependentUpon>SMCCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SMCDropDownList.ascx.cs">
+      <DependentUpon>SMCDropDownList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SMCDropDownList.ascx.designer.cs">
+      <DependentUpon>SMCDropDownList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\KeyType.ascx.cs">
+      <DependentUpon>KeyType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\KeyType.ascx.designer.cs">
+      <DependentUpon>KeyType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonMainData.ascx.cs">
+      <DependentUpon>PersonMainData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\PersonMainData.ascx.designer.cs">
+      <DependentUpon>PersonMainData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Freamwork\BasicPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Freamwork\ClientIP.cs" />
+    <Compile Include="Freamwork\FormContext.cs" />
+    <Compile Include="Freamwork\CronProcessHelper.cs" />
+    <Compile Include="Freamwork\FormResources.cs" />
+    <Compile Include="Freamwork\GeneralPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Freamwork\ICurrentUNI.cs" />
+    <Compile Include="Freamwork\LecturerRef.cs" />
+    <Compile Include="Freamwork\UMSException.cs" />
+    <Compile Include="Freamwork\UserProps.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CommonServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceToCreateUser\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Common\Common.svc.cs">
+      <DependentUpon>Common.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Share\AttachmentList.aspx.cs">
+      <DependentUpon>AttachmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\AttachmentList.aspx.designer.cs">
+      <DependentUpon>AttachmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\DownloadFile.aspx.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\DownloadFile.aspx.designer.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\FileExplorer.ascx.cs">
+      <DependentUpon>FileExplorer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\FileExplorer.ascx.designer.cs">
+      <DependentUpon>FileExplorer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\MultiFilesUpload.aspx.cs">
+      <DependentUpon>MultiFilesUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\MultiFilesUpload.aspx.designer.cs">
+      <DependentUpon>MultiFilesUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\UnderConstruction.aspx.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\UnderConstruction.aspx.designer.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\UploadFile.aspx.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\UploadFile.aspx.designer.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Share\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Share\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InternalPageInfo.aspx.cs">
+      <DependentUpon>InternalPageInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\InternalPageInfo.aspx.designer.cs">
+      <DependentUpon>InternalPageInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NoPermission.aspx.cs">
+      <DependentUpon>NoPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NoPermission.aspx.designer.cs">
+      <DependentUpon>NoPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NoPermissionWithoutMasterPage.aspx.cs">
+      <DependentUpon>NoPermissionWithoutMasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NoPermissionWithoutMasterPage.aspx.designer.cs">
+      <DependentUpon>NoPermissionWithoutMasterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebHandlers\FilesUploadHandler.ashx.cs">
+      <DependentUpon>FilesUploadHandler.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETEMModel\ETEMModel.csproj">
+      <Project>{42EB67E5-C906-4FAC-8B02-3824E6217232}</Project>
+      <Name>ETEMModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CommonServiceReference\" />
+    <WCFMetadataStorage Include="Service References\ServiceToCreateUser\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60479</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ETEM</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

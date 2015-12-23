@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETEM", "ETEM\ETEM.csproj", "{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETEMModel", "ETEMModel\ETEMModel.csproj", "{42EB67E5-C906-4FAC-8B02-3824E6217232}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ETEM\\ETEM.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = ETEM\\
+		SccProjectUniqueName2 = ETEMModel\\ETEMModel.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = ETEMModel\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2BE35DAF-1812-490A-97EA-6DA6EB02BDB6}.Release|x86.ActiveCfg = Release|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{42EB67E5-C906-4FAC-8B02-3824E6217232}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

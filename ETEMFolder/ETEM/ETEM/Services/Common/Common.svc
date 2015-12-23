@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ETEM.Services.Common.Common" CodeBehind="Common.svc.cs" %>

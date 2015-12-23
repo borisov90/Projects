@@ -1,0 +1,38 @@
+﻿.login-form
+{
+    width: 260px;
+    height: 220px;
+   /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7; */
+    border: 20px #2C74B9 inset;
+    background-color: #0C457C;
+    padding: 0px;
+   /*  -webkit-border-radius: 190px;
+    -moz-border-radius: 190px;
+    border-radius: 190px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-right-radius: 0px; 
+    /*-moz-box-shadow: -15px 29px 5px 0px #c46e6e;
+    -webkit-box-shadow: -15px 29px 5px 0px #c46e6e;
+    box-shadow: -15px 29px 5px 0px #c46e6e; */
+}
+
+.login-form-fields
+{
+    margin-top:5%;
+    margin-left:18%;
+}
+
+.login-form-fields span
+{
+    color:white;
+}
+
+
+.offset5Perc {
+  margin-left: 30%;
+}

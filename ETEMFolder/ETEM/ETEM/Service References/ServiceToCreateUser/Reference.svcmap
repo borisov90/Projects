@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4d5afaf4-7f33-4eed-ac6c-9847b25fb242" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceToCreateUser.xsd" MetadataType="Schema" ID="98550145-b3cf-4e5a-bb7a-96933ca4df25" SourceId="1" SourceUrl="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceToCreateUser1.wsdl" MetadataType="Wsdl" ID="5bf8fe26-ac75-4410-8fc0-267885e1ec0a" SourceId="1" SourceUrl="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ServiceToCreateUser1.xsd" MetadataType="Schema" ID="03d95d44-0ce8-4856-b14a-76f1bb64364e" SourceId="1" SourceUrl="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceToCreateUser2.xsd" MetadataType="Schema" ID="ee33d434-7a95-44a0-8241-69b87ee01e2c" SourceId="1" SourceUrl="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceToCreateUser.wsdl" MetadataType="Wsdl" ID="e0dbd5ae-4202-4db2-af8b-bd5d9d680538" SourceId="1" SourceUrl="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc?wsdl" />
+    <MetadataFile FileName="ServiceToCreateUser.disco" MetadataType="Disco" ID="0fd0a7a9-21de-4a74-98e7-0cae739ea167" SourceId="1" SourceUrl="http://localhost/SMCDLNAA/WebServices/ServiceToCreateUser.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

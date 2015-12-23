@@ -1,0 +1,2671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Entity_User_is_not_update" xml:space="preserve">
+    <value>Данните на потребителя не са актуализирани.</value>
+  </data>
+  <data name="Entity_User_is_update_successful" xml:space="preserve">
+    <value>Данните на потребителя  са актуализирани успешно.</value>
+  </data>
+  <data name="Entity_User_Not_Found_By_ID" xml:space="preserve">
+    <value>Потребител с ID:{0} не е открит в таблицата User</value>
+  </data>
+  <data name="Entity_User_PasswordMinLength" xml:space="preserve">
+    <value>Дължината на паролата трябва да бъде по-голяма от</value>
+  </data>
+  <data name="Entity_User_UserName_Exist" xml:space="preserve">
+    <value>В базата данни има въведен потребител със същото потребителско има. Моля, променете го и запишете данните отново!</value>
+  </data>
+  <data name="UI_Button_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="UI_Label_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="UI_Label_UserName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="UI_Login_Successful" xml:space="preserve">
+    <value>Login successful</value>
+  </data>
+  <data name="UI_Login_Unsuccessful" xml:space="preserve">
+    <value>Login unsuccessful</value>
+  </data>
+  <data name="UI_UserList_TabMainData_User" xml:space="preserve">
+    <value>Основни данни на потребителя</value>
+  </data>
+  <data name="Entity_is_not_update" xml:space="preserve">
+    <value>The data entry is not updated successfully</value>
+  </data>
+  <data name="Entity_is_update_successful" xml:space="preserve">
+    <value>The data entry is updated successfully</value>
+  </data>
+  <data name="Entity_KeyType_KeyTypeIntCode_Exist" xml:space="preserve">
+    <value>В базата данни има въведена номенклатура със същия ключ</value>
+  </data>
+  <data name="Entity_KeyType_Not_Found_By_ID" xml:space="preserve">
+    <value>Номенклатурата с ID:{0} не е открита в таблицата KeyType</value>
+  </data>
+  <data name="Entity_Not_Found_By_ID" xml:space="preserve">
+    <value>Не е открит запис с това ID</value>
+  </data>
+  <data name="UI_NO" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="UI_YES" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Entity_KeyValue_KeyValueIntCode_Exist" xml:space="preserve">
+    <value>В базата данни има въведена стойност със същия ключ</value>
+  </data>
+  <data name="Permission_Action_Denied" xml:space="preserve">
+    <value>Нямате права за това действие!!!</value>
+  </data>
+  <data name="UI_Please_Select" xml:space="preserve">
+    <value>Please choose</value>
+  </data>
+  <data name="Entity_Common_Field_Mandatory" xml:space="preserve">
+    <value>Полето `{0}` е задължително.</value>
+  </data>
+  <data name="Entity_Person_FirstName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Entity_Person_IdentityNumber" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
+  <data name="Entity_Person_IdentityNumber_Exist" xml:space="preserve">
+    <value>В базата данни има въведено лице със същия идентификатор.</value>
+  </data>
+  <data name="Entity_Person_LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Entity_Setting_SettingIntCode_Exist" xml:space="preserve">
+    <value>Съществува настройка със същия код.</value>
+  </data>
+  <data name="Entity_Setting_SettingValue_Date" xml:space="preserve">
+    <value>Въведената стойност трябва да бъде дата</value>
+  </data>
+  <data name="Entity_Setting_SettingValue_Double" xml:space="preserve">
+    <value>Въведената стойност трявба да бъде число</value>
+  </data>
+  <data name="Entity_Setting_SettingValue_Int32" xml:space="preserve">
+    <value>Въведената стойност трявба да бъде цяло число</value>
+  </data>
+  <data name="Entity_Person_Not_Found_By_ID" xml:space="preserve">
+    <value>Лице с ID:{0} не е открито в таблицата Person</value>
+  </data>
+  <data name="Entity_is_not_update_in_tab" xml:space="preserve">
+    <value>The data entry in tab {0} is not updated successfully</value>
+  </data>
+  <data name="Personal_Data" xml:space="preserve">
+    <value>"Лични данни"</value>
+  </data>
+  <data name="Current_Education" xml:space="preserve">
+    <value>"Данни за обучението"</value>
+  </data>
+  <data name="Previous_Education" xml:space="preserve">
+    <value>"Предходно образование"</value>
+  </data>
+  <data name="Entity_Student_SchoolFromNameSE" xml:space="preserve">
+    <value>Наименование на средно или висше училище</value>
+  </data>
+  <data name="Entity_StudentStatus_idAffiliate" xml:space="preserve">
+    <value>Филиал</value>
+  </data>
+  <data name="Entity_Student_idFaculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="Entity_Student_SidSpeciality" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="Placeholder_Adress" xml:space="preserve">
+    <value>Въведете адрес</value>
+  </data>
+  <data name="Placeholder_Birth_Date" xml:space="preserve">
+    <value>Въведете дата на раждане</value>
+  </data>
+  <data name="Placeholder_Email" xml:space="preserve">
+    <value>Въведете e-mail</value>
+  </data>
+  <data name="Placeholder_Faculty_Number" xml:space="preserve">
+    <value>Въведете факултетен номер</value>
+  </data>
+  <data name="Placeholder_FName" xml:space="preserve">
+    <value>Въведете име</value>
+  </data>
+  <data name="Placeholder_LName" xml:space="preserve">
+    <value>Въведете фамилия</value>
+  </data>
+  <data name="Placeholder_Phone" xml:space="preserve">
+    <value>Въведете телефон</value>
+  </data>
+  <data name="Placeholder_SEName" xml:space="preserve">
+    <value>Въведете профил</value>
+  </data>
+  <data name="Placeholder_SESchoolName" xml:space="preserve">
+    <value>Въведете име</value>
+  </data>
+  <data name="Placeholder_SName" xml:space="preserve">
+    <value>Въведете презиме</value>
+  </data>
+  <data name="Placeholder_UCN" xml:space="preserve">
+    <value>ЕГН/ЛЧН/ИДН</value>
+  </data>
+  <data name="Placeholder_Year" xml:space="preserve">
+    <value>Въведете година</value>
+  </data>
+  <data name="Add_New_Item_In_Last_Menu" xml:space="preserve">
+    <value>Добавяне на нов елемент в 'Последното меню' с име:</value>
+  </data>
+  <data name="Add_New_Item_In_Main_Menu" xml:space="preserve">
+    <value>Добавяне на нов елемент в 'Селектираното главно меню' с име:</value>
+  </data>
+  <data name="Add_New_Item_In_Sub_Menu" xml:space="preserve">
+    <value>Добавяне на нов елемент във 'Вложеното меню' с име:</value>
+  </data>
+  <data name="Add_New_Item_In_Base_Menu" xml:space="preserve">
+    <value>Добавяне на нов елемент във "Основното меню" с име:</value>
+  </data>
+  <data name="Adding_Nodes" xml:space="preserve">
+    <value>Добавяне на нов елемент</value>
+  </data>
+  <data name="Add_Btn" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="Can_Change_Position_In_Root_And_Parent_Menu" xml:space="preserve">
+    <value>Възможна е промяна на мястото във вложените или към главното меню</value>
+  </data>
+  <data name="Can_Change_Position_In_Root_Menu" xml:space="preserve">
+    <value>Възможна е промяна на мястото в главното меню</value>
+  </data>
+  <data name="Can_Only_Change_Name_And_URL" xml:space="preserve">
+    <value>Избраният елемент е от главното меню, възможни са следните промени</value>
+  </data>
+  <data name="Editing_Nodes" xml:space="preserve">
+    <value>Промяна на текущия елемент</value>
+  </data>
+  <data name="Make_Node_Root" xml:space="preserve">
+    <value>Направи елемента главен</value>
+  </data>
+  <data name="New_Node_Name" xml:space="preserve">
+    <value>Възможност за промяна на името</value>
+  </data>
+  <data name="Save_Btn" xml:space="preserve">
+    <value>Запази</value>
+  </data>
+  <data name="Entity_MenuNode_Name" xml:space="preserve">
+    <value>"Име на елемента"</value>
+  </data>
+  <data name="Entity_NAV_URL" xml:space="preserve">
+    <value>"URL"</value>
+  </data>
+  <data name="Placeholder_NotifAbout" xml:space="preserve">
+    <value>Въведете текст на съобщението</value>
+  </data>
+  <data name="Placeholder_NotifComment" xml:space="preserve">
+    <value>Въведете коментар към съобщението</value>
+  </data>
+  <data name="Entity_Notification_Not_Found_By_ID" xml:space="preserve">
+    <value>Съобщение с ID:{0} не е открито в таблицата Ntification</value>
+  </data>
+  <data name="CampusApplication_Data" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Entity_CampusApplication_Not_Found_By_ID" xml:space="preserve">
+    <value>Заявление за общежитие с ID `{0}` не е открито в таблица `CampusApplication`!</value>
+  </data>
+  <data name="FamilyStatus_Data" xml:space="preserve">
+    <value>Семейно положение</value>
+  </data>
+  <data name="HomeState_Data" xml:space="preserve">
+    <value>Жилищно състояние</value>
+  </data>
+  <data name="UI_Please_Save_Tab" xml:space="preserve">
+    <value>Моля, първо запишете раздел {0}!</value>
+  </data>
+  <data name="SCHEDULE_DETAILS_COMFIRMED" xml:space="preserve">
+    <value>Потвърдено</value>
+  </data>
+  <data name="SCHEDULE_DETAILS_SAVED" xml:space="preserve">
+    <value>Запазено</value>
+  </data>
+  <data name="SCHEDULE_DETAILS_UNCOMFIRMED" xml:space="preserve">
+    <value>Непотвърдено</value>
+  </data>
+  <data name="Count_Credits" xml:space="preserve">
+    <value>Кредити</value>
+  </data>
+  <data name="Count_Hours" xml:space="preserve">
+    <value>Бр. часа</value>
+  </data>
+  <data name="Discipline_Name" xml:space="preserve">
+    <value>Наименование на дисциплините</value>
+  </data>
+  <data name="Separation_Courses_Semesters" xml:space="preserve">
+    <value>Разпределение по курсове и семестри</value>
+  </data>
+  <data name="Summary_Hours" xml:space="preserve">
+    <value>Вс. часове</value>
+  </data>
+  <data name="Mandatory_Disciplines" xml:space="preserve">
+    <value>ЗАДЪЛЖИТЕЛНИ УЧЕБНИ ДИСЦИПЛИНИ</value>
+  </data>
+  <data name="Optional_Disciplines" xml:space="preserve">
+    <value>ИЗБИРАЕМИ УЧЕБНИ ДИСЦИПЛИНИ</value>
+  </data>
+  <data name="Practical_Disciplines" xml:space="preserve">
+    <value>ПРАКТИКИ</value>
+  </data>
+  <data name="GridView_CampusApplications_ApplicationNumber" xml:space="preserve">
+    <value>№ на рег.</value>
+  </data>
+  <data name="GridView_CampusApplications_ApplicationRegistrationDate" xml:space="preserve">
+    <value>Дата на рег.</value>
+  </data>
+  <data name="GridView_CampusApplications_CourseName" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="GridView_CampusApplications_Edit" xml:space="preserve">
+    <value>Редакция</value>
+  </data>
+  <data name="GridView_CampusApplications_FacultyName" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="GridView_CampusApplications_FacultyNo" xml:space="preserve">
+    <value>Фак. №</value>
+  </data>
+  <data name="GridView_CampusApplications_FullName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="GridView_CampusApplications_SpecialityName" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="GridView_EmptyDataRow" xml:space="preserve">
+    <value>No data to display!</value>
+  </data>
+  <data name="Entity_CampusApplication_Course" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="Entity_CampusApplication_EGN" xml:space="preserve">
+    <value>ЕГН/ЛНЧ</value>
+  </data>
+  <data name="Entity_CampusApplication_Faculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="Entity_CampusApplication_FacultyNo" xml:space="preserve">
+    <value>Факултетен №</value>
+  </data>
+  <data name="Entity_CampusApplication_FirstName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Entity_CampusApplication_IdentityNumber" xml:space="preserve">
+    <value>Лична карта №</value>
+  </data>
+  <data name="Entity_CampusApplication_LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Entity_CampusApplication_Location" xml:space="preserve">
+    <value>Град (село)</value>
+  </data>
+  <data name="Entity_CampusApplication_Municipality" xml:space="preserve">
+    <value>Община</value>
+  </data>
+  <data name="Entity_CampusApplication_Nationality" xml:space="preserve">
+    <value>Държава</value>
+  </data>
+  <data name="Entity_CampusApplication_ParentName" xml:space="preserve">
+    <value>Презиме</value>
+  </data>
+  <data name="Entity_CampusApplication_Speciality" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="Entity_CampusApplication_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_CampusApplication_AverageGrade" xml:space="preserve">
+    <value>Среден успех (с цифри)</value>
+  </data>
+  <data name="Entity_CampusApplication_IdentityNumberDate" xml:space="preserve">
+    <value>Дата на издаване</value>
+  </data>
+  <data name="Entity_CampusApplication_IdentityNumberIssuedBy" xml:space="preserve">
+    <value>Издадена от</value>
+  </data>
+  <data name="Form_CampusApplication_Note" xml:space="preserve">
+    <value>за студентите първокурсници се изписва средния успех от приемните изпити и средния успех от дипломата за средно образование</value>
+  </data>
+  <data name="Placeholder_EGN" xml:space="preserve">
+    <value>Въведете ЕГН</value>
+  </data>
+  <data name="Placeholder_ForeignerIdentityNumber" xml:space="preserve">
+    <value>Въведете идент. номер на чужденец</value>
+  </data>
+  <data name="Placeholder_IdentityNumber" xml:space="preserve">
+    <value>Въведете ЛНЧ №</value>
+  </data>
+  <data name="Placeholder_IdentityNumberDate" xml:space="preserve">
+    <value>Въведете издадена на</value>
+  </data>
+  <data name="Placeholder_IdentityNumberIssueBy" xml:space="preserve">
+    <value>Въведете издадена от</value>
+  </data>
+  <data name="Placeholder_IDN" xml:space="preserve">
+    <value>Въведете ИДН</value>
+  </data>
+  <data name="Placeholder_Title" xml:space="preserve">
+    <value>Въведете титла</value>
+  </data>
+  <data name="Placeholder_IDCard" xml:space="preserve">
+    <value>Въведете лична карта №</value>
+  </data>
+  <data name="Entity_Not_Found_ID" xml:space="preserve">
+    <value>Не е зададено ID</value>
+  </data>
+  <data name="Entity_Person_Found_More_Than_One_By_Names" xml:space="preserve">
+    <value>Открити са повече от едно лица с име: {0} в таблица Person</value>
+  </data>
+  <data name="Entity_Person_Not_Found_By_Names" xml:space="preserve">
+    <value>Лице с име: {0} не е открито в таблица Person</value>
+  </data>
+  <data name="Placeholder_Education_Year" xml:space="preserve">
+    <value>Въведете учебна година</value>
+  </data>
+  <data name="Placeholder_Faculty_No" xml:space="preserve">
+    <value>Въведете факултетен №</value>
+  </data>
+  <data name="Placeholder_IdentityNumberDate_Date" xml:space="preserve">
+    <value>Въведете дата на издаване</value>
+  </data>
+  <data name="Placeholder_Location" xml:space="preserve">
+    <value>Въведете град (село)</value>
+  </data>
+  <data name="Placeholder_MarkInNumber" xml:space="preserve">
+    <value>Въведете среден успех (с цифри)</value>
+  </data>
+  <data name="Entity_Sequence_idResource" xml:space="preserve">
+    <value>Ресурс ID</value>
+  </data>
+  <data name="Entity_Sequence_nextVal" xml:space="preserve">
+    <value>Следваща стойност</value>
+  </data>
+  <data name="Entity_Sequence_NextVal_Grater_Than_Zero" xml:space="preserve">
+    <value>Следваща стойност по - голяма от нула</value>
+  </data>
+  <data name="Entity_Sequence_Not_Found_By_ID" xml:space="preserve">
+    <value>Запис с ID: {0} не е открит в таблица Sequence</value>
+  </data>
+  <data name="Entity_Sequence_Not_Found_By_Resource" xml:space="preserve">
+    <value>Запис за Resource: {0} не е открит в таблица Sequence</value>
+  </data>
+  <data name="Entity_Sequence_Not_Found_By_Resource_And_ResourceID" xml:space="preserve">
+    <value>Запис за Resource: {0} и ResourceID: {1} не е открит в таблица Sequence</value>
+  </data>
+  <data name="Entity_Sequence_Resource" xml:space="preserve">
+    <value>Ресурс</value>
+  </data>
+  <data name="Entity_StudentStatus_Not_Found_By_Person_ID" xml:space="preserve">
+    <value>Текущ статус на студента не може да бъде открит по лице с ID: {0} с име: {1}!</value>
+  </data>
+  <data name="Entity_Registration_Successful" xml:space="preserve">
+    <value>Регистрацията премина успешно!</value>
+  </data>
+  <data name="Entity_RegistrationNumber_Generate_Error" xml:space="preserve">
+    <value>Грешка при генериране на номер на регистрация!</value>
+  </data>
+  <data name="File_Wrong_Path_Or_FileName" xml:space="preserve">
+    <value>Грешен път или име на файл: {0}!</value>
+  </data>
+  <data name="DataView_CampusApplication_For_DocxData_Not_Found_By_ID" xml:space="preserve">
+    <value>Данни за заявление за общежитие с ID `{0}` не са заредени успешно!</value>
+  </data>
+  <data name="GridView_Delete" xml:space="preserve">
+    <value>Изтриване</value>
+  </data>
+  <data name="GridView_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Entity_CampusApplication_Delete_Successful" xml:space="preserve">
+    <value>Заявлението за общежитие беше изтрито успешно!</value>
+  </data>
+  <data name="Entity_CampusApplication_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на заявление за общежитие!</value>
+  </data>
+  <data name="Entity_CampusApplication_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на заявление за общежитие с ID: {0}!</value>
+  </data>
+  <data name="Entity_is_deleted_successful" xml:space="preserve">
+    <value>The deletion is successfully</value>
+  </data>
+  <data name="Entity_is_not_deleted" xml:space="preserve">
+    <value>The deletion is not successfully</value>
+  </data>
+  <data name="Entity_Person_Found_More_Than_One_By_EGN" xml:space="preserve">
+    <value>Открити са повече от едно лица с ЕГН: {0} в таблица Person</value>
+  </data>
+  <data name="Entity_Person_Not_Found_By_EGN" xml:space="preserve">
+    <value>Лице с ЕГН: {0} не е открито в таблица Person</value>
+  </data>
+  <data name="Message_Confirm_Delete" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да изтриете избрания запис?</value>
+  </data>
+  <data name="EntitySetName_is_not_set" xml:space="preserve">
+    <value>Името на таблицата не е вкарано</value>
+  </data>
+  <data name="Entity_is_created_successful" xml:space="preserve">
+    <value>The new data entry is created successfully</value>
+  </data>
+  <data name="Entity_is_not_created" xml:space="preserve">
+    <value>The new data entry is not created successfully</value>
+  </data>
+  <data name="Entity_Person_Identifiers" xml:space="preserve">
+    <value>Поне един от следните идентификатори е задължителен (ЕГН | ЛНЧ | ИДН)</value>
+  </data>
+  <data name="The_list_of_entities_was_empty" xml:space="preserve">
+    <value>Няма обекти за запис</value>
+  </data>
+  <data name="Entity_Procol_Exists" xml:space="preserve">
+    <value>Същесвува протокол за този семестър</value>
+  </data>
+  <data name="AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_Protocol_Period" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="Entity_Protocol_ResourseName" xml:space="preserve">
+    <value>Име на ресурс</value>
+  </data>
+  <data name="Fifth_Course" xml:space="preserve">
+    <value>Пети курс</value>
+  </data>
+  <data name="First_Course" xml:space="preserve">
+    <value>Първи курс</value>
+  </data>
+  <data name="Fourth_Course" xml:space="preserve">
+    <value>Четвърти курс</value>
+  </data>
+  <data name="Second_Course" xml:space="preserve">
+    <value>Втори курс</value>
+  </data>
+  <data name="Summer_Semester" xml:space="preserve">
+    <value>Летен семестър</value>
+  </data>
+  <data name="Third_Course" xml:space="preserve">
+    <value>Трети курс</value>
+  </data>
+  <data name="Winter_Semester" xml:space="preserve">
+    <value>Зимен семестър</value>
+  </data>
+  <data name="Entity_StreamGroup_Exists" xml:space="preserve">
+    <value>Има създадени потоци и групи за тази академична година и семестър</value>
+  </data>
+  <data name="CampusApplicationMain_Error_LoadStudentInfo_Not_Selected_Student" xml:space="preserve">
+    <value>Моля, изберете студент, за който да се заредят данни!</value>
+  </data>
+  <data name="Entity_CampusAdmission_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_CampusAdmission_AccommmodationEndDate" xml:space="preserve">
+    <value>Период на настаняване до</value>
+  </data>
+  <data name="Entity_CampusAdmission_AccommmodationOrderDate" xml:space="preserve">
+    <value>Дата на заповед за настаняване</value>
+  </data>
+  <data name="Entity_CampusAdmission_AccommmodationOrderNumber" xml:space="preserve">
+    <value>Номер на заповед за настаняване</value>
+  </data>
+  <data name="Entity_CampusAdmission_AccommmodationStartDate" xml:space="preserve">
+    <value>Период на настаняване от</value>
+  </data>
+  <data name="Entity_CampusAdmission_PreparedPerson" xml:space="preserve">
+    <value>Изготвил</value>
+  </data>
+  <data name="Entity_CampusAdmission_RankingDate" xml:space="preserve">
+    <value>Дата за класиране</value>
+  </data>
+  <data name="Entity_CampusAdmission_SubmissionEndDate" xml:space="preserve">
+    <value>Крайна дата за подаване на заявление</value>
+  </data>
+  <data name="Entity_CampusAdmission_SubmissionStartDate" xml:space="preserve">
+    <value>Начална дата за подаване на завление</value>
+  </data>
+  <data name="GridView_CampusAdmission_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="GridView_CampusAdmission_AccommmodationOrderDate" xml:space="preserve">
+    <value>Дата на заповед за настаняване</value>
+  </data>
+  <data name="GridView_CampusAdmission_AccommmodationOrderNumber" xml:space="preserve">
+    <value>Номер на заповед за настаняване</value>
+  </data>
+  <data name="GridView_CampusAdmission_RankingDate" xml:space="preserve">
+    <value>Дата за класиране</value>
+  </data>
+  <data name="GridView_CampusAdmission_SubmissionEndDate" xml:space="preserve">
+    <value>Крайна дата за подаване на заявление</value>
+  </data>
+  <data name="GridView_CampusAdmission_SubmissionStartDate" xml:space="preserve">
+    <value>Начална дата за подаване на заявление</value>
+  </data>
+  <data name="Entity_DisciplineNameByTypeOKC_idDisciplineGeneral" xml:space="preserve">
+    <value>Вид дисциплина</value>
+  </data>
+  <data name="Entity_DisciplineNameByTypeOKC_idDisciplineName" xml:space="preserve">
+    <value>Дисциплина</value>
+  </data>
+  <data name="Entity_DisciplineNameByTypeOKC_idOKC" xml:space="preserve">
+    <value>ОКС</value>
+  </data>
+  <data name="CampusAdmission_Data" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Entity_CampusAdmission_Not_Found_By_ID" xml:space="preserve">
+    <value>Прием за общежитие с ID `{0}` не е открит в таблица `CampusAdmission`!</value>
+  </data>
+  <data name="Entity_DisciplinesSchedule_Exists" xml:space="preserve">
+    <value>Има разписание за тези дисциплини през този период</value>
+  </data>
+  <data name="No_Data_For_Period" xml:space="preserve">
+    <value>Няма данни за избрания период</value>
+  </data>
+  <data name="Entity_CampusAdmission_Error_Unique_By_SubmissionDates" xml:space="preserve">
+    <value>Внимание! В системата вече съществува `Прием за общежитие` (с дати за подаване на заявление от {0} до {1}) включващ избрания период (или част от него)!</value>
+  </data>
+  <data name="Entity_CampusApplication_Not_Found_CampusAdmission_For_RegDate" xml:space="preserve">
+    <value>Внимание! Не можете да регистрирате заявлението, защото в момента няма активен `Прием за общежитие`!</value>
+  </data>
+  <data name="Time_Format_Error" xml:space="preserve">
+    <value>Форматът за час е следния "ЧЧ:ММ"</value>
+  </data>
+  <data name="Wrong_Time_Start" xml:space="preserve">
+    <value>Началния час на занятията е :</value>
+  </data>
+  <data name="Wrong_Time_Format" xml:space="preserve">
+    <value>Началният час на занятията трябва да е преди крайният!</value>
+  </data>
+  <data name="Course" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="Faculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="OKC" xml:space="preserve">
+    <value>ОКС</value>
+  </data>
+  <data name="AcademicYear_Period_Mandatory" xml:space="preserve">
+    <value>Учебна година и семестър са задължителни!</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_RoomsCount" xml:space="preserve">
+    <value>Брой стаи</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Sex" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Type" xml:space="preserve">
+    <value>Тип стая</value>
+  </data>
+  <data name="CampusApplicationRegistered_Data" xml:space="preserve">
+    <value>Регистрирани заявления за общежитие</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Delete_Successful" xml:space="preserve">
+    <value>Записът за тип и брой стаи от общежитие беше изтрит успешно!</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на запис за тип и брой стаи от общежитие!</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на запис за тип и брой стаи от общежитие с ID: {0}!</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Not_Found_By_ID" xml:space="preserve">
+    <value>Запис за тип и брой стаи от общежитие с ID `{0}` не е открито в таблица `CampusAdmissionRoom`!</value>
+  </data>
+  <data name="RankingByAvarageGrade_Data" xml:space="preserve">
+    <value>Класиране по успех</value>
+  </data>
+  <data name="RankingByRight_Data" xml:space="preserve">
+    <value>Класиране по право</value>
+  </data>
+  <data name="UI_Faculty_Please_Select" xml:space="preserve">
+    <value>Моля, изберете факултет</value>
+  </data>
+  <data name="Auto_Generated_Details" xml:space="preserve">
+    <value>Учебен час генериран от общоакадемичните дисциплини</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Not_Found" xml:space="preserve">
+    <value>Не са зададени типове и брой стаи!</value>
+  </data>
+  <data name="Curriculum_For_Period" xml:space="preserve">
+    <value>Учебен план за период</value>
+  </data>
+  <data name="Protocol_Number" xml:space="preserve">
+    <value>Протокол номер</value>
+  </data>
+  <data name="Entity_Affiliate_LinkedData_Exist" xml:space="preserve">
+    <value>Не можете да изтриете филиала, защото има свъразни данни!</value>
+  </data>
+  <data name="Entity_CampusAdmission_Ranking_Successful" xml:space="preserve">
+    <value>Класирането за общежития приключи успешно!</value>
+  </data>
+  <data name="Entity_Curriculum_EducationDuration" xml:space="preserve">
+    <value>Продължителност на обучението</value>
+  </data>
+  <data name="Entity_Curriculum_Period_Wrong_Format" xml:space="preserve">
+    <value>Грешен формат на периода (yyyy/yyyy)</value>
+  </data>
+  <data name="Placeholder_MobilePhone" xml:space="preserve">
+    <value>Въдете мобилен телефон</value>
+  </data>
+  <data name="First_add_specialty" xml:space="preserve">
+    <value>Първо добавете специалност</value>
+  </data>
+  <data name="Entity_CampusApplication_Registration_IsSubmittedApplication_Required" xml:space="preserve">
+    <value>Въвели сте `Дата на подаване` на ред {0}. Полето `Подал заявление` е задължително за този запис!</value>
+  </data>
+  <data name="Entity_CampusApplication_Registration_SubmissionDate_Required" xml:space="preserve">
+    <value>Маркирали сте `Подал заявление` на ред {0}. Полето `Дата на подаване` е задължително за този запис!</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>Кредита</value>
+  </data>
+  <data name="Entity_CampusAdmission_Delete_Successful" xml:space="preserve">
+    <value>Приемът за общежитие беше изтрит успешно!</value>
+  </data>
+  <data name="Entity_CampusAdmission_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на прием за общежитие!</value>
+  </data>
+  <data name="Entity_CampusAdmission_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на прием за общежитие с ID: {0}!</value>
+  </data>
+  <data name="Entity_CampusAdmission_Error_Delete_CampusApplications" xml:space="preserve">
+    <value>Внимание! Не можете да изтриете избрания запис, защото има регистрирани заявления за общежитие!</value>
+  </data>
+  <data name="Entity_Delete_Successful" xml:space="preserve">
+    <value>Записът беше изтрит успешно!</value>
+  </data>
+  <data name="FIRST_ADD_LECTURER" xml:space="preserve">
+    <value>Първо добавете проподавател</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_OrderNumberDateAverageGrade" xml:space="preserve">
+    <value>Заповед за стипендия за успех</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_OrderNumberDateRight" xml:space="preserve">
+    <value>Заповед за стипендия по право</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_SubmissionEndDate" xml:space="preserve">
+    <value>Крайна дата за подаване на документи</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_SubmissionStartDate" xml:space="preserve">
+    <value>Начална дата за подаване на документи</value>
+  </data>
+  <data name="Without_entered_lecturers" xml:space="preserve">
+    <value>без въведени преподаватели </value>
+  </data>
+  <data name="With_those_lecturers" xml:space="preserve">
+    <value>със следните преподаватели: </value>
+  </data>
+  <data name="Lessons_count_per_week" xml:space="preserve">
+    <value>учебни часа за седмица</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_OrderDateRanking" xml:space="preserve">
+    <value>Дата на заповед</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_OrderNumberRanking" xml:space="preserve">
+    <value>№ на заповед</value>
+  </data>
+  <data name="Entity_CampusApplication_Error_Unique_By_CampusAdmission_Reg" xml:space="preserve">
+    <value>Внимание! Не можете да регистрирате повече от едно заявление за един и същ прием за общежитие за конкретен студент!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_AverageGrade_Wrong_Interval" xml:space="preserve">
+    <value>Средният успех трябва да бъде в интервал между 2 и 6!</value>
+  </data>
+  <data name="RankingWithout_Data" xml:space="preserve">
+    <value>Без класиране</value>
+  </data>
+  <data name="Entity_Contract_MainContract_Exist" xml:space="preserve">
+    <value>Преподавателят може да има само един основен договор за семестър!!!</value>
+  </data>
+  <data name="Form_CampusAdmission_Error_Generate_AccommodationOrder" xml:space="preserve">
+    <value>Грешка при генериране на документ - заповед за настаняване в общежитие!</value>
+  </data>
+  <data name="Form_CampusApplication_Error_Generate_CampusAppDeclaration" xml:space="preserve">
+    <value>Грешка при генериране на документ - декларация при кандидатстване за общежитие!</value>
+  </data>
+  <data name="Form_CampusApplication_Error_Generate_CampusApplication" xml:space="preserve">
+    <value>Грешка при генериране на документ - заявление за общежитие!</value>
+  </data>
+  <data name="Entity_ContractLecturerDisciplineLecture_Exercise" xml:space="preserve">
+    <value>Моля, въведете число между 0 и 999 за часове за упражнения</value>
+  </data>
+  <data name="Entity_ContractLecturerDisciplineLecture_Lecture" xml:space="preserve">
+    <value>Моля, въведете число между 0 и 999 за часове за лекции</value>
+  </data>
+  <data name="Form_CampusAdmission_Error_Generate_CampusRankingReport" xml:space="preserve">
+    <value>Грешка при генериране на документ (отчет в EXCEL) - класиране за общежитие!</value>
+  </data>
+  <data name="Form_CampusAdmission_Error_Not_Found_RankedApplications" xml:space="preserve">
+    <value>Внимание! Няма класирани заявления за общежитие!</value>
+  </data>
+  <data name="Entity_DisciplineName_Error_Unique_By_OKC" xml:space="preserve">
+    <value>Внимание! В базата данни вече съществува `ДИСЦИПЛИНА` с такова наименование за избраното ОКС!</value>
+  </data>
+  <data name="PersonalData_Error_LoadStudentInfo_Not_Selected_Person" xml:space="preserve">
+    <value>Моля, изберете лице, за което да се заредят данни!</value>
+  </data>
+  <data name="Entity_PreviousEducation_Not_Found_By_ID" xml:space="preserve">
+    <value>Предходно образование с ID `{0}` не е открито в таблица `PreviousEducation`!</value>
+  </data>
+  <data name="Entity_PreviousEducation_SchoolFromNameSE" xml:space="preserve">
+    <value>Наименование на средно или висше училище</value>
+  </data>
+  <data name="Entity_PreviousEducation_Delete_Successful" xml:space="preserve">
+    <value>Предходното образование беше изтрито успешно!</value>
+  </data>
+  <data name="Entity_PreviousEducation_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на предходно образование!</value>
+  </data>
+  <data name="Entity_PreviousEducation_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на предходно образование с ID: {0}!</value>
+  </data>
+  <data name="UserMain_Data" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="No_Active_Curriculum_For_This_Specialty" xml:space="preserve">
+    <value>Няма активен  учебен план за тази специалност и този курс</value>
+  </data>
+  <data name="No_Foreign_Language_In_Curriculum" xml:space="preserve">
+    <value>Няма чужд език в учебния график на тази специаност в този курс</value>
+  </data>
+  <data name="GridView_Users_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GridView_Users_Person" xml:space="preserve">
+    <value>Person full name</value>
+  </data>
+  <data name="GridView_Users_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="GridView_Users_UserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Cannot_Add_Different_Disciplines_In_Stream" xml:space="preserve">
+    <value>Различни дисциплини не могат да бъдат обединявани в поток!</value>
+  </data>
+  <data name="Entity_User_Password" xml:space="preserve">
+    <value>Парола</value>
+  </data>
+  <data name="Entity_User_Person" xml:space="preserve">
+    <value>Лице</value>
+  </data>
+  <data name="Entity_User_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Entity_User_UserName" xml:space="preserve">
+    <value>Потребителско име</value>
+  </data>
+  <data name="LECTURERREPORT_LECTURER_MAINCONTRACT" xml:space="preserve">
+    <value>Няма въведен основен договор за избрания преподавател и период.</value>
+  </data>
+  <data name="Auto_Generated_Details_From_Languages" xml:space="preserve">
+    <value>Учебен час генериран от "Разписание за езиците"</value>
+  </data>
+  <data name="Entity_CampusApplication_ApplicationReason" xml:space="preserve">
+    <value>Основание за кандидатстване</value>
+  </data>
+  <data name="Entity_CampusApplication_Delete_Error_NotRegisteredOnly" xml:space="preserve">
+    <value>Внимание! Може да се трият само `НЕРЕГИСТРИРАНИ` заявления за общежития!</value>
+  </data>
+  <data name="Entity_CampusApplication_Save_HasFamilyRelation" xml:space="preserve">
+    <value>Внимание! Избрали сте статус `За семейно общежитие с {0}`. Моля, въведете име за съответното лице в раздел (`Семейно положение`)!</value>
+  </data>
+  <data name="Entity_CampusApplication_Save_HasHousingStatus" xml:space="preserve">
+    <value>Внимание! Избрали сте статус `Основание за кандидатстване - ПО ПРАВО`. Моля, изберете поне една стойност `ДА` от точка `Предимства за настаняване в общежитието` в раздел (`Жилищно състояние`)!</value>
+  </data>
+  <data name="Form_CampusApplication_Title" xml:space="preserve">
+    <value>Заявление за общежитие</value>
+  </data>
+  <data name="Classes_Generated_From_Schedule_Cells" xml:space="preserve">
+    <value>Учебен час генериран от 'Седмично разписание по специалности'</value>
+  </data>
+  <data name="Entity_CampusApplication_Error_Unique_By_CampusAdmission_Save" xml:space="preserve">
+    <value>Внимание! Не можете да запишете повече от едно заявление за един и същ прием за общежитие за конкретен студент!</value>
+  </data>
+  <data name="Entity_CampusApplication_Not_Found_CampusAdmission_For_DateNow" xml:space="preserve">
+    <value>Внимание! Не можете да запишете заявлението, защото в момента няма активен `Прием за общежитие`!</value>
+  </data>
+  <data name="Entity_Error_EndDate_After_StartDate" xml:space="preserve">
+    <value>Внимание! `{0}` не може да бъде след `{1}`!</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Error_OneVacantBed_Sex_Required" xml:space="preserve">
+    <value>Избрали сте стая от тип `1 свободно легло` - ред {0}. Моля, изберете пол!</value>
+  </data>
+  <data name="Please_choose_discipline" xml:space="preserve">
+    <value>Моля изберете дисциплина!</value>
+  </data>
+  <data name="Number_Digits_InWords" xml:space="preserve">
+    <value>стотни</value>
+  </data>
+  <data name="Number_Digit_One_InWords" xml:space="preserve">
+    <value>стотна</value>
+  </data>
+  <data name="Entity_CampusAdmissionRoom_Error_Delete_LinkedTo_CampusApplications" xml:space="preserve">
+    <value>Внимание! Не можете да изтриете този запис за тип и брой стаи, защото към него има разпределени студенти (заявления за общежитие)!</value>
+  </data>
+  <data name="Export_Excel_CampusAdmission_ExcelSheet_ByAvarageGrade" xml:space="preserve">
+    <value>По успех</value>
+  </data>
+  <data name="Export_Excel_CampusAdmission_ExcelSheet_ByRight" xml:space="preserve">
+    <value>По право</value>
+  </data>
+  <data name="Export_Excel_CampusAdmission_ExcelSheet_WithoutRanking" xml:space="preserve">
+    <value>Без класиране</value>
+  </data>
+  <data name="Please_select_all_lists" xml:space="preserve">
+    <value>Моля  изберете опции от всички списъци!</value>
+  </data>
+  <data name="Set_Schedule_Status" xml:space="preserve">
+    <value>Изберете статус на разписанието!</value>
+  </data>
+  <data name="ScholarShipApplication_Main" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_AcademicPeriod" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_AverageGrade" xml:space="preserve">
+    <value>Среден успех</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Course" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_EnclosedDocuments" xml:space="preserve">
+    <value>Приложени документи</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Faculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_FacultyNo" xml:space="preserve">
+    <value>Факултетен №</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_FirstName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_IBAN" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_IdentityNumber" xml:space="preserve">
+    <value>Лична карта №</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_IdentityNumberDate" xml:space="preserve">
+    <value>Дата на издаване</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_IdentityNumberEGN" xml:space="preserve">
+    <value>ЕГН/ЛНЧ</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_IdentityNumberIssueBy" xml:space="preserve">
+    <value>Издадена от</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Income" xml:space="preserve">
+    <value>Месечен доход на член от семейството (лв.)</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Income_Warning_GtOrEqToZero" xml:space="preserve">
+    <value>Месеченият доход на член от семейството (лв.) трябва да бъде по - голям от или равен на нула!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Location" xml:space="preserve">
+    <value>Населено място</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Municipality" xml:space="preserve">
+    <value>Община</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Nationality" xml:space="preserve">
+    <value>Държава</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_PermanentAddress" xml:space="preserve">
+    <value>Постоянен адрес (кв., ул., бл., ап.)</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_SecondName" xml:space="preserve">
+    <value>Презиме</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Speciality" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_ScholarShipCategory" xml:space="preserve">
+    <value>Категория стипендия</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_ScholarShipType" xml:space="preserve">
+    <value>Вид стипендия</value>
+  </data>
+  <data name="Form_ScholarShipApplication_Title" xml:space="preserve">
+    <value>Молба за отпускане на стипендия</value>
+  </data>
+  <data name="SortDirectionAsc" xml:space="preserve">
+    <value>Възходящ ред</value>
+  </data>
+  <data name="SortDirectionDesc" xml:space="preserve">
+    <value>Низходящ ред</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_Unique_By_ScholarShipAdmission_Reg" xml:space="preserve">
+    <value>Внимание! Не можете да регистрирате повече от една молба за едно и също класиране за стипендия за конкретен студент!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_Unique_By_ScholarShipAdmission_Save" xml:space="preserve">
+    <value>Внимание! Не можете да запишете повече от една молба за едно и също класиране за стипендия за конкретен студент!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Not_Found_ScholarShipAdmission_For_DateNow" xml:space="preserve">
+    <value>Внимание! Не можете да запишете молбата, защото в момента няма активно `Класиране за стипендия`!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Not_Found_ScholarShipAdmission_For_RegDate" xml:space="preserve">
+    <value>Внимание! Не можете да регистрирате молабата, защото в момента няма активно `Класиране за стипендия`!</value>
+  </data>
+  <data name="GridView_Row_Number" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="GridView_ScholarShipCount_ByAvgGrade_TitleHeader" xml:space="preserve">
+    <value>Брой стипендии за успех</value>
+  </data>
+  <data name="GridView_ScholarShipCount_ByIncome_TitleHeader" xml:space="preserve">
+    <value>Брой стипендии за доход</value>
+  </data>
+  <data name="GridView_ScholarShipCount_Faculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="GridView_ScholarShipCount_Total" xml:space="preserve">
+    <value>Общо</value>
+  </data>
+  <data name="GridView_ScholarShipCount_Total_All" xml:space="preserve">
+    <value>ОБЩО</value>
+  </data>
+  <data name="Cannot_Have_Master_Additional_Specialty" xml:space="preserve">
+    <value>Няма втора специалност за ОКС  магистър</value>
+  </data>
+  <data name="Entity_LecturerReport_MonthCivilContract_Exist" xml:space="preserve">
+    <value>Има въведено сведение за учебно-преподавателска работа за избрания месец</value>
+  </data>
+  <data name="Entity_LecturerReport_NOTCivilContract_Exist" xml:space="preserve">
+    <value>Има въведена карта за индивидуална заетост за избрания период.</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_Not_Found_By_ID" xml:space="preserve">
+    <value>Класиране за стипендия с ID `{0}` не е открита в таблица `ScholarShipAdmission`!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_Registration_Income_Not_In_Interval" xml:space="preserve">
+    <value>Внимание! Не можете да регистрирате молбата за стипендия, защото декларираният от Вас среден месечен доход на член от семейството надвишава {0} лева, което не отговаря на изискванията за кандидатстване.</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Not_Found_By_ID" xml:space="preserve">
+    <value>Молба за стипендия с ID `{0}` не е открита в таблица `ScholarShipApplication`!</value>
+  </data>
+  <data name="ScholarApplicationRegistered_Data" xml:space="preserve">
+    <value>Регистрирани молби за стипендия</value>
+  </data>
+  <data name="ScholarShipAdmission_Main" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_AvgGrade_Under_LowerLimit" xml:space="preserve">
+    <value>Внимание! Не можете да кандидатствате за стипендия, защото Вашият среден успех е по-нисък от {0}.</value>
+  </data>
+  <data name="Entity_WeekScheduleDetail_BuildingAddress" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="Entity_WeekScheduleDetail_DisciplineName" xml:space="preserve">
+    <value>Дисциплина</value>
+  </data>
+  <data name="Entity_WeekSchedule_CurrentYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_WeekSchedule_CurrPeriod" xml:space="preserve">
+    <value>Период</value>
+  </data>
+  <data name="Entity_WeekSchedule_Exist" xml:space="preserve">
+    <value>Съществува седмично разписание за този период</value>
+  </data>
+  <data name="Entity_WeekSchedule_Speciality" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="Delete_Succsess" xml:space="preserve">
+    <value>Изтриването успешно!</value>
+  </data>
+  <data name="Specialty_Added_Already" xml:space="preserve">
+    <value>Специалността е вече добавена!</value>
+  </data>
+  <data name="No_Conflicts_Found" xml:space="preserve">
+    <value>Няма открити конфликти!</value>
+  </data>
+  <data name="First_add_year" xml:space="preserve">
+    <value>Първо добавете година</value>
+  </data>
+  <data name="SessionType_SessionPeriod_Mandatory" xml:space="preserve">
+    <value>Периодът и типът на сесията са задължителни!</value>
+  </data>
+  <data name="First_create_ExamProtocol" xml:space="preserve">
+    <value>Първо трябва да създадете протокол!</value>
+  </data>
+  <data name="First_add_ArtModel" xml:space="preserve">
+    <value>Моля, първо запишете модел!</value>
+  </data>
+  <data name="First_add_credits" xml:space="preserve">
+    <value>Моля, запишете броя кредити!</value>
+  </data>
+  <data name="First_add_hours" xml:space="preserve">
+    <value>Моля, запишете броя учебни часове!</value>
+  </data>
+  <data name="First_add_student" xml:space="preserve">
+    <value>Моля, изберете студент!</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_Course" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_IBAN" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_IsForPayment" xml:space="preserve">
+    <value>За изплащане на стипендия</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_Month" xml:space="preserve">
+    <value>Месец</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_Not_Found_By_ID" xml:space="preserve">
+    <value>Месечна ведомост за изплащане на стипендии с ID `{0}` не е открита в таблица `ScholarShipPaymentBalance`!</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_ScholarShipAmount" xml:space="preserve">
+    <value>Стипендия (в лв.)</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_ScholarShipCategory" xml:space="preserve">
+    <value>Категория стипендия</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_Speciality" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_StudentName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Entity_ScholarShipPayment_AcademicSemester" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="Entity_ScholarShipPayment_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_ScholarShipPayment_Month" xml:space="preserve">
+    <value>Месец</value>
+  </data>
+  <data name="Entity_ScholarShipPayment_Not_Found_By_ID" xml:space="preserve">
+    <value>Начисляване на стипендии с ID `{0}` не е открито в таблица `ScholarShipPayment`!</value>
+  </data>
+  <data name="Entity_ScholarShipPayment_Year" xml:space="preserve">
+    <value>Година</value>
+  </data>
+  <data name="Cant_add_One_student_twice" xml:space="preserve">
+    <value>Студентът вече е добавен</value>
+  </data>
+  <data name="GridView_ScholarShipPayment_AcademicSemester" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="GridView_ScholarShipPayment_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="GridView_ScholarShipPayment_Month" xml:space="preserve">
+    <value>Месец</value>
+  </data>
+  <data name="GridView_ScholarShipPayment_Year" xml:space="preserve">
+    <value>Година</value>
+  </data>
+  <data name="ScholarShipsCharging_Data" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Not_Unique_Records" xml:space="preserve">
+    <value>Съществува запис с подадените параметри!</value>
+  </data>
+  <data name="Already_Saved_Or_No_Selected" xml:space="preserve">
+    <value>Протоколите са вече съсдадени или няма селектирани</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Delete_Error_NotRegisteredOnly" xml:space="preserve">
+    <value>Внимание! Може да се трият само `НЕРЕГИСТРИРАНИ` молби за стипендия!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Delete_Successful" xml:space="preserve">
+    <value>Молбата за стипендия беше изтрита успешно!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на молба за стипендия!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на молба за стипендия с ID: {0}!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Registration_IsSubmittedApplication_Required" xml:space="preserve">
+    <value>Въвели сте `Дата на подаване` на ред {0}. Полето `Подал документи` е задължително за този запис!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Registration_SubmissionDate_Required" xml:space="preserve">
+    <value>Маркирали сте `Подал документи` на ред {0}. Полето `Дата на подаване` е задължително за този запис!</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_Error_Unique_By_SubmissionDates" xml:space="preserve">
+    <value>Внимание! В системата вече съществува `Класиране за стипендия` (с дати за подаване на молба от {0} до {1}) включващ избрания период (или част от него)!</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_SubmissionEndDate" xml:space="preserve">
+    <value>Крайна дата за подаване на документи</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_SubmissionStartDate" xml:space="preserve">
+    <value>Начална дата за подаване на документи</value>
+  </data>
+  <data name="Form_ScholarShipApplication_Error_Generate_DeclarationApps" xml:space="preserve">
+    <value>Грешка при генериране на документи - Декларация с приложения за кандидатстване за стипендия!</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_AcademicPeriod" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_AcademicYear" xml:space="preserve">
+    <value>Учебна година</value>
+  </data>
+  <data name="Entity_ArtModelReport_Not_Found_By_ID" xml:space="preserve">
+    <value>Договор на модел с ID `{0}` не е открито!</value>
+  </data>
+  <data name="Already_created_exam_protocols" xml:space="preserve">
+    <value>Вече има генерирани протоколи от този тип за този период</value>
+  </data>
+  <data name="Entity_Person_Sex" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="Export_Excel_ScholarShipAdmission_Ranking_ExcelSheet_ByAvgGrade_Course_1" xml:space="preserve">
+    <value>Класиране_Успех_1</value>
+  </data>
+  <data name="Export_Excel_ScholarShipAdmission_Ranking_ExcelSheet_ByAvgGrade_Course_2345" xml:space="preserve">
+    <value>Класиране_Успех_2,3,4,5</value>
+  </data>
+  <data name="Export_Excel_ScholarShipAdmission_Ranking_ExcelSheet_ByIncome_Course_1" xml:space="preserve">
+    <value>Класиране_Доход_1</value>
+  </data>
+  <data name="Export_Excel_ScholarShipAdmission_Ranking_ExcelSheet_ByIncome_Course_2345" xml:space="preserve">
+    <value>Класиране_Доход_2,3,4,5</value>
+  </data>
+  <data name="Export_Excel_ScholarShipAdmission_Ranking_ExcelSheet_ByRight" xml:space="preserve">
+    <value>Класиране_Право</value>
+  </data>
+  <data name="Form_ScholarShipAdmission_Error_Generate_ScholarShipRankingReport" xml:space="preserve">
+    <value>Грешка при генериране на документ (отчет в EXCEL) - класиране за стипендия!</value>
+  </data>
+  <data name="Form_ScholarShipAdmission_Error_NotFound_ScholarShipApplications" xml:space="preserve">
+    <value>Внимание! Няма регистрирани молби за стипендия към текущото класиране!</value>
+  </data>
+  <data name="Form_ScholarShipAdmission_Error_NotFound_ScholarShipApplications_IsRanked" xml:space="preserve">
+    <value>Внимание! Няма класирани молби за стипендия към текущото класиране!</value>
+  </data>
+  <data name="ScholarShipPayment_Data" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Second_Specialty" xml:space="preserve">
+    <value>Втора специалност</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Warning_Not_Found_ScholarShipApplications" xml:space="preserve">
+    <value>Внимание! Не можете да запишете данни за ведомости, защото за избраните `Учебна година`, `Семестър` и `Месец` няма стипендии за изплащане!</value>
+  </data>
+  <data name="Choose_Lecturer" xml:space="preserve">
+    <value>Моля, изберете преподавател!</value>
+  </data>
+  <data name="Please_Choose_Course" xml:space="preserve">
+    <value>Moля, изберете курс!</value>
+  </data>
+  <data name="Please_add_discipline" xml:space="preserve">
+    <value>Моля, изберете дисциплина!</value>
+  </data>
+  <data name="Entity_StudentStatus_Course" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="Entity_StudentStatus_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Entity_InOutDocumentUserLink_Not_Found_By_ID" xml:space="preserve">
+    <value>Запис с ID `{0}` не е открито в таблица `InOutDocumentUserLink`!</value>
+  </data>
+  <data name="Export_CSV_ScholarShips_ByRight_FileName" xml:space="preserve">
+    <value>Стипендии_Файл_за_експорт_по_право</value>
+  </data>
+  <data name="Export_CSV_ScholarShips_OnGeneralBasis_FileName" xml:space="preserve">
+    <value>Стипендии_Файл_за_експорт_по_успех</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_Amount" xml:space="preserve">
+    <value>Стипендия _(лв)</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_Category" xml:space="preserve">
+    <value>Категория стипендия</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_EGN" xml:space="preserve">
+    <value>ЕГН</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_FirstName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_Generated" xml:space="preserve">
+    <value>generated</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_IBAN" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_RankingByIncome" xml:space="preserve">
+    <value>Класация доход</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_RegDate" xml:space="preserve">
+    <value>Дата на рег</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_SecondName" xml:space="preserve">
+    <value>Презиме</value>
+  </data>
+  <data name="Export_CSV_ScholarShip_Column_YesNo" xml:space="preserve">
+    <value>Да/Не</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Error_Generate_ExportBank_FilesCSV_In_ZIP" xml:space="preserve">
+    <value>Грешка при генериране на ведомости за стипендии в CSV файлове включени в ZIP архив!</value>
+  </data>
+  <data name="Form_ArtModelApplicationData_Error_Generate_PaymentFeeReport" xml:space="preserve">
+    <value>Грешка при генериране на документ (отчет в EXCEL) - Ведомост – модели за изплащане на хонорарие!</value>
+  </data>
+  <data name="Form_ArtModelChargingData_Error_Generate_PaymentReport" xml:space="preserve">
+    <value>Грешка при генериране на документ (отчет в EXCEL) - Ведомост – модели за изплащане на хонорарие!</value>
+  </data>
+  <data name="First_Add_RegNumber" xml:space="preserve">
+    <value>Моля, запишете регистрационен номер!</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Моля, изберете дата на регистрация!</value>
+  </data>
+  <data name="First_add_About" xml:space="preserve">
+    <value>Моля, въведете данни в полето 'Относно' !</value>
+  </data>
+  <data name="Form_CampusApplication_Error_Generate_CampusApp_And_Declaration" xml:space="preserve">
+    <value>Грешка при генериране на документи - заявление и декларация за общежитие!</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_AcademicPeriod" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_EducationInstitution" xml:space="preserve">
+    <value>Училище</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_EMail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_FirstName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_MobilePhone" xml:space="preserve">
+    <value>Мобилен телефон</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_SecondName" xml:space="preserve">
+    <value>Презиме</value>
+  </data>
+  <data name="Entity_PreparationCourse_AcademicPeriod" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="Entity_PreparationCourse_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Entity_PreparationCourse_Name" xml:space="preserve">
+    <value>Курс</value>
+  </data>
+  <data name="Entity_PreparationCourse_Преподавател" xml:space="preserve">
+    <value>Преподавател</value>
+  </data>
+  <data name="Entity_SpecialityForApplication_AcademicPeriod" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_IncomingNumber" xml:space="preserve">
+    <value>Входящ номер</value>
+  </data>
+  <data name="Entity_StudentCandidate_ApplicationReason" xml:space="preserve">
+    <value>Основание за кандидатстване</value>
+  </data>
+  <data name="Entity_StudentCandidate_StudyType" xml:space="preserve">
+    <value>Вид обучение</value>
+  </data>
+  <data name="Form_PreparationCourseData_Error_Save_Lecturers" xml:space="preserve">
+    <value>Грешка при запис на преподаватели за подготвителен курс!</value>
+  </data>
+  <data name="Entity_PreparationCourse_Not_Found_By_ID" xml:space="preserve">
+    <value>Подготвителен курс с ID `{0}` не е открит в таблица `PreparationCourse`!</value>
+  </data>
+  <data name="Form_PreparationCourseData_Error_Delete_Lecturers" xml:space="preserve">
+    <value>Грешка при изтриване на преподаватели от подготвителен курс!</value>
+  </data>
+  <data name="GridView_PreparationCourse_AcademicPeriodName" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="GridView_PreparationCourse_LecturersNames" xml:space="preserve">
+    <value>Преподаватели</value>
+  </data>
+  <data name="GridView_PreparationCourse_PreparationCourseName" xml:space="preserve">
+    <value>Подготвителен курс</value>
+  </data>
+  <data name="Form_PreparationCourseApplicationData_Error_Delete_PreparationCourse" xml:space="preserve">
+    <value>Грешка при изтриване на подготвителен курс от потенциален кандидат-студент!</value>
+  </data>
+  <data name="Form_PreparationCourseApplicationData_Error_Delete_Speciality" xml:space="preserve">
+    <value>Грешка при изтриване на специалност от потенциален кандидат-студент!</value>
+  </data>
+  <data name="Form_PreparationCourseApplicationData_Error_Save_PreparationCourse" xml:space="preserve">
+    <value>Грешка при запис на подготвителен курс към потенциален кандидат-студент!</value>
+  </data>
+  <data name="Form_PreparationCourseApplicationData_Error_Save_Speciality" xml:space="preserve">
+    <value>Грешка при запис на специалност към потенциален кандидат-студент!</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_AcademicPeriodName" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_EMail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_FullName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_MobilePhone" xml:space="preserve">
+    <value>Мобилен телефон</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_Month" xml:space="preserve">
+    <value>Месец</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_PreparationCourses" xml:space="preserve">
+    <value>Подготвителни курсове</value>
+  </data>
+  <data name="GridView_PreparationCourseApplication_Spetialities" xml:space="preserve">
+    <value>Специалности</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_Not_Found_By_ID" xml:space="preserve">
+    <value>Заявка за подготвителен кандидат-студентски курс с ID `{0}` не е открита в таблица `PreparationCourseApplication`!</value>
+  </data>
+  <data name="Mark_Counts" xml:space="preserve">
+    <value>Зачита се</value>
+  </data>
+  <data name="Entity_StudentCandidate_Not_Found_By_ID" xml:space="preserve">
+    <value>Кандидат-студенти с ID `{0}` не е открит в таблица `StudentCandidate`!</value>
+  </data>
+  <data name="Form_StudentCandidateData_Error_Delete_Speciality" xml:space="preserve">
+    <value>Грешка при изтриване на специалност от кандидат-студент!</value>
+  </data>
+  <data name="Form_StudentCandidateData_Error_Save_Speciality" xml:space="preserve">
+    <value>Грешка при запис на специалност към кандидат-студент!</value>
+  </data>
+  <data name="StudentCandidate_Main" xml:space="preserve">
+    <value>Данни за кандидатстване</value>
+  </data>
+  <data name="Entity_StudentCandidate_AcademicPeriod" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="Entity_StudentCandidate_OKC" xml:space="preserve">
+    <value>ОКС</value>
+  </data>
+  <data name="Entity_StudentCandidate_Semester" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_Error_AddedSpeciality_Unique" xml:space="preserve">
+    <value>Внимание! Избраната специалност е вече добавена!</value>
+  </data>
+  <data name="Entity_PreparationCourse_Error_AddedLecturer_Unique" xml:space="preserve">
+    <value>Внимание! Избраният преподавател е вече добавен!</value>
+  </data>
+  <data name="Entity_SpecialityForApplication_Number_In_Article68_Par3_Of_The_HEA" xml:space="preserve">
+    <value>Квота за места, посочени в чл.68, ал.3 от ЗВО</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_AcademicPeriodName" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_AcceptedStudentsPublicCount" xml:space="preserve">
+    <value>Приети студенти държавна поръчка</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_ApprovedPaidEducation" xml:space="preserve">
+    <value>Утвърден прием платено обучение</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_ApprovedPublicEducation" xml:space="preserve">
+    <value>Утвърден прием държавна поръчка</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_SemesterName" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_SpecialityName" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_StudentCandidatesCount" xml:space="preserve">
+    <value>Кандидат-студенти</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_StudentDegreeName" xml:space="preserve">
+    <value>ОКС</value>
+  </data>
+  <data name="First_add_CreateByPerson" xml:space="preserve">
+    <value>Моля, запишете възложител на задачата!</value>
+  </data>
+  <data name="First_add_CreateDate" xml:space="preserve">
+    <value>Моля, запишете дата на възлагане!</value>
+  </data>
+  <data name="First_add_RegDate" xml:space="preserve">
+    <value>Моля, запишете дата на регистрация!</value>
+  </data>
+  <data name="First_add_ResponsiblePerson" xml:space="preserve">
+    <value>Моля, запишете изпълнител на задачата!</value>
+  </data>
+  <data name="Form_SpecialityForApplication_Error_Save_Specialities_For_Application" xml:space="preserve">
+    <value>Грешка при запис на специалности за кандидатстване!</value>
+  </data>
+  <data name="Form_SpecialityForApplication_Successful_Save_Specialities_For_Application" xml:space="preserve">
+    <value>Записът на специалности за кандидатстване приключи успешно!</value>
+  </data>
+  <data name="Form_StudentCandidateData_Title" xml:space="preserve">
+    <value>Данни за кандидат-студент</value>
+  </data>
+  <data name="StudentCandidatesList_Data" xml:space="preserve">
+    <value>Кандидат-студенти</value>
+  </data>
+  <data name="Cant_find_Studnet_status" xml:space="preserve">
+    <value>Не могат да бъдат открити "Данни за обучението"</value>
+  </data>
+  <data name="No_Curriculum_appendix" xml:space="preserve">
+    <value>Не е открито приложение към учебния план за тази дисциплина</value>
+  </data>
+  <data name="Student_dont_study_this_discipline" xml:space="preserve">
+    <value>Студентът не изучава тази дисциплина</value>
+  </data>
+  <data name="Student_dont_study_this_discipline_in_this_course_and_semester" xml:space="preserve">
+    <value>Студентът не изучава тази дисциплина през този курс и семестър</value>
+  </data>
+  <data name="The_Student_Should_Be_Active" xml:space="preserve">
+    <value>Студентът трябва да бъде с активен статус!</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_Delete_Successful" xml:space="preserve">
+    <value>Данните за потенциален кандидат-студент бяха изтрити успешно!</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на данни за потенциален кандидат-студент!</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на данни за потенциален кандидат-студент с ID: {0}!</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_Total" xml:space="preserve">
+    <value>Общо</value>
+  </data>
+  <data name="Form_SpecialityForApplication_Error_Generate_StudentCandidatesList_InExcelZip" xml:space="preserve">
+    <value>Грешка при генериране на списъци за кандидат-студенти</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_AcademicYear" xml:space="preserve">
+    <value>Учебна {0} година</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_IncomingNumber" xml:space="preserve">
+    <value>Вх. №</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_MarksSum" xml:space="preserve">
+    <value>Бал</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Mark_FirstExam" xml:space="preserve">
+    <value>Оценка - I изпит</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Mark_SecondExam" xml:space="preserve">
+    <value>Оценка - II изпит</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_RowNumber" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Signature_FirstExam" xml:space="preserve">
+    <value>Подпис - I изпит</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Signature_SecondExam" xml:space="preserve">
+    <value>Подпис - II изпит</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_StudentFullName" xml:space="preserve">
+    <value>Име, презиме, фамилия</value>
+  </data>
+  <data name="Mark_InWords_Good" xml:space="preserve">
+    <value>Добър</value>
+  </data>
+  <data name="Mark_InWords_Moderate" xml:space="preserve">
+    <value>Среден</value>
+  </data>
+  <data name="Mark_InWords_Poor" xml:space="preserve">
+    <value>Слаб</value>
+  </data>
+  <data name="Mark_InWords_VeryGood" xml:space="preserve">
+    <value>Мн. добър</value>
+  </data>
+  <data name="Mark_InWords_Еxcellent" xml:space="preserve">
+    <value>Отличен</value>
+  </data>
+  <data name="First_add_ContractDateFrom" xml:space="preserve">
+    <value>Моля изберете дата на договора от!</value>
+  </data>
+  <data name="First_add_ContractSubject" xml:space="preserve">
+    <value>Моля, запишете предмет на договора!</value>
+  </data>
+  <data name="First_add_PersonPerformer" xml:space="preserve">
+    <value>Моля запишете изпълнител(лице)!</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_SecondSpeciality" xml:space="preserve">
+    <value>Втора специалност</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_CourseAttendingType" xml:space="preserve">
+    <value>Ще посещавате курса като</value>
+  </data>
+  <data name="Message_Confirm_Ranking" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да направите класиране?</value>
+  </data>
+  <data name="Form_Please_Select_Sth" xml:space="preserve">
+    <value>Моля, изберете `{0}`!</value>
+  </data>
+  <data name="Form_Please_Type_Sth" xml:space="preserve">
+    <value>Моля, въведете `{0}`!</value>
+  </data>
+  <data name="Form_StudentCandidateSpeciality_Error_Save_Order_For_Admission" xml:space="preserve">
+    <value>Грешка при запис на заповед за прием на кандидат-студенти!</value>
+  </data>
+  <data name="Form_StudentCandidateSpeciality_OrderNumber" xml:space="preserve">
+    <value>Номер на заповед за прием</value>
+  </data>
+  <data name="Form_StudentCandidateSpeciality_RankingType" xml:space="preserve">
+    <value>Тип класиране на кандидат-студенти</value>
+  </data>
+  <data name="Form_StudentCandidateSpeciality_Successful_Save_Order_For_Admission" xml:space="preserve">
+    <value>Записът на заповед за прием на кандидат-студенти приключи успешно!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_RankingNumberID" xml:space="preserve">
+    <value>Класиране</value>
+  </data>
+  <data name="Form_Please_Select_Sth_OnRow" xml:space="preserve">
+    <value>Моля, изберете `{0}`, на ред `{1}`!</value>
+  </data>
+  <data name="Form_Please_Type_Sth_OnRow" xml:space="preserve">
+    <value>Моля, въведете `{0}`, на ред `{1}`!</value>
+  </data>
+  <data name="Form_SpecialityForApplicationMain_Title" xml:space="preserve">
+    <value>Списъци за специалност</value>
+  </data>
+  <data name="GridView_StudentCandidates_SecondSpeciality" xml:space="preserve">
+    <value>2-ра специалност</value>
+  </data>
+  <data name="GridView_StudentCandidates_SpecialityName" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="First_add_ContractNumber" xml:space="preserve">
+    <value>Моля, въведете № на договор!</value>
+  </data>
+  <data name="Add_Different_ContractNumber" xml:space="preserve">
+    <value>Съществува договор с такъв '№ на договор' !</value>
+  </data>
+  <data name="Form_SpecialityForApplication_Error_StudentCandidates_Ranking" xml:space="preserve">
+    <value>Грешка при класиране на кандидат-студенти!</value>
+  </data>
+  <data name="Form_SpecialityForApplication_Success_StudentCandidates_Ranking" xml:space="preserve">
+    <value>Класирането на кандидат-студенти приключи успешно!</value>
+  </data>
+  <data name="Message_Confirm_ChangeStatus" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да промените статуса на изпитния протокол на попълнен? След промяна на статуса на протокола, няма да можете да правите повече промени.</value>
+  </data>
+  <data name="Entity_SpecialityForApplication_Error_ApprovedEducationCount_OverLimit" xml:space="preserve">
+    <value>Внимание! Бройките за `{0}` надвишават въведените с `{1}`! Моля, отмаркирайте излишните!</value>
+  </data>
+  <data name="Entity_SpecialityForApplication_Error_Speciality_ApprovedEdCount_OverLimit" xml:space="preserve">
+    <value>Внимание! Бройките за специалност `{0}` - `{1}` надвишават въведените с `{2}`! Моля, отмаркирайте излишните!</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_PermanentAddress_Label" xml:space="preserve">
+    <value>Постоянен адрес</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Ranking" xml:space="preserve">
+    <value>Класиране</value>
+  </data>
+  <data name="Entity_Curriculum_ProtocolNumber" xml:space="preserve">
+    <value>Решение с протокол номер</value>
+  </data>
+  <data name="Cannot_Have_One_Spec_Twice" xml:space="preserve">
+    <value>Вече има създаден учебен план за този период и специалност</value>
+  </data>
+  <data name="Wrong_Time_Class_Min_Duration" xml:space="preserve">
+    <value>Началният час трябва да е преди крайния</value>
+  </data>
+  <data name="EMail_Error_Send" xml:space="preserve">
+    <value>Грешка при изпращане на E-Mail!</value>
+  </data>
+  <data name="EMail_External_Send_Not_Permitted" xml:space="preserve">
+    <value>Внимание! Изпращането на външен e-mail не е позволено от системата!</value>
+  </data>
+  <data name="Schedule_Validation_No_Colisions" xml:space="preserve">
+    <value>Не са открити застъпвания</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_AcceptedStudentsPaidCount" xml:space="preserve">
+    <value>Приети студенти платено обучение</value>
+  </data>
+  <data name="Entity_Lecurer" xml:space="preserve">
+    <value>Преподавател</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Език</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Ниво</value>
+  </data>
+  <data name="First_Save_Speciality" xml:space="preserve">
+    <value>Запишете първо специалността</value>
+  </data>
+  <data name="Entity_StudentCandidate_Person_WithSameData_For_AcademicPeriod_Exist" xml:space="preserve">
+    <value>Не можете да запишете данните, защото същото лице вече е въведено за този прием. Моля, допълнете данните за кандидатстване във вече въведеното лице.</value>
+  </data>
+  <data name="StudentCandidatesList_Data1" xml:space="preserve">
+    <value>Кандидат-студенти</value>
+  </data>
+  <data name="AcademicPeriod_Mandatory" xml:space="preserve">
+    <value>Моля, добавете семестър!</value>
+  </data>
+  <data name="AcademicYear_Mandatory" xml:space="preserve">
+    <value>Моля, добавете учебна година!</value>
+  </data>
+  <data name="Entity_StudentAdmission_Mark_Must_Be_2_6" xml:space="preserve">
+    <value>Моля, въведете бал от 6 до 99</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_FinishedAdmission" xml:space="preserve">
+    <value>Приключил прием</value>
+  </data>
+  <data name="GridView_StudentCandidate_AcademicPeriodName" xml:space="preserve">
+    <value>Прием</value>
+  </data>
+  <data name="GridView_StudentCandidate_EMail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="GridView_StudentCandidate_FullName" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="GridView_StudentCandidate_MobilePhone" xml:space="preserve">
+    <value>Мобилен телефон</value>
+  </data>
+  <data name="GridView_StudentCandidate_Spetialities" xml:space="preserve">
+    <value>Специалности</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Error_FirstCourse_FirstSemester_Cannot_Apply" xml:space="preserve">
+    <value>Внимание! Студент първи курс, първи семестър не може да кандидатства за стипендия!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_MarkAddExam_Wrong_Interval" xml:space="preserve">
+    <value>Оценка - Доп. изпит трябва да бъде в интервал между 2 и 6!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_MarkFirstExam_Wrong_Interval" xml:space="preserve">
+    <value>Оценка - I изпит трябва да бъде в интервал между 2 и 6!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_MarkSecondExamCoeff_Wrong_Interval" xml:space="preserve">
+    <value>Коеф. за оценка - II изпит трябва да бъде в интервал между 1 и 99!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_MarkSecondExamTask1_Wrong_Interval" xml:space="preserve">
+    <value>Оценка - II изпит (задача 1) трябва да бъде в интервал между 2 и 6!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_MarkSecondExamTask2_Wrong_Interval" xml:space="preserve">
+    <value>Оценка - II изпит (задача 2) трябва да бъде в интервал между 2 и 6!</value>
+  </data>
+  <data name="Entity_StudentCandidateSpeciality_MarkSecondExam_Wrong_Interval" xml:space="preserve">
+    <value>Оценка - II изпит трябва да бъде в интервал между 2 и 6!</value>
+  </data>
+  <data name="Year_Mandatory" xml:space="preserve">
+    <value>Моля, добавете година!</value>
+  </data>
+  <data name="Form_Send_Email_To_Persons_Error" xml:space="preserve">
+    <value>Внимание! Грешка при изпращане на E-mail на `{0}`!</value>
+  </data>
+  <data name="Form_Send_Email_To_Persons_Success" xml:space="preserve">
+    <value>Изпращането на E-mail завърши успешно!</value>
+  </data>
+  <data name="Message_Confirm_SendEmails" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да изпратите E-mail известия?</value>
+  </data>
+  <data name="Email_WrongSentEmail_Email" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="Email_WrongSentEmail_PersonName" xml:space="preserve">
+    <value>Име на лицето:</value>
+  </data>
+  <data name="Form_SpecialityForApplication_Error_StudentCandidates_Sending_Emails" xml:space="preserve">
+    <value>Грешка при изпращане на имейл известия!</value>
+  </data>
+  <data name="Entity_Museum_Author" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="Entity_Museum_ClientNumber" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="Entity_Museum_Department" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="Entity_Museum_Fund" xml:space="preserve">
+    <value>Фонт</value>
+  </data>
+  <data name="Entity_Museum_WorkName" xml:space="preserve">
+    <value>Попълнете или Наименование на творбата или Заглавие</value>
+  </data>
+  <data name="Cannot_Have_Diplicate_ClientNumbers" xml:space="preserve">
+    <value>Вече съществува експонат със същото име</value>
+  </data>
+  <data name="Entity_MuseumProtocol_DateGive" xml:space="preserve">
+    <value>Дата на предаване</value>
+  </data>
+  <data name="GridView_SpecialityForApplication_StudentCandidatesRankedCount" xml:space="preserve">
+    <value>Класирани</value>
+  </data>
+  <data name="Wrong_Mark_Format" xml:space="preserve">
+    <value>Грешен формат на оценката</value>
+  </data>
+  <data name="Entity_ScholarShipAdmission_Ranking_Successful" xml:space="preserve">
+    <value>Класирането за стипендии приключи успешно!</value>
+  </data>
+  <data name="Entity_StudentAdmissionData_Speciality_IsNullOrEmpty" xml:space="preserve">
+    <value>Полето Специалност е задължително.</value>
+  </data>
+  <data name="StudentAdmissionData_Data" xml:space="preserve">
+    <value>Данни за прием</value>
+  </data>
+  <data name="Entity_StudentStatus_OnlyOne_AcademicPeriod_Student" xml:space="preserve">
+    <value>Студента вече е добавен към избрания академичен период</value>
+  </data>
+  <data name="Entity_Type_Organization" xml:space="preserve">
+    <value>Вид на организацията</value>
+  </data>
+  <data name="Form_LecturerPaymentDetail_Error_Generate_PaymentReport" xml:space="preserve">
+    <value>Грешка при генериране на документ (отчет в EXCEL) - СПИСЪК за изплащане часовете на хоноруваните преподаватели в НХА</value>
+  </data>
+  <data name="Entity_RequestDetail_Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="Entity_RequestDetail_Delete_Successful" xml:space="preserve">
+    <value>Заявените артикули бяха изтрити успешно!</value>
+  </data>
+  <data name="Entity_RequestDetail_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Entity_RequestDetail_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на заявени артикули!</value>
+  </data>
+  <data name="Entity_RequestDetail_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на заявен артикул с ID: {0}!</value>
+  </data>
+  <data name="Entity_RequestDetail_EstimatedEndDate" xml:space="preserve">
+    <value>Прогнозен срок за изпълнение до</value>
+  </data>
+  <data name="Entity_RequestDetail_EstimatedValueWithVAT" xml:space="preserve">
+    <value>Прогнозна стойност с ДДС</value>
+  </data>
+  <data name="Entity_RequestDetail_Group" xml:space="preserve">
+    <value>Група</value>
+  </data>
+  <data name="Entity_RequestDetail_Note" xml:space="preserve">
+    <value>Забележка</value>
+  </data>
+  <data name="Entity_RequestDetail_Not_Found_By_ID" xml:space="preserve">
+    <value>Заявен артикул с ID `{0}` не е открита в таблица `RequestDetail`!</value>
+  </data>
+  <data name="Entity_RequestDetail_Quantity" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="Entity_Request_Delete_Successful" xml:space="preserve">
+    <value>Заявката беше изтрита успешно!</value>
+  </data>
+  <data name="Entity_Request_Department" xml:space="preserve">
+    <value>Катедра</value>
+  </data>
+  <data name="Entity_Request_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на заявка!</value>
+  </data>
+  <data name="Entity_Request_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на заявка с ID: {0}!</value>
+  </data>
+  <data name="Entity_Request_EstimatedValueWithVAT" xml:space="preserve">
+    <value>Прогнозна стойност с ДДС</value>
+  </data>
+  <data name="Entity_Request_Faculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="Entity_Request_Not_Found_By_ID" xml:space="preserve">
+    <value>Заявка с ID `{0}` не е открита в таблица `Request`!</value>
+  </data>
+  <data name="Entity_Request_RequestCategory" xml:space="preserve">
+    <value>Категория на заявката</value>
+  </data>
+  <data name="Entity_Request_RequestDate" xml:space="preserve">
+    <value>Дата на заявката</value>
+  </data>
+  <data name="Entity_Request_RequestingPerson" xml:space="preserve">
+    <value>Заявител</value>
+  </data>
+  <data name="Entity_Request_RequestType" xml:space="preserve">
+    <value>Вид на заявката</value>
+  </data>
+  <data name="Entity_Request_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="GridView_Request_Department" xml:space="preserve">
+    <value>Катедра</value>
+  </data>
+  <data name="GridView_Request_EstimatedValueWithVAT" xml:space="preserve">
+    <value>Прогнозна стойност с ДДС</value>
+  </data>
+  <data name="GridView_Request_Faculty" xml:space="preserve">
+    <value>Факултет</value>
+  </data>
+  <data name="GridView_Request_RequestCategory" xml:space="preserve">
+    <value>Категория на заявката</value>
+  </data>
+  <data name="GridView_Request_RequestDate" xml:space="preserve">
+    <value>Дата на заявката</value>
+  </data>
+  <data name="GridView_Request_RequestingPerson" xml:space="preserve">
+    <value>Заявител</value>
+  </data>
+  <data name="GridView_Request_RequestType" xml:space="preserve">
+    <value>Вид на заявката</value>
+  </data>
+  <data name="GridView_Request_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Request_Data" xml:space="preserve">
+    <value>Основни данни</value>
+  </data>
+  <data name="Entity_Contract_ContractType" xml:space="preserve">
+    <value>Вид на договора</value>
+  </data>
+  <data name="Entity_Contract_Date" xml:space="preserve">
+    <value>Дата на сключване</value>
+  </data>
+  <data name="Entity_Contract_MainContract" xml:space="preserve">
+    <value>Основен договор</value>
+  </data>
+  <data name="Entity_Contract_Number" xml:space="preserve">
+    <value>№ на договор</value>
+  </data>
+  <data name="Entity_Contract_Occupation" xml:space="preserve">
+    <value>Заемана длъжност</value>
+  </data>
+  <data name="Entity_Contract_Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="FIRST_ADD_ACADEMIC_DEGREE" xml:space="preserve">
+    <value>Моля, въведете данни в раздела `Научна степен`</value>
+  </data>
+  <data name="FIRST_ADD_FULL_ACADEMIC_DEGREE" xml:space="preserve">
+    <value>Моля, въведете данни в раздела `Научна степен` за полето `Академична длъжност`</value>
+  </data>
+  <data name="LecturerPayment_AddLecturer_Error" xml:space="preserve">
+    <value>Възникна грешка при добавяне на допълнителни часове за преподавател!</value>
+  </data>
+  <data name="Entity_LecturerReport_Not_Found_By_ID" xml:space="preserve">
+    <value>LecturerReport с ID `{0}` не е открито!</value>
+  </data>
+  <data name="Form_Email_Body_Required" xml:space="preserve">
+    <value>Моля, въведете съдържание!</value>
+  </data>
+  <data name="Form_Email_Subject_And_Body_Required" xml:space="preserve">
+    <value>Моля, въведете {0}!</value>
+  </data>
+  <data name="Form_Email_Subject_Required" xml:space="preserve">
+    <value>Моля, въведете заглавие!</value>
+  </data>
+  <data name="Form_Email_Please_Select_Recipient_PotentialStudentCandidate" xml:space="preserve">
+    <value>Моля, изберете поне един потенциален кандидат-студент!</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Mark_AdditionalExam" xml:space="preserve">
+    <value>Оценка - Доп. изпит</value>
+  </data>
+  <data name="Excel_Export_StudentCandidatesList_BySpeciality_Signature_AdditionalExam" xml:space="preserve">
+    <value>Подпис - Доп. изпит</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Продължителност на проекта</value>
+  </data>
+  <data name="Entity_ProjectName" xml:space="preserve">
+    <value>Наименование на проекта</value>
+  </data>
+  <data name="ProjectCategory" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="ProjectStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Entity_PersonName" xml:space="preserve">
+    <value>Участник</value>
+  </data>
+  <data name="Entity_ProjectParticipantRole" xml:space="preserve">
+    <value>Роля в проекта</value>
+  </data>
+  <data name="Entity_ProjectParticipantType" xml:space="preserve">
+    <value>Тип на участника</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_PreparationCourse" xml:space="preserve">
+    <value>Подготвителен курс</value>
+  </data>
+  <data name="Entity_PreparationCourseApplication_Specialty" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="Form_Please_Add_Sth" xml:space="preserve">
+    <value>Моля, добавете `{0}`!</value>
+  </data>
+  <data name="Entity_Description" xml:space="preserve">
+    <value>Описание на дейността</value>
+  </data>
+  <data name="Form_Email_Please_Select_Recipient_Lecturer" xml:space="preserve">
+    <value>Моля, изберете поне един преподавател!</value>
+  </data>
+  <data name="Form_Email_Please_Select_Recipient_Student" xml:space="preserve">
+    <value>Моля, изберете поне един студент!</value>
+  </data>
+  <data name="Entity_StudentProject_Delete_Successful" xml:space="preserve">
+    <value>Зписа е изтрит успешно!</value>
+  </data>
+  <data name="Entity_ExpenseType" xml:space="preserve">
+    <value>Вид на разхода</value>
+  </data>
+  <data name="Entity_Group_Not_Found_By_ID" xml:space="preserve">
+    <value>Запис с ID: {0} не е открит в таблица Group</value>
+  </data>
+  <data name="Entity_ScholarShipPaymentBalance_Exist" xml:space="preserve">
+    <value>Избраният студент вече съществува в списъка с начисления за стипендии към текущия месец!</value>
+  </data>
+  <data name="Notification_SendTo_Mandatory" xml:space="preserve">
+    <value>Моля, добавете получател!</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Грешен формат на оценките</value>
+  </data>
+  <data name="Entity_Event_Cordinator" xml:space="preserve">
+    <value>Координатор</value>
+  </data>
+  <data name="Entity_Event_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Entity_Event_Name" xml:space="preserve">
+    <value>Събитие</value>
+  </data>
+  <data name="Entity_Event_Participant" xml:space="preserve">
+    <value>Участник</value>
+  </data>
+  <data name="Entity_Event_SentMessage" xml:space="preserve">
+    <value>Изпратено съобщение</value>
+  </data>
+  <data name="Entity_ClassRoom_Exists" xml:space="preserve">
+    <value>Има въведена зала със същото име.</value>
+  </data>
+  <data name="Entity_User_Send_Password_Body" xml:space="preserve">
+    <value>Здравейте {0},
+
+За Вас е предоставен достъп до автоматизираната университетска информационна система на НХА на следния адрес: http://ams.nha.bg
+ 
+За да използвате услугите на системата  е необходимо да въведете:
+Потребителско име: '{1}'
+Парола: '{2}' 
+ 
+При проблеми и допълнителни въпроси пишете на следния имейл адрес: ums@nha.bg.
+ 
+Това е автоматично генерирано съобщение, моля не отговаряйте.
+
+ 
+Автоматизираната университетска информационна система е създадена по ПРОЕКТ BG051PO001-3.1.08-0025 “Усъвършенстване на системите за управление в Националната художествена академия, чрез въвеждане на Автоматизирана Университетска Информационна Система” Проектът се осъществява с финансовата подкрепа на Европейски социален фонд на Европейския съюз Оперативна програма „Развитие на човешките ресурси”.</value>
+  </data>
+  <data name="Entity_User_Send_Password_Subject" xml:space="preserve">
+    <value>Достъп до aвтоматизираната университетска информационна система на НХА</value>
+  </data>
+  <data name="Wrong_Type_TimeFormat" xml:space="preserve">
+    <value>Форматът за час е следния "ЧЧ:ММ"</value>
+  </data>
+  <data name="Form_Event_Please_Select_Participant" xml:space="preserve">
+    <value>Моля, изберете участник!</value>
+  </data>
+  <data name="Form_Events_Error_Sending_Emails" xml:space="preserve">
+    <value>Грешка при изпращане на e-mail до участници в събитието</value>
+  </data>
+  <data name="Add_Comment" xml:space="preserve">
+    <value>Добави коментар</value>
+  </data>
+  <data name="Entity_RequestInOutDocumentLink_Error_Adding" xml:space="preserve">
+    <value>Грешка при добавяне на връзка към документ! </value>
+  </data>
+  <data name="Entity_RequestInOutDocumentLink_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на връзка към документ! </value>
+  </data>
+  <data name="Entity_RequestProjectLink_Error_Adding" xml:space="preserve">
+    <value>Грешка при добавяне на връзка към проект! </value>
+  </data>
+  <data name="Entity_RequestProjectLink_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на връзка към проект!</value>
+  </data>
+  <data name="Entity_Request_Error_InOutDocument_Required" xml:space="preserve">
+    <value>Моля, изберете документ!</value>
+  </data>
+  <data name="Entity_Request_Error_InOutDocument_Unique" xml:space="preserve">
+    <value>Внимание! Избраният документ вече е добавен!</value>
+  </data>
+  <data name="Entity_Request_Error_Project_Required" xml:space="preserve">
+    <value>Моля, изберете проект!</value>
+  </data>
+  <data name="Entity_Request_Error_Project_Unique" xml:space="preserve">
+    <value>Внимание! Избраният проект вече е добавен!</value>
+  </data>
+  <data name="Form_Request_Message_InOutDocument_Delete" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да изтриете избраните връзки към документи?</value>
+  </data>
+  <data name="Form_Request_Message_Project_Delete" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да изтриете избраните връзки към проекти?</value>
+  </data>
+  <data name="Can_Add_Participant_Only_Onse" xml:space="preserve">
+    <value>Изпълнител може да бъде добавен само веднъж</value>
+  </data>
+  <data name="Form_Request_Message_RequestDetails_Delete" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да изтриете избраните заявени артикули?</value>
+  </data>
+  <data name="Entity_ApprovalDetail_ApprovalType" xml:space="preserve">
+    <value>Тип съгласуване</value>
+  </data>
+  <data name="Entity_ApprovalDetail_ForApprovalToPerson" xml:space="preserve">
+    <value>За съгласуване от</value>
+  </data>
+  <data name="Entity_Approval_About" xml:space="preserve">
+    <value>Относно</value>
+  </data>
+  <data name="Entity_ApprovalDetail_GroupForApproval" xml:space="preserve">
+    <value>Група за съгласуване</value>
+  </data>
+  <data name="Form_Please_Select_Sth_Or_SthOther" xml:space="preserve">
+    <value>Моля, изберете `{0}` или `{1}`!</value>
+  </data>
+  <data name="GridView_AddStudent" xml:space="preserve">
+    <value>Добавяне на студент</value>
+  </data>
+  <data name="Entity_Approval_Not_Found_By_ID" xml:space="preserve">
+    <value>Съгласуване с ID `{0}` не е открита в таблица `Approval`!</value>
+  </data>
+  <data name="Entity_AcademicDegree_AcadRank" xml:space="preserve">
+    <value>Академична длъжност</value>
+  </data>
+  <data name="Entity_AcademicDegree_ScArea" xml:space="preserve">
+    <value>Област,в която е придобита научната степен</value>
+  </data>
+  <data name="Entity_AcademicDegree_ScDegree" xml:space="preserve">
+    <value>Научна степен</value>
+  </data>
+  <data name="Entity_BirthYear" xml:space="preserve">
+    <value>Година на раждане</value>
+  </data>
+  <data name="Entity_Person_Citizenship" xml:space="preserve">
+    <value>Гражданство</value>
+  </data>
+  <data name="Entity_ApprovalDetail_Delete_Successful" xml:space="preserve">
+    <value>Съгласуване - детайли бяха изтрити успешно!</value>
+  </data>
+  <data name="Entity_ApprovalDetail_Error_Delete" xml:space="preserve">
+    <value>Грешка при изтриване на съгласуване - детайли!</value>
+  </data>
+  <data name="Entity_ApprovalDetail_Error_Delete_By_ID" xml:space="preserve">
+    <value>Грешка при изтриване на съгласуване - детайли с ID: {0}!</value>
+  </data>
+  <data name="Entity_Approval_StartApproval_Notification_About_Prefix" xml:space="preserve">
+    <value>Съгласуване на {0}:</value>
+  </data>
+  <data name="Entity_CivilContract_Contract_Number" xml:space="preserve">
+    <value>№ на договор</value>
+  </data>
+  <data name="Entity_CivilContract_Error_Contract_Unique_By_Number" xml:space="preserve">
+    <value>Внимание! В системата вече съществува договор с такъв номер! Моля, променете номера на договора! </value>
+  </data>
+  <data name="Entity_ApprovalDetail_Not_Found_By_ID" xml:space="preserve">
+    <value>Детайл за съгласуване с ID `{0}` не е открит в таблица `ApprovalDetail`!</value>
+  </data>
+  <data name="Entity_Approval_Approval_Finish_Successful_Notification" xml:space="preserve">
+    <value>Съгласуването на {0}: `{1}` приключи успешно!</value>
+  </data>
+  <data name="Entity_Approval_BackForCorrection_Notification_About_Prefix" xml:space="preserve">
+    <value>Връщане за корекция на {0}:</value>
+  </data>
+  <data name="Entity_Approval_Disapproval_Notification" xml:space="preserve">
+    <value>Съгласуването на {0}: `{1}` е неуспешно!</value>
+  </data>
+  <data name="Please_Select_Lecturer" xml:space="preserve">
+    <value>Избраното лице не е преподавател. Моля, изберете преподавател!</value>
+  </data>
+  <data name="Entity_Speciality_Not_Found_By_ID" xml:space="preserve">
+    <value>Специалност с ID `{0}` не е открита в таблица `Speciality`!</value>
+  </data>
+  <data name="One_Person_Twice_In_Project" xml:space="preserve">
+    <value>Участникът може да бъде добавен само веднъж</value>
+  </data>
+  <data name="Entity_CampusApplicationReport_Description" xml:space="preserve">
+    <value>Описание на документа</value>
+  </data>
+  <data name="Entity_CampusApplicationReport_Not_Found_By_ID" xml:space="preserve">
+    <value>Справка за настаняване и плащания с ID `{0}` не е открит в таблица `CampusApplicationReport`!</value>
+  </data>
+  <data name="Entity_CampusApplicationReport_ReportDate" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Entity_CampusApplicationReport_ReportType" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="GridView_CampusApplicationReports_Description" xml:space="preserve">
+    <value>Описание на документа</value>
+  </data>
+  <data name="GridView_CampusApplicationReports_ReportDate" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="GridView_CampusApplicationReports_ReportType" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="Entity_StudentAdmission_Mark_Must_Be_3_99" xml:space="preserve">
+    <value>Допостими стойности за БАЛ са между 3 и 99</value>
+  </data>
+  <data name="Entity_StudentAdmission_Mark_Must_Be_Number" xml:space="preserve">
+    <value>Моля, въведете число в полето БАЛ</value>
+  </data>
+  <data name="Message_Confirm_Generation_Foreigner_Protocols" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да създадете автоматично ВСИЧКИ изпитни протоколи за чужденци?</value>
+  </data>
+  <data name="Message_Confirm_Generation_Manual_Protocol" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да създадете ръчно изпитен протокол за избраната дисциплина и курс?</value>
+  </data>
+  <data name="Message_Confirm_Generation_Manual_Protocol_SecondSpec" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да създадете ръчно изпитен протокол за избраната дисциплина (от втора специалност)  и курс ?</value>
+  </data>
+  <data name="Message_Confirm_Generation_New_Protocols" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да създадете автоматично ВСИЧКИ изпитни протоколи?</value>
+  </data>
+  <data name="Message_Confirm_Generation_SecondSpec_Foreigner_Protocols" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да създадете автоматично ВСИЧКИ изпитни протоколи за чужденци за втората специалност?</value>
+  </data>
+  <data name="Message_Confirm_Generation_SecondSpec_New_Protocols" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да създадете автоматично ВСИЧКИ изпитни протоколи за втора специалност?</value>
+  </data>
+  <data name="Entity_Finance_Export_AcademicPeriod_Override" xml:space="preserve">
+    <value>Не можете да запишете данните, защото вече има въведен експорт за този академичен период</value>
+  </data>
+  <data name="Finance_Export_CalendarYear" xml:space="preserve">
+    <value>Календарна година</value>
+  </data>
+  <data name="Finance_Export_CountInternationalMobilityAcademicStaff" xml:space="preserve">
+    <value>Международна мобилност на академичния състав в страни от ЕС, ЕИП и трети страни</value>
+  </data>
+  <data name="Finance_Export_CountInternationalMobilityWentToUni" xml:space="preserve">
+    <value>Международна мобилност във ВУ</value>
+  </data>
+  <data name="Finance_Export_CountLibraryEntities" xml:space="preserve">
+    <value>Брой билиотечни единици</value>
+  </data>
+  <data name="Finance_Export_CountLibraryEntitiesUse" xml:space="preserve">
+    <value>Ползваемост на библиотечния фонд</value>
+  </data>
+  <data name="Finance_Export_CountStudnetsInCampus" xml:space="preserve">
+    <value>Брой студенти настанени в общежития</value>
+  </data>
+  <data name="Finance_Export_ResearchActivityFinances" xml:space="preserve">
+    <value>Чуждо финансиране за НРД</value>
+  </data>
+  <data name="Finance_Export_ResearchActivityGovernmentSubsidy" xml:space="preserve">
+    <value>Държавна субсидия за НРД</value>
+  </data>
+  <data name="Finance_Export_StudyArea" xml:space="preserve">
+    <value>Учебна площ</value>
+  </data>
+  <data name="Finance_Export_UniAdministrativeBuildingsValue" xml:space="preserve">
+    <value>Стойност на сградите (административни)</value>
+  </data>
+  <data name="Finance_Export_UniFixtures" xml:space="preserve">
+    <value>Стопански инвентар</value>
+  </data>
+  <data name="Finance_Export_UniHardwareValue" xml:space="preserve">
+    <value>Стойност на оборудването (компютри и хардуер)</value>
+  </data>
+  <data name="Finance_Export_UniLivingBuildingsValue" xml:space="preserve">
+    <value>Стойност на сградите (жилищни)</value>
+  </data>
+  <data name="Finance_Export_UniLoanEquipmentValue" xml:space="preserve">
+    <value>Стойност на оборудването (капитализирани разходи)</value>
+  </data>
+  <data name="Finance_Export_UniOhterVehiclesValues" xml:space="preserve">
+    <value>Стойност на оборудването (други транспортни средства)</value>
+  </data>
+  <data name="Finance_Export_UniOtherBuildingsValue" xml:space="preserve">
+    <value>Стойност на сградите (други)</value>
+  </data>
+  <data name="Finance_Export_UniOtherMachinesValue" xml:space="preserve">
+    <value>Стойност на оборудването (други машини)</value>
+  </data>
+  <data name="Finance_Export_UniTotalBudget" xml:space="preserve">
+    <value>Общ бюджет на ВУ</value>
+  </data>
+  <data name="Finance_Export_UniVehiclesValue" xml:space="preserve">
+    <value>Стойност на оборудването (леки автомобили)</value>
+  </data>
+  <data name="Database_Export_CodeInternationalDatabase" xml:space="preserve">
+    <value>Код на базата данни</value>
+  </data>
+  <data name="Database_Export_CountScientificFields" xml:space="preserve">
+    <value>Брой научни области</value>
+  </data>
+  <data name="Database_Export_DbName" xml:space="preserve">
+    <value>Наименование на базата данни</value>
+  </data>
+  <data name="Database_Export_DescriptionScientificFields" xml:space="preserve">
+    <value>Описание на научните области</value>
+  </data>
+  <data name="StudentMobility_Export_CodeProfGroup" xml:space="preserve">
+    <value>Код на професионалното направление</value>
+  </data>
+  <data name="StudentMobility_Export_CollaborativeMasterProgramsInBg" xml:space="preserve">
+    <value>Съвместни магистърски програми с ВУ в България</value>
+  </data>
+  <data name="StudentMobility_Export_CollaborativeMasterProgramsOutsiteBg" xml:space="preserve">
+    <value>Съвместни магистърски програми с ВУ в страни от ЕС, ЕИП и трети страни</value>
+  </data>
+  <data name="StudentMobility_Export_CountForeingStudentsOnProgramInHere" xml:space="preserve">
+    <value>Студенти от ЕС, ЕИП и трети страни, обучавани в международни програми за студентска мобилност</value>
+  </data>
+  <data name="StudentMobility_Export_CountStudentsOnPrograms" xml:space="preserve">
+    <value>Студенти от ВУ в международни програми за студентска мобилност</value>
+  </data>
+  <data name="StudentMobility_Export_Export_AcademicPeriod_Override" xml:space="preserve">
+    <value>Не можете да запишете данните, защото вече има въведен експорт за този академичен период</value>
+  </data>
+  <data name="StudentGrant_Export_AcademicPeriod_Override" xml:space="preserve">
+    <value>Не можете да запишете данните, защото вече има въведен експорт за този академичен период</value>
+  </data>
+  <data name="StudentGrant_Export_CalendarYear" xml:space="preserve">
+    <value>Календарна година</value>
+  </data>
+  <data name="StudentGrant_Export_CodeProfGroup" xml:space="preserve">
+    <value>Код на професионалното направление</value>
+  </data>
+  <data name="StudentGrant_Export_TotalGrantsValue" xml:space="preserve">
+    <value>Обща сума на разходите за стипендии</value>
+  </data>
+  <data name="Entity_Request_Error_Contract_Required" xml:space="preserve">
+    <value>Моля, изберете договор!</value>
+  </data>
+  <data name="Entity_Request_Error_Contract_Unique" xml:space="preserve">
+    <value>Внимание! Избраният договор вече е добавен!</value>
+  </data>
+  <data name="ContractNumber_Not_In_Range" xml:space="preserve">
+    <value>Въведеният номер на договор не попада в определения диапазон!</value>
+  </data>
+  <data name="RangeFrom_Mandatory" xml:space="preserve">
+    <value>Моля, добавете начало на диапазон!</value>
+  </data>
+  <data name="RangeТо_Mandatory" xml:space="preserve">
+    <value>Моля, добавете край на диапазон!</value>
+  </data>
+  <data name="SurveyName_Manfatory" xml:space="preserve">
+    <value>Моля, въведете име на анкета!</value>
+  </data>
+  <data name="Entity_RequestDetail_Supplier" xml:space="preserve">
+    <value>Доставчик</value>
+  </data>
+  <data name="Entity_Approval_ApprovalType" xml:space="preserve">
+    <value>Тип съгласуване</value>
+  </data>
+  <data name="Entity_Approval_ForApprovalToPerson" xml:space="preserve">
+    <value>За съгласуване от</value>
+  </data>
+  <data name="Entity_Approval_GroupForApproval" xml:space="preserve">
+    <value>Група за съгласуване</value>
+  </data>
+  <data name="Contract_Number_Exist" xml:space="preserve">
+    <value>Не можете да запишете данните, защото има вече въведен запис с избрания номер на договор!</value>
+  </data>
+  <data name="First_add_ContractDate" xml:space="preserve">
+    <value>Моля изберете дата на договора!</value>
+  </data>
+  <data name="GridView_SurveyResult" xml:space="preserve">
+    <value>Попълване на анкета</value>
+  </data>
+  <data name="Entity_WeekScheduleDetail_DayOfWeek" xml:space="preserve">
+    <value>Ден от седмицата</value>
+  </data>
+  <data name="Add_Survey" xml:space="preserve">
+    <value>Моля, изберете анкета!</value>
+  </data>
+  <data name="Add_SurveyType" xml:space="preserve">
+    <value>Моля, изберете тип на анкета!</value>
+  </data>
+  <data name="Survey_Already_Exists" xml:space="preserve">
+    <value>Съществува анкета за избрания период!</value>
+  </data>
+  <data name="Survey_Send_Success" xml:space="preserve">
+    <value>Анкетата е изпратена успешно.</value>
+  </data>
+  <data name="RangeCategory_Mandatory" xml:space="preserve">
+    <value>Моля, изберете категория!</value>
+  </data>
+  <data name="Form_Email_Please_Select_Recipient_PhD" xml:space="preserve">
+    <value>Моля, изберете поне един докторант</value>
+  </data>
+  <data name="SpecialityCode not found" xml:space="preserve">
+    <value>Специалността не е открита </value>
+  </data>
+  <data name="Mark_Counts_EN" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Mark_Dont_Counts_EN" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Message_Sent_NOTSuccessfully" xml:space="preserve">
+    <value>Съобщението НЕ е изпратено!</value>
+  </data>
+  <data name="Message_Sent_Successfully" xml:space="preserve">
+    <value>Съобщението е изпратено успешно.</value>
+  </data>
+  <data name="Wrong_Secret_Code" xml:space="preserve">
+    <value>Моля, попълнете кода от картинката, като внимавате за главните букви!</value>
+  </data>
+  <data name="Entity_LecturerPaymentDetail_Not_Found_By_ID" xml:space="preserve">
+    <value>Детайл за хонорар преподавател с ID `{0}` не е открито в таблица `LecturerPaymentDetail`!</value>
+  </data>
+  <data name="Message_Confirm_Change_Current_Student_Data" xml:space="preserve">
+    <value>След запис системата ще промени текущите данни(Kурс/Година на обучение, Статус, Учебен план, Академичен период) на студента/докторанта. Сигурни ли сте ?</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Error_Generate_Export_In_EXCEL" xml:space="preserve">
+    <value>Грешка при експортиране на ведомости за стипендии в EXCEL!</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_AmountPaid" xml:space="preserve">
+    <value>Изплатена сума:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_AmountUnpaid" xml:space="preserve">
+    <value>Неизплатена сума:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_ChAccountant" xml:space="preserve">
+    <value>Гл. счетоводител:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_CountUnpaid" xml:space="preserve">
+    <value>Брой неизплатени стипендии:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_Date" xml:space="preserve">
+    <value>Дата:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_PreparedBy" xml:space="preserve">
+    <value>Изготвил:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_Title_Year_Month" xml:space="preserve">
+    <value>Учебна година {0}, {1}, {2} {3}</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_TotalCount" xml:space="preserve">
+    <value>Общо брой стипендии:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_TotalSum_By_Category" xml:space="preserve">
+    <value>Обща сума за изплащане:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_TotalSum_By_Faculty" xml:space="preserve">
+    <value>Обща сума за изплащане за {0}:</value>
+  </data>
+  <data name="Form_ScholarShipPayment_Export_In_Excel_TotalSum_Charged" xml:space="preserve">
+    <value>Общо сума начислени стипендии:</value>
+  </data>
+  <data name="Entity_DiplomaInfo_ProffesionalQualification" xml:space="preserve">
+    <value>Професионална квалификация</value>
+  </data>
+  <data name="Entity_DiplomaInfo_ProtocolDate" xml:space="preserve">
+    <value>Дата на протокол</value>
+  </data>
+  <data name="Entity_DiplomaInfo_ProtocolNumber" xml:space="preserve">
+    <value>№ на протокол</value>
+  </data>
+  <data name="Entity_DiplomaInfo_StickerReleaseYear" xml:space="preserve">
+    <value>Година на издаване</value>
+  </data>
+  <data name="Message_Confirm_btnExportDiplomas" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да генерирате "Файл Б: Подаване на данни за издадените документи и сканирани изображения". Това ще смени полето "Етап на подаване" на статус "Изпратена диплома"</value>
+  </data>
+  <data name="Message_Confirm_btnExportStickers" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да генерирате "Файл А: Подаване на данни за завършилите студенти" . Това ще смени полето "Етап на подаване" на статус "Изпратен за стикер"</value>
+  </data>
+  <data name="Entity_DiplomaInfo_DiplomaRegistryDate" xml:space="preserve">
+    <value>Дата на издаване</value>
+  </data>
+  <data name="Entity_DiplomaInfo_DiplomaRegistryNumber" xml:space="preserve">
+    <value>Регистрационен №</value>
+  </data>
+  <data name="Entity_DiplomaInfo_DiplomaSeriaNumber" xml:space="preserve">
+    <value>Диплома серия №</value>
+  </data>
+  <data name="Entity_DiplomaInfo_GraduationYear" xml:space="preserve">
+    <value>Година на завършване</value>
+  </data>
+  <data name="Message_Confirm_btnChangeExportStatusToReady" xml:space="preserve">
+    <value>Сигурни ли сте,че искате да потвърдите, че студентът е готов за експорт. Това ще смени полето "Етап на подаване" на статус "Готов за експорт"</value>
+  </data>
+  <data name="Entity_ScholarShipPayment_Error_Exist_For_Selected_AcademicPeriod_And_Month" xml:space="preserve">
+    <value>Внимание! В системата вече съществува запис за избраните `{0}, `{1}` и `{2}`!</value>
+  </data>
+  <data name="Wrong_Date_Format" xml:space="preserve">
+    <value>Грешен формат на датата!</value>
+  </data>
+  <data name="Faculty_is_mandatory" xml:space="preserve">
+    <value>Моля, изберете факултет!</value>
+  </data>
+  <data name="Cannot_change_status_becouse_it_is_already_changed" xml:space="preserve">
+    <value>Протоколът вече е преминал статус "Попълнен"</value>
+  </data>
+  <data name="No_selected_students" xml:space="preserve">
+    <value>Няма избрани студенти (Студенти, които имат въведени оценки не могат да бъдат изтрити)</value>
+  </data>
+  <data name="GridView_Request_RequestNumber" xml:space="preserve">
+    <value>Номер на заявката</value>
+  </data>
+  <data name="Entity_CivilContract_Error_Request_Required" xml:space="preserve">
+    <value>Моля, изберете заявка!</value>
+  </data>
+  <data name="Entity_CivilContract_Not_Found" xml:space="preserve">
+    <value>Моля, първо запишете данните за договора!</value>
+  </data>
+  <data name="Form_Request_Export_Excel_Approvals" xml:space="preserve">
+    <value>СЪГЛАСУВАНО С :</value>
+  </data>
+  <data name="Form_Request_Export_Excel_Necessity" xml:space="preserve">
+    <value>Необходимостта от поемане на това задължение е :</value>
+  </data>
+  <data name="Form_Request_Export_Excel_PaymentKind" xml:space="preserve">
+    <value>Начин на плащане :</value>
+  </data>
+  <data name="Form_Request_Export_Excel_PrintDate" xml:space="preserve">
+    <value>Дата на печат:</value>
+  </data>
+  <data name="Entity_Request_Error_Unique" xml:space="preserve">
+    <value>Внимание! Избраната заявка вече е добавена!</value>
+  </data>
+  <data name="Form_Request_Export_Excel_Error_Generation" xml:space="preserve">
+    <value>Грешка при генериране на заявка за материали в Excel!</value>
+  </data>
+  <data name="Form_Request_Export_Excel_Total" xml:space="preserve">
+    <value>Обща стойност</value>
+  </data>
+  <data name="Message_SentScheduleForValidation" xml:space="preserve">
+    <value>Докато трае валидацията, няма да имате достъп до графика. Сигурни ли сте, че сте напълно готови с него?</value>
+  </data>
+  <data name="Form_Request_Export_Excel_RequestNumberAndDate" xml:space="preserve">
+    <value>ПРЕДЛОЖЕНИЕ №</value>
+  </data>
+  <data name="Entity_PhDStatus_OnlyOne_AcademicPeriod_PhD" xml:space="preserve">
+    <value>Докторанта вече е добавен към избрания академичен период!</value>
+  </data>
+  <data name="Entity_Approval_StartApproval_Confirmation_Notification_About_Prefix" xml:space="preserve">
+    <value>Утвърждаване на {0}:</value>
+  </data>
+  <data name="Message_Confirm_Change_Current_StudentSecondData" xml:space="preserve">
+    <value>След запис системата ще изтрие втората специалност и оценките за нея! Сигурни ли сте, че искате да продължите?</value>
+  </data>
+  <data name="Entity_ScholarShipApplication_Not_Found_By_Name_And_ID" xml:space="preserve">
+    <value>Молба за стипендия от `{0}` не е открита в базата данни!</value>
+  </data>
+  <data name="Cannot_Delete_Correspondent" xml:space="preserve">
+    <value>Не може да изтриете Кореспондент, който участва във връзка с друг документ.</value>
+  </data>
+  <data name="Lb_Diploma_Info" xml:space="preserve">
+    <value>Информация за дипломата</value>
+  </data>
+  <data name="Entity_PhDAdmission_Department" xml:space="preserve">
+    <value>Катедра</value>
+  </data>
+  <data name="Entity_PhDAdmission_Speciality" xml:space="preserve">
+    <value>Специалност</value>
+  </data>
+  <data name="PhDCourseList_Data" xml:space="preserve">
+    <value />
+  </data>
+  <data name="First_Add_SurveyName" xml:space="preserve">
+    <value>Моля, добавете име на анкета!</value>
+  </data>
+  <data name="Date_survey_expired" xml:space="preserve">
+    <value>Крайният срок за попълване на анкета е преминал!</value>
+  </data>
+  <data name="GridView_ScholarShipAdmission_AcademicSemester" xml:space="preserve">
+    <value>Семестър</value>
+  </data>
+  <data name="StudentCourseList_Data" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Entity_PhDAdmission_Order" xml:space="preserve">
+    <value>Заповед</value>
+  </data>
+  <data name="Entity_PhDAdmission_RegistrationDate" xml:space="preserve">
+    <value>Дата на зачисляване</value>
+  </data>
+  <data name="GridView_Down" xml:space="preserve">
+    <value>Надолу</value>
+  </data>
+  <data name="GridView_Up" xml:space="preserve">
+    <value>Нагоре</value>
+  </data>
+  <data name="Message_Confirm_Make_InValid" xml:space="preserve">
+    <value>Сигурни ли сте, че искате да направите записа невалиден ?</value>
+  </data>
+  <data name="Please_add_NumberCavities" xml:space="preserve">
+    <value>Please, add number of cavities!</value>
+  </data>
+  <data name="Please_add_ProfileCategory" xml:space="preserve">
+    <value>Please, add profile category!</value>
+  </data>
+  <data name="Please_add_ProfileType" xml:space="preserve">
+    <value>Please, add profile type!</value>
+  </data>
+  <data name="InquiryData_Data" xml:space="preserve">
+    <value>Inquiry Data</value>
+  </data>
+  <data name="Please_add_ProfileComplexity" xml:space="preserve">
+    <value>Please, add profile complexity</value>
+  </data>
+  <data name="InquiryData_DieFormula_not_found" xml:space="preserve">
+    <value>Not found formula for die diameter.</value>
+  </data>
+</root>

@@ -1,0 +1,188 @@
+﻿/* Large desktop */
+@media (min-width: 1200px) and (max-width: 1410px)
+{
+    .absolute-pos
+    {
+        top:11%;
+    }
+}
+
+@media (max-width: 1270px)
+{
+    .absolute-pos
+    {
+        top:9%;
+    }
+    .exitBtn a
+    {
+        position: absolute;
+        top: 0.2%;
+        left: 85%;
+    }
+
+}
+
+@media (max-width: 879px)
+{
+    .absolute-pos
+    {
+        top:9%;
+    }
+    .exitBtn a
+    {
+        position: absolute;
+        top: 0.2%;
+        left: 80%;
+    }
+
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+{
+    .absolute-pos
+    {
+        top:8%;
+    }
+    #headline-info
+    {
+        font-size: 1.3em;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+{
+    .absolute-pos
+    {
+        top:7%;
+    }
+    .TextBoxDescription
+    {
+        width: 50%;
+    }
+    .exitBtn a
+    {
+        position: absolute;
+        top: 0.1%;
+        left: 75%;
+    }
+
+    #headline-info
+    {
+        font-size: 1.1em;
+    }
+    #logout-btn
+    {
+        float: right;
+        width: 20px;
+        height: auto;
+        margin-right: 2%;
+        margin-top: -60px;
+    }
+    #footer-text
+    {
+        display: none;
+    }
+    #smaller-text-footer
+    {
+        display: block;
+    }
+}
+@media (min-width: 733px) and (max-width: 754px)
+{
+    .absolute-pos
+    {
+        top:4%;
+    }
+}
+@media (min-width: 691px) and (max-width: 732px)
+{
+    .absolute-pos
+    {
+        top:5%;
+    }
+}
+@media (min-width: 601px) and (max-width: 690px)
+{
+    .absolute-pos
+    {
+        top:5%;
+    }
+}
+@media (max-width: 600px)
+{
+    .absolute-pos
+    {
+        top:6%;
+    }
+    #ContentPlaceHolder_StudentMainData_TabContainer
+    {
+        margin-top: 7%;
+    }
+    .newItemPopUp h4
+{
+    font-size:0.9em;
+}
+    .exitBtn a
+    {
+        position: absolute;
+        top: 0.1%;
+        left: 70%;
+    }
+    #footer-text
+    {
+        display: none;
+    }
+    #smaller-text-footer
+    {
+        display: block;
+    }
+    #headline-info
+    {
+        display: none;
+    }
+    #uni-logo
+    {
+    	background: #0C457C;
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+{
+     .absolute-pos
+    {
+        top:7%;
+    }
+       .newItemPopUp h4
+{
+    font-size:0.75em;
+}
+    .TextBoxDescription
+    {
+        width: 30%;
+    }
+    .exitBtn a
+    {
+        position: absolute;
+        top: 0.1%;
+        left: 60%;
+    }
+
+
+    #footer-text
+    {
+        display: none;
+    }
+    #smaller-text-footer
+    {
+        display: block;
+    }
+    input[type="text"], select
+    {
+        max-width: 150px !important;
+    }
+
+}

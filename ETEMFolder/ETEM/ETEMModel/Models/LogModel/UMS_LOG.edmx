@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="UMS_LOGModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="UMS_LOGModelStoreContainer">
+          <EntitySet Name="EventFullLog" EntityType="UMS_LOGModel.Store.EventFullLog" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="EventFullLog">
+          <Key>
+            <PropertyRef Name="idEventLog" />
+          </Key>
+          <Property Name="idEventLog" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idUser" Type="int" />
+          <Property Name="EventDate" Type="datetime" Nullable="false" />
+          <Property Name="EventMessage" Type="nvarchar" MaxLength="500" />
+          <Property Name="EventActionType" Type="nvarchar" MaxLength="50" />
+          <Property Name="EntityActionID" Type="nvarchar" MaxLength="50" />
+          <Property Name="EntityActionName" Type="nvarchar" MaxLength="50" />
+          <Property Name="EntityActionMeaningfulValueJSON" Type="ntext" />
+          <Property Name="PersonMakingAction" Type="nvarchar" MaxLength="50" />
+          <Property Name="PersonSessionID" Type="nvarchar" MaxLength="500" />
+          <Property Name="FullLogPropertiesXML" Type="ntext" />
+          <Property Name="FullLogMeaningfulValuesXML" Type="ntext" />
+          <Property Name="Page" Type="nvarchar" MaxLength="200" />
+          <Property Name="SecuritySetting" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UMS_LOGModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="UMS_LOGEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EventFullLogs" EntityType="UMS_LOGModel.EventFullLog" />
+        </EntityContainer>
+        <EntityType Name="EventFullLog">
+          <Key>
+            <PropertyRef Name="idEventLog" />
+          </Key>
+          <Property Type="Int32" Name="idEventLog" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="idUser" />
+          <Property Type="DateTime" Name="EventDate" Nullable="false" />
+          <Property Type="String" Name="EventMessage" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EventActionType" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EntityActionID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EntityActionName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EntityActionMeaningfulValueJSON" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PersonMakingAction" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PersonSessionID" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FullLogPropertiesXML" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FullLogMeaningfulValuesXML" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Page" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SecuritySetting" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UMS_LOGModelStoreContainer" CdmEntityContainer="UMS_LOGEntities">
+          <EntitySetMapping Name="EventFullLogs">
+            <EntityTypeMapping TypeName="UMS_LOGModel.EventFullLog">
+              <MappingFragment StoreEntitySet="EventFullLog">
+                <ScalarProperty Name="SecuritySetting" ColumnName="SecuritySetting" />
+                <ScalarProperty Name="Page" ColumnName="Page" />
+                <ScalarProperty Name="FullLogMeaningfulValuesXML" ColumnName="FullLogMeaningfulValuesXML" />
+                <ScalarProperty Name="FullLogPropertiesXML" ColumnName="FullLogPropertiesXML" />
+                <ScalarProperty Name="PersonSessionID" ColumnName="PersonSessionID" />
+                <ScalarProperty Name="PersonMakingAction" ColumnName="PersonMakingAction" />
+                <ScalarProperty Name="EntityActionMeaningfulValueJSON" ColumnName="EntityActionMeaningfulValueJSON" />
+                <ScalarProperty Name="EntityActionName" ColumnName="EntityActionName" />
+                <ScalarProperty Name="EntityActionID" ColumnName="EntityActionID" />
+                <ScalarProperty Name="EventActionType" ColumnName="EventActionType" />
+                <ScalarProperty Name="EventMessage" ColumnName="EventMessage" />
+                <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="idEventLog" ColumnName="idEventLog" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="UMS_LOG">
+        <EntityTypeShape EntityType="UMS_LOGModel.EventFullLog" Width="1.5" PointX="0.75" PointY="0.75" Height="3.7109993489583326" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

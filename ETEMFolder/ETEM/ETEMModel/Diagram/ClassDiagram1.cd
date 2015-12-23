@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ETEMModel.Helpers.BaseClassBL&lt;T&gt;">
+    <Position X="5" Y="4.75" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AADAAKgChAAQACABAQQwAIgAAAEgAAAAIAAAACIAQAA=</HashCode>
+      <FileName>Helpers\BaseClassBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.BaseHelper" Collapsed="true">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYCBGUEAIBgEBAgSAAMACAAAIIsBAABAoAAIBAAEEAI=</HashCode>
+      <FileName>Helpers\BaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ComplexResultContext&lt;T&gt;" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\ComplexResultContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.RequestMeasure" Collapsed="true">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAAFAAACAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Helpers\RequestMeasure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.CallContext" Collapsed="true">
+    <Position X="12.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAgAAAAAAAAAAAgAgAAAAAJiAAAAAAAAAAAAIAAAAEA=</HashCode>
+      <FileName>Helpers\ResultContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.SystemError" Collapsed="true">
+    <Position X="12.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAQCA=</HashCode>
+      <FileName>Helpers\SystemError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.SystemMessage" Collapsed="true">
+    <Position X="14" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAIAAAACA=</HashCode>
+      <FileName>Helpers\SystemMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CampusAdmissionBL">
+    <Position X="14" Y="7.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAIAAAAABAAAAAAAAAAAAAAAAAAAEABAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CampusAdmissionBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CampusAdmissionRoomBL">
+    <Position X="9.5" Y="7.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>BACAAAAAAAAAAAABAAAAAAAAAAAAAAIAAAAAABAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CampusAdmissionRoomBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CampusApplicationBL" Collapsed="true">
+    <Position X="4.75" Y="7.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>IACQAAAAIAAAAAABYAAAAEAEAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CampusApplicationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CampusAdmissionDataView" BaseTypeListCollapsed="true">
+    <Position X="5" Y="14.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CampusAdmissionDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CampusAdmissionRoomDataView" BaseTypeListCollapsed="true">
+    <Position X="14" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAQAAAAEA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CampusAdmissionRoomDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CampusApplicationDataView" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="11.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>YASAgAAAAACAAIAAAAIAAAKAAAAQAAAgAEAAAEAGAIY=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CampusApplicationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.CampusAdmission">
+    <Position X="4.75" Y="8.75" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>0AUAECJBIGAwBEkggCgChOAMAYAQMKwEVRBDEEUBCEA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CampusAdmission.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CampusAdmissionRoom">
+    <Position X="14" Y="10.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQEAEAAAAAAQBAgAogQAFCAIAIOJEEIwBCBAAAGgCAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CampusAdmissionRoom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CampusApplication" Collapsed="true">
+    <Position X="10" Y="10.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>SaeVM2t17zEw9Lo+tPUf9O4qG7u0MX7CfrVRPlLcPto=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CampusApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ETEMModel.Helpers.Identifiable" Collapsed="true">
+    <Position X="12.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Identifiable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Models.DataView.DataViewInterface" Collapsed="true">
+    <Position X="10.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\DataViewInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

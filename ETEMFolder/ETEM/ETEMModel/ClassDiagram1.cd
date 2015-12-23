@@ -1,0 +1,3312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Resources.captions" Collapsed="true">
+    <Position X="255" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/v///1//+/+///3/3////8///ff+f/////99//b35/8=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel._Default" Collapsed="true">
+    <Position X="253.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAIAAAAAAAQAAAAAAAAQAAAAAAAIAAQA=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.GridViewPager" Collapsed="true">
+    <Position X="260.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAICBAACAIAACAAIIABgAACEAIAAEA=</HashCode>
+      <FileName>DynamicData\Content\GridViewPager.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.DefaultEntityTemplate" Collapsed="true">
+    <Position X="256.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAIECAAAAAAA=</HashCode>
+      <FileName>DynamicData\EntityTemplates\Default.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Default_EditEntityTemplate" Collapsed="true">
+    <Position X="253.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAACAAAAACAAAAEAAAAIECAAAAAAA=</HashCode>
+      <FileName>DynamicData\EntityTemplates\Default_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Default_InsertEntityTemplate" Collapsed="true">
+    <Position X="255" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAACAAAAACAAAAEAAAAIECAAAAAAA=</HashCode>
+      <FileName>DynamicData\EntityTemplates\Default_Insert.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.BooleanField" Collapsed="true">
+    <Position X="269" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Boolean.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Boolean_EditField" Collapsed="true">
+    <Position X="267.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAACAAAAAAQEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Boolean_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ChildrenField" Collapsed="true">
+    <Position X="258.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAEAAQBACAAAIAAAIAAQA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Children.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Children_InsertField" Collapsed="true">
+    <Position X="256.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Children_Insert.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.DateTimeField" Collapsed="true">
+    <Position X="270.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\DateTime.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.DateTime_EditField" Collapsed="true">
+    <Position X="269" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgEAAAAQAAAAAAAAAAAAAQEAAAQAAAAAIgEgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\DateTime_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Decimal_EditField" Collapsed="true">
+    <Position X="272.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAABgAAAAAAQEAAAAAAAAAIgAgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Decimal_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.EmailAddressField" Collapsed="true">
+    <Position X="253.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\EmailAddress.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.EnumerationField" Collapsed="true">
+    <Position X="258.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Enumeration.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Enumeration_EditField" Collapsed="true">
+    <Position X="256.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAQAAAAgAAACAAAAAAQEAAAAgAAAAIAAgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Enumeration_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ForeignKeyField" Collapsed="true">
+    <Position X="253.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAAAAAAAAAAAAAAAAAAAAAAQBACAAAAAAABAAQA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\ForeignKey.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ForeignKey_EditField" Collapsed="true">
+    <Position X="272.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAQAAAAAAAACAAAAAAQEAAAAAAAAAIAAgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\ForeignKey_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Integer_EditField" Collapsed="true">
+    <Position X="270.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAABgAAAAAAQEAAAAAAAAAIgAgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Integer_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ManyToManyField" Collapsed="true">
+    <Position X="269" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\ManyToMany.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ManyToMany_EditField" Collapsed="true">
+    <Position X="267.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAQEAAAIAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\ManyToMany_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.MultilineText_EditField" Collapsed="true">
+    <Position X="272.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAIgAgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\MultilineText_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.TextField" Collapsed="true">
+    <Position X="263.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAACAQAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Text.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Text_EditField" Collapsed="true">
+    <Position X="262" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAACAAAAAAQEAAAAAAAAAIgAgA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Text_Edit.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.UrlField" Collapsed="true">
+    <Position X="260.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAEAACAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\FieldTemplates\Url.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.BooleanFilter" Collapsed="true">
+    <Position X="270.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAYAAAADAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\Filters\Boolean.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.EnumerationFilter" Collapsed="true">
+    <Position X="260.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAYAAAADAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\Filters\Enumeration.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ForeignKeyFilter" Collapsed="true">
+    <Position X="255" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAYAAAADABAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicData\Filters\ForeignKey.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Details" Collapsed="true">
+    <Position X="258.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAUCAAAAABAABAAAAAAQCAAAgAAAADAAAAAAJAAAA=</HashCode>
+      <FileName>DynamicData\PageTemplates\Details.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Edit" Collapsed="true">
+    <Position X="270.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JACAECAAAAAhAABAAAAAAQCAAAgAAAADAAAAAAIAAAA=</HashCode>
+      <FileName>DynamicData\PageTemplates\Edit.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Insert" Collapsed="true">
+    <Position X="269" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JACAECAAAAABgABAAAAAAQCAAAgAAAABAAAAAAIAAAA=</HashCode>
+      <FileName>DynamicData\PageTemplates\Insert.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.List" Collapsed="true">
+    <Position X="260.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAEKEAAAABEEBAAAAAAQEAAAkAEAABAAAAAAIAAAA=</HashCode>
+      <FileName>DynamicData\PageTemplates\List.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.ListDetails" Collapsed="true">
+    <Position X="262" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hKDAUCMAAAAhkEBAIAgEAQBAAAkAEAAHAAACAAICAAA=</HashCode>
+      <FileName>DynamicData\PageTemplates\ListDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Global" Collapsed="true">
+    <Position X="258.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAACAAAAAAAAAAAAAAgAYBAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Site" Collapsed="true">
+    <Position X="255" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAEABIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Site.master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.AbstractSearch" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAgBA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\AbstractSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.BooleanSearch" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAgAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\BooleanSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.DateSearch" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAQABAgAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\DateSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.DecimalSearch" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAgAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\DecimalSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.NumericSearch" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAgAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\NumericSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.OrderByHelper" Collapsed="true">
+    <Position X="260.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\OrderByHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.SearchExtensions" Collapsed="true">
+    <Position X="263.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAgAAAAAACAAAAIAAAAAI=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\SearchExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AbstractSearchBLHolder.TextSearch" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\TextSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.AffiliateBL" Collapsed="true">
+    <Position X="55" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAACAAABAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\AffiliateBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.CronProcessHistoryBL" Collapsed="true">
+    <Position X="64" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAAAAIAA=</HashCode>
+      <FileName>Helpers\Admin\CronProcessHistoryBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.DisciplineNameBL" Collapsed="true">
+    <Position X="75.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAEBAAAIAEAAAgAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\DisciplineNameBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.DisciplineNameByTypeOKCBL" Collapsed="true">
+    <Position X="86.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAAAAAABAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Helpers\Admin\DisciplineNameByTypeOKCBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.FacultyBL" Collapsed="true">
+    <Position X="97.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAABAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\FacultyBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.KeyTypeBL" Collapsed="true">
+    <Position X="109" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAIBAAAEAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\KeyTypeBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.KeyValueBL" Collapsed="true">
+    <Position X="122.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAAAAAAAAAAABAAAgAAgAAAAAAAQAAAABBAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\KeyValueBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.LocationBL" Collapsed="true">
+    <Position X="133.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACKZAAAAAM4gAECBBQAAAAAAAAIQAAAAAAAACAAAQAI=</HashCode>
+      <FileName>Helpers\Admin\LocationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.MenuNodeBL" Collapsed="true">
+    <Position X="145" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAgAgAAAAAABAAACAAQAAAAAAAAAAgAAJACAAIA=</HashCode>
+      <FileName>Helpers\Admin\MenuNodeBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.NavUrlBL" Collapsed="true">
+    <Position X="158.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\NavUrlBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.PermittedActionBL" Collapsed="true">
+    <Position X="169.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAQAAAAAAABAQAAAAAAAAAQAAAAAggABAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\PermittedActionBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.PermittedActionSetting" Collapsed="true">
+    <Position X="9.5" Y="31.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\PermittedActionBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.PersonBL" Collapsed="true">
+    <Position X="190" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAhgDAAAAAAABAAAACQAQAAAIAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\PersonBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.RoleBL" Collapsed="true">
+    <Position X="201.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACIAgAAAAAAAQAJAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\RoleBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.RoleMenuNodeBL" Collapsed="true">
+    <Position X="212.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAQAEABAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Helpers\Admin\RoleMenuNodeBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.ScheduleBL" Collapsed="true">
+    <Position X="223.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ikOpGAeHlQAiiAGHCELIESYCFIjAQgEAgMACAAMAQIY=</HashCode>
+      <FileName>Helpers\Admin\ScheduleBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.WeekScheduleDetailsHelper" Collapsed="true">
+    <Position X="265.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Helpers\Admin\ScheduleBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.WeekScheduleDetailBL" Collapsed="true">
+    <Position X="241.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAACBEgBhgAQBAIYMCEAEJiiAAAAMABAAAAQAAAA=</HashCode>
+      <FileName>Helpers\Admin\ScheduleDetailsBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.SequenceBL" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAABAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\SequenceBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.SettingBL" Collapsed="true">
+    <Position X="21.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAKAQAAAAAAAAAABAAAAAAAAAAAAAAAAAggAAAAAAAE=</HashCode>
+      <FileName>Helpers\Admin\SettingBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.SpecialityBL" Collapsed="true">
+    <Position X="32.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAAAAAABIDAAAAAAAAQAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\SpecialityBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.SpecialityCodeBL" Collapsed="true">
+    <Position X="43.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAwAIAAAAAABAAAAAAAASAAAAAAAggAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\SpecialityCodeBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.UniBL" Collapsed="true">
+    <Position X="57.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAgAAAAA=</HashCode>
+      <FileName>Helpers\Admin\UniBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.UProfGroupBL" Collapsed="true">
+    <Position X="66.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAIAAAABAAAAEAAEABAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Helpers\Admin\UProfGroupBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.UserBL" Collapsed="true">
+    <Position X="77.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAACAAIAAAABAABAAAAAAAAAAAAAACAQAAEAAAA=</HashCode>
+      <FileName>Helpers\Admin\UserBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Admin.WeekScheduleOverridenBL" Collapsed="true">
+    <Position X="88.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAQAAAAAAAABQAiAAAAQFCFgAQAAAAAIAIAgAAQ=</HashCode>
+      <FileName>Helpers\Admin\WeekScheduleOverridenBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.AcademicPeriodBL" Collapsed="true">
+    <Position X="100" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASCAAAAAQAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\AcademicPeriodBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.AdditionalSpecialityBL" Collapsed="true">
+    <Position X="111.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACIAACAEgBAAAQHhCKEQAAAhCBEAAAAQQAAAAQCAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\AdditionalSpecialityBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CampusAdmissionBL" Collapsed="true">
+    <Position X="124.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAAIAAAAABAAAAAAAAAAAAAAAAAAAEABAAEAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CampusAdmissionBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CampusAdmissionRoomBL" Collapsed="true">
+    <Position X="136" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAAAAAAAAAAAABAAAAAAAAAAAAAAIAAAAAABAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CampusAdmissionRoomBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CampusApplicationBL" Collapsed="true">
+    <Position X="147.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACQAAAAICFAAEABYAIIAEAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CampusApplicationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CivilContractArtModelReportLinkBL" Collapsed="true">
+    <Position X="160.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAEAAAAAAAABAACAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CivilContractArtModelReportLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CivilContractBL" Collapsed="true">
+    <Position X="172" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAAIAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAACAAAg=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CivilContractBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CivilContractLecturerContractLinkBL" Collapsed="true">
+    <Position X="181" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAAAAAAABAAAAAAACAAABAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CivilContractLecturerContractLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ClassRoomBL" Collapsed="true">
+    <Position X="192.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAEAAAABAAAACAAAiAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ClassRoomBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.DisciplineNameClassRoomOKC" Collapsed="true">
+    <Position X="263.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgQA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ClassRoomBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CourseListBL" Collapsed="true">
+    <Position X="214.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CourseListBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CourseListDetailBL" Collapsed="true">
+    <Position X="226" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CourseListDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CurriculumAppendixBL" Collapsed="true">
+    <Position X="235" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBAAAAAIAAAAA1AAAgAABAACAAAAQAgAAAAAQAACA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CurriculumAppendixBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CurriculumBL" Collapsed="true">
+    <Position X="244" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAAAAAARAYAAEAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CurriculumBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CurriculumDetailBL" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAAAAAAABAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CurriculumDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.CurriculumDetailsCreditHourBL" Collapsed="true">
+    <Position X="23.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAEAQAJAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\CurriculumDetailsCreditHourBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.DepartmentBL" Collapsed="true">
+    <Position X="34.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAAAAIBAAABABAAAAAEAIAAAkUIAAAcAAAACAAAU=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\DepartmentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.FacultyProtocolBL" Collapsed="true">
+    <Position X="46" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAgAAAAAAAAABAAAAABgAAAKAAIRCAAAAACCAQAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\FacultyProtocolBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.FacultyProtocolDisciplineNameBL" Collapsed="true">
+    <Position X="59.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\FacultyProtocolDisciplineNameBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.LanguageScheduleBL" Collapsed="true">
+    <Position X="68.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAgEAAAAAABAAAAAAAAAAQAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\LanguageScheduleBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.LanguageScheduleDetailBL" Collapsed="true">
+    <Position X="79.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAACAAghAAAADhAJEAAAABCgAAIAACAAAABQAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\LanguageScheduleDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.LanguageSpecialityBL" Collapsed="true">
+    <Position X="91" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAAAAAAAAAAABAAAAAEAAAAAAAAAAgAAABAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\LanguageSpecialityBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.RequestBL" Collapsed="true">
+    <Position X="102.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCABAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\RequestBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.RequestDetailBL" Collapsed="true">
+    <Position X="113.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAEAgBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\RequestDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ScheduleGeneralDisciplineDetailBL" Collapsed="true">
+    <Position X="127" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAAEQAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScheduleGeneralDisciplineDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ScholarShipAdmissionBL" Collapsed="true">
+    <Position X="138.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAACAQAAAAADAAKAAAAAAAAIAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScholarShipAdmissionBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ScholarShipApplicationBL" Collapsed="true">
+    <Position X="149.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAAAIAAEAAgAABAAAABAAAAAAAAAAABAAAAAAAIAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScholarShipApplicationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ScholarShipCountBL" Collapsed="true">
+    <Position X="163" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScholarShipCountBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ScholarShipPaymentBalanceBL" Collapsed="true">
+    <Position X="174.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAAAAAABABAAAAAAAACAAAAAAAACAAAAAIAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScholarShipPaymentBalanceBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.ScholarShipPaymentBL" Collapsed="true">
+    <Position X="183.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAAAAAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScholarShipPaymentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.StreamGroupDetailBL" Collapsed="true">
+    <Position X="194.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAABAAAAAAgABIAAAChAAEBAEgARCCQAAAESAAEg=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\StreamGroupDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.AdministrativeActivities.StreamGroupDetailsLecturerBL" Collapsed="true">
+    <Position X="203.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAhAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\StreamGroupDetailsLecturerBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipApplicationCriteriaBL" Collapsed="true">
+    <Position X="217" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AdministrativeActivities\ScholarShipApplicationCriteriaBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.AdditionalSpecialityDataView" Collapsed="true">
+    <Position X="27.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAgAAIAAAIAAAAAAAAAAAQAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\AdditionalSpecialityDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CampusAdmissionDataView" Collapsed="true">
+    <Position X="24.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CampusAdmissionDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CampusAdmissionRoomDataView" Collapsed="true">
+    <Position X="27.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAQAAAAEA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CampusAdmissionRoomDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CampusApplicationDataView" Collapsed="true">
+    <Position X="21.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aBSAgChAQAiACIAgAAIAAAaAAAASAAggAkAwAEAmAIY=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CampusApplicationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CivilContractDataView" Collapsed="true">
+    <Position X="27.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAQAgAAAAQIACAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CivilContractDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ClassRoomDataView" Collapsed="true">
+    <Position X="18.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEAAQAAAAAI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ClassRoomDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ClassRoomDisciplineNameDataView" Collapsed="true">
+    <Position X="27.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAAAARAAAAAEA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ClassRoomDisciplineNameDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CourseListDataView" Collapsed="true">
+    <Position X="15.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQEAAARCBEMgIAIBIAACAgAQAAAAAAgARAAEAQgI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CourseListDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CurriculumAppendixDataView" Collapsed="true">
+    <Position X="27.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EhIgAQBAAAACBaIABAAAAALABAABAAABAYEgCABEAEI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CurriculumAppendixDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.CurriculumExtender" Collapsed="true">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\CurriculumExtender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.DepartmentDisciplineNameDataView" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\DepartmentDisciplineNameDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.DepartmentLecturerDataView" Collapsed="true">
+    <Position X="9.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\DepartmentLecturerDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.DepartmentSpecialityCodeDataView" Collapsed="true">
+    <Position X="27.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\DepartmentSpecialityCodeDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.FacultyProtocolDataView" Collapsed="true">
+    <Position X="6.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\FacultyProtocolDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.FacultyProtocolDisciplinesDataView" Collapsed="true">
+    <Position X="270.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAIAAIIACACAAAQAAAAAQBgABgAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\FacultyProtocolDisciplinesDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.LanguageScheduleDataView" Collapsed="true">
+    <Position X="27.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGgACAAAAEAAAIAAIAAAAAAAAAABAAAAAAAAQAg=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\LanguageScheduleDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.LanguageScheduleDetailDataView" Collapsed="true">
+    <Position X="3.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\LanguageScheduleDetailDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.LanguageSpecialityDataView" Collapsed="true">
+    <Position X="8.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\LanguageSpecialityDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.LanguageSpecialityDavaView" Collapsed="true">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\LanguageSpecialityDavaView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.RequestDataView" Collapsed="true">
+    <Position X="27.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAEAIAAAAAAAAAAABSAAAAAAAAAA0AAAQAAAAg=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\RequestDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.RequestDetailDataView" Collapsed="true">
+    <Position X="0.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAAAAAAE=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\RequestDetailDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScheduleGeneralDisciplineDetailDataView" Collapsed="true">
+    <Position X="24.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAgQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScheduleGeneralDisciplineDetailDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipAdmissionDataView" Collapsed="true">
+    <Position X="21.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAAgIAAAAAAQAAAAACAAAAAABEAAAAAAICI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScholarShipAdmissionDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipApplicationCriteriaDataView" Collapsed="true">
+    <Position X="18.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAABAAAAAAAAAAAAAAAAAAAAABAEAoAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScholarShipApplicationCriteriaDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipApplicationDataView" Collapsed="true">
+    <Position X="24.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YASAgAAAAADAAIBAAAIACASAgAEQAQAgAEAYAAwGEAY=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScholarShipApplicationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipCountDataView" Collapsed="true">
+    <Position X="24.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScholarShipCountDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipPaymentBalanceDataView" Collapsed="true">
+    <Position X="24.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgEBAAgQJAAAAAAAAgAAQABAAAAAEAAAAgAAAg=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScholarShipPaymentBalanceDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.ScholarShipPaymentDataView" Collapsed="true">
+    <Position X="15.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAgAAAAAAAAEAAAQAAAAI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\ScholarShipPaymentDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.AcademicPeriodDataView" Collapsed="true">
+    <Position X="12.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\StreamGroupDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.StreamGroupDetailsDataView" Collapsed="true">
+    <Position X="24.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAEACAAAACAAIAAAMAAQGAIAQAAAAAQBgAhAAACAAg=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\StreamGroupDetailsDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.AdministrativeActivities.StreamGroupLecturerDataView" Collapsed="true">
+    <Position X="9.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAAAAAMAAAMAAAAAAAAAAAAAABwAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\AdministrativeActivities\StreamGroupLecturerDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ArtModels.ArtModelApplicationBL" Collapsed="true">
+    <Position X="82" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Helpers\ArtModels\ArtModelApplicationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ArtModels.ArtModelApplicationDetailBL" Collapsed="true">
+    <Position X="93.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAIAAIIAABBAAAQAAAAAAAAAAAAACAAAAAEAA=</HashCode>
+      <FileName>Helpers\ArtModels\ArtModelApplicationDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ArtModels.ArtModelBL" Collapsed="true">
+    <Position X="104.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABIAQAAAEAACAAAABAAAAAAAEAAgA=</HashCode>
+      <FileName>Helpers\ArtModels\ArtModelBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ArtModels.ArtModelChargingBL" Collapsed="true">
+    <Position X="115.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAGAAAAAAIAABAAAAAAQAAAAAAAAQAAAAAAAEAAA=</HashCode>
+      <FileName>Helpers\ArtModels\ArtModelChargingBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ArtModels.ArtModelReportBL" Collapsed="true">
+    <Position X="129.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAAAAQBAAAAAAAAAAAgAAABAAIAAAAAAAA=</HashCode>
+      <FileName>Helpers\ArtModels\ArtModelReportBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ArtModels.ArtModelReportDetailBL" Collapsed="true">
+    <Position X="140.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAkQAAAAAAAAABAACAAAAAAAAAACAAAAAAAAAAAgA=</HashCode>
+      <FileName>Helpers\ArtModels\ArtModelReportDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.BaseClassBL&lt;T&gt;" Collapsed="true">
+    <Position X="131.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADAAKgChAAQACADAQQwAIgAAAEgAAAAIAAACCIAQAA=</HashCode>
+      <FileName>Helpers\BaseClassBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.BaseGenericHelper&lt;T&gt;" Collapsed="true">
+    <Position X="262" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACAA=</HashCode>
+      <FileName>Helpers\BaseGenericHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.BaseHelper" Collapsed="true">
+    <Position X="263.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QaCBGUMAoBgEFCgWBEdAOE1BIIuRAgJCoAAJBSBEEAM=</HashCode>
+      <FileName>Helpers\BaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.UMSCalendar" Collapsed="true">
+    <Position X="269" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAFAAAEAIAAAAA=</HashCode>
+      <FileName>Helpers\BaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.BaseSetting" Collapsed="true">
+    <Position X="0.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\BaseSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ComplexResultContext&lt;T&gt;" Collapsed="true">
+    <Position X="253.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIEAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\ComplexResultContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Constants" Collapsed="true">
+    <Position X="255" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YVk+DljsqvQQsVZ0cnizNveXeilpAh5F1kE/mdWK8z8=</HashCode>
+      <FileName>Helpers\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.CustomLinq" Collapsed="true">
+    <Position X="267.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\CustomLinq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.GenericCustomLinq&lt;T&gt;" Collapsed="true">
+    <Position X="256.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAAAAAAE=</HashCode>
+      <FileName>Helpers\CustomLinq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.RequestMeasure" Collapsed="true">
+    <Position X="255" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAAAFAAACAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Helpers\RequestMeasure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.CallContext" Collapsed="true">
+    <Position X="253.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAgAAAAAAAAAAAgAoAAAIARCAAAAAAAABAAAIAAgAEA=</HashCode>
+      <FileName>Helpers\ResultContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.SystemError" Collapsed="true">
+    <Position X="256.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAQCA=</HashCode>
+      <FileName>Helpers\SystemError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.SystemMessage" Collapsed="true">
+    <Position X="258.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAIAAAACA=</HashCode>
+      <FileName>Helpers\SystemMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.UMSEnums" Collapsed="true">
+    <Position X="272.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\UMSEnums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.UMSModelException" Collapsed="true">
+    <Position X="253.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\UMSModelException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.CommonBL" Collapsed="true">
+    <Position X="270.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAgEAAAAAAAAAAQAAAAAAAAAAQAAABAAgAAAAAAA=</HashCode>
+      <FileName>Helpers\Common\CommonBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.CompletionResult" Collapsed="true">
+    <Position X="272.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Common\CommonBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.DisciplineFullInfo" Collapsed="true">
+    <Position X="260.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIACEAAAgAEIAAAIAAACgAAAAAACAAAgAAAAAAAgA=</HashCode>
+      <FileName>Helpers\Common\DisciplineFullInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.MultipleIdKey" Collapsed="true">
+    <Position X="253.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAACAAAAAAIAAgGgAAAAAAAACAAAAgAAAAAA=</HashCode>
+      <FileName>Helpers\Common\MultipleIdKey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.MultipleSortingClass" Collapsed="true">
+    <Position X="255" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAQBAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Common\MultipleSortingClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.ItemClass" Collapsed="true">
+    <Position X="253.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>Helpers\Common\MultipleSortingClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.NotificationBL" Collapsed="true">
+    <Position X="151.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAIAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Helpers\Common\NotificationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.SendMailHelper" Collapsed="true">
+    <Position X="267.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEIAAABEAIABAAAABQAAAAQEAAAAIgAAACAAgAA=</HashCode>
+      <FileName>Helpers\Common\SendMailHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.SortDirectionClass" Collapsed="true">
+    <Position X="256.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Helpers\Common\SortDirectionClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.SoursePeriodsData" Collapsed="true">
+    <Position X="258.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAIACAAACAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Helpers\Common\SourseActualData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.ThreadCheckForWrongEmails" Collapsed="true">
+    <Position X="265.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAACAAABAAAAAAAAAI=</HashCode>
+      <FileName>Helpers\Common\ThreadCheckForWrongEmails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Common.UploadedFileBL" Collapsed="true">
+    <Position X="205.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Common\UploadedFileBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Compator.EqualityComparer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="262" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Compator\EqualityComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Helpers.ContractorPartner.ContractorAndPartnerBL" Collapsed="true">
+    <Position X="228.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\ContractorPartner\ContractorAndPartnerBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.ContractorPartner.ContractorAndPartnerContactBL" Collapsed="true">
+    <Position X="237.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAAAQAAA=</HashCode>
+      <FileName>Helpers\ContractorPartner\ContractorAndPartnerContactBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Employees.EmployeBL" Collapsed="true">
+    <Position X="246.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAAAAAABAAAAAEAAEAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Employees\EmployeBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Extentions.Extentions" Collapsed="true">
+    <Position X="267.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAAAAAAAgCAAAABqAEAICgIAAAAEAAAACAAAAAEA=</HashCode>
+      <FileName>Helpers\Extentions\Extentions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.CorrespondentBL" Collapsed="true">
+    <Position X="25.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAgAAAAAABAAAAAAAAAAAAAAAAAgAAAAAAEAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\CorrespondentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.InOutDocLinkBL" Collapsed="true">
+    <Position X="37" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAwIAAAAAAAABAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\InOutDocLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.InOutDocumentBL" Collapsed="true">
+    <Position X="48.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EADAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\InOutDocumentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.InOutDocumentUserLinkBL" Collapsed="true">
+    <Position X="61.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CADAAAAAAAAAAAABAAACAAAAAAAAAAAABAAAAAAEAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\InOutDocumentUserLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.OrderBL" Collapsed="true">
+    <Position X="70.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAASAAAAQAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\OrderBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.OrderUserLinkBL" Collapsed="true">
+    <Position X="84.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAgAAAAAAAAQABAAEAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\OrderUserLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.TaskBL" Collapsed="true">
+    <Position X="95.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAAIAAAAAAABAAQAAAAAAEQCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\TaskBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.TaskInOutDocumentLinkBL" Collapsed="true">
+    <Position X="106.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAAAAAAIBAABAgAAAEAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\TaskInOutDocumentLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.InOutDocuments.TaskOrderLinkBL" Collapsed="true">
+    <Position X="118" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAUAAABAAAAAAAAAABAAAACAAEAAAQAAAA=</HashCode>
+      <FileName>Helpers\InOutDocuments\TaskOrderLinkBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Interfaces.Idisciplinable" Collapsed="true">
+    <Position X="265.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAACAAAAAIAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Interfaces\Idisciplinable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Interfaces.Iperiodable" Collapsed="true">
+    <Position X="272.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAIACAAACAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Helpers\Interfaces\Iperiodable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.AcademicDegreesBL" Collapsed="true">
+    <Position X="154" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\AcademicDegreesBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.ContractBL" Collapsed="true">
+    <Position X="165.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAAAAAACAEAAAFAAgAAAAAAQAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\ContractBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.ContractLecturerDisciplineBL" Collapsed="true">
+    <Position X="176.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\ContractLecturerDisciplineBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerBL" Collapsed="true">
+    <Position X="185.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACCAAAAEAAIBgAJACIAAAAgABoAAAAAAAAAAAACgIQ=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerPaymentBL" Collapsed="true">
+    <Position X="196.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAAAAABAAAAAAQAAAACAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerPaymentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerPaymentDetailBL" Collapsed="true">
+    <Position X="208" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAACIBAACgIAABAAAAAAAAAAABAAQIAAAAAAAAAII=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerPaymentDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerReportBL" Collapsed="true">
+    <Position X="219.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAQAEAAAAAAAABAACAAAAAAAAAAAAAAACAAAAAABA=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerReportBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerTimeSheetBL" Collapsed="true">
+    <Position X="230.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerTimeSheetBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerTimeSheetContext" Collapsed="true">
+    <Position X="258.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAQQAgAAAAAAAAEBAAIAIAAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerTimeSheetContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.LecturerTimeSheetDetailBL" Collapsed="true">
+    <Position X="248.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAEAAAAAQAgAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\LecturerTimeSheetDetailBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Lecturers.QualificationBL" Collapsed="true">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAAAAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Lecturers\QualificationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Museum.MuseumItemBL" Collapsed="true">
+    <Position X="28" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBAAACAAAAAAABAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Helpers\Museum\MuseumItemBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Museum.MusuemProtocolBL" Collapsed="true">
+    <Position X="39.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACABAAAAAAAAAABAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Museum\MusuemProtocolBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.PhD.PhDBL" Collapsed="true">
+    <Position X="50.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAAAAIAAABAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\PhD\PhDBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Settings.BaseSettingHelper" Collapsed="true">
+    <Position X="265.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Settings\BaseSettingHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Settings.BaseSettings" Collapsed="true">
+    <Position X="9.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAgAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Settings\BaseSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Settings.SettingAttribute" Collapsed="true">
+    <Position X="270.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Settings\SettingAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Settings.SettingListInformation" Collapsed="true">
+    <Position X="253.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Helpers\Settings\SettingAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Settings.SettingGroupAttribute" Collapsed="true">
+    <Position X="272.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Helpers\Settings\SettingAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.DiplomaInfoBL" Collapsed="true">
+    <Position X="120.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Students\DiplomaInfoBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.ExamProtocolBL" Collapsed="true">
+    <Position X="131.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkDAhAECAAQECAQhUACAAAIgATCAkEQRJCAAwAAAAOI=</HashCode>
+      <FileName>Helpers\Students\ExamProtocolBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.ExamProtocolLecturerBL" Collapsed="true">
+    <Position X="142.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAQAAAA=</HashCode>
+      <FileName>Helpers\Students\ExamProtocolLecturerBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.ExamProtocolStudentBL" Collapsed="true">
+    <Position X="156.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAQAAAAEgAAAgBAAAAAAAEgAABQAQBUgAAAkAIAEA=</HashCode>
+      <FileName>Helpers\Students\ExamProtocolStudentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.FamilyRelationBL" Collapsed="true">
+    <Position X="167.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Helpers\Students\FamilyRelationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.HomeStateBL" Collapsed="true">
+    <Position X="178.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Helpers\Students\HomeStateBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.PreparationCourseApplicationBL" Collapsed="true">
+    <Position X="187.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCgAAAAAAAAAAABIoACAAAAgAIAABAAgBAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Students\PreparationCourseApplicationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.PreparationCourseBL" Collapsed="true">
+    <Position X="199" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEAAAAQAAAAABAAAAAAAAAAAAAAAAAAEQAAIAAAA=</HashCode>
+      <FileName>Helpers\Students\PreparationCourseBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.PreviousEducationBL" Collapsed="true">
+    <Position X="210.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAIBAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Students\PreviousEducationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.SpecialityForApplicationBL" Collapsed="true">
+    <Position X="221.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAChEAAAAAAQAAERQAAAAAAAoAqAAAAAAACAAAABAAI=</HashCode>
+      <FileName>Helpers\Students\SpecialityForApplicationBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentAdmissionBL" Collapsed="true">
+    <Position X="232.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICAAIAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Helpers\Students\StudentAdmissionBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentBL" Collapsed="true">
+    <Position X="239.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgmQgEoAsIgZIQARkYAiAAQQEAgCAYAAAEIACAgAMGA=</HashCode>
+      <FileName>Helpers\Students\StudentBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentCandidateBL" Collapsed="true">
+    <Position X="250.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BECAAEIUQAEAAgABAAAAAAABACAAAAAAAAgCCAAgAAA=</HashCode>
+      <FileName>Helpers\Students\StudentCandidateBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentCandidateSpecialityBL" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAQAAAAAAAAAAAEAAAEIQ=</HashCode>
+      <FileName>Helpers\Students\StudentCandidateSpecialityBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentCourseDisciplineBL" Collapsed="true">
+    <Position X="30.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Students\StudentCourseDisciplineBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentCourseListBL" Collapsed="true">
+    <Position X="41.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Students\StudentCourseListBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentStatusBL" Collapsed="true">
+    <Position X="52.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAAGAAAAAJAAAAAgAAAAAAAAIABAAAADQBAAA=</HashCode>
+      <FileName>Helpers\Students\StudentStatusBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.MarkByAcademicPeriod" Collapsed="true">
+    <Position X="270.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAQAAAAACAAAAAAAAAAAAAAAgAAAAAAgAAA=</HashCode>
+      <FileName>Helpers\Students\StudentStatusBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Helpers.Students.StudentStatusChangeBL" Collapsed="true">
+    <Position X="73" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAABAAAAAgAAAAAAgAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Helpers\Students\StudentStatusChangeBL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Admin.AffiliateDataView" Collapsed="true">
+    <Position X="30.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAEAAAAAEAAA=</HashCode>
+      <FileName>Models\DataView\Admin\AffiliateDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Admin.DepartmentDataView" Collapsed="true">
+    <Position X="27.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAAAAAAAAAAAAAACAAAAAAAgAAEBAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\Admin\DepartmentDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Admin.FacultyDataView" Collapsed="true">
+    <Position X="6.5" Y="32" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAECAAAAEAAA=</HashCode>
+      <FileName>Models\DataView\Admin\FacultyDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Admin.UProfGroupDataView" Collapsed="true">
+    <Position X="3.5" Y="32" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAgAAAAAAA=</HashCode>
+      <FileName>Models\DataView\Admin\UProfGroupDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelApplicationDataView" Collapsed="true">
+    <Position X="6.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAQAAEAAEAAEAAAAAEAAAAAAAAAAAEAAAQAAAAIAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelApplicationDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelApplicationDetailDataView" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEQAAgAAAAFQBAAIAAIEAAFAkAAhAAAGAAUQAEAAIAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelApplicationDetailDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelChargingDataView" Collapsed="true">
+    <Position X="24.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelChargingDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelDataView" Collapsed="true">
+    <Position X="24.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAGgAAAAAgMAAAAAAAAAAACAAAEACAAAAIAAAAAg=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelExportChargingDataView" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAgAAAAEAAAAAAAAEAAEAAAAgAAAAAAAQAAAAIAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelExportChargingDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelPosingDataView" Collapsed="true">
+    <Position X="10.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelPosingDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelReportDataView" Collapsed="true">
+    <Position X="3.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEECAAAAAAAAAAAAAAAAAAEAAAQAAAAIAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelReportDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ArtModels.ArtModelReportDetailDataView" Collapsed="true">
+    <Position X="24.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAIEQAAQAUAQAAAIAAIAAAiAAACAAAAEAAAAgAA=</HashCode>
+      <FileName>Models\DataView\ArtModels\ArtModelReportDetailDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Common.PersonByTypeDataView" Collapsed="true">
+    <Position X="263.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAEggCAABCMAAAAAAAAAAAACAAAAAAAAABIQCAAg=</HashCode>
+      <FileName>Models\DataView\Common\PersonByTypeDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.ContractorPartners.ContractorAndPartnerDataView" Collapsed="true">
+    <Position X="21.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\ContractorPartners\ContractorAndPartnerDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.CurriculumDataView" Collapsed="true">
+    <Position X="2.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQABAEAAAAAAAAAAAAAAAAAAAAAAEAhAAACAAI=</HashCode>
+      <FileName>Models\DataView\CurriculumDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.CurriculumDetailDataView" Collapsed="true">
+    <Position X="12.5" Y="29" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\CurriculumDetailDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.DisciplineNameByTypeOKCDataView" Collapsed="true">
+    <Position X="18.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAEARAAAAAAA=</HashCode>
+      <FileName>Models\DataView\DisciplineNameByTypeOKCDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.KeyTypeDataView" Collapsed="true">
+    <Position X="21.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAIAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\KeyTypeDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.LecturerDataView" Collapsed="true">
+    <Position X="18.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAGgAAAAAgMAAAAAAAAAEACAAAEACAEAAIAAAAAg=</HashCode>
+      <FileName>Models\DataView\LecturerDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.MenuNodeDataView" Collapsed="true">
+    <Position X="30.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAACAAAAAAAAABAAAABAA=</HashCode>
+      <FileName>Models\DataView\MenuNodeDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.NotificationDataView" Collapsed="true">
+    <Position X="0.5" Y="26" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgAAAAAAAEAAAAAAAAQAAAAAAAAgAMAAAAQSAAA=</HashCode>
+      <FileName>Models\DataView\NotificationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.PermittedActionDataView" Collapsed="true">
+    <Position X="3.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Models\DataView\PermittedActionDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.PersonDataView" Collapsed="true">
+    <Position X="0.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAAIAACgAgEAAAgAAAgAEAAAAAAAAABkAhAAAAAAA=</HashCode>
+      <FileName>Models\DataView\PersonDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.QualificationDataView" Collapsed="true">
+    <Position X="9.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAACAQAAAAAAAAAgCAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\DataView\QualificationDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.SpecialityCourseOKCDataView" Collapsed="true">
+    <Position X="262" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAggAAAAIAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\SpecialityCourseOKCDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.SpecialityDataView" Collapsed="true">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEAAAAAAAAAAhAAAAACAAAAAAABAIUCxAAAAQqI=</HashCode>
+      <FileName>Models\DataView\SpecialityDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.StudentDataView" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EICAAAIACAAAgIAAAIAAhCCAAAAAAAhggESAIAAAAAA=</HashCode>
+      <FileName>Models\DataView\StudentDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.UserDataView" Collapsed="true">
+    <Position X="0.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAGgECAAAAAAAAAAIAAAQQgAAAAAAAEABEAAAAAg=</HashCode>
+      <FileName>Models\DataView\UserDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.WeekScheduleDataView" Collapsed="true">
+    <Position X="5.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAgAAAgAAAAAAI=</HashCode>
+      <FileName>Models\DataView\WeekScheduleDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.WeekScheduleDetailDataView" Collapsed="true">
+    <Position X="30.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAEAAAAQAIAAABAAADAAAFAAAAICAgAgAFQAAAA=</HashCode>
+      <FileName>Models\DataView\WeekScheduleDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.WeekScheduleOverridenView" Collapsed="true">
+    <Position X="0.5" Y="32" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAUAAAQAAAAIAAgAAAAAgAAAAUAIAiAAAEgBCACAA=</HashCode>
+      <FileName>Models\DataView\WeekScheduleOverridenView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.WeekScheduleView" Collapsed="true">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAIAAAIAAAAACAAAAAAAAAIAhAAACAAA=</HashCode>
+      <FileName>Models\DataView\WeekScheduleView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Employees.EmployeDataView" Collapsed="true">
+    <Position X="21.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAGgAAAAAgMAAAAAAAAAEACAAAEACAEAAIAAAAAg=</HashCode>
+      <FileName>Models\DataView\Employees\EmployeDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.InOutDocLinkDataView" Collapsed="true">
+    <Position X="15.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAIAACAAEAAAAABAQAAAAAABAAAAAAACAABAA=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\InOutDocLinkDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.InOutDocumentDataView" Collapsed="true">
+    <Position X="21.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAIACAEAAAAgABAQAAAAAABGAEAAAAAAABAA=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\InOutDocumentDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.InOutDocumentUserLinkDataView" Collapsed="true">
+    <Position X="12.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAAAAAAAAAAAAAABAAAAAAAAAACAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\InOutDocumentUserLinkDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.OrderDataView" Collapsed="true">
+    <Position X="21.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\OrderDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.OrderUserLinkDataView" Collapsed="true">
+    <Position X="9.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAAAAAAAAAAAAAABAAAAAAAAAACAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\OrderUserLinkDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.TaskDataView" Collapsed="true">
+    <Position X="21.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAMAAAACEAAAAAAAAAAQAAAAQAAEAAAAAAACEAAA=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\TaskDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.InOutDocuments.TaskOrderLinkDataView" Collapsed="true">
+    <Position X="6.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\InOutDocuments\TaskOrderLinkDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.ContractDataView" Collapsed="true">
+    <Position X="3.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAEACAgMAAAIAAAEAIAAAAAAAAAAAAgACAAAg=</HashCode>
+      <FileName>Models\DataView\Lecturers\ContractDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.ContractLecturerDisciplineDataView" Collapsed="true">
+    <Position X="21.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\ContractLecturerDisciplineDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.LecturerDisciplineDataView" Collapsed="true">
+    <Position X="0.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\LecturerDisciplineDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.LecturerPaymentDataView" Collapsed="true">
+    <Position X="18.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAIAAAAAAAAAAAAAEAAAAAACAAAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\LecturerPaymentDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.LecturerPaymentDetailDataView" Collapsed="true">
+    <Position X="15.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAAAAAAAAAAIAAAAAAAAAAAAEAAAAAQAAAAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\LecturerPaymentDetailDataView.cs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.LecturerReportDataView" Collapsed="true">
+    <Position X="18.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEgEAACAAMEAAIACAEAIgAAAAAAEAAAAAAAAAAo=</HashCode>
+      <FileName>Models\DataView\Lecturers\LecturerReportDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.LecturerTimeSheetDataView" Collapsed="true">
+    <Position X="12.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\LecturerTimeSheetDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.LecturerTimeSheetDetailDataView" Collapsed="true">
+    <Position X="18.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEBIAAJAAAAgAgABBIABSAAAGkJAAIAAIABCBwAgAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\LecturerTimeSheetDetailDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Lecturers.TimeSheetDayOfWeek" Collapsed="true">
+    <Position X="267.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAIAACAAAAAAAAEAACAAIAAAYAAAAAQoAIIAAAA=</HashCode>
+      <FileName>Models\DataView\Lecturers\TimeSheetDayOfWeek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Museum.MuseumItemDataView" Collapsed="true">
+    <Position X="6.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAIAAAAAAAAAAAAAQBIAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\Museum\MuseumItemDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Museum.MuseumProtocolDataView" Collapsed="true">
+    <Position X="18.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAIA=</HashCode>
+      <FileName>Models\DataView\Museum\MuseumProtocolDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.PhD.PhDDataView" Collapsed="true">
+    <Position X="5.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgIAAAIAAAACAAAAAAAgggECAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\PhD\PhDDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.DiplomaInfoDataView" Collapsed="true">
+    <Position X="15.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEBAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAIAA=</HashCode>
+      <FileName>Models\DataView\Students\DiplomaInfoDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.DropInOrder" Collapsed="true">
+    <Position X="269" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABUAACAAAAAIAAMgBAABCAAAAAAggAQABAAAhAAA=</HashCode>
+      <FileName>Models\DataView\Students\DropInOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.ExamProtocolsDataView" Collapsed="true">
+    <Position X="12.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGQQAAEAACAAIAAAEAAQFCAgIQAAjBAAAABACACAAI=</HashCode>
+      <FileName>Models\DataView\Students\ExamProtocolsDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.ExamProtocolStudentDataView" Collapsed="true">
+    <Position X="15.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ogBAlAIkIBCWACAABIAAEHiAmQgAQAEAJgEBACAAQAI=</HashCode>
+      <FileName>Models\DataView\Students\ExamProtocolStudentDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.FamilyRelationDataView" Collapsed="true">
+    <Position X="9.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAQAA=</HashCode>
+      <FileName>Models\DataView\Students\FamilyRelationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.HomeStateDataView" Collapsed="true">
+    <Position X="15.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAEAAAAECAAA=</HashCode>
+      <FileName>Models\DataView\Students\HomeStateDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.PreparationCourseApplicationDataView" Collapsed="true">
+    <Position X="3.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAABAAAAAgAAAAAAAAEAAAQQAAAA=</HashCode>
+      <FileName>Models\DataView\Students\PreparationCourseApplicationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.PreparationCourseDataView" Collapsed="true">
+    <Position X="6.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAACAAAAEAAARAAAAA=</HashCode>
+      <FileName>Models\DataView\Students\PreparationCourseDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.PreviousEducationDataView" Collapsed="true">
+    <Position X="0.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAIAACAAA=</HashCode>
+      <FileName>Models\DataView\Students\PreviousEducationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.SpecialityForApplicationDataView" Collapsed="true">
+    <Position X="13.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQBAAAAQAAKAAAAAEgAAAAAAAgEAQAAAAEAA=</HashCode>
+      <FileName>Models\DataView\Students\SpecialityForApplicationDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentAdmissionDataView" Collapsed="true">
+    <Position X="12.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEgAAAAAAAAACAAAAAAAACAgAAAgAAAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\Students\StudentAdmissionDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentCandidateDataView" Collapsed="true">
+    <Position X="9.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABASAkog2ADAkbQiDOAJGCCBoCAiUGygFdCQAAAR4hw=</HashCode>
+      <FileName>Models\DataView\Students\StudentCandidateDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentCourseDisciplineDataView" Collapsed="true">
+    <Position X="6.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAgIEACAAAAAAABASCAAAAAAAAAQACAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\Students\StudentCourseDisciplineDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentCourseListDataView" Collapsed="true">
+    <Position X="269" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEgACAAAAIAAAAAAgAAAAQAAAAEAAkAAQIAAAAg=</HashCode>
+      <FileName>Models\DataView\Students\StudentCourseListDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentEducationDataView" Collapsed="true">
+    <Position X="270.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAgAAAgQAAAAAAAkAAAAAAAAI=</HashCode>
+      <FileName>Models\DataView\Students\StudentEducationDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentMarkDataView" Collapsed="true">
+    <Position X="272.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oACgAAAAAAAQAIAQAAAAAACAgQAAAAAAAECBAAAAAAI=</HashCode>
+      <FileName>Models\DataView\Students\StudentMarkDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentStatusChangeDataView" Collapsed="true">
+    <Position X="12.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\DataView\Students\StudentStatusChangeDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DataView.Students.StudentStatusDataView" Collapsed="true">
+    <Position X="3.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgSEAGgEAACAAIAFJCAAQESAlCABAEhgAESAIAAAIAs=</HashCode>
+      <FileName>Models\DataView\Students\StudentStatusDataView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Affiliate" Collapsed="true">
+    <Position X="30.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BSAEARJBLhQQBCjAkYDAC0IIUACIASEiiSCRAAAIDIA=</HashCode>
+      <FileName>Models\Partial\Admin\Affiliate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DisciplineName" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="262" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAICAggQAQAMqAiYAAgAIAAJAABAQAAgAAAAAAGAA=</HashCode>
+      <FileName>Models\Partial\Admin\DisciplineName.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Faculty" Collapsed="true">
+    <Position X="6.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AaAEARIYKIARhKkgiaSKQsiwUAKAACwAjiCRALAABAA=</HashCode>
+      <FileName>Models\Partial\Admin\Faculty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.MenuNode" Collapsed="true">
+    <Position X="30.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGJKICAQ0gAQAAxAkgAAAAIQAQA3YAAAgAQAAFAAAAA=</HashCode>
+      <FileName>Models\Partial\Admin\MenuNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.NavURL" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="258.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAgAAQAAkAoAAAAAEAMiAwMAAAAAAABEAgBAA=</HashCode>
+      <FileName>Models\Partial\Admin\NavURL.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.RoleMenuNode" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="258.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABIAQBAQAAkEkBAEAAAADAAhAAAAgAAAAgAABAA=</HashCode>
+      <FileName>Models\Partial\Admin\RoleMenuNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.UNI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="255" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RSIUAPJLLhAaDmjUsTBCYWoI0CFYRTkqigBThMBAPgY=</HashCode>
+      <FileName>Models\Partial\Admin\UNI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.UProfGroup" Collapsed="true">
+    <Position X="3.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RgAwgAAoVQBwAAgAgAkAQDAAEAAQABEIQyAEAAAggAA=</HashCode>
+      <FileName>Models\Partial\Admin\UProfGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.WeekSchedule" Collapsed="true">
+    <Position X="6.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAQAEBBAJGQgDgAg4QkaGoIAiiUAAgAWKAQAAACAkM=</HashCode>
+      <FileName>Models\Partial\Admin\WeekSchedule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.WeekScheduleDetail" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RSrxEVos4BMQocwqzOhsgKYaIqAcILQAHptVggLQqAQ=</HashCode>
+      <FileName>Models\Partial\Admin\WeekScheduleDetails.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.WeekScheduleOverriden" Collapsed="true">
+    <Position X="0.5" Y="30.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgIBEASQBAQAAhSkAAEgAAIASQMEAAAGLABAAiAAAA=</HashCode>
+      <FileName>Models\Partial\Admin\WeekScheduleOverriden.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.AdditionalSpeciality" Collapsed="true">
+    <Position X="27.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAQACAEEQAQgogJQAACgAAIiAACwAAgQAgAAGUoE=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\AdditionalSpeciality.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CampusAdmission" Collapsed="true">
+    <Position X="24.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AUAECJBIGAwBEkggCgChOAMAYAQMKwEVRBDEEUBCEA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CampusAdmission.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CampusAdmissionRoom" Collapsed="true">
+    <Position X="27.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAEAAAAAAQBAgAogQAFCAIAIOJEEIwBCBAAAGgCAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CampusAdmissionRoom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CampusApplication" Collapsed="true">
+    <Position X="21.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SKeXs2t17zEw1Po+tPUf9O4qG7u0MX7CfnVRflLcPto=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CampusApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CivilContract" Collapsed="true">
+    <Position X="27.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EHAgQIASIQAYoAkAhgMHBUYhQiEFAIIsAguRIAMAAgU=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CivilContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CivilContractArtModelReportLink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="260.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoCIAAAAAAQUAoBgAIAEAAAAIAAAEAAAggAAAAAIgA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CivilContractArtModelReportLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.CivilContractLecturerContractLink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="262" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAADAAAQSAoAgAKAIAAAAIAAAAAAgogIAAAIAAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CivilContractLecturerContractLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.ClassRoom" Collapsed="true">
+    <Position X="18.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAABAQAAgIgEAAIAQAAAAAwChAABMAQACAgAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ClassRoom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ClassRoomDisciplineName" Collapsed="true">
+    <Position X="27.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAgkAgAAAQAAgJkAAAAggAAQAAACAAAAAAAQCAgAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ClassRoomDisciplineName.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CourseList" Collapsed="true">
+    <Position X="15.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIARAAVAACCQgKgAgIAAQAgIgCAAAAAAAAAAAASCAAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CourseList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CourseListDetail" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="262" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAEAACAQAAgAgAAAADACgAiAAAgABAAAIAAAIAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CourseListDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Curriculum" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAURAAAAKUUYsAgggCUaIiAIACAAADAAApABgAABEkc=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\Curriculum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CurriculumAppendix" Collapsed="true">
+    <Position X="27.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4YAMwBkAEAAQAAgggIqAACwgAIqBCS0QFpgIoAMGEYg=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CurriculumAppendix.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CurriculumDetail" Collapsed="true">
+    <Position X="12.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAQBIABAAAAYgBgggIiAAogAANCAATQAAgAg4AYAEhQ=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CurriculumDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.CurriculumDetailsCreditHour" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="265.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAEwBgIECAQADgBgICAACgAAAjBCSwUAIAAIIJECAg=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\CurriculumDetailsCreditHour.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Department" Collapsed="true">
+    <Position X="27.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAACAQAQAKgAgIAAYhQEAABARAAAAEgAABwiAgg=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\Department.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DepartmentLecturer" Collapsed="true">
+    <Position X="9.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEACAAAwAQAAgAgAAAAmAEGAAACAAABAAIBhAAAAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\DepartmentLecturer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.DepartmentSpecialityCode" Collapsed="true">
+    <Position X="27.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABACCAECAQAAkAgBAAAiCEEAAACAAAAAAAABAAACA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\DepartmentSpecialityCode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.FacultyProtocol" Collapsed="true">
+    <Position X="6.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIRJQMAAIYDQAKgAgIAQaESACEAAAAAAAQAAAARAAAo=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\FacultyProtocol.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.FacultyProtocolDisciplineName" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="269" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wgCUAEAgAAkQgYgAoMQAACAICKiAAAwABwAIAABABoE=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\FacultyProtocolDisciplineName.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.LanguageSchedule" Collapsed="true">
+    <Position X="27.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEACAQAgCQEAgAiIAAACgACQqAAA4DBAAIAADSEAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\LanguageSchedule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LanguageScheduleDetail" Collapsed="true">
+    <Position X="3.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAokAAAQEcgKjKBIICgCIAIIACABBAgUAACCkAI=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\LanguageScheduleDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LanguageSpeciality" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AAQAAAAQAEQkQggqAAAAAAIACoAACEBAAQAgBAQEIA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\LanguageSpeciality.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Request" Collapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQECAwAABQAOgggIBCwiKWUpDECEEIAICQIBQAQAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\Request.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.RequestDetail" Collapsed="true">
+    <Position X="0.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UDAxAqAAAAEwAAwAgFASAACQUACEgEEcAISggAEBECk=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\RequestDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScheduleGeneralDisciplineDetail" Collapsed="true">
+    <Position X="24.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFCA4kAYSQAegKheBMKGwSKKiAAKwABgIcAACCgAI=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScheduleGeneralDisciplineDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipAdmission" Collapsed="true">
+    <Position X="21.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAIFAILIISRWkswwKkAgPpEJAiYIKQUFBBlEECjSEI=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScholarShipAdmission.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipApplication" Collapsed="true">
+    <Position X="24.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yqZVnW48aVHwzvg+lfs90u64Hq+WMPpKfhRZbvbOPto=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScholarShipApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipApplicationCriteria" Collapsed="true">
+    <Position X="18.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQCAAIIEFEUiggQgAACEmAghASgAIAAoAAAQAAAMAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScholarShipApplicationCriteria.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipCount" Collapsed="true">
+    <Position X="24.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYBAIkAIAAEyCmgIgIiIQBIQBACQgsIAgYFYgCBABWg=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScholarShipCount.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipPayment" Collapsed="true">
+    <Position X="15.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARACgIABACQAEgQwIAAAAgAAAAgAAAAAAAQBAKCAAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScholarShipPayment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipPaymentBalance" Collapsed="true">
+    <Position X="24.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGTRDgIC0hBUgEg05QpxgmcJUiykQJgoJUA4BWIPMsg=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\ScholarShipPaymentBalance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.AcademicPeriod" Collapsed="true">
+    <Position X="12.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAIAIIIYCQAAgAgIAgKEwACEAAAIIAAAAAICACAAI=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\StreamGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.StreamGroupDetail" Collapsed="true">
+    <Position X="24.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAQDA0AiEGVgbgogMQEBCgIBKiAAKwgAwAgwADGUoE=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\StreamGroupDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.StreamGroupDetailsLecturer" Collapsed="true">
+    <Position X="9.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggUBSIAAgAWAAgAgAAAAEAACAAAAAAABQAIAAAAAAA=</HashCode>
+      <FileName>Models\Partial\AdministrativeActivities\StreamGroupDetailsLecturer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModel" Collapsed="true">
+    <Position X="24.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAAAFCAAAQAAgBgAAIAAAAABFAgAAAAAAAAAACAgg=</HashCode>
+      <FileName>Models\Partial\ArtModels\ArtModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModelApplication" Collapsed="true">
+    <Position X="6.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQGCC5sBgAQAEgB4MAEBAoAChAmgMAARAAdRAICIAA=</HashCode>
+      <FileName>Models\Partial\ArtModels\ArtModelApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModelApplicationDetail" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAiADotAwAQQU4OoKhMBBACIIqCpKQABgAU4ACAggA=</HashCode>
+      <FileName>Models\Partial\ArtModels\ArtModelApplicationDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModelCharging" Collapsed="true">
+    <Position X="24.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAQIABAAQAEgA4AAAABAAAgAgAEAAQAAABAIACAA=</HashCode>
+      <FileName>Models\Partial\ArtModels\ArtModelCharging.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModelReport" Collapsed="true">
+    <Position X="3.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQCQAJAJAAQEEgB4AAAAAQAArAhgEAgQAEFJAMAIIA=</HashCode>
+      <FileName>Models\Partial\ArtModels\ArtModelReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModelReportDetail" Collapsed="true">
+    <Position X="24.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEgCIAgFCgBQEAwIgIAEAAAAAIAAAAAAAAAQIAAEIAA=</HashCode>
+      <FileName>Models\Partial\ArtModels\ArtModelReportDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Notification" Collapsed="true">
+    <Position X="0.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CLUARQgWAAKQIikAgAAAAgIaAiDFCACgAkAQAUkCIAA=</HashCode>
+      <FileName>Models\Partial\Common\Notification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.UploadedFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="258.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAhCIIgARAMxgAgAgKAKCAIAACAAAQQVABZRiABIAAY=</HashCode>
+      <FileName>Models\Partial\Common\UploadedFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.ContractorAndPartner" Collapsed="true">
+    <Position X="21.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECILCUBSIS1QhCobhAwgIg5CAMEAZQgoRUgCkFEwpCI=</HashCode>
+      <FileName>Models\Partial\ContractorPartner\ContractorAndPartner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ContractorAndPartnerContact" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="256.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIDACDAkCQQAAgwlAAggAAgAAEAAAAYACgAICBABAA=</HashCode>
+      <FileName>Models\Partial\ContractorPartner\ContractorAndPartnerContact.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.CronProcessHistory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="263.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABACIAASDRAAgAgAYAABgBIBEhiACAAAJAAAQAAAA=</HashCode>
+      <FileName>Models\Partial\CronProcessHistory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.DisciplineNameByTypeOKC" Collapsed="true">
+    <Position X="18.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEggAAAIkQAIgBgIQEAgAAAIAAAAQAAgAAAAAAQgE=</HashCode>
+      <FileName>Models\Partial\DisciplineNameByTypeOKC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Employe" Collapsed="true">
+    <Position X="21.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAACAAAQAAkAgAAAAAACAABAAAAAAAAAAFAGAgg=</HashCode>
+      <FileName>Models\Partial\Employees\Employe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Correspondent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="258.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBYAIgAAAIASQBgC4AQAAEAAMCgBghACCgDiABCAIAQ=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\Correspondent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.InOutDocLink" Collapsed="true">
+    <Position X="15.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAoICgAQQABhAoAQAAIaAACABABAAAoCAFAAgAEA=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\InOutDocLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.InOutDocument" Collapsed="true">
+    <Position X="21.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SgQUWAIDpJEUAklm8CQFh7cARjg1YZAPXDhRAKKyiEA=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\InOutDocument.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.InOutDocumentUserLink" Collapsed="true">
+    <Position X="12.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQFAQACAAASARgAoAAAAACAAGABQIAAAECSAEABAAA=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\InOutDocumentUserLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Order" Collapsed="true">
+    <Position X="21.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAQAEAIBJAAYAhkggCAAgoAAQCAQJJAEHBDAACAyiEg=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\Order.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.OrderUserLink" Collapsed="true">
+    <Position X="9.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAQACAAASABgAgAAAAAAAAIAARIAQEECQAEAFAAg=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\OrderUserLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Task" Collapsed="true">
+    <Position X="21.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAwAkCEBBEAYAAkjgAAAAgIAAgIUABBAgAARAAACgAE=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\Task.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.TaskInOutDocumentLink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="260.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgQAgAAAAEAQBBgAoAAAAAAgACABApAAgECQAAAFAAA=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\TaskInOutDocumentLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.TaskOrderLink" Collapsed="true">
+    <Position X="6.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAFAgEAAAEAQABgAgAAAAAAgAAAABIAIgVCQAAAFAAg=</HashCode>
+      <FileName>Models\Partial\InOutDocuments\TaskOrderLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.KeyType" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hCEDAACAAiFyAQmBgAEQIQQAAAAAQaA0AAQCEgiAAgA=</HashCode>
+      <FileName>Models\Partial\KeyType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.KeyValue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="255" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xAEDyAIjCAEyg4mQgaC4Y+SLA9AQSSQkCAQzEgiAgxA=</HashCode>
+      <FileName>Models\Partial\KeyValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.AcademicDegree" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="255" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCkgAIACAARIAgIgAASAAAICAAABAAQBUhIAAAAACA=</HashCode>
+      <FileName>Models\Partial\Lecturer\AcademicDegree.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Contract" Collapsed="true">
+    <Position X="3.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EUCkYAQJIw0RiQgApoBRAR5hKgAFJBEozCMdIAMKAEE=</HashCode>
+      <FileName>Models\Partial\Lecturer\Contract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ContractLecturerDiscipline" Collapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACECCQDAgCUCIgAiIEAAQhACIEIIAQAhgAJABKOAAA=</HashCode>
+      <FileName>Models\Partial\Lecturer\ContractLecturerDiscipline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LecturerDiscipline" Collapsed="true">
+    <Position X="0.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEICgAAgAQAIgAgIAACAAACIAAAAQAhgAIAAAAAAA=</HashCode>
+      <FileName>Models\Partial\Lecturer\LecturerDiscipline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LecturerPayment" Collapsed="true">
+    <Position X="18.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAEAAAQBEgAgIAIAgggQEAAAAACBBAIAAAGAAQ=</HashCode>
+      <FileName>Models\Partial\Lecturer\LecturerPayment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LecturerPaymentDetail" Collapsed="true">
+    <Position X="15.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WTa9ZGi0UP8QgWoCv/EfhIoyPsXBJFlzTIU5RwOkCjw=</HashCode>
+      <FileName>Models\Partial\Lecturer\LecturerPaymentDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LecturerReport" Collapsed="true">
+    <Position X="18.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYA0ROCEQmyQASoAqMAUAApwSgFGJAlSJAA5AkKCCRg=</HashCode>
+      <FileName>Models\Partial\Lecturer\LecturerReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LecturerTimeSheet" Collapsed="true">
+    <Position X="12.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQEAAAAAAAQCAsAoBACEAAoAEAAIABQIAAoAMEACQA=</HashCode>
+      <FileName>Models\Partial\Lecturer\LecturerTimeSheet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.LecturerTimeSheetDetail" Collapsed="true">
+    <Position X="18.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FSCgACokASAQQ+oOqKNKSBgCIIqA4AQABiAdoAsGCgA=</HashCode>
+      <FileName>Models\Partial\Lecturer\LecturerTimeSheetDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Qualification" Collapsed="true">
+    <Position X="9.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEhAIIQABEC0AAgAwAFAABQAAiQCiAIBAdAJiAAAAAI=</HashCode>
+      <FileName>Models\Partial\Lecturer\Qualification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Lecturer" Collapsed="true">
+    <Position X="18.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAMIAECAAEQAAgAiAAAAAAACEBAAAAABAAIAAAiEgg=</HashCode>
+      <FileName>Models\Partial\Lecturer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Location" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="263.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAGAAAACNAYBChIgAIYYAQAEACEQCAgCAABCAAQBAE=</HashCode>
+      <FileName>Models\Partial\Location.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.MuseumItem" Collapsed="true">
+    <Position X="6.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>aGCJhJ5jUQc5iAkKujDAgHZEEI0QIZJU4sYYkEwbPIk=</HashCode>
+      <FileName>Models\Partial\Museum\MuseumItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.MuseumProtocol" Collapsed="true">
+    <Position X="18.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQBcQRCIQATAwwBgAAQQHAAAACAAAAAAACQAAAEIMU=</HashCode>
+      <FileName>Models\Partial\Museum\MuseumProtocol.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.PermittedAction" Collapsed="true">
+    <Position X="3.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECAFEMAAGwAAkAggAAAGAAAAAAAAIEAgSAECAAAAA=</HashCode>
+      <FileName>Models\Partial\PermittedAction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Person" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ie4lYXsyO1sxhOgYtH0Jls6oMv8SePYmDRQ1fNryP0g=</HashCode>
+      <FileName>Models\Partial\Person.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.PhD" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="267.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAACACAQgAgAhAAEAAAIACBAAAAAAAAAAAACAgg=</HashCode>
+      <FileName>Models\Partial\PhD\PhD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Role" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="256.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgBkAABGwAAwEogAAoCQAAAAgQAAMCAQBAAAQBAE=</HashCode>
+      <FileName>Models\Partial\Role.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Sequence" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="269" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAIEJIAQAAhAgBAAgBQAACAAAAEBAQAAkAIAACI=</HashCode>
+      <FileName>Models\Partial\Sequence.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.Setting" Collapsed="true">
+    <Position X="0.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAADAgQDAgYwCAIAAAIAoQDCgIAUAAABAAAQEA=</HashCode>
+      <FileName>Models\Partial\Setting.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Speciality" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BZMZABIo/bBwhKlAgcCCRCycWSCRABwopiCgRD5gwKA=</HashCode>
+      <FileName>Models\Partial\Speciality.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.SpecialityCode" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="260.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwQBYAgBJCEQgEiQgQQQIAmQEQAAQAAgAIAEAgkACgE=</HashCode>
+      <FileName>Models\Partial\SpecialityCode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.DiplomaInfo" Collapsed="true">
+    <Position X="15.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ApSJgFACYJEQQugggKg0gkuAQEEIBSAJBIQizAgAdDA=</HashCode>
+      <FileName>Models\Partial\Students\DiplomaInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ExamProtocol" Collapsed="true">
+    <Position X="12.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YaaVSB+CIIEQkDgNiMQUQGoIE7iUIEwDIgAYggjSBms=</HashCode>
+      <FileName>Models\Partial\Students\ExamProtocol.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ExamProtocolLecturer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="265.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEAAAAAAAQUAoBgAEAAAgACAAAAAQABBIIAAAAAAI=</HashCode>
+      <FileName>Models\Partial\Students\ExamProtocolLecturer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.ExamProtocolStudent" Collapsed="true">
+    <Position X="15.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lYoFgAhEQAQcEEpxgAggkBGCGAECKAQBBGCcEEQAAYo=</HashCode>
+      <FileName>Models\Partial\Students\ExamProtocolStudent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.FamilyRelation" Collapsed="true">
+    <Position X="9.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIUGAgGBAAQkAqCgIEMIAAAABAAABIAAAASAAACEpg=</HashCode>
+      <FileName>Models\Partial\Students\FamilyRelation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.HomeState" Collapsed="true">
+    <Position X="15.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAgEJAAQEA4CgAFgAAAAAAABIAAAAAASAAUAAEA=</HashCode>
+      <FileName>Models\Partial\Students\HomeState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.PreparationCourse" Collapsed="true">
+    <Position X="6.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIKAAAAAAGwAAgAgIAAIAwAAAAAQAAEAoSAAACGAAA=</HashCode>
+      <FileName>Models\Partial\Students\PreparationCourse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.PreparationCourseApplication" Collapsed="true">
+    <Position X="3.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABA0gYSQGQgEkgwNUAAAwAACEwEUAACwQAFADCAEg=</HashCode>
+      <FileName>Models\Partial\Students\PreparationCourseApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.PreviousEducation" Collapsed="true">
+    <Position X="0.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAwAiIEXSAAQMMgmgIBQhFbAAAUIAAFACghgAAYECAI=</HashCode>
+      <FileName>Models\Partial\Students\PreviousEducation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.SpecialityForApplication" Collapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASUAAQQAQGQgAiAgNQQAgkIESAAAEwhIAAgAQCKAgE=</HashCode>
+      <FileName>Models\Partial\Students\SpecialityForApplication.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.Student" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="263.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ALAYACImSIFYhGggjIAIzGqoByjEACxDAAASxBASFkw=</HashCode>
+      <FileName>Models\Partial\Students\Student.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentAdmission" Collapsed="true">
+    <Position X="12.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SqIVkKIjaAUdxHiwjaoa3ICKATC4IiUjVJLAQR4QSCQ=</HashCode>
+      <FileName>Models\Partial\Students\StudentAdmission.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentCandidate" Collapsed="true">
+    <Position X="9.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAwQgyQCGRAEgghIQAwAgAAABABgAACAlihACCAgs=</HashCode>
+      <FileName>Models\Partial\Students\StudentCandidate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentCandidateSpeciality" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="265.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GDAwgAY4ygFQhXimiOYBmAcYYDS4kKAEGUEhAAkLAkM=</HashCode>
+      <FileName>Models\Partial\Students\StudentCandidateSpeciality.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentCourseDiscipline" Collapsed="true">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZAgEwANIUAAYIFgpgIgAgCgAEImIAI0AVqgEgCYGCgg=</HashCode>
+      <FileName>Models\Partial\Students\StudentCourseDiscipline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentCourseList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="267.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAAAAAAQgCgAgIAAQAgIACAAAASAAAAEQAACACA=</HashCode>
+      <FileName>Models\Partial\Students\StudentCourseList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentStatus" Collapsed="true">
+    <Position X="3.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UCAS0SKMYABZplggiKQanquoIyqUIiwjdpBQwAIyH0Q=</HashCode>
+      <FileName>Models\Partial\Students\StudentStatus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.StudentStatusChange" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QJEBkAMAZAAQJhogoCAAwIKCAgBUIAFAFJBQgAMESIA=</HashCode>
+      <FileName>Models\Partial\Students\StudentStatusChange.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.User" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAECAQEwAMhAkAIEAiIQAgAFBIAWAQQQAAQDUgg=</HashCode>
+      <FileName>Models\Partial\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ETEMModel.Models.ETEMDataModelEntities" Collapsed="true">
+    <Position X="270.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>v1/P//9o/5f7/vf5/+v///OPX+fprdb/7/+f/7////w=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.ArtModelPosing" Collapsed="true">
+    <Position X="10.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABCAAACAAABAAAAEACAABAAkACAIAQFAAAgADA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.BuildingAddress" Collapsed="true">
+    <Position X="272.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAABAgAAAAgEAAAEIgEAAAAAACAAAAAAQAEQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.CodeProfArea" Collapsed="true">
+    <Position X="265.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAABAAAAAgAGAACAAAAAAAACAAgAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.CodeProfGroup" Collapsed="true">
+    <Position X="267.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAggAAAAAAABAAAAAkAACAACAAAAAAAQwQkAAAggAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.Country" Collapsed="true">
+    <Position X="260.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCBGiAYAIIAAAAABAEAUIIQAAAAEQBEAgAAQggAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DepartmentDisciplineName" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICABAAAQAAAAIAAAIAAEiAEEIAACAQAAgAACBAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.DisciplineNameLecturer" Collapsed="true">
+    <Position X="265.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEgCAAAgAAAIIAAIAAAAAECIAABAQABgAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.District" Collapsed="true">
+    <Position X="267.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCADIAAAAAAAAAAAAAAQIAQBAABERAEAAAAAAJACAIE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.EKATTE" Collapsed="true">
+    <Position X="272.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAHCQSADEQARAAIACAAIAQBQBAARACALggASIAQFAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.EventLog" Collapsed="true">
+    <Position X="263.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAEAAmAIgAACgAgKAIAAICAAAAAICBAAEQkADZBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.HierarchicalKeyType" Collapsed="true">
+    <Position X="262" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgADRACAggAUAAyAACAopCQAAABgUAoAFJACIgEAABI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.HierarchicalKeyValue" Collapsed="true">
+    <Position X="263.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>xAECyAAhAhEqAgGQAeAoIKSDAdAAWWAkCAQhEgiAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.LocationView" Collapsed="true">
+    <Position X="265.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAGAAEFCEAKACBIAAAAYAQAEAAASCAASwBhAEAQBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.Municipality" Collapsed="true">
+    <Position X="256.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAHAUAACIAAAAAABAIUIAQBAAAERKAADAAAAIACBAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.Organization" Collapsed="true">
+    <Position X="262" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoACSQAIgiEwAAABBAAgIgQgAIBA0RgENIYEAoCAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.PersonTypeLink" Collapsed="true">
+    <Position X="265.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAACAAAGAAAAAAAAgAAAAARAAAAACAAEAAwCEig=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.PreparationCourseApplicationLink" Collapsed="true">
+    <Position X="270.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAQSAAgAAEgICAAAAgAgBAEAAAIAMAAMAAEIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.PreparationCourseAppSpecialityLink" Collapsed="true">
+    <Position X="272.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAASAQQAAgAEgACAAAAAIAiAgAAAEAEAAEAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.PreparationCourseLecturerLink" Collapsed="true">
+    <Position X="253.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIECCAAAgAgAAAAAAAAAAAACACAAAgIBIgIYAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.RolePermittedActionLink" Collapsed="true">
+    <Position X="260.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgUAABAICJAAgAABEAEAAEAACgAgACQAAgAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.ScholarShipFamilyRelation" Collapsed="true">
+    <Position X="262" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCgAEAiEBEAACACgAYAMhAAAAASCCABAASEQFCACEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.Section" Collapsed="true">
+    <Position X="265.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAMgAAAAAAAgIjYGEABAQAAEFC4AAhAAAgg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.sysdiagram" Collapsed="true">
+    <Position X="255" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACICAMAABEIAAAIAAggAAQFIAHUAAAAAAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.UpdateLock" Collapsed="true">
+    <Position X="256.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAARCAAACAAAwAAAEBDIgAAAAAAAAAAJBEAAiAAAIAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.UserRoleLink" Collapsed="true">
+    <Position X="262" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABABAABBACAAoCEAAAAACACAAgAIAAAAEQAAABBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.VillageType" Collapsed="true">
+    <Position X="263.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAEFAEAAACBIAAAAAAAAAAAAAAAAQwQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Models.Partial.Admin.ClassInfo" Collapsed="true">
+    <Position X="263.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgAAAEAAAAAgAAAAAAAACAAAAAACAAAA=</HashCode>
+      <FileName>Models\Partial\Admin\ClassInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETEMModel.Services.Admin.Administration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="258.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>uaO5OI3N99+ys9LfF4RmHNzv2VJ237QRK83dDsXSJIY=</HashCode>
+      <FileName>Services\Admin\Administration.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.AdministrativeActivities.AdminActivities" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="256.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>tWUXHIEugagiMBkXYMK8gUACLYyJAIogzIkeBR64kgg=</HashCode>
+      <FileName>Services\AdministrativeActivities\AdminActivities.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.ArtModelRef.ArtModelRef" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="260.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwCA0UAAIAAIAAQCJACAYCWAAKAggCBVAACSAAEEkgA=</HashCode>
+      <FileName>Services\ArtModel\ArtModelRef.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.Common.Common" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="269" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAIAAAAkAAABQCAIAIABAAAIAAAAkAAAAQAE=</HashCode>
+      <FileName>Services\Common\Common.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.Employe.EmployeRef" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="255" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Services\Employe\EmployeRef.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.InOutDocumentRef.InOutDocumentRef" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="267.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OAHExyIJgAAcBwAAAAcCMEAAAERGAAACVyEACAUEEAA=</HashCode>
+      <FileName>Services\InOutDocument\InOutDocumentRef.cs.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.LecturerRef.LecturerRef" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="256.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wKgCUwMAECCMBgIkACqUCA40AVqDQYQsAICEAgCCQFQ=</HashCode>
+      <FileName>Services\Lecturer\LecturerRef.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.PhD.PhDRef" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="269" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAQIAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\PhD\PhD.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ETEMModel.Services.Students.StudentRef" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="253.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pcGw2dtUaTlCgkodcoAqBhRH4aLBwBMBp32W2DYpMnc=</HashCode>
+      <FileName>Services\Students\StudentRef.svc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ETEMModel.Helpers.Identifiable" Collapsed="true">
+    <Position X="262" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Identifiable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Models.DataView.DataViewInterface" Collapsed="true">
+    <Position X="253.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\DataView\DataViewInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.Admin.IAdministration" Collapsed="true">
+    <Position X="256.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oKMZEADAhM6gAdLaFwQmCJiAAQJWixQBIAjVDgWSIAI=</HashCode>
+      <FileName>Services\Admin\IAdministration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.AdministrativeActivities.IAdminActivities" Collapsed="true">
+    <Position X="255" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\AdministrativeActivities\IAdminActivities.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.ArtModel.IArtModel" Collapsed="true">
+    <Position X="258.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ArtModel\IArtModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.Common.ICommon" Collapsed="true">
+    <Position X="260.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Services\Common\ICommon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.Employe.IEmploye" Collapsed="true">
+    <Position X="263.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Employe\IEmployeRef.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.InOutDocument.IInOutDocument" Collapsed="true">
+    <Position X="265.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\InOutDocument\IInOutDocument.cs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.Lecturer.ILecturer" Collapsed="true">
+    <Position X="267.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Lecturer\ILecturer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.PhD.IPhD" Collapsed="true">
+    <Position X="269" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\PhD\IPhD.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ETEMModel.Services.Students.IStudent" Collapsed="true">
+    <Position X="270.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEQAAAAICFCAEAMYAACAAAEAAAAAAAABAQAgCAAACA=</HashCode>
+      <FileName>Services\Students\IStudent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ETEMModel.Helpers.AbstractSearchBLHolder.BooleanComparators" Collapsed="true">
+    <Position X="253.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\BooleanSearch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETEMModel.Helpers.AbstractSearchBLHolder.DateComparators" Collapsed="true">
+    <Position X="255" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAQQAAAAAAAAE=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\DateSearch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETEMModel.Helpers.AbstractSearchBLHolder.DecimalComparators" Collapsed="true">
+    <Position X="256.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAQQAAAAQAAAE=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\DecimalSearch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETEMModel.Helpers.AbstractSearchBLHolder.NumericComparators" Collapsed="true">
+    <Position X="258.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAQQAAAAQAAAE=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\NumericSearch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETEMModel.Helpers.AbstractSearchBLHolder.TextComparators" Collapsed="true">
+    <Position X="260.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQQAAA=</HashCode>
+      <FileName>Helpers\AbstractSearchBLHolder\TextSearch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
