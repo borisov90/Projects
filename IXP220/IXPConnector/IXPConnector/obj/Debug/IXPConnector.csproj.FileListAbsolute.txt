@@ -1,0 +1,14 @@
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\IXPConnector.exe.config
+D:\Work\IXP220\IXPConnector\IXPConnector\obj\Debug\IXPConnector.csprojResolveAssemblyReference.cache
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\IXPConnector.exe
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\IXPConnector.pdb
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\EntityFramework.dll
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\EntityFramework.Firebird.dll
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\EntityFramework.xml
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\EntityFramework.Firebird.pdb
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\IXP220\IXPConnector\IXPConnector\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+D:\Work\IXP220\IXPConnector\IXPConnector\obj\Debug\IXPConnector.exe
+D:\Work\IXP220\IXPConnector\IXPConnector\obj\Debug\IXPConnector.pdb
