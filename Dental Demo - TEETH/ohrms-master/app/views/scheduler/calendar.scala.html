@@ -1,0 +1,28 @@
+@import ws.delegates.{AppointmentDelegate}
+@scheduler(Messages("scheduler.title")){
+
+<!-- Scheduler -->
+<header class="grid_12 head center">
+    <h1>@Messages("scheduler.title") <img id="loader" src="@routes.Assets.at("images/loader.gif")"></h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="grid_12">
+    <a href="#" id="showEventsButton" class="bt blue right" style="display: none;">Show All Events</a>
+    <div style="margin-botton: 3px;">
+        <strong>Legend:</strong>
+        <span class="label">Past Appointments</span>
+        <span class="label label-important">Today's Appointments</span>
+        <span class="label label-info">Future Appointments</span>
+    </div>
+    <br/>
+    <div id="calendar">
+    </div>
+</div>
+<!-- /Scheduler -->
+
+<!--Update Appointment-->
+
+<!--/Update Appointment-->
+
+}

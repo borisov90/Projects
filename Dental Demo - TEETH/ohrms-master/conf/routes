@@ -1,0 +1,191 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET     /                           controllers.Application.login
+POST    /login_attempt              controllers.Application.authenticate
+GET     /login_wait                 controllers.Application.countdown
+GET     /login_question             controllers.Application.question
+POST    /security_question          controllers.Application.questionAuthenticate
+GET     /logout                     controllers.Application.logout
+GET     /settings                         controllers.Settings.settings
+GET     /dashboard                  controllers.Application.dashboard
+GET     /patients/:id/treatment_plan          controllers.Patient.getTreatmentPlan(id: String, start : Int ?= 0, count : Int ?= 25)
+GET     /dentists/search       controllers.Dentist.searchDentistList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+GET     /settings/audit_log/search       controllers.Settings.searchAuditLog(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+GET     /patients/search       controllers.Patient.search(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+GET     /dental_services/search       controllers.DentalService.searchServiceList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+GET     /patients                   controllers.Patient.getList(start : Int ?= 0, count : Int ?= 25)
+GET     /clinic                     controllers.Clinic.getList(start : Int ?= 0, count : Int ?= 25)
+POST    /clinic                     controllers.Clinic.submitAddForm
+GET     /clinic/add                 controllers.Clinic.getAddForm
+POST    /clinic/update            controllers.Clinic.submitUpdateForm
+GET     /clinic/:id                 controllers.Clinic.getClinicListById(id: String)
+GET     /clinic/:id/update          controllers.Clinic.getUpdateForm(id: String)
+GET     /clinic/search       controllers.Clinic.searchClinicList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+GET     /reminders                     controllers.Announcement.getList(start : Int ?= 0, count : Int ?= 25)
+POST    /reminders                     controllers.Announcement.submitAddForm
+#GET     /reminders/add                 controllers.Announcement.getAddForm(start : Int ?= 0, count : Int ?= 25)
+POST    /reminders/update            controllers.Announcement.submitUpdateForm
+GET     /reminders/:id                 controllers.Announcement.getAnnouncementListById(id: String)
+GET     /reminders/:id/update          controllers.Announcement.getUpdateForm(id: String)
+GET     /reminders/search       controllers.Announcement.searchAnnouncementList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+POST    /reminders/delete            controllers.Announcement.deleteInformation(id: String)
+POST    /patients                   controllers.Patient.submitAddForm
+POST    /patients/update            controllers.Patient.submitUpdateForm
+POST    /patients/delete            controllers.Patient.deleteInformation(id: String)
+GET     /patients/:id/treatment_plan/update               controllers.Patient.getUpdateForm(id: String, start: Int ?= 0, count: Int ?= 25)
+GET     /patients/add               controllers.Patient.getAddForm
+GET     /settings/audit_log         controllers.Settings.auditLog(start : Int ?= 0, count : Int ?= 25)
+GET     /dentists                   controllers.Dentist.getList(start : Int ?= 0, count : Int ?= 25)
+GET     /dentists/:id/information          controllers.Dentist.getDentistInformationById(id: String)
+POST    /dentists/update            controllers.Dentist.submitUpdateForm
+POST    /dentists/delete            controllers.Dentist.deleteInformation(id: String)
+GET     /dentists/:id/information/update               controllers.Dentist.getUpdateForm(id: String)
+POST    /dentists                   controllers.Dentist.submitAddForm
+GET     /dentists/add               controllers.Dentist.getAddForm
+GET     /scheduler                  controllers.Scheduler.getCalendar
+POST    /appointments                  controllers.Appointments.submitAddForm
+POST    /appointments/update            controllers.Appointments.submitUpdateForm
+GET     /appointments/:id                 controllers.Appointments.getAppointmentListById(id: String)
+GET     /appointments/:id/update          controllers.Appointments.getUpdateForm(id: String)
+#GET     /payments                     controllers.Payment.getList(start : Int ?= 0, count : Int ?= 25, patientId: String)
+POST    /payments                     controllers.Payment.submitAddForm
+POST    /payments/update            controllers.Payment.submitUpdateForm
+#GET     /payments/:id/update          controllers.Payment.getUpdateForm(id: String)
+GET     /dental_supplies                     controllers.Supply.getList(start : Int ?= 0, count : Int ?= 25)
+POST    /dental_supplies                     controllers.Supply.submitAddForm
+GET     /dental_supplies/add                 controllers.Supply.getAddForm
+POST    /dental_supplies/update            controllers.Supply.submitUpdateForm
+GET     /dental_supplies/:id                 controllers.Supply.getSupplyListById(id: String)
+GET     /dental_supplies/:id/update          controllers.Supply.getUpdateForm(id: String)
+GET     /dental_supplies/search       controllers.Supply.searchSupplyList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+POST    /treatment_plan             controllers.TreatmentPlan.addTreatment
+GET     /dental_services                 controllers.DentalService.getList(start : Int ?= 0, count : Int ?= 25)
+GET     /dental_services/:id        controllers.DentalService.getDentalServiceInformationById(id: String)
+POST    /dental_services                  controllers.DentalService.submitAddForm
+GET     /dental_services/add               controllers.DentalService.getAddForm
+POST    /dental_services/update            controllers.DentalService.submitUpdateForm
+GET     /dental_services/:id/update      controllers.DentalService.getUpdateForm(id: String)
+POST    /dental_services/delete            controllers.DentalService.deleteInformation(id: String)
+GET     /staffs/search       controllers.Staff.searchStaffList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+GET     /staffs                    controllers.Staff.getList(start : Int ?= 0, count : Int ?= 25)
+POST    /staffs                    controllers.Staff.submitAddForm
+GET     /staffs/add                controllers.Staff.getAddForm
+POST    /staffs/update             controllers.Staff.submitUpdateForm
+GET     /staffs/:id                controllers.Staff.getStaffById(id: String)
+POST    /staffs/delete            controllers.Staff.deleteInformation(id: String)
+GET     /staffs/:id/update                controllers.Staff.getUpdateForm(id: String)
+GET     /reports                    controllers.Reports.getReportsList()
+GET     /reports/patient_list       controllers.Reports._patientList(start : Int ?= 0, count : Int ?= 25)
+GET     /reports/dentist_list       controllers.Reports._dentistList(start : Int ?= 0, count : Int ?= 25)
+GET     /reports/service_list       controllers.Reports._serviceList(start : Int ?= 0, count : Int ?= 25)
+GET     /reports/staff_list         controllers.Reports._staffList(start : Int ?= 0, count : Int ?= 25)
+GET     /reports/dental_certificate/:patientId     controllers.Reports._dentalCertificate(patientId)
+GET     /reports/payment_receipt/:id    controllers.Reports._paymentReceipt(id, start : Int ?= 0, count : Int ?= 25)
+GET     /reports/individual_patients/:id    controllers.Reports._individualPatientReport(id, start : Int ?= 0, count : Int ?= 25)
+GET     /reports/monthly_income/:year/:month    controllers.Reports._monthlyIncomeReport(year: Int, month: Int)
+GET     /reports/audit_logs/:module/:dateStart/:dateEnd    controllers.Reports._auditLogReport(module: String, dateStart: String, dateEnd: String)
+GET     /sample/billy               controllers.Application.billySample
+GET     /specializations                     controllers.Specialization.getList(start : Int ?= 0, count : Int ?= 25)
+GET     /specializations/search       controllers.Specialization.searchSpecializationList(start : Int ?= 0, count : Int ?= 25, filter ?= "")
+POST    /specializations                     controllers.Specialization.submitAddForm
+GET     /specializations/add                 controllers.Specialization.getAddForm
+POST    /specializations/update            controllers.Specialization.submitUpdateForm
+GET     /specializations/:id                 controllers.Specialization.getSpecializationById(id: String)
+GET     /specializations/:id/update          controllers.Specialization.getUpdateForm(id: String)
+POST    /specializations/delete            controllers.Specialization.deleteInformation(id: String)
+GET     /settings/teeth_naming              controllers.Settings.teethNaming()
+GET     /reports/patient_list/:startDate/:endDate       controllers.Reports._patientListByDateRange(startDate: String, endDate: String)
+
+
+GET     /json/patients              controllers.Json.getPatientList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/patients/search     controllers.Json.searchPatientListByLastName(start : Int ?= 0, count : Int ?= 25 , filter ?= "")
+GET     /json/dentists/search     controllers.Json.searchDentistList(start : Int ?= 0, count : Int ?= 25 , filter ?= "")
+GET     /json/dental_services/search     controllers.Json.searchServiceList(start : Int ?= 0, count : Int ?= 25 , filter ?= "")
+GET     /json/settings/audit_log/search     controllers.Json.searchAuditLog(start : Int ?= 0, count : Int ?= 25 , filter ?= "")
+GET     /json/dentists              controllers.Json.getDentistList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/staffs/search     controllers.Json.searchStaffList(start : Int ?= 0, count : Int ?= 25 , filter ?= "")
+GET     /json/staffs                controllers.Json.getStaffList(start : Int ?= 0, count : Int ?= 25)
+POST    /json/patients              controllers.Json.submitPatientAddForm
+POST    /json/patients/update       controllers.Json.submitPatientUpdateForm
+POST    /json/patients/delete       controllers.Json.deletePatientInformation
+GET     /json/patients/:id/treatment_plan      controllers.Json.getPatientTreatmentPlan(id: String)
+GET     /json/dentists/:id/information     controllers.Json.getDentistInformationById(id: String)
+POST    /json/dentists/update       controllers.Json.submitDentistUpdateForm
+POST    /json/dentists/delete       controllers.Json.deleteDentistInformation
+POST    /json/dentists              controllers.Json.submitDentistAddForm
+GET     /json/settings/audit_log    controllers.Json.auditLog(start : Int ?= 0, count : Int ?= 25)
+POST    /json/treatment_plan        controllers.Json.addTreatmentPlan
+GET     /json/treatment_plan/:patientId        controllers.Json.getTreatmentPlan(patientId: String, start : Int ?= 0, count : Int ?= 25)
+POST    /json/dental_services              controllers.Json.submitDentalServiceAddForm
+GET     /json/dental_services            controllers.Json.getDentalServiceList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/dental_services/:id/information     controllers.Json.getDentalServiceInformationById(id: String)
+POST    /json/dental_services/update       controllers.Json.submitDentalServiceUpdateForm
+POST    /json/dental_services/delete       controllers.Json.deleteServicesInformation
+GET     /json/staffs            controllers.Json.getStaffList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/staffs/:id     controllers.Json.getStaffById(id: String)
+POST    /json/staffs/update         controllers.Json.submitStaffUpdateForm
+POST    /json/staffs/delete       controllers.Json.deleteStaffInformation
+POST    /json/staffs                controllers.Json.submitStaffAddForm
+GET     /json/clinic                controllers.Json.getClinicList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/clinic/:id     controllers.Json.getClinicListById(id: String)
+POST    /json/clinic/update         controllers.Json.submitClinicUpdateForm
+POST    /json/clinic                controllers.Json.submitClinicAddForm
+GET     /json/dental_services/all                       controllers.Json.getAllDentalServices
+POST    /json/dental_services/banned_services       controllers.Json.submitBannedServicesAddForm
+GET     /json/dental_services/banned/:serviceCode       controllers.Json.getBannedServicesByServiceCode(serviceCode: String)
+GET     /json/appointments          controllers.Json.getAllAppointments
+POST    /json/appointments              controllers.Json.submitAppointmentsAddForm
+GET     /json/appointments/today    controllers.Json.getAllAppointmentsToday
+GET     /json/appointments/:id          controllers.Json.getAppointmentById(id: String)
+POST    /json/appointments/update       controllers.Json.submitAppointmentUpdateForm
+GET     /json/reminders                controllers.Json.getAnnouncementList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/reminders/today    controllers.Json.getAllAnnouncementsToday
+GET     /json/reminders/:id     controllers.Json.getAnnouncementListById(id: String)
+POST    /json/reminders/update         controllers.Json.submitAnnouncementUpdateForm
+POST    /json/reminders               controllers.Json.submitAnnouncementAddForm
+POST    /json/reminders/delete       controllers.Json.deleteAnnouncementInformation
+GET     /json/:tableName/row_count         controllers.Json.getRowCountOfTable(tableName: String)
+GET     /json/patients/last_visit          controllers.Json.getPatientLastVisit(start : Int ?= 0, count : Int ?= 25)
+GET     /json/patients/last_visit/search   controllers.Json.searchPatientLastVisit(start : Int ?= 0, count : Int ?= 25 , filter ?= "")
+GET     /json/dentists/all                       controllers.Json.getAllDentists
+GET     /json/specializations           controllers.Json.getSpecializationList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/specializations/:id     controllers.Json.getSpecializationById(id: String)
+POST    /json/specializations/update         controllers.Json.submitSpecializationUpdateForm
+POST    /json/specializations/delete       controllers.Json.deleteSpecializationInformation
+POST    /json/specializations                controllers.Json.submitSpecializationAddForm
+GET     /json/patients/all                 controllers.Json.getAllPatients
+GET     /json/patients/visits/:year        controllers.Json.getPatientVisitsByYear(year: Int)
+GET     /json/patients/visits/:year/:month        controllers.Json.getPatientVisitsByMonth(year: Int, month: Int)
+GET     /json/teeth/type/:tType/position/:position        controllers.Json.getTeethByPositionAndType(position: String, tType: String)
+GET     /json/patients/all/names                 controllers.Json.getAllPatientNames
+GET     /json/payments/:patientId                controllers.Json.getPaymentsByPatientId(start : Int ?= 0, count : Int ?= 25, patientId: String)
+GET     /json/reports/payment_receipt/:id                controllers.Json.getPaymentById(id: String)
+POST    /json/payments/update         controllers.Json.submitPaymentUpdateForm
+POST    /json/payments                controllers.Json.submitPaymentAddForm
+GET     /json/payments/:patientId/total_payments     controllers.Json.getTotalPayments(patientId)
+GET     /json/payments/:patientId/total_prices     controllers.Json.getTotalPrices(patientId)
+GET     /json/payments/:patientId/balance     controllers.Json.getPaymentBalance(patientId)
+GET     /json/payments/total_prices/:year/:month     controllers.Json.getTotalPricesByDateRange(year: Int, month: Int)
+GET     /json/dental_services/all/types         controllers.Json.getAllDentalServiceTypes
+GET     /json/specialization/all/names         controllers.Json.getAllSpecializationNames
+GET     /json/settings/audit_log/:module/:date_start/:date_end    controllers.Json.getAuditLogReport(module: String, date_start: String, date_end: String)
+GET     /json/dental_services/tooth/name/:toothId       controllers.Json.getToothName(toothId: String)
+
+GET     /json/dental_supplies               controllers.Json.getSupplyList(start : Int ?= 0, count : Int ?= 25)
+GET     /json/dental_supplies/:id     controllers.Json.getSupplyListById(id: String)
+POST    /json/dental_supplies/update         controllers.Json.submitSupplyUpdateForm
+POST    /json/dental_supplies                controllers.Json.submitSupplyAddForm
+
+POST    /json/settings/teeth_naming        controllers.Json.submitTeethNamingUpdateForm
+GET     /json/patients/:startDate/:endDate      controllers.Json.getPatientsByDateRange(startDate: String, endDate: String)
+GET     /json/monthly_income/:year/:month       controllers.Json.getMonthlyIncome(year: Int, month: Int)
+
+
+GET     /image                      controllers.Application.imageForm
+POST    /image                      controllers.Application.upload
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

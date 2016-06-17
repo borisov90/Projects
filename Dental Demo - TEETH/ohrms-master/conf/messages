@@ -1,0 +1,76 @@
+button.add=Add
+button.update=Update
+button.edit=Edit
+button.cancel=Cancel
+button.close=Close
+button.delete=Delete
+button.save=Save
+button.save.changes=Save Changes
+
+chart.title=Dental Chart
+chart.personal.title=Personal Dental Chart
+
+calendar.title=Calendar
+
+dashboard.title=Dashboard
+
+misc.search=Search
+
+patient.title=Patients
+patient.list.title=Patient List
+patient.add.title=Add Patient
+patient.update.title=Update Patient
+patient.profile.title=Profile
+patient.medical.history.title=Medical History
+
+dentist.title=Dentists
+dentist.list.title=Dentist List
+dentist.add.title=Add Dentist
+dentist.update.title=Update Dentist
+dentist.profile.title=Profile
+
+staff.title=Staffs
+staff.list.title=Staff List
+staff.add.title=Add Staff
+staff.update.title=Update Staff
+staff.profile.title=Profile
+
+dental.service.title=Dental Services
+dental.service.list.title=Dental Services List
+dental.service.add.title=Add Dental Services
+dental.service.update.title=Update Dental Services
+dental.service.profile.title=Profile
+
+report.title=Reports
+
+scheduler.title=Scheduler
+scheduler.appointment.title=Appointment
+scheduler.appointment.add.title=Add Appointment
+
+service.title=Services
+service.add.title=Add Dental Service
+
+settings.audit.log.title=Audit Log
+
+clinic.title=Clinic
+clinic.list.title=Clinic List
+clinic.add.title=Add Clinic
+clinic.update.title=Update Clinic
+
+announcement.title=Reminders
+announcement.list.title=Reminders List
+announcement.add.title=Add Reminder
+announcement.update.title=Update Reminder
+
+specialization.title=Specialization
+specialization.list.title=Specialization List
+specialization.add.title=Add Specialization
+specialization.update.title=Update Specialization
+
+treatments.title=Treatments
+
+login.title=Login
+
+
+
+

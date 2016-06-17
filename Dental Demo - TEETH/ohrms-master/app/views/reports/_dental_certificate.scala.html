@@ -1,0 +1,92 @@
+@(patientId: String)
+@import play.cache.Cache
+@import ws.helper.DateWithTime
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Sabertooth Dental Clinic</title>
+    <style type="text/css">
+        .title {
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 24px;
+
+        }
+        .sub-title {
+        text-align: center;
+        font-size: 11px;
+        font-weight: normal;
+        color: #8E8F92;
+        font-family: sans-serif;
+        }
+        .table {
+        width: 100%;
+        border-collapse: collapse;
+        display: table;
+        white-space: normal;
+        line-height: normal;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        font-variant: normal;
+        font-style: normal;
+        color: #000;
+        text-align: auto;
+        border-spacing: 2px;
+        border-color: #000;
+        }
+
+        .title2 {
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 18px;
+
+        }
+        .center {
+        text-align: center;
+        }
+        .medium-font {
+        font-size: 14px;
+        font-weight: medium;
+        }
+        .table-header {
+        color: #09A;
+        background-color: #E4FFFF;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+        .br-1 {
+        margin-bottom: 15px;
+        }
+        .underline {
+            border-bottom: solid 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">
+    Sabertooth Dental Clinic
+</div>  <div class="sub-title">
+    Malolos City, Bulacan
+</div>
+<br/>
+
+Date: @(DateWithTime.dateWithTimeString)
+<p>To Whom It May Concern:</p>
+<p>This is to certify that the bearer, _________________________________ was examined and attended by the undersigned Dental treatment procedures done:</p>
+<ul>
+    <li>Oral Prophylaxis</li>
+    <li>Extraction of tooth no.'s __________________________________________________________________________</li>
+    <li>Permanent fillings or restorations of tooth's no __________________________________________________________________________</li>
+    <li>Dentures</li>
+    <li>Others <p class="underline" style="width: 100%;"></p></li>
+</ul>
+
+<p>Recommendations:</p>
+</body>
+</html>

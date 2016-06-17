@@ -1,0 +1,87 @@
+@patient(Messages("patient.title")){
+
+<!-- Add Patient -->
+<header class="grid_12 head center">
+    <h1>@Messages("patient.add.title")</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="box grid_12">
+<header>
+    <div class="inner">
+        <div class="left title">
+            <h1></h1>
+        </div>
+        <div class="right">
+            <a href="#" class="close">close</a>
+        </div>
+    </div>
+</header>
+
+<div class="box-content">
+<div>
+    <div class="columns">
+        <div class="form-details right">
+            @helper.form(action = routes.Patient.submitAddForm){
+            <div class="field left">
+                <input type="hidden" name="id" value="">
+                <input type="hidden" name="date_of_birth">
+                <ul>
+                    <li>
+                        <label class="upper">First Name:</label>
+                        <input type="text" required = "required" name="first_name">
+                    </li>
+                    <li>
+                        <label>Middle Name: <span>(optional)</span></label>
+                        <input type="text" name="middle_name">
+                    </li>
+                    <li>
+                        <label>Last Name:</label>
+                        <input type="text" required = "required" name="last_name">
+                    </li>
+                    <li>
+                        <label>Gender:</label>
+                        <select name="gender" required="required">
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="field right">
+                <ul>
+                    <li>
+                        <label class="upper">Address:</label>
+                        <textarea class="autogrow" required = "required" name="address" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2"></textarea>
+                    </li>
+                    <li>
+                        <label>Contact Number:</label>
+                        <input id="contact_no" type="text" required = "required" name="contact_no">
+                    </li>
+                    <li>
+                        <label>Birthdate:</label>
+                        <select id="day" style='width: 18%;'>
+                        </select>
+                        <select id="month" style='width: 40%;'>
+                        </select>
+                        <select id="year" style='width: 35%;'>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="field special">
+                <label>Medical History: <span>(optional)</span></label>
+                <textarea class="autogrow" name="medical_history" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2"></textarea>
+            </div>
+        </div>
+    </div>
+    <footer class="pane">
+        <input type="submit" class="bt blue right" value="@Messages("button.add")">
+    </footer>
+            }
+</div>
+
+</div>
+</div>
+<!-- /Add Patient -->
+}

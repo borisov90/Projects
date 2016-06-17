@@ -1,0 +1,199 @@
+@(patientList: List[ws.services.PatientList], treatmentPlan: List[ws.services.TreatmentPlanType], dentalServices: List[ws.services.DentalServiceList], dentists: List[ws.services.DentistList])
+
+@patient(Messages("patient.title")){
+
+<!-- Update Patient -->
+<header class="grid_12 head center">
+    <h1>@Messages("patient.update.title")</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="box grid_12">
+<header>
+    <div class="inner">
+        <div class="left title">
+            @patientList.map { pl =>
+            <h1>@pl.lastName, @pl.firstName @pl.middleName</h1>
+            }
+        </div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li class="active first"><a href="#tab-1">Profile</a></li>
+                    <li><a href="#tab-2">Personal Dental Chart</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="close">close</a>
+        </div>
+    </div>
+</header>
+
+<div class="box-content">
+<div id="tab-1" class="tab patient_information">
+    <div class="columns">
+        <div class="form-details right">
+            @patientList.map { pl =>
+            @helper.form(action = routes.Patient.submitUpdateForm){
+            <div class="field left">
+                <input type="hidden" name="id" value="@pl.id">
+                <ul>
+                    <li>
+                        <label class="upper">First Name:</label>
+                        <input type="text" required = "required" name="first_name" value="@pl.firstName">
+                    </li>
+                    <li>
+                        <label>Middle Name: <span>(optional)</span></label>
+                        <input type="text" name="middle_name" value="@pl.middleName">
+                    </li>
+                    <li>
+                        <label>Last Name:</label>
+                        <input type="text" name="last_name" required = "required" value="@pl.lastName">
+                    </li>
+                    <li>
+                        <label>Gender:</label>
+                        @{pl.gender match {
+                        case "f" => {
+                        <select name="gender">
+                            <option value="m">Male</option>
+                            <option value="f" selected="selected">Female</option>
+                        </select>
+                        }
+                        case "m" => {
+                        <select name="gender">
+                            <option value="m" selected="selected">Male</option>
+                            <option value="f">Female</option>
+                        </select>
+                        }
+                        case _ => {
+                        <select name="gender">
+                            <option value="x">Choose Gender:</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                        </select>
+                        }
+                        }}
+                    </li>
+                </ul>
+            </div>
+            <div class="field right">
+                <ul>
+                    <li>
+                        <label class="upper">Address:</label>
+                        <textarea id="textarea-input-grow" class="autogrow" name="address" required = "required" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2">@pl.address</textarea>
+                    </li>
+                    <li>
+                        <label>Contact Number:</label>
+                        <input id="contact_no" type="text" name="contact_no" required = "required" id="text" onkeyup="enterNumber()" value="@pl.contactNo">
+
+                    </li>
+                    <li>
+                        <label>Birthdate:</label>
+                        <select id="day" style='width: 18%;'>
+                        </select>
+                        <select id="month" style='width: 40%;'>
+                        </select>
+                        <select id="year" style='width: 35%;'>
+                        </select>
+                        <input type="hidden" name="date_of_birth" required = "required" value="@pl.dateOfBirth">
+                    </li>
+                </ul>
+            </div>
+            <div class="field special">
+                <label>Medical History: <span>(optional)</span></label>
+                <textarea id="" class="autogrow" name="medical_history" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2">@pl.medicalHistory</textarea>
+            </div>
+        </div>
+    </div>
+    <footer class="pane">
+        <input type="submit" class="bt blue right" value="@Messages("button.update")">
+    </footer>
+    }
+    }
+</div>
+<div id="tab-2" class="tab" style="display: none; ">
+    <ul class="button-bar blue small teeth-type">
+        <li name="adultButton" class="first active"><a href="#">Adult</a></li>
+        <li name="childButton" class="last"><a id="teeth-status" href="#">Child</a></li>
+    </ul>
+    <ul class="button-bar orange small">
+        <li class="first last"><a id="dentistToolsButton">Dentist Tools</a></li>
+    </ul>
+    <!--Teeth Chart-->
+    <!--Child-->
+    <div class="face no-highlight">
+    @modal._child_teeth_chart_with_check()
+    <!--/Child-->
+    <!--Adult-->
+    @modal._adult_teeth_chart_with_check()
+    <!--/Adult-->
+    <!--/Teeth Chart-->
+    <!-- Dental Services -->
+    <div class="box grid_11">
+        <header>
+            <div class="inner">
+                <div class="left title">
+                    <h1>@Messages("treatments.title")</h1>
+
+                </div>
+                <div class="right">
+                    <a href="#" class="close">close</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="box-content">
+            <div class="grid_11 table">
+                <div>
+                    <table id="tbl-treatments">
+                        <thead>
+                        <tr>
+                            <th class="first" style="text-align: center;"><span class="glyph center"></span></th>
+                            <th>Service Name</th>
+                            <th>Tooth</th>
+                            <th>Price</th>
+                            <th>Date Performed</th>
+                            <th class="last">Dentist Name</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @treatmentPlan.map { tp =>
+                        <tr class="center">
+                            <td><input type='checkbox' data-teeth-name="@tp.teethName" data-service-id="@tp.serviceId" data-treat-id="@tp.id"></td>
+                            <td><span class="label"  style="background: @tp.color;">@tp.serviceName</span></td>
+                            <td>@tp.teethName</td>
+                            <td><span class="pesos">P</span> @tp.servicePrice</td>
+                            <td>@tp.datePerformed</td>
+                            <td>Dr. @tp.dentistName</td>
+                        </tr>
+                        }
+                        </tbody>
+                    </table>
+                    <!--<footer class="extension bottom inright pagination right">
+                        <nav>
+                            <ul>
+                                <li class="first"><a href="#">« previous</a></li>
+                                <li><a href="#">01</a></li>
+                                <li><a href="#">02</a></li>
+                                <li class="active"><a href="#">03</a></li>
+                                <li><a href="#">04</a></li>
+                                <li><a href="#">05</a></li>
+                                <li class="disabled last"><span>disabled »</span></li>
+                            </ul>
+                        </nav>
+                    </footer>-->
+                </div>
+            </div>
+        </div>
+        <footer class="pane">
+            <a id="update_treatment_plan" class="bt blue right" href="#">@Messages("button.save.changes")</a>
+        </footer>
+    </div>
+    <!-- / Services -->
+</div>
+</div>
+
+@modal._dentist_tools(dentalServices, dentists)
+
+</div>
+<!-- /Update Patient -->
+}

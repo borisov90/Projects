@@ -1,0 +1,61 @@
+@(dentalServices: List[ws.services.DentalServiceList], dentists: List[ws.services.DentistList])
+
+<!--Dentist Tools-->
+<div id="dentistTools" title="Dentist Tools">
+    <h4>Selected Teeth: </h4>
+    <div class="selected-tooth ui-box center">
+    </div>
+    <div class="dental-services ui-box dental-services-details">
+        <p class="center dental-service-name"></p>
+        <div>
+            <div class="left" style="width: 48%; padding-right: 5px;">
+                <p>Price:</p>
+                <input name="price" value="0.00" type="text" disabled="disabled" style="width: 100%;">
+            </div>
+            <div class="left" style="width: 48%; padding-left: 5px;">
+                <p>Discount:</p>
+                <select class="discount" style="width: 100%;">
+                    <option value="1" selected="selected">original price</option>
+                    <option value=".05">5%</option>
+                    <option value=".1">10%</option>
+                    <option value=".12">12%</option>
+                    <option value=".15">15%</option>
+                    <option value=".2">20%</option>
+                    <option value=".25">25%</option>
+                    <option value=".3">30%</option>
+                    <option value=".4">40%</option>
+                    <option value=".5">50%</option>
+                    <option value=".75">75%</option>
+                </select>
+            </div>
+        </div>
+        <p>Dentist:</p>
+        <select class="large" name="dentist_id">
+            @dentists.map { d =>
+            <option value="@d.id">Dr. @d.firstName @d.middleName @d.lastName</option>
+            }
+        </select>
+        <p>Date Performed: <input class="large" name="date_performed" type="text"></p>
+    </div>
+    <!--<div id="accordion">-->
+    <h4>Dental Services</h4>
+    <div class="ui-box center">
+        <div>
+            <ul id="dental_services">
+                @dentalServices.map { ds =>
+                <button id="@ds.code" original-title="@ds.name" name="@ds.name" class="dental_service ui-widget-content" data-id="@ds.id" data-type="@ds.toolType" data-color="@ds.color" data-price="@ds.price" data-image-template="@ds.imageTemplate">@ds.code</button>
+                }
+                <button id="ERASER" class="dental_service ui-widget-content" data-type="paint" data-color="white">ERASER</button>
+            </ul>
+        </div>
+    </div>
+    <h4>Inclusive Dental Services</h4>
+    <div class="ui-box center">
+        <div>
+            <ul id="inclusive_dental_services">
+                <!--<p class="center inclusive-dental-service-name"></p>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--/Dentist Tools-->

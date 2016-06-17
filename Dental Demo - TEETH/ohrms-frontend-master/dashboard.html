@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class=" -webkit-"><head>
+        <meta charset="UTF-8">
+        <title>Sabertooth - Dashboard</title>
+        <!-- JAVASCRIPTs -->
+        <!--[if lt IE 9]>
+            <script language="javascript" type="text/javascript" src="js/jqPlot/excanvas.min.js"></script>
+            <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/960.css">
+        <link rel="stylesheet" type="text/css" href="css/icons.css">
+        <link rel="stylesheet" type="text/css" href="css/tipsy.css">
+        <link rel="stylesheet" type="text/css" href="css/formalize.css">
+        <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.18.custom.css">
+        <link rel="stylesheet" type="text/css" href="css/chosen.css">
+        <link rel="stylesheet" type="text/css" href="css/ui.spinner.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.jqplot.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fullcalendar.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.miniColors.css">
+        <link rel="stylesheet" type="text/css" href="css/elrte.min.css">
+        <link rel="stylesheet" type="text/css" href="css/elfinder.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script src="js/jquery.tipsy.js"></script>
+        <script src="js/jquery.formalize.min.js"></script>
+        <script src="js/jquery.modal.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+        <script src="js/datables/js/jquery.dataTables.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/jquery.autogrowtextarea.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.fileinput.js"></script>
+        <script src="js/chosen.jquery.min.js"></script>
+        <script src="js/ui.checkBox.js"></script>
+        <script src="js/ui.spinner.min.js"></script>
+        <script src="js/jquery.loading.js"></script>
+        <script src="js/jquery.path.js"></script>
+        <script src="js/jqPlot/jquery.jqplot.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.pieRenderer.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.cursor.min.js"></script>
+        <!-- # -->
+        <script src="js/jqPlot/plugins/jqplot.highlighter.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.dragable.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.dateAxisRenderer.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.ohlcRenderer.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.trendline.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.barRenderer.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+        <script src="js/jqPlot/plugins/jqplot.pointLabels.min.js"></script>
+        <!-- /# -->
+        <script src="js/fullcalendar.min.js"></script>
+        <script src="js/jquery.miniColors.min.js"></script>
+        <script src="js/jquery.maskedinput-1.3.min.js"></script>
+        <script src="js/jquery-ui-timepicker-addon.js"></script>
+        <script src="js/elrte.min.js"></script>
+        <script src="js/elfinder.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.metadata.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/demo.js"></script>
+        <script type="text/javascript" src="js/raphael-min.js"></script>
+        <script type="text/javascript" src="js/teeth-chart-adult.js"></script>
+    </head>
+    <body style="background-image: url(img/bg-pattern-5.png); ">
+        <!-- wrapper -->
+        <div id="wrapper">
+            <header>
+                <div class="container_12">
+                    <div class="grid_12">
+                        <!-- navigation menu -->
+                        <nav class="main-nav">
+                            <ul>
+                                <li class="first"><a href="#" name="Dashboard"><span class="glyph cloud"></span> Dashboard</a></li>
+                                <li class="active"><a href="#" name="Patients"><span class="glyph user"></span> Patients</a></li>
+                                <li><a href="#" name="Scheduler"><span class="glyph clock"></span> Scheduler</a></li>
+                                <li><a href="#" name="Services"><span class="glyph list"></span> Services</a></li>
+                                <li><a href="charts.php" name="Reports"><span class="glyph rating"></span> Reports</a></li>
+                            </ul>
+                        </nav>
+                        <!-- /navigation menu -->
+
+                        <!-- bar -->
+                        <ul class="bar">
+                            <li class="search first">
+                                <div>
+                                    <form>
+                                        <!-- the "L" value represents the icon, don't change -->
+                                        <input type="submit" value="L" class="tooltip glyph" original-title="Click to search">
+                                        <input type="text" placeholder="What you want to search?" name="s" style="display: none; ">
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyph settings"></span>
+                                </a>
+                            </li>
+                            <li class="last">
+                                <a href="#" class="tooltip" original-title="edit profile">
+                                    <span class="glyph user"></span>
+                                    <span class="text">Dr. Kureha</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                
+                </div>
+            </header>
+
+            <section id="main">
+                <div class="container_12">
+                    <div class="grid_12" id="content-top">
+                        <div id="logo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li class="first">
+                                    <a href="#addPatientModal" class="modal">
+                                        <span class="glyph zoom-in"></span>
+                                        Add Patient
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#dentalChartModal" class="modal">
+                                        <span class="glyph open-in-new-window"></span>
+                                        Dental Chart
+                                    </a>
+                                </li>
+                                <li class="last">
+                                    <a href="#">
+                                        <span class="glyph zoom-in"></span>
+                                        Calendar
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div id="content">
+                    <!-- AddPatientModal -->
+                    <div class="box grid_8" id="addPatientModal" hidden="">
+                        <header>
+                            <div class="inner">
+                                <div class="left title">
+                                    <h1>Add Patient</h1>
+                                </div>
+                                <div class="right">
+                                    <a href="#" class="close">close</a>
+                                </div>
+                            </div>
+                        </header>
+                    
+                        <div class="box-content">
+                            AddPatientModal
+                            <footer class="pane">
+                                <a href="#" class="close bt red">Close modal</a>
+                                <a href="#" class="bt blue">Custom button</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- /AddPatientModal -->
+
+                    <!-- DentalChartModal -->
+                    <div class="box grid_8" id="dentalChartModal" hidden="">
+                        <header>
+                            <div class="inner">
+                                <div class="left title">
+                                    <h1>Dental Chart</h1>
+                                </div>
+                                <div class="center">
+                                    <div id="svgchart">
+                                    </div>
+                                    <a href="#" class="close">close</a>
+                                </div>
+                            </div>
+                        </header>
+                    
+                        <div class="box-content">
+
+                            <footer class="pane">
+                                <a href="#" class="close bt red">Close modal</a>
+                                <a href="#" class="bt blue">Custom button</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- /DentalChartModal -->
+
+                        <div class="main-box">
+
+                            <!-- # Dashboard -->
+                            <header class="grid_12 head">
+                                <h1>Dashboard</h1>
+                                <div class="clear"></div><span class="divider"></span>
+                            </header>
+
+                            <!-- Announcements -->
+                            <div class="simple-box grid_8">
+                                <div class="inner">
+                                    <header>
+                                        <h1>Announcements</h1>
+                                    </header>
+
+                                    <div class="box-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam. Sed pharetra placerat est suscipit sagittis. Phasellus aliquam malesuada blandit. Donec adipiscing sem erat. Donec adipiscing sem erat. Nunc at dui id purus lacinia tincidunt sit amet vel erat. Maecenas id augue ac metus tempus aliquam. Sed pharetra placerat est suscipit sagittis. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Announcements -->
+
+                            <!-- Today's Appointments -->
+                            <div class="box grid_4">
+                                <header>
+                                    <div class="inner">
+                                        <div class="left title">
+                                            <h1>Today's Appoinments</h1>
+                                            <a href="#">view scheduler »</a>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="close">close</a>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div class="box-content no-inner-space" style="display: block; ">
+                                    <ul class="userlist">
+                                        <li class="first">
+                                            <div class="avatar"><img src="img/thumbs/media1.jpg" width="40" height="40" alt="avatar"></div>
+                                            <div class="info-l">
+                                                <a href="#" class="title">Kunis, Mila D.</a>
+                                                <span>Oral Prophylaxis, Ex...</span>
+                                            </div>
+                                            <div class="info-r">
+                                                <span>10 am</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar"><img src="img/thumbs/media2.jpg" width="40" height="40" alt="avatar"></div>
+                                            <div class="info-l">
+                                                <a href="#" class="title">Madrigal, Ehra D.C.</a>
+                                                <span>Extraction</span>
+                                            </div>
+                                            <div class="info-r">
+                                                <span>12 pm</span>
+                                            </div>
+                                        </li>
+                                        <li class="last">
+                                            <div class="avatar"><img src="img/thumbs/media3.jpg" width="40" height="40" alt="avatar"></div>
+                                            <div class="info-l">
+                                                <a href="#" class="title">Song Hye Kyo</a>
+                                                <span>Oral Prophylaxis</span>
+                                            </div>
+                                            <div class="info-r">
+                                                <span>1:30 pm</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Today's Appoinments -->
+
+                            <!-- Statistics -->
+                            <div class="box grid_8">
+                                <header>
+                                    <div class="inner">
+                                        <div class="left title">
+                                            <h1>Statistics</h1>
+                                        </div>
+                                        <div class="right">
+                                            <nav>
+                                                <ul>
+                                                    <li class="active first"><a href="#tab-1">Tab 1</a></li>
+                                                    <li><a href="#tab-2">Tab 2</a></li>
+                                                    <li class="last"><a href="#tab-3">Tab 3</a></li>
+                                                </ul>
+                                            </nav>
+                                            <a href="#" class="close">close</a>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div class="box-content">
+                                    <div id="tab-1" class="tab">
+                                        <img src="img/chart.jpg" width="590" height="300" alt="chart">
+                                    </div>
+                                    <div id="tab-2" class="tab" style="display: none; ">
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <a href="#">Ut wisi enim</a> ad minim veniam, quis nostrud exerci tation <strong>ullamcorper</strong> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla <strong>facilisis at vero eros et accumsan</strong> et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <em>Nam liber tempor</em> cum soluta nobis eleifend option congue nihil <a href="#">imperdiet doming id</a> quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. </p>
+                                    </div>
+                                    <div id="tab-3" class="tab" style="display: none; ">
+                                        <p>Lorem <a href="#">ipsum dolor</a> sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <a href="#">Ut wisi enim</a> ad minim veniam, quis nostrud exerci tation <strong>ullamcorper</strong> suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla <strong>facilisis at vero eros et accumsan</strong> et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <em>Nam liber tempor</em> cum soluta nobis eleifend option congue nihil <a href="#">imperdiet doming id</a> quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Statistics -->
+
+                            <!-- Latest Patients -->
+                            <div class="box grid_4">
+                                <header>
+                                    <div class="inner">
+                                        <div class="left title">
+                                            <h1>Latest Patients</h1>
+                                            <a href="#">view patient list »</a>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="close">close</a>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div class="box-content no-inner-space" style="display: block; ">
+                                    <ul class="userlist">
+                                        <li class="first">
+                                            <div class="avatar"><img src="img/thumbs/media4.jpg" width="40" height="40" alt="avatar"></div>
+                                            <div class="info-l">
+                                                <a href="#" class="title">Manalo, Jose I.</a>
+                                                <span>Balagtas, Bulacan</span>
+                                            </div>
+                                            <div class="info-r">
+                                                <span>2 hours ago</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avatar"><img src="img/thumbs/media6.jpg" width="40" height="40" alt="avatar"></div>
+                                            <div class="info-l">
+                                                <a href="#" class="title">De Leon, Joey C.</a>
+                                                <span>Malolos, Bulacan</span>
+                                            </div>
+                                            <div class="info-r">
+                                                <span>12 hours ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="last">
+                                            <div class="avatar"><img src="img/thumbs/media7.jpg" width="40" height="40" alt="avatar"></div>
+                                            <div class="info-l">
+                                                <a href="#" class="title">Sotto, Vic M.</a>
+                                                <span>Bocaue, Bulacan</span>
+                                            </div>
+                                            <div class="info-r">
+                                                <span>3 days ago</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Latest Patients -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- /wrapper -->
+
+        <footer>
+            <div class="container_12">
+                <p>© Copyright 2012 - Sabertooth | Juan Tamad - <a href="#" target="_blank">Sabertooth Technologies</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

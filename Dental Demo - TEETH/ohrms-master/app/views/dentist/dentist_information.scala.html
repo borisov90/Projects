@@ -1,0 +1,103 @@
+@(dentistList: List[ws.services.DentistList])
+
+@main("Dentist Information") {
+<!-- # Treatment Plan -->
+<header class="grid_12 head">
+    <h1>Dentist Profile</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<!-- Breadcrumb -->
+<script type="text/javascript">
+    $('<div class="extension top inleft breadcrumbs"><nav><ul><li class="first"><a href="#">Settings</a> <span class="divider"></span></li><li><a href="#">Dentists</a> <span class="divider"></span></li><li class="last"><a href="#">@dentistList.map { dl => Dr. @dl.firstName @dl.middleName @dl.lastName \'s Profile }</a></li></ul></nav></div>').prependTo('#content');
+</script>
+<!-- /Breadcrumb -->
+
+<!-- Profile, Dental Chart, Medical History -->
+<div class="box grid_12">
+<header>
+    <div class="inner">
+        <div class="left title">
+            @dentistList.map { dl =>
+            <h1>@dl.lastName, @dl.firstName @dl.middleName</h1>
+            }
+        </div>
+        <div class="right">
+            <nav style="display: none;">
+                <ul>
+                    <li class="active first"><a href="#tab-1">Profile</a></li>
+
+                </ul>
+            </nav>
+            <a href="#" class="close">close</a>
+        </div>
+    </div>
+</header>
+
+<div class="box-content">
+<div id="tab-1" class="tab">
+    <div class="columns">
+        <div class="form-details right">
+            @dentistList.map { dl =>
+            <div class="field left">
+                <ul>
+                    <!--<li>
+                        <label>Dentist ID:</label>
+                        <label class="form-label">@dl.id</label>
+                    </li>-->
+                    <li>
+                        <label>First Name:</label>
+                        <label class="form-label">@dl.firstName</label>
+                    </li>
+                    <li>
+                        <label>Middle Name:</label>
+                        <label class="form-label">@dl.middleName</label>
+                    </li>
+                    <li>
+                        <label>Last Name:</label>
+                        <label class="form-label">@dl.lastName</label>
+                    </li>
+                    <li>
+                        <label>User Name:</label>
+                        <label class="form-label">@dl.userName</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="field right">
+                <ul>
+                    <li>
+                        <label>Address:</label>
+                        <label class="form-label">@dl.address</label>
+                    </li>
+                    <li>
+                        <label>Contact Number:</label>
+                        <label class="form-label">@dl.contactNo</label>
+                    </li>
+                    <li>
+                        <label>PRC No:</label>
+                        <label class="form-label">@dl.prcNo</label>
+                    </li>
+                    <li>
+                        <label>Specialization(s):</label>
+                        <label class="form-label">@for(sn <- dl.specializationName){@sn</br>}</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        @if((play.cache.Cache.get("role")) == 0) {
+            <footer class="pane">
+                <a class="bt blue right" href="@routes.Dentist.getUpdateForm(dl.id)">@Messages("button.edit")</a>
+            </footer>
+        }else{
+            @if((play.cache.Cache.get("user_name")) == dl.userName){
+            <footer class="pane">
+                <a class="bt blue right" href="@routes.Dentist.getUpdateForm(dl.id)">@Messages("button.edit")</a>
+            </footer>
+            }
+        }
+</div>   }
+<!-- /Dentist Info -->
+}

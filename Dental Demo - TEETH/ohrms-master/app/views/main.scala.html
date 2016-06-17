@@ -1,0 +1,252 @@
+@(title: String)(content: Html)
+@import play.cache.Cache
+@import ws.delegates.{DentistDelegate, DentalServiceDelegate, PatientDelegate}
+
+<!DOCTYPE html>
+
+<html class=" -webkit-">
+<head>
+    <meta charset="UTF-8">
+    <title>Sabertooth - @title</title>
+    <link rel="shortcut icon" type="image/png" href='@routes.Assets.at("images/tooth.png")'>
+    <!-- JAVASCRIPTs -->
+    <!--[if lt IE 9]>
+    <script language="javascript" type="text/javascript" src="@routes.Assets.at("javascripts/jqPlot/excanvas.min.js")"></script>
+    <script language="javascript" type="text/javascript" src="@routes.Assets.at("javascripts/html5shiv.js")"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/reset.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/960.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/icons.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/tipsy.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/formalize.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/prettyPhoto.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/jquery-ui-1.8.18.custom.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/chosen.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/ui.spinner.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/jquery.jqplot.min.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/fullcalendar.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/jquery.miniColors.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/elrte.min.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/elfinder.css")'>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery-ui-1.8.18.custom.min.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery.tipsy.js")'></script>
+    <!--<script src="@routes.Assets.at("javascripts/jquery.formalize.min.js")'></script>-->
+    <script src='@routes.Assets.at("javascripts/jquery.modal.js")'></script>
+    <script src='@routes.Assets.at("javascripts/prefixfree.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/datables/js/jquery.dataTables.min.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery.prettyPhoto.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.autogrowtextarea.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.easing.1.3.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.fileinput.js")'></script>
+    <script src='@routes.Assets.at("javascripts/chosen.jquery.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/ui.checkBox.js")'></script>
+    <script src='@routes.Assets.at("javascripts/ui.spinner.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.loading.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.path.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/jquery.jqplot.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.pieRenderer.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.cursor.min.js")'></script>
+    <!-- # -->
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.highlighter.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.dragable.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.dateAxisRenderer.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.ohlcRenderer.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.trendline.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.barRenderer.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.categoryAxisRenderer.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jqPlot/plugins/jqplot.pointLabels.min.js")'></script>
+    <!-- /# -->
+    <script src='@routes.Assets.at("javascripts/fullcalendar.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.miniColors.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery.maskedinput-1.3.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/jquery-ui-timepicker-addon.js")'></script>
+    <script src='@routes.Assets.at("javascripts/elrte.min.js")'></script>
+    <script src='@routes.Assets.at("javascripts/elfinder.min.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery.validate.min.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery.metadata.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/main.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/demo.js")'></script>
+    <!--<script type="text/javascript" src='@routes.Assets.at("javascripts/raphael-min.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/dental-chart-child.js")'></script>-->
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/functions.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery-resize.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/jquery.contextmenu.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/cal.js")'></script>
+    <script type="text/javascript" src='@routes.Assets.at("javascripts/bootstrap-typeahead.js")'></script>
+
+    <!--<script type="text/javascript" src='@routes.Assets.at("javascripts/jquery-ui-1.9.2.custom.js")'></script>-->
+
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/teeth-chart.css")'><!--
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/jquery-ui-1.9.2.custom.css")'>-->
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/jquery.contextmenu.css")'>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
+    <script type="text/javascript">
+
+        function confirmPassword(){
+
+        var password = document.getElementById('password');
+        var confirmPassword = document.getElementById('confirmpassword');
+
+        if (password.value != confirmPassword.value)
+        {
+        alert("Password not matched");
+        confirmPassword.value = confirmPassword.value.substring(0,confirmPassword.value="");
+        }
+        }
+
+    </script>
+</head>
+<body style="background-image: url(@routes.Assets.at("images/bg-pattern-5.png"); ">
+<!-- wrapper -->
+<div id="wrapper">
+<header>
+    <div class="container_12">
+        <div class="grid_12">
+            <!-- navigation menu -->
+            <nav class="main-nav">
+                <ul>
+
+                    <li class="first"><a href="@routes.Application.dashboard()" name="Dashboard"><span class="glyph cloud"></span> @Messages("dashboard.title")</a></li>
+                    <li><a href="@routes.Patient.getList()" name="Patients"><span class="glyph user"></span> @Messages("patient.title")</a></li>
+                    <li><a href="@routes.Scheduler.getCalendar()" name="Scheduler"><span class="glyph clock"></span> @Messages("scheduler.title")</a></li>
+                    <li><a href="@routes.DentalService.getList()" name="Services"><span class="glyph list"></span> @Messages("service.title")</a></li>
+                    <li><a href="@routes.Reports.getReportsList()" name="Reports"><span class="glyph rating"></span> @Messages("report.title")</a></li>
+
+                </ul>
+            </nav>
+            <!-- /navigation menu -->
+
+            <!-- bar -->
+            <ul class="bar">
+                <!--<li class="search first">
+                    <div>
+                        <form>
+                            &lt;!&ndash; the "L" value represents the icon, don't change &ndash;&gt;
+                            <input type="submit" value="L" class="tooltip glyph" original-title="Click to search">
+                            <input type="text" placeholder="What you want to search?" name="s" style="display: none; ">
+                        </form>
+                    </div>
+                </li>-->
+                <li class="first">
+                    <a href="@routes.Settings.settings()" class="tooltip" original-title="settings">
+                        <span class="glyph settings"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@routes.Application.logout()" class="tooltip" original-title="log out">
+                        <span class="glyph logout"></span>
+                    </a>
+                </li>
+                <li class="last">
+                    <a href="#">
+                        <span class="glyph user"></span>
+                        <span class="text">@(play.cache.Cache.get("user_name"))</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section id="main">
+<div class="container_12">
+<div class="grid_12" id="content-top">
+    <div id="logo">
+        <img src="@routes.Assets.at("images/logo.png")" alt="logo">
+    </div>
+    <!--<nav>
+        <ul>
+            <li class="first">
+                <a href="#addAppointmentModal" class="modal">
+                    <span class="glyph zoom-in"></span>
+                    @Messages("scheduler.appointment.title")
+                </a>
+            </li>
+            <li class="last">
+                <a href="#addPatientModal" class="modal">
+                    <span class="glyph zoom-in"></span>
+                    @Messages("patient.add.title")
+                </a>
+            </li>
+            <li class="last">
+                <a href="#dentalChartModal" class="modal">
+                    <span class="glyph open-in-new-window"></span>
+                    @Messages("chart.title")
+                </a>
+            </li>
+            <li class="last">
+                <a href="#addAppointmentModal" class="modal">
+                    <span class="glyph open-in-new-window"></span>
+                    @Messages("chart.title")
+                </a>
+            </li>
+        </ul>
+    </nav>-->
+</div>
+
+<div id="content">
+@modal._add_appointment(DentistDelegate.getAllDentists, DentalServiceDelegate.getAllDentalServiceList, PatientDelegate.getAllPatients)
+
+@modal._update_appointment_form()
+
+
+<!-- AddPatientModal
+modal._add_patient()
+/AddPatientModal -->
+
+<!-- DentalChartModal -->
+<!--<div class="box grid_12" id="dentalChartModal" hidden="">
+    <header>
+        <div class="inner">
+            <div class="left title">
+                <h1>@Messages("chart.title")</h1>
+            </div>
+            <div class="center">
+                <a href="#" class="close">close</a>
+            </div>
+        </div>
+    </header>
+    <div class="box-content">
+        <ul class="button-bar blue small teeth-type">
+            <li name="adultButton" class="first active"><a href="#">Adult</a></li>
+            <li name="childButton" class="last"><a id="teeth-status" href="#">Child</a></li>
+        </ul>
+        <br>
+        &lt;!&ndash;Teeth Chart&ndash;&gt;
+        <div class="face no-highlight">
+            &lt;!&ndash;Child&ndash;&gt;
+            &lt;!&ndash;/Child&ndash;&gt;
+            &lt;!&ndash;Adult&ndash;&gt;
+            &lt;!&ndash;/Adult&ndash;&gt;
+        </div>
+        &lt;!&ndash;/Teeth Chart&ndash;&gt;
+    </div>
+</div>-->
+<!-- /DentalChartModal -->
+
+<div class="main-box">
+
+    @content
+
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- /wrapper -->
+
+<footer>
+    <div class="container_12">
+        <p>@(play.cache.Cache.get("clinic-name")), @(play.cache.Cache.get("clinic-address")) <a href="#" target="_blank"> - About the Developers</a></p>
+    </div>
+</footer>
+
+<script type="text/javascript" src='@routes.Assets.at("javascripts/teeth-child.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/teeth-adult.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/teeth-chart.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/highcharts/js/highcharts.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/highcharts/modules/exporting.js")'></script>
+
+</body>
+</html>

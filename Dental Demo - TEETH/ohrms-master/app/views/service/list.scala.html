@@ -1,0 +1,212 @@
+@(dentalServiceList: List[ws.services.DentalServiceList])
+
+@service(Messages("service.title")){
+
+<header class="grid_12 head center">
+    <h1>@Messages("service.title")</h1>
+    <a class="function-button right" href="@routes.Reports._serviceList()"><span class="glyph portrait-view"></span> print</a>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<!-- Add Dental Service-->
+@if((play.cache.Cache.get("role")) == 0){
+<div class="box grid_12">
+    <header>
+        <div class="inner">
+            <div class="left title">
+                <h1>@Messages("service.add.title")</h1>
+            </div>
+            <div class="right">
+                <a href="#" class="close">close</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="box-content">
+        <div class="columns">
+            <div class="form-details right">
+                @helper.form(action = routes.DentalService.submitAddForm){
+                <div class="field left">
+                    <input type="hidden" name="id" value="">
+                    <ul>
+                        <li>
+                            <label class="upper">Name:</label>
+                            <input type="text" name="name" required="required">
+                        </li>
+                        <li>
+                            <label>Code:</label>
+                            <input type="text" name="code" required="required">
+                        </li>
+                        <li>
+                            <label>Service Type:</label>
+                            <select name="type">
+                                <option value="General Dentistry">General Dentistry</option>
+                                <option value="Orthodontics">Orthodontics</option>
+                                <option value="Periodontics">Periodontics</option>
+                                <option value="Endodontics">Endodontics</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Price:</label>
+                            <input type="text" name="price" required="required">
+                        </li>
+                    </ul>
+                </div>
+                <div class="field right">
+                    <ul>
+                        <li>
+                            <label class="upper">Tool Type:</label>
+                            <select name="target">
+                                <option value="1">Paint</option>
+                                <option value="2">Symbol</option>
+                                <option value="3">Selective</option>
+                                <option value="4">Inclusive</option>
+                            </select>
+                        </li>
+                        <li style="display: none;">
+                            <label>Template:</label>
+                            <select name="image_template">
+                                <option value="CHAR-A">CHAR-A</option>
+                                <option value="CHAR-B">CHAR-B</option>
+                                <option value="CHAR-C">CHAR-C</option>
+                                <option value="CHAR-D">CHAR-D</option>
+                                <option value="CROSSOUT">CROSSOUT</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>Color:</label>
+                            <div class="field small">
+                                <input name="color" type="text" class="colorpicker miniColors"  maxlength="7" autocomplete="off" required="required" style="padding-right: 35px;">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="field special">
+                    <label>Restricted Services: <span>(optional)</span></label>
+                    <div>
+                        <select class="special special-left services-list" multiple>
+                            @dentalServiceList.map { dsl =>
+                            <option value="@dsl.id">@dsl.name</option>
+                            }
+                        </select>
+
+                        <div class="button-set">
+                            <a href="#" class="bt blue close center forward"><span class="glyph forward-2"></span><span class="glyph forward-2"></span></a><br>
+                            <a href="#" class="bt blue close center back"><span class="glyph back-2"></span><span class="glyph back-2"></span></a>
+                        </div>
+
+                        <select class="special special-right services-banned" multiple>
+                        </select>
+
+                        <div class="services-banned">
+
+                        </div>
+                    </div>
+                    <!--<textarea class="autogrow" name="medical_history" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2"></textarea>-->
+                    <!--<blockquote>Banned Services column, sets the services that only alowed to be mix with.</blockquote>-->
+                </div>
+            </div>
+        </div>
+        @if((play.cache.Cache.get("role")) == 0) {
+        <footer class="pane">
+            <input id="addServiceButton" type="submit" class="bt blue right close" value="@Messages("button.add")">
+        </footer>
+        }
+        </form>
+        }
+    </div>
+</div>
+        }
+<!-- /Add Dental Service-->
+
+<!-- Service List -->
+<div class="grid_12">
+    <div class="extension top fullwidth">
+        <div id="DataTables_Table_0_length" class="dataTables_length">
+            <label>
+                <span class="textnode">Show </span>
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0">
+                    <option value="0" selected="selected">-</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                <span class="textnode"> entries</span>
+            </label>
+        </div>
+        <div class="dataTables_filter" id="DataTables_Table_0_filter">
+            <label>
+                <form action="@routes.DentalService.searchServiceList()" method="GET">
+                    <span class="textnode">@Messages("misc.search"): </span>
+                    <input type="text" aria-controls="DataTables_Table_0" id="search_box" name="filter" placeholder="Enter keyword..">
+                </form>
+            </label>
+        </div>
+        <div class="clear"></div></div>
+    <div class="table">
+        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+            <table class="datatable dataTable" id="DataTables_Table_0">
+                <thead>
+                <tr role="row">
+                    <th class="first sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 30%;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">
+                        <div class="parentsort">Service Name
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 10%;" aria-label="Browser: activate to sort column ascending">
+                        <div class="parentsort">Code
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15%;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">Type
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15%;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">Target
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15%;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">Price
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="last sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 15%;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">Color
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                @dentalServiceList.map { dsl =>
+                <tr>
+                    <td class="sorting_1"><a href="@routes.DentalService.getDentalServiceInformationById(dsl.id)">@dsl.name</a></td>
+                    <td>@dsl.code</td>
+                    <td>@dsl.sType</td>
+                    <td>@dsl.toolType</td>
+                    <td><span class="pesos">P</span> @dsl.price</td>
+                    <td class="center"><span class="label" style="background: @dsl.color;">@dsl.color</span></td>
+                </tr>
+                }
+                </tbody>
+            </table>
+            <div class="extension bottom inright pagination">
+                <div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_0_paginate">
+                    <a tabindex="0" class="first previous paginate_button paginate_button_disabled" id="DataTables_Table_0_previous">Previous</a>
+                        <span>
+                            <a tabindex="0" class="paginate_active">1</a>
+                        </span>
+                    <a tabindex="0" class="last next paginate_button" id="DataTables_Table_0_next">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Service List -->
+
+}

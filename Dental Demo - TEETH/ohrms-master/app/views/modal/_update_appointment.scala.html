@@ -1,0 +1,97 @@
+@(appointmentList: List[ws.services.AppointmentList], dentists: List[ws.services.DentistList], services: List[ws.services.DentalServiceList])
+
+@main("Appointment Information") {
+
+<header class="grid_12 head">
+    <h1>Appointment Information</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="box grid_12" id="updateAppointmentModal">
+    <header>
+        <div class="inner">
+            <div class="left title">
+                @appointmentList.map { dl =>
+                <h1>@dl.lastName, @dl.firstName @dl.middleName</h1>
+                }
+            </div>
+            <div class="right">
+                <nav style="display: none;">
+                    <ul>
+                        <li class="active first"><a href="#tab-1">Profile</a></li>
+
+                    </ul>
+                </nav>
+                <a href="#" class="close">close</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="box-content">
+        <div class="center">
+            <div class="form-details right">
+                @appointmentList.map { dl =>
+                <form action="" class="appointment_update_form">
+                <div class="field left">
+                    <input type="hidden" name="id" value="@dl.id">
+                    <ul>
+                        <li>
+                            <label>Service:</label>
+                            <select name="dental_service_id" data-default="@dl.dentalServiceId">
+                                @services.map { s =>
+                                <option value="@s.id">@s.name</option>
+                                }
+                            </select>
+                            <script type="text/javascript">
+                                $('select[name=dental_service_id]').attr('data-default');
+                            </script>
+                        </li>
+                        <li>
+                            <label>First Name:</label>
+                            <input type="text" name="first_name" required = "required" value="@dl.firstName">
+                        </li>
+                        <li>
+                            <label>Middle Name:</label>
+                            <input type="text" name="middle_name" value="@dl.middleName">
+                        </li>
+                        <li>
+                            <label>Last Name:</label>
+                            <input type="text" name="last_name" required = "required" value="@dl.lastName">
+                        </li>
+                    </ul>
+                </div>
+                <div class="field right">
+                    <ul>
+                        <li>
+                            <label>Dentist:</label>
+                            <select name="dentist_id" data-default="@dl.dentistId">
+                                @dentists.map { d =>
+                                   <option value="@d.id">@d.firstName @d.middleName @d.lastName</option>
+                                }
+                            </select>
+                            <script type="text/javascript">
+                                $('select[name=dentist_id]').attr('data-default');
+                            </script>
+                        </li>
+                        <li>
+                            <label>Contact Number:</label>
+                            <input type="text" name="contact_no" required = "required" value="@dl.contactNo">
+                        </li>
+                        <li>
+                            <label>Address:</label>
+                            <textarea name="address" required = "required" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2">@dl.address</textarea>
+                        </li>
+                        <input type="hidden" name="date_start" value="@dl.dateStart.get">
+                        <input type="hidden" name="date_end" value="@dl.dateEnd.get">
+                    </ul>
+                </div>
+                </form>
+            </div>
+        </div>
+        <footer class="pane">
+           <input type="submit" class="bt blue right" value="@Messages("button.update")">
+        </footer>
+        }
+    </div>
+</div>
+   }

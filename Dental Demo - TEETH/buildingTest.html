@@ -1,0 +1,300 @@
+﻿<html><head><meta charset="utf-8"><style type="text/css"></style></head><body style="-ms-word-wrap: break-word;">﻿
+
+    <title>REST JQuery Contact Editor</title>
+  
+    <script src="../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <!--<script src="Scripts/jquery_1.9.1.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/RESTJQueryContactEditor.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        // <![CDATA[
+
+        //Variable to hold reference to a table row between ajax call and callback
+        var TMP_ROW = null;
+
+
+        //var fieldValue = Xrm.Page.getAttribute("new_propertytype");
+        //console.log(fieldValue);
+        var cityValue = window.parent.Xrm.Page.getAttribute("new_city").getValue();
+        var areaValue = window.parent.Xrm.Page.getAttribute("new_area").getValue();
+        var areaMinValue = areaValue - (areaValue / 10);
+        var areaMaxValue = areaValue + (areaValue / 10);
+
+        //var locationValue = window.parent.Xrm.Page.getAttribute("new_location").getValue();
+        var propertyTypeValue = window.parent.Xrm.Page.getAttribute("new_propertytype").getValue();
+        //alert(locationValue);
+
+        $(document).ready(SearchButton_onclick);
+
+
+        //*************************** EVENT HANDLERS ******************************
+
+        //Search Button Event Handler
+        function SearchButton_onclick() {
+            //var fieldValue = Xrm.Page.getAttribute("new_propertytype").getValue();
+            //    console.log(fieldValue);
+            retrieveMultiple("new_propertiesSet", null, SearchCompleted, null);
+        }
+
+        //*************************** CALLBACK FUNCTIONS ******************************
+
+        //Callback - Search Success
+        function SearchCompleted(data, textStatus, XmlHttpRequest) {
+
+
+            //Clear out all Contacts in the grid.
+            EmptyTable();
+
+            //Re-populate the grid with results, if any
+            if (data && data.length > 0) {
+
+                //Hide the empty message
+                HideEmptyRow();
+
+                for (var i = 0; i < data.length; i++) {
+
+                    //Generates all the HTML for a new row and populates
+                    //it with data based on the Contact object
+                    CreateNewRow(data[i]);
+                }
+                //alert(data.length + " Contact record(s) retrieved.");
+            }
+            //Or display the empty table message if no results
+            else {
+
+                ShowEmptyRow();
+                alert("No Contact record(s) retrieved.");
+            }
+        }
+
+        //Callback - Create Success
+        function ContactCreateCompleted(data, textStatus, XmlHttpRequest) {
+
+            //Update the Contact row with the ContactId so future user actions
+            //on this row operate correctly. (Update vs. Create)
+            if (TMP_ROW && data && data.ContactId) {
+
+                //Set the ContactId
+                $(TMP_ROW).find("#new_propertiesId").attr("value", data.new_requirementsId);
+
+                //Set the Link column
+                $(TMP_ROW).find("#RecordLink").html("<a target=\"_blank\" href=\"" +
+                                    clientUrl + "/main.aspx?etn=new_properties&id=%7b" + data.new_propertiesId +
+                                    "%7d&pagetype=entityrecord\">View</a>");
+            }
+
+            //Enable all buttons
+            $(":button").attr('disabled', '');
+
+            TMP_ROW = null;
+
+
+
+        }
+        //Callback - Create Failure
+
+
+        //*************************** HELPER FUNCTIONS ******************************
+
+        //Accepts a contact object, generates a new row in the table,
+        //and wires up event handlers for buttons in the row
+        function CreateNewRow(contact, fromNewButton) {
+
+            // && propertyTypeValue == contact.new_propertytype.V
+            //alert(contact.new_Premisetype.Value);
+
+            if (contact.new_Area >= areaMinValue && contact.new_Area <= areaMaxValue
+                && contact.new_city == cityValue && contact.new_Premisetype.Value == propertyTypeValue) {
+                //Hide the "Empty Message" row
+                $("TR.EmptyRow").hide();
+
+                //Generate a new row
+                ;
+                //
+                var row = $("<tr class='RecordRow' />");
+                row.append($("<td><span id='RecordLink'>N/A</span></td>"));
+                row.append($("<td><input type='text' id='new_propertiesName'style='width: 150px;' readonly='true'  class='noborder'/></td>"));
+                row.append($("<td><input type='text' id='CreatedOn'  style='width: 250px;' readonly='true'class='noborder'/></td>"));
+                row.append($("<td><input type='text' id='new_address_sm'  style='width: 300px;' readonly='true' class='noborder'/></td>"));
+                row.append($("<td><input type='number' id='new_Area'  style='width: 100px;' readonly='true' class='noborder'/></td>"));
+                row.append($("<td><span id='BuildingLink'>N/A</span></td>"));
+                row.append($("<td><input type='button' id='CreateLeadButton' value='Create Opportunity' align='center' class='noborder'/></td>"));
+
+
+
+                //Add it to the bottom
+                $("#ContactTableBody").append(row);
+
+                //Set table fields from contact
+                if (contact.new_propertiesId) {
+                    row.find("#new_propertiesId").attr("value", contact.ContactId);
+                    //Set the Link column
+                    row.find("#RecordLink").html("<a target=\"_blank\" href=\"" +
+                                       clientUrl + "/main.aspx?etn=new_properties&id=%7b" + contact.new_propertiesId +
+                                       "%7d&pagetype=entityrecord\">View</a>");
+                }
+                if (contact.new_name) {
+                    row.find("#new_propertiesName").attr("value", contact.new_name);
+                }
+                if (contact.CreatedOn) {
+                    var dateValue = new Date(parseInt(contact.CreatedOn.replace("/Date(", "").replace(")/", ""), 10));
+                    row.find("#CreatedOn").attr("value", dateValue.toGMTString());
+                    ////var dateValue = new Date(parseInt(contact.CreatedOn.replace("/Date(", "").replace(")/", ""), 10));
+                    //row.find("#CreatedOn").attr("value", contact.CreatedOn.toGMTString());
+                }
+                if (contact.new_address_sm) {
+                    row.find("#new_address_sm").attr("value", contact.new_address_sm);
+                }
+                if (contact.new_Area) {
+                    row.find("#new_Area").attr("value", contact.new_Area);
+                }
+                if (contact.new_BuildingpropertyId) {
+                    //alert(contact.new_BuildingpropertyId.Id);
+                    row.find("#BuildingLink").html("<a target=\"_blank\" href=\"" +
+                                           clientUrl + "/main.aspx?etn=new_buildings&id=%7b" + contact.new_BuildingpropertyId.Id +
+                                           "%7d&pagetype=entityrecord\">" + contact.new_BuildingpropertyId.Name + "</a>");
+                }
+            }
+        }
+
+
+
+
+
+        //Instantiates and returns an empty contact object
+
+        //Hides the row with the empty message in Contacts table
+        function HideEmptyRow() {
+
+            if ($("TR.EmptyRow")[0]) {
+                $("TR.EmptyRow").hide();
+            }
+        }
+
+        //Shows the row with the empty message in Contacts table
+        function ShowEmptyRow() {
+            if ($("TR.EmptyRow")[0]) {
+                $("TR.EmptyRow").show();
+            }
+            else {
+                var emptyRow = $("<tr id='EmptyRow' class='EmptyRow'><td colspan='12' style='text-align:center;'><span>No Property records are available in this view.</span></td></tr>")
+                $("#ContactTableBody").append(emptyRow);
+
+            }
+
+        }
+
+        //Removes all the Contact rows from the table
+        function EmptyTable() {
+
+            //Clear out the Contact table's rows that have attribute class=RecordRow
+            //These are the ones that contain Contact record data.
+            $("TR.RecordRow").remove();
+        }
+
+        // ]]>
+
+    </script>
+    <style type="text/css">
+        #ContactTable {
+            border: none;
+            border-spacing: 0px;
+            border-width: 0px;
+            font-family: Arial;
+            font-size: 10px;
+            margin-top: 10px;
+            border-collapse: collapse;
+            table-layout: auto;
+            text-align: center;
+        }
+       
+
+        
+       
+
+            #ContactTable td {
+                border-width: 1px;
+                border-style: none;
+                margin: 1px;
+            }
+
+            #ContactTable th {
+                border-width: 1px;
+                padding: 1px;
+                border-style: none;
+                margin: 1px;
+                font-family: Arial;
+            }
+
+            #ContactTable INPUT[type="text"] {
+                border-width: 1px;
+                padding: 1px;
+                border-style: none;
+                margin: 0;
+            }
+
+            #ContactTable INPUT[type="button"] {
+                border-width: 1px;
+                border-style: outset;
+            }
+            .noborder {
+                border:none;
+
+                
+            }
+
+            /*#CreatedOn {
+                 border: none;
+            }
+            #new_Area {
+                border: none;
+            }*/
+
+        body {
+            background: white;
+            font-family: Segoe UI;
+        }
+    </style>
+
+    <h3 style="font-family: Arial;">
+        Match requirements
+    </h3>
+    <!--<div>
+        <label style="font-family: Arial;" for="txtSearch">
+            Name:
+        </label>
+        <input id="txtSearch" style="width: 200px;" type="text">-->
+        <!--<input title="Click to match the properties that fulfill your requirements" id="SearchButton" style="width: 80px;" onclick="return SearchButton_onclick()" type="button" value="Match">-->
+    <!--</div>-->
+    <div>
+        <table id="ContactTable" summary="This table displays the properties that match the requirements entered.">
+            <!--<thead>
+                <tr>
+                    <th>
+                    <th scope="col">
+                        Link
+                    </th>
+                    <th scope="col">
+                        Property Description
+                    </th>
+                    <th scope="col">
+                        Created On
+                    </th>
+                    <th scope="col">
+                        Address
+                    </th>
+                    <th scope="col">
+                        Area
+                    </th>
+                    <th scope="col">
+                        Building
+                    </th>
+                </tr>
+            </thead>-->
+            <tbody id="ContactTableBody"></tbody>
+        </table>
+    </div>
+
+
+</body></html>

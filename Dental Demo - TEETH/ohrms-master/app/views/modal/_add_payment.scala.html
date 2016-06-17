@@ -1,0 +1,68 @@
+@(paymentList: List[ws.services.PaymentList], patientId: String, balance: Double)
+
+<!-- AddPaymentModal -->
+        <script type="text/javascript">
+//compute balance
+function computeBalance(){
+
+var payment = document.getElementById('payment');
+var balance = @balance;
+var bal = document.getElementById('balance');
+            //alert(balance);
+
+if (payment.value > balance){
+alert("Payment exceed!");
+payment.value = "";
+}
+else {
+bal.value = balance - payment.value;
+}
+}
+</script>
+<div class="box grid_5" id="addPaymentModal" hidden="">
+    <header>
+        <div class="inner">
+            <div class="left title">
+                <h1>Add Payment </h1><h1 id="appointmentDate"></h1>
+            </div>
+            <div class="right">
+                <a href="#" class="close">close</a>
+            </div>
+        </div>
+    </header>
+    @helper.form(action = routes.Payment.submitAddForm){
+    <div class="box-content">
+        <div class="columns">
+            <input type="hidden" name="id"/>
+            <input type="hidden" name="date_of_payment"/>
+            <input type="hidden" name="user_name"/>
+            <input type="hidden" name="patient_id" value="@patientId"/>
+            <input type="hidden" name="first_name"/>
+            <input type="hidden" name="last_name"/>
+            <table>
+                <tr>
+                    <td>
+                        <label>Payment:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="payment" name="payment" required = "required" onblur="computeBalance()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Balance:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="balance" disabled="disabled" value="@balance"/>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <footer class="pane">
+            <input type="submit" class="bt blue right" value="Pay ">
+        </footer>
+          }
+    </div>
+</div>
+<!-- /AddPaymentModal -->

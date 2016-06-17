@@ -1,0 +1,200 @@
+@(dentistList: List[ws.services.DentistList],securityQuestions: List[ws.services.SecurityQuestion])
+
+@main(Messages("dentist.title")){
+
+<!-- Dentist List -->
+<header class="grid_12 head center">
+    <h1>@Messages("dentist.list.title")</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<!-- Breadcrumb -->
+<script type="text/javascript">
+    $('<div class="extension top inleft breadcrumbs"><nav><ul><li class="first"><a href="#">Settings</a> <span class="divider"></span></li><li class="last"><a href="#">Dentists</a></li></ul></nav></div>').prependTo('#content');
+</script>
+<!-- /Breadcrumb -->
+
+@settings._settings_sidebar()
+
+<div class="grid_9">
+    @if((play.cache.Cache.get("role")) == 0){
+    <div class="box">
+        <header>
+            <div class="inner">
+                <div class="left title">
+                    <h1>Add Dentist</h1>
+                </div>
+                <div class="right">
+                    <nav style="display:none;">
+                        <ul>
+                            <li class="active first"><a href="#tab-1">Profile</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="close">close</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="box-content">
+            <div id="tab-1" class="tab">
+                <div class="columns">
+                    <div class="form-details right">
+                        @helper.form(action = routes.Dentist.submitAddForm){
+                        <div class="field left">
+                            <input type="hidden" name="id" value="">
+                            <ul>
+                                <li>
+                                    <label class="upper">First Name:</label>
+                                    <input type="text" name="first_name" required = "required">
+                                </li>
+                                <li>
+                                    <label>Middle Name: <span>(optional)</span></label>
+                                    <input type="text" name="middle_name">
+                                </li>
+                                <li>
+                                    <label>Last Name:</label>
+                                    <input type="text" name="last_name" required = "required">
+                                </li>
+
+                                <li>
+                                    <label>Username:</label>
+                                    <input type="text" id = "userName" name="user_name" required = "required">
+                                </li>
+                                <li>
+                                    <label>Password:</label>
+                                    <input type="password" id ="password" name="password" required = "required">
+                                </li>
+                                <li>
+                                    <label>Confirm Password:</label>
+                                    <input type="password" id="confirmpassword" required = "required" onblur="confirmPassword()">
+                                </li>
+                                <li>
+                                    <p>Security Question:</p>
+                                    <select class="large" name="question">
+                                        @securityQuestions.map { sq =>
+                                        <option value="@sq.id">@sq.question</option>
+                                        }
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>Answer:</label>
+                                    <input type="text" name="answer" required = "required">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="field right">
+                            <ul id="specialization_list">
+                                <li>
+                                    <label class="upper">Address:</label>
+                                    <textarea id="textarea-input-grow" class="autogrow" name="address" required = "required" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2"></textarea>
+                                </li>
+                                <li>
+                                    <label>Contact No:</label>
+                                    <input type="text" name="contact_no" id="text" required = "required" onkeyup="enterNumber()">
+
+                                </li>
+                                <li>
+                                    <label>PRC No:</label>
+                                    <input type="text" name="prc_no" required = "required">
+                                </li>
+                                <li>
+                                    <label>Specialization: <span>(optional)</span></label>
+                                    <input type="text" class="specialization" name="specializationName[0]" data-count=0 value="" style="width: 85%;">
+                                    <a href="#" class="bt blue left box" style="width: 10px;"><span class="glyph zoom-in"></span></a>
+                                </li>
+                                <br/>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <footer class="pane">
+                    <input type="submit" onclick="confirmPassword()" class="bt blue right" value="@Messages("button.add")">
+                </footer>
+                }
+            </div>
+        </div>
+    </div> }
+
+    <div class="extension top fullwidth">
+        <div id="DataTables_Table_0_length" class="dataTables_length">
+            <label>
+                <span class="textnode">Show </span>
+                <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0">
+                    <option value="0" selected="selected">-</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                <span class="textnode"> entries</span>
+            </label>
+        </div>
+        <div class="dataTables_filter" id="DataTables_Table_0_filter">
+            <label>
+                <form action="@routes.Dentist.searchDentistList()" method="GET">
+                    <span class="textnode">@Messages("misc.search"): </span>
+                    <input type="text" aria-controls="DataTables_Table_0" id="search_box" name="filter" placeholder="Enter keyword..">
+                </form>
+            </label>
+        </div>
+        <div class="clear"></div></div>
+    <div class="table">
+        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+            <table class="datatable dataTable" id="DataTables_Table_0">
+                <thead>
+                <tr role="row">
+                    <th class="first sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 25%;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">
+                        <div class="parentsort">Complete name
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 30%;" aria-label="Browser: activate to sort column ascending">
+                        <div class="parentsort">Address
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 184px;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">Contact No.
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 184px;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">PRC No.
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                    <th class="last sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 184px;" aria-label="Platform(s): activate to sort column ascending">
+                        <div class="parentsort">Specialization(s)
+                            <div class="sorticon"></div>
+                        </div>
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                @dentistList.map { dl =>
+                <tr>
+                    <td class="  sorting_1"><a href="@routes.Dentist.getDentistInformationById(dl.id)">@dl.lastName, @dl.firstName @dl.middleName</a></td>
+                    <td class=" ">@dl.address</td>
+                    <td class=" ">@dl.contactNo</td>
+                    <td class=" ">@dl.prcNo</td>
+                    <td class=" ">@for(sn <- dl.specializationName){@sn<br/>}</td>
+                </tr>
+                }
+                </tbody>
+            </table>
+            <div class="extension bottom inright pagination">
+                <div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_0_paginate">
+                    <a tabindex="0" class="first previous paginate_button paginate_button_disabled" id="DataTables_Table_0_previous">Previous</a>
+                                                <span>
+                                                    <a tabindex="0" class="paginate_button">1</a>
+                                                </span>
+                    <a tabindex="0" class="last next paginate_button" id="DataTables_Table_0_next">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Dentist List -->
+}

@@ -1,0 +1,66 @@
+@(clinicList: List[ws.services.ClinicList])
+
+@main(Messages("clinic.title")){
+
+<!-- Update Clinic -->
+
+<header class="grid_12 head center">
+    <h1>@Messages("clinic.update.title")</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="box grid_12">
+    <header>
+        <div class="inner">
+            <div class="left title">
+                <h1></h1>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li class="active first"><a href="#tab-1">Profile</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="close">close</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="box-content">
+        <div id="tab-1" class="tab">
+            <div class="">
+                <div class="form-details">
+                    @clinicList.map { dl =>
+                    @helper.form(action = routes.Clinic.submitUpdateForm){
+                    <div class="field left">
+                        <input type="hidden" name="id" value="@dl.id">
+                        <input type="hidden" name="user_name" value="@(play.cache.Cache.get("user_name"))">
+
+                        <ul>
+                            <li>
+                                <label>Clinic Name:</label>
+                                <input type="text" name="clinic_name" value="@dl.clinicName" required = "required">
+                            </li>
+                            <li>
+                                <label>Contact Number</label>
+                                <input type="text" name="contact_number" value="@dl.contactNumber" required = "required">
+                            </li>
+                            <li>
+                                <label>Logo:<br></label>
+                                <input type="file" name="imaging" value="@dl.image">
+                            </li>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="pane">
+                <input type="submit" class="bt blue right" value="@Messages("button.update")">
+            </footer>
+            }
+            }
+        </div>
+    </div>
+</div>
+
+<!-- /Update Clinic -->
+}

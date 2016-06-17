@@ -1,0 +1,239 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 19/02/2016 14:51
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-airwater-syringe:before { content: "\f100"; }
+.flaticon-amalgam:before { content: "\f101"; }
+.flaticon-amalgam-capsule:before { content: "\f102"; }
+.flaticon-amalgam-carrier:before { content: "\f103"; }
+.flaticon-anesthetic:before { content: "\f104"; }
+.flaticon-anesthetic-needle:before { content: "\f105"; }
+.flaticon-anesthetic-needle-1:before { content: "\f106"; }
+.flaticon-anesthetic-syringe:before { content: "\f107"; }
+.flaticon-aspiranting-tip:before { content: "\f108"; }
+.flaticon-aspirating-tip:before { content: "\f109"; }
+.flaticon-aspirating-tip-1:before { content: "\f10a"; }
+.flaticon-aspirating-tip-2:before { content: "\f10b"; }
+.flaticon-aspiring-tip:before { content: "\f10c"; }
+.flaticon-bite-block:before { content: "\f10d"; }
+.flaticon-broken-tooth:before { content: "\f10e"; }
+.flaticon-canine-tooth:before { content: "\f10f"; }
+.flaticon-capsule:before { content: "\f110"; }
+.flaticon-chisel:before { content: "\f111"; }
+.flaticon-cottons-pliers:before { content: "\f112"; }
+.flaticon-cracked-tooth:before { content: "\f113"; }
+.flaticon-crane:before { content: "\f114"; }
+.flaticon-crane-1:before { content: "\f115"; }
+.flaticon-crowned-tooth:before { content: "\f116"; }
+.flaticon-cutting-rongeurs:before { content: "\f117"; }
+.flaticon-cutting-rounger:before { content: "\f118"; }
+.flaticon-decayed-tooth:before { content: "\f119"; }
+.flaticon-dental-explorer:before { content: "\f11a"; }
+.flaticon-dental-floss:before { content: "\f11b"; }
+.flaticon-dental-floss-1:before { content: "\f11c"; }
+.flaticon-dental-floss-2:before { content: "\f11d"; }
+.flaticon-dental-probe:before { content: "\f11e"; }
+.flaticon-dental-probe-1:before { content: "\f11f"; }
+.flaticon-dental-probe-2:before { content: "\f120"; }
+.flaticon-dental-probe-3:before { content: "\f121"; }
+.flaticon-dental-prone:before { content: "\f122"; }
+.flaticon-dental-scaler:before { content: "\f123"; }
+.flaticon-dentist-mask:before { content: "\f124"; }
+.flaticon-examinating-tooth:before { content: "\f125"; }
+.flaticon-extracting:before { content: "\f126"; }
+.flaticon-extraction-forceps:before { content: "\f127"; }
+.flaticon-fake-tooth:before { content: "\f128"; }
+.flaticon-filled-tooth:before { content: "\f129"; }
+.flaticon-filler:before { content: "\f12a"; }
+.flaticon-forceps:before { content: "\f12b"; }
+.flaticon-forceps-1:before { content: "\f12c"; }
+.flaticon-gauze:before { content: "\f12d"; }
+.flaticon-golden-tooth:before { content: "\f12e"; }
+.flaticon-hammer:before { content: "\f12f"; }
+.flaticon-headlamp:before { content: "\f130"; }
+.flaticon-hemostat:before { content: "\f131"; }
+.flaticon-hemostat-1:before { content: "\f132"; }
+.flaticon-holed-tooth:before { content: "\f133"; }
+.flaticon-implant-fixture:before { content: "\f134"; }
+.flaticon-implant-fixture-1:before { content: "\f135"; }
+.flaticon-implant-wrench:before { content: "\f136"; }
+.flaticon-incisors-tooth:before { content: "\f137"; }
+.flaticon-inner-tooth:before { content: "\f138"; }
+.flaticon-mallet:before { content: "\f139"; }
+.flaticon-molar-tooth:before { content: "\f13a"; }
+.flaticon-mouth-mirror:before { content: "\f13b"; }
+.flaticon-mouth-prop:before { content: "\f13c"; }
+.flaticon-mouth-wash:before { content: "\f13d"; }
+.flaticon-mouthwash:before { content: "\f13e"; }
+.flaticon-plier:before { content: "\f13f"; }
+.flaticon-pliers:before { content: "\f140"; }
+.flaticon-polishing-paste:before { content: "\f141"; }
+.flaticon-potts:before { content: "\f142"; }
+.flaticon-premolar:before { content: "\f143"; }
+.flaticon-prophy-angle:before { content: "\f144"; }
+.flaticon-root:before { content: "\f145"; }
+.flaticon-scaler:before { content: "\f146"; }
+.flaticon-scaler-1:before { content: "\f147"; }
+.flaticon-scaler-2:before { content: "\f148"; }
+.flaticon-scaler-3:before { content: "\f149"; }
+.flaticon-scaler-4:before { content: "\f14a"; }
+.flaticon-scalpel:before { content: "\f14b"; }
+.flaticon-scalpel-1:before { content: "\f14c"; }
+.flaticon-scalpel-blade:before { content: "\f14d"; }
+.flaticon-scalpel-blade-1:before { content: "\f14e"; }
+.flaticon-scalpel-handle:before { content: "\f14f"; }
+.flaticon-scissor:before { content: "\f150"; }
+.flaticon-scissors:before { content: "\f151"; }
+.flaticon-shiny-tooth:before { content: "\f152"; }
+.flaticon-straight-elevator:before { content: "\f153"; }
+.flaticon-suture-needle:before { content: "\f154"; }
+.flaticon-suture-scissors:before { content: "\f155"; }
+.flaticon-teeth-protection:before { content: "\f156"; }
+.flaticon-tissue-retractor:before { content: "\f157"; }
+.flaticon-tissue-retractor-1:before { content: "\f158"; }
+.flaticon-tissue-retractor-2:before { content: "\f159"; }
+.flaticon-tissue-retractor-3:before { content: "\f15a"; }
+.flaticon-tissue-scissors:before { content: "\f15b"; }
+.flaticon-tongue-retractor:before { content: "\f15c"; }
+.flaticon-tongue-retractor-1:before { content: "\f15d"; }
+.flaticon-tooth:before { content: "\f15e"; }
+.flaticon-tooth-with-braces:before { content: "\f15f"; }
+.flaticon-tooth-with-diamond:before { content: "\f160"; }
+.flaticon-toothbrush:before { content: "\f161"; }
+.flaticon-toothpaste:before { content: "\f162"; }
+.flaticon-towel-clamps:before { content: "\f163"; }
+    
+    $font-Flaticon-airwater-syringe: "\f100";
+    $font-Flaticon-amalgam: "\f101";
+    $font-Flaticon-amalgam-capsule: "\f102";
+    $font-Flaticon-amalgam-carrier: "\f103";
+    $font-Flaticon-anesthetic: "\f104";
+    $font-Flaticon-anesthetic-needle: "\f105";
+    $font-Flaticon-anesthetic-needle-1: "\f106";
+    $font-Flaticon-anesthetic-syringe: "\f107";
+    $font-Flaticon-aspiranting-tip: "\f108";
+    $font-Flaticon-aspirating-tip: "\f109";
+    $font-Flaticon-aspirating-tip-1: "\f10a";
+    $font-Flaticon-aspirating-tip-2: "\f10b";
+    $font-Flaticon-aspiring-tip: "\f10c";
+    $font-Flaticon-bite-block: "\f10d";
+    $font-Flaticon-broken-tooth: "\f10e";
+    $font-Flaticon-canine-tooth: "\f10f";
+    $font-Flaticon-capsule: "\f110";
+    $font-Flaticon-chisel: "\f111";
+    $font-Flaticon-cottons-pliers: "\f112";
+    $font-Flaticon-cracked-tooth: "\f113";
+    $font-Flaticon-crane: "\f114";
+    $font-Flaticon-crane-1: "\f115";
+    $font-Flaticon-crowned-tooth: "\f116";
+    $font-Flaticon-cutting-rongeurs: "\f117";
+    $font-Flaticon-cutting-rounger: "\f118";
+    $font-Flaticon-decayed-tooth: "\f119";
+    $font-Flaticon-dental-explorer: "\f11a";
+    $font-Flaticon-dental-floss: "\f11b";
+    $font-Flaticon-dental-floss-1: "\f11c";
+    $font-Flaticon-dental-floss-2: "\f11d";
+    $font-Flaticon-dental-probe: "\f11e";
+    $font-Flaticon-dental-probe-1: "\f11f";
+    $font-Flaticon-dental-probe-2: "\f120";
+    $font-Flaticon-dental-probe-3: "\f121";
+    $font-Flaticon-dental-prone: "\f122";
+    $font-Flaticon-dental-scaler: "\f123";
+    $font-Flaticon-dentist-mask: "\f124";
+    $font-Flaticon-examinating-tooth: "\f125";
+    $font-Flaticon-extracting: "\f126";
+    $font-Flaticon-extraction-forceps: "\f127";
+    $font-Flaticon-fake-tooth: "\f128";
+    $font-Flaticon-filled-tooth: "\f129";
+    $font-Flaticon-filler: "\f12a";
+    $font-Flaticon-forceps: "\f12b";
+    $font-Flaticon-forceps-1: "\f12c";
+    $font-Flaticon-gauze: "\f12d";
+    $font-Flaticon-golden-tooth: "\f12e";
+    $font-Flaticon-hammer: "\f12f";
+    $font-Flaticon-headlamp: "\f130";
+    $font-Flaticon-hemostat: "\f131";
+    $font-Flaticon-hemostat-1: "\f132";
+    $font-Flaticon-holed-tooth: "\f133";
+    $font-Flaticon-implant-fixture: "\f134";
+    $font-Flaticon-implant-fixture-1: "\f135";
+    $font-Flaticon-implant-wrench: "\f136";
+    $font-Flaticon-incisors-tooth: "\f137";
+    $font-Flaticon-inner-tooth: "\f138";
+    $font-Flaticon-mallet: "\f139";
+    $font-Flaticon-molar-tooth: "\f13a";
+    $font-Flaticon-mouth-mirror: "\f13b";
+    $font-Flaticon-mouth-prop: "\f13c";
+    $font-Flaticon-mouth-wash: "\f13d";
+    $font-Flaticon-mouthwash: "\f13e";
+    $font-Flaticon-plier: "\f13f";
+    $font-Flaticon-pliers: "\f140";
+    $font-Flaticon-polishing-paste: "\f141";
+    $font-Flaticon-potts: "\f142";
+    $font-Flaticon-premolar: "\f143";
+    $font-Flaticon-prophy-angle: "\f144";
+    $font-Flaticon-root: "\f145";
+    $font-Flaticon-scaler: "\f146";
+    $font-Flaticon-scaler-1: "\f147";
+    $font-Flaticon-scaler-2: "\f148";
+    $font-Flaticon-scaler-3: "\f149";
+    $font-Flaticon-scaler-4: "\f14a";
+    $font-Flaticon-scalpel: "\f14b";
+    $font-Flaticon-scalpel-1: "\f14c";
+    $font-Flaticon-scalpel-blade: "\f14d";
+    $font-Flaticon-scalpel-blade-1: "\f14e";
+    $font-Flaticon-scalpel-handle: "\f14f";
+    $font-Flaticon-scissor: "\f150";
+    $font-Flaticon-scissors: "\f151";
+    $font-Flaticon-shiny-tooth: "\f152";
+    $font-Flaticon-straight-elevator: "\f153";
+    $font-Flaticon-suture-needle: "\f154";
+    $font-Flaticon-suture-scissors: "\f155";
+    $font-Flaticon-teeth-protection: "\f156";
+    $font-Flaticon-tissue-retractor: "\f157";
+    $font-Flaticon-tissue-retractor-1: "\f158";
+    $font-Flaticon-tissue-retractor-2: "\f159";
+    $font-Flaticon-tissue-retractor-3: "\f15a";
+    $font-Flaticon-tissue-scissors: "\f15b";
+    $font-Flaticon-tongue-retractor: "\f15c";
+    $font-Flaticon-tongue-retractor-1: "\f15d";
+    $font-Flaticon-tooth: "\f15e";
+    $font-Flaticon-tooth-with-braces: "\f15f";
+    $font-Flaticon-tooth-with-diamond: "\f160";
+    $font-Flaticon-toothbrush: "\f161";
+    $font-Flaticon-toothpaste: "\f162";
+    $font-Flaticon-towel-clamps: "\f163";

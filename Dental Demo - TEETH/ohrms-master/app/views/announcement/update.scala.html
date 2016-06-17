@@ -1,0 +1,60 @@
+@(announcementList: List[ws.services.AnnouncementList])
+
+@main(Messages("announcement.title")){
+
+<!-- Update Announcement -->
+
+<header class="grid_12 head center">
+    <h1>@Messages("announcement.update.title")</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="box grid_12">
+    <header>
+        <div class="inner">
+            <div class="left title">
+                <h1></h1>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li class="active first"><a href="#tab-1">Profile</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="close">close</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="box-content">
+        <div id="tab-1" class="tab">
+            <div class="">
+                <div class="form-details">
+                    @announcementList.map { dl =>
+                    @helper.form(action = routes.Announcement.submitUpdateForm){
+
+                        <input type="hidden" name="id" value="@dl.id">
+                        <input type="hidden" name="username" value="@dl.username">
+                        <label>Reminder:</label>
+                          <textarea id="textarea-input-grow" class="autogrow" name="announcement" required = "required" style="height: 50px; overflow: hidden; margin-top: 0px; margin-bottom: 0px;" rows="2">@dl.description</textarea>
+
+                    <div class="field left">
+
+                                <label>Date:</label>
+                                <input type="text" name="date_created" required = "required" value="@dl.dateCreated">
+
+                    </div>
+
+                </div>
+            </div>
+            <footer class="pane">
+                <input type="submit" class="bt blue right" value="@Messages("button.update")">
+            </footer>
+            }
+            }
+        </div>
+    </div>
+</div>
+
+<!-- /Update  -->
+}

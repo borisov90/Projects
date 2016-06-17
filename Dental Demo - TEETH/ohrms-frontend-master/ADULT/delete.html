@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>delete</title>
+	<style type="text/css">
+	.mouth {
+		width: 250px;
+		height: 250px;
+		margin: auto;
+		background-color: red;
+	}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+
+	<div class="mouth">
+		<canvas id='canvas1' width='50' height='50'></canvas>
+		<canvas id='canvas2' width='50' height='50'></canvas>
+	</div>
+
+	<input id="imageButton" type="button" value="SHOW"/>
+
+	<script type="text/javascript">
+	var canvas1 = document.getElementById('canvas1');
+	var canvas2 = document.getElementById('canvas2');
+	var ctx1 = canvas1.getContext('2d');
+	var ctx2 = canvas2.getContext('2d');
+
+	// #layer1
+	ctx1.save();
+	ctx1.transform(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, -1002.362200);
+
+	// #layer1-4
+	ctx1.save();
+	ctx1.transform(1.000000, 0.000000, 0.000000, 1.000000, -19.257363, 624.481230);
+
+	// #path3182-1
+	ctx1.fillStyle = 'rgb(0, 0, 0)';
+	ctx1.beginPath();
+	ctx1.moveTo(53.843750, 379.143430);
+	ctx1.bezierCurveTo(55.646364, 379.098130, 57.335265, 379.536310, 59.718750, 380.580930);
+	ctx1.bezierCurveTo(64.616029, 382.727230, 67.357384, 386.544060, 68.375000, 392.705930);
+	ctx1.bezierCurveTo(68.957797, 396.234910, 68.890319, 396.580090, 67.437500, 400.299680);
+	ctx1.bezierCurveTo(66.072550, 403.794300, 63.516644, 407.268430, 62.312500, 407.268430);
+	ctx1.bezierCurveTo(60.098545, 409.723600, 58.668203, 410.582560, 57.132719, 411.933410);
+	ctx1.bezierCurveTo(56.790365, 413.679280, 55.527706, 416.206360, 54.625000, 417.987180);
+	ctx1.bezierCurveTo(52.787387, 421.612340, 49.824255, 424.206600, 46.375000, 425.143430);
+	ctx1.bezierCurveTo(41.374599, 426.501560, 36.861689, 426.624720, 33.250000, 425.518430);
+	ctx1.bezierCurveTo(31.483528, 424.977310, 29.331368, 424.395630, 28.500000, 424.205930);
+	ctx1.bezierCurveTo(25.953984, 423.624990, 22.564148, 419.607540, 21.593750, 416.049680);
+	ctx1.bezierCurveTo(20.452095, 411.863950, 20.197771, 407.954000, 20.906250, 406.455930);
+	ctx1.bezierCurveTo(21.173238, 404.769420, 21.220446, 402.819870, 22.062500, 401.549680);
+	ctx1.bezierCurveTo(22.063064, 401.540680, 22.093060, 401.527280, 22.093750, 401.518480);
+	ctx1.bezierCurveTo(22.169950, 400.535280, 22.977340, 397.862780, 23.937500, 395.455980);
+	ctx1.bezierCurveTo(26.854628, 388.143700, 30.548316, 385.235290, 37.218750, 385.112230);
+	ctx1.bezierCurveTo(39.884212, 384.910950, 41.028291, 384.458060, 42.875000, 383.862230);
+	ctx1.bezierCurveTo(43.699076, 382.176950, 45.756243, 381.048840, 50.312500, 379.737230);
+	ctx1.bezierCurveTo(51.630472, 379.357470, 52.762181, 379.170580, 53.843750, 379.143430);
+	ctx1.closePath();
+	ctx1.fill();
+
+	$('#imageButton').click(function() {
+		var url1 = canvas1.toDataURL();
+		var imageObj = new Image();
+        imageObj.onload = function() {
+          ctx2.drawImage(this, 0, 0);
+        };
+        imageObj.src = url1;	
+    });
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import ws.services.PatientService
+@main("Reports"){
+<script type="text/javascript">
+    $('.main-nav ul').children().removeClass('active');
+    $('.main-nav ul li a[name=Reports]').parent().addClass('active');
+</script>
+
+@modal._date_range("patientDateRangeModal", "patientDateRange")
+@modal._month_range("monthlyIncomeDateRangeModal", "monthlyIncomeDateRange")
+@modal._date_range("auditLogDateRangeModal", "auditLogDateRange")
+@modal._patients("patientsModal", "patients", PatientService.getAllPatients)
+
+<!--  Reports -->
+<header class="grid_12 head center">
+    <h1>Reports</h1>
+    <div class="clear"></div><span class="divider"></span>
+</header>
+
+<div class="grid_12">
+    <ul>
+        <li>
+            <!--<p><a href="@routes.Reports._patientList()" target="_blank"></a></p>-->
+            <p><a href="#patientDateRangeModal" class="modal">Patients List</a></p>
+        </li>
+        <li>
+            <p><a href="#monthlyIncomeDateRangeModal" class="modal">Monthly Income</a></p>
+        </li>
+        <li>
+            <p><a href="@routes.Reports._serviceList()" target="_blank">Services List</a></p>
+        </li>
+        <li>
+            <p><a href="@routes.Reports._dentistList()" target="_blank">Dentists List</a></p>
+        </li>
+        <li>
+            <p><a href="@routes.Reports._staffList()" target="_blank">Staff List</a></p>
+        </li>
+        <li>
+            <p><a href="#auditLogDateRangeModal" class="modal">Audit Log</a></p>
+            <!--<p><a href='@routes.Reports._auditLogReport("p", "2013-02-27 06:22:05", "2013-09-27 06:24:52")' target="_blank">Audit Log</a></p>-->
+        </li>
+        <li>
+            <p><a href="#patientsModal" class="modal">Dental History</a></p>
+        </li>
+    </ul>
+</div>
+<!-- / Reports -->
+
+}

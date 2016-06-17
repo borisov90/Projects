@@ -1,0 +1,448 @@
+{
+  "checksum": {
+    "previous": "3f92d4db86a1fb6f7575bec20e1833949591f5fd52c6a820c1f08fd20a3c0912",
+    "current": "3f92d4db86a1fb6f7575bec20e1833949591f5fd52c6a820c1f08fd20a3c0912"
+  },
+  "fonts": [
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/Flaticon.ttf",
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/Flaticon.svg",
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/Flaticon.woff",
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/Flaticon.eot"
+  ],
+  "glyphs": {
+    "airwater-syringe": {
+      "codepoint": 61696,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/airwater-syringe.svg"
+    },
+    "amalgam": {
+      "codepoint": 61697,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/amalgam.svg"
+    },
+    "amalgam-capsule": {
+      "codepoint": 61698,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/amalgam-capsule.svg"
+    },
+    "amalgam-carrier": {
+      "codepoint": 61699,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/amalgam-carrier.svg"
+    },
+    "anesthetic": {
+      "codepoint": 61700,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/anesthetic.svg"
+    },
+    "anesthetic-needle": {
+      "codepoint": 61701,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/anesthetic-needle.svg"
+    },
+    "anesthetic-needle-1": {
+      "codepoint": 61702,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/anesthetic-needle-1.svg"
+    },
+    "anesthetic-syringe": {
+      "codepoint": 61703,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/anesthetic-syringe.svg"
+    },
+    "aspiranting-tip": {
+      "codepoint": 61704,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/aspiranting-tip.svg"
+    },
+    "aspirating-tip": {
+      "codepoint": 61705,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/aspirating-tip.svg"
+    },
+    "aspirating-tip-1": {
+      "codepoint": 61706,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/aspirating-tip-1.svg"
+    },
+    "aspirating-tip-2": {
+      "codepoint": 61707,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/aspirating-tip-2.svg"
+    },
+    "aspiring-tip": {
+      "codepoint": 61708,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/aspiring-tip.svg"
+    },
+    "bite-block": {
+      "codepoint": 61709,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/bite-block.svg"
+    },
+    "broken-tooth": {
+      "codepoint": 61710,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/broken-tooth.svg"
+    },
+    "canine-tooth": {
+      "codepoint": 61711,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/canine-tooth.svg"
+    },
+    "capsule": {
+      "codepoint": 61712,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/capsule.svg"
+    },
+    "chisel": {
+      "codepoint": 61713,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/chisel.svg"
+    },
+    "cottons-pliers": {
+      "codepoint": 61714,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/cottons-pliers.svg"
+    },
+    "cracked-tooth": {
+      "codepoint": 61715,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/cracked-tooth.svg"
+    },
+    "crane": {
+      "codepoint": 61716,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/crane.svg"
+    },
+    "crane-1": {
+      "codepoint": 61717,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/crane-1.svg"
+    },
+    "crowned-tooth": {
+      "codepoint": 61718,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/crowned-tooth.svg"
+    },
+    "cutting-rongeurs": {
+      "codepoint": 61719,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/cutting-rongeurs.svg"
+    },
+    "cutting-rounger": {
+      "codepoint": 61720,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/cutting-rounger.svg"
+    },
+    "decayed-tooth": {
+      "codepoint": 61721,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/decayed-tooth.svg"
+    },
+    "dental-explorer": {
+      "codepoint": 61722,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-explorer.svg"
+    },
+    "dental-floss": {
+      "codepoint": 61723,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-floss.svg"
+    },
+    "dental-floss-1": {
+      "codepoint": 61724,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-floss-1.svg"
+    },
+    "dental-floss-2": {
+      "codepoint": 61725,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-floss-2.svg"
+    },
+    "dental-probe": {
+      "codepoint": 61726,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-probe.svg"
+    },
+    "dental-probe-1": {
+      "codepoint": 61727,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-probe-1.svg"
+    },
+    "dental-probe-2": {
+      "codepoint": 61728,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-probe-2.svg"
+    },
+    "dental-probe-3": {
+      "codepoint": 61729,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-probe-3.svg"
+    },
+    "dental-prone": {
+      "codepoint": 61730,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-prone.svg"
+    },
+    "dental-scaler": {
+      "codepoint": 61731,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dental-scaler.svg"
+    },
+    "dentist-mask": {
+      "codepoint": 61732,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/dentist-mask.svg"
+    },
+    "examinating-tooth": {
+      "codepoint": 61733,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/examinating-tooth.svg"
+    },
+    "extracting": {
+      "codepoint": 61734,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/extracting.svg"
+    },
+    "extraction-forceps": {
+      "codepoint": 61735,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/extraction-forceps.svg"
+    },
+    "fake-tooth": {
+      "codepoint": 61736,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/fake-tooth.svg"
+    },
+    "filled-tooth": {
+      "codepoint": 61737,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/filled-tooth.svg"
+    },
+    "filler": {
+      "codepoint": 61738,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/filler.svg"
+    },
+    "forceps": {
+      "codepoint": 61739,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/forceps.svg"
+    },
+    "forceps-1": {
+      "codepoint": 61740,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/forceps-1.svg"
+    },
+    "gauze": {
+      "codepoint": 61741,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/gauze.svg"
+    },
+    "golden-tooth": {
+      "codepoint": 61742,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/golden-tooth.svg"
+    },
+    "hammer": {
+      "codepoint": 61743,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/hammer.svg"
+    },
+    "headlamp": {
+      "codepoint": 61744,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/headlamp.svg"
+    },
+    "hemostat": {
+      "codepoint": 61745,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/hemostat.svg"
+    },
+    "hemostat-1": {
+      "codepoint": 61746,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/hemostat-1.svg"
+    },
+    "holed-tooth": {
+      "codepoint": 61747,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/holed-tooth.svg"
+    },
+    "implant-fixture": {
+      "codepoint": 61748,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/implant-fixture.svg"
+    },
+    "implant-fixture-1": {
+      "codepoint": 61749,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/implant-fixture-1.svg"
+    },
+    "implant-wrench": {
+      "codepoint": 61750,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/implant-wrench.svg"
+    },
+    "incisors-tooth": {
+      "codepoint": 61751,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/incisors-tooth.svg"
+    },
+    "inner-tooth": {
+      "codepoint": 61752,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/inner-tooth.svg"
+    },
+    "mallet": {
+      "codepoint": 61753,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/mallet.svg"
+    },
+    "molar-tooth": {
+      "codepoint": 61754,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/molar-tooth.svg"
+    },
+    "mouth-mirror": {
+      "codepoint": 61755,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/mouth-mirror.svg"
+    },
+    "mouth-prop": {
+      "codepoint": 61756,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/mouth-prop.svg"
+    },
+    "mouth-wash": {
+      "codepoint": 61757,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/mouth-wash.svg"
+    },
+    "mouthwash": {
+      "codepoint": 61758,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/mouthwash.svg"
+    },
+    "plier": {
+      "codepoint": 61759,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/plier.svg"
+    },
+    "pliers": {
+      "codepoint": 61760,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/pliers.svg"
+    },
+    "polishing-paste": {
+      "codepoint": 61761,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/polishing-paste.svg"
+    },
+    "potts": {
+      "codepoint": 61762,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/potts.svg"
+    },
+    "premolar": {
+      "codepoint": 61763,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/premolar.svg"
+    },
+    "prophy-angle": {
+      "codepoint": 61764,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/prophy-angle.svg"
+    },
+    "root": {
+      "codepoint": 61765,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/root.svg"
+    },
+    "scaler": {
+      "codepoint": 61766,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scaler.svg"
+    },
+    "scaler-1": {
+      "codepoint": 61767,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scaler-1.svg"
+    },
+    "scaler-2": {
+      "codepoint": 61768,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scaler-2.svg"
+    },
+    "scaler-3": {
+      "codepoint": 61769,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scaler-3.svg"
+    },
+    "scaler-4": {
+      "codepoint": 61770,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scaler-4.svg"
+    },
+    "scalpel": {
+      "codepoint": 61771,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scalpel.svg"
+    },
+    "scalpel-1": {
+      "codepoint": 61772,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scalpel-1.svg"
+    },
+    "scalpel-blade": {
+      "codepoint": 61773,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scalpel-blade.svg"
+    },
+    "scalpel-blade-1": {
+      "codepoint": 61774,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scalpel-blade-1.svg"
+    },
+    "scalpel-handle": {
+      "codepoint": 61775,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scalpel-handle.svg"
+    },
+    "scissor": {
+      "codepoint": 61776,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scissor.svg"
+    },
+    "scissors": {
+      "codepoint": 61777,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/scissors.svg"
+    },
+    "shiny-tooth": {
+      "codepoint": 61778,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/shiny-tooth.svg"
+    },
+    "straight-elevator": {
+      "codepoint": 61779,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/straight-elevator.svg"
+    },
+    "suture-needle": {
+      "codepoint": 61780,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/suture-needle.svg"
+    },
+    "suture-scissors": {
+      "codepoint": 61781,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/suture-scissors.svg"
+    },
+    "teeth-protection": {
+      "codepoint": 61782,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/teeth-protection.svg"
+    },
+    "tissue-retractor": {
+      "codepoint": 61783,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tissue-retractor.svg"
+    },
+    "tissue-retractor-1": {
+      "codepoint": 61784,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tissue-retractor-1.svg"
+    },
+    "tissue-retractor-2": {
+      "codepoint": 61785,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tissue-retractor-2.svg"
+    },
+    "tissue-retractor-3": {
+      "codepoint": 61786,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tissue-retractor-3.svg"
+    },
+    "tissue-scissors": {
+      "codepoint": 61787,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tissue-scissors.svg"
+    },
+    "tongue-retractor": {
+      "codepoint": 61788,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tongue-retractor.svg"
+    },
+    "tongue-retractor-1": {
+      "codepoint": 61789,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tongue-retractor-1.svg"
+    },
+    "tooth": {
+      "codepoint": 61790,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tooth.svg"
+    },
+    "tooth-with-braces": {
+      "codepoint": 61791,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tooth-with-braces.svg"
+    },
+    "tooth-with-diamond": {
+      "codepoint": 61792,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/tooth-with-diamond.svg"
+    },
+    "toothbrush": {
+      "codepoint": 61793,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/toothbrush.svg"
+    },
+    "toothpaste": {
+      "codepoint": 61794,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/toothpaste.svg"
+    },
+    "towel-clamps": {
+      "codepoint": 61795,
+      "source": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg/towel-clamps.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".flaticon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "Flaticon",
+    "force": true,
+    "input": {
+      "templates": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg",
+      "vectors": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/svg"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font",
+      "fonts": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font",
+      "preview": "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font"
+    },
+    "preprocessor_path": null,
+    "quiet": true,
+    "templates": [
+      "../../../../../sites/flaticon/libraries/webfont/templates/flaticon.html",
+      "../../../../../sites/flaticon/libraries/webfont/templates/_flaticon.scss",
+      "../../../../../sites/flaticon/libraries/webfont/templates/flaticon.css"
+    ]
+  },
+  "templates": [
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/flaticon.html",
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/_flaticon.scss",
+    "/var/www/static/flaticon/zip_packs/111752-dentist-tools-and-teeth/font/flaticon.css"
+  ]
+}
