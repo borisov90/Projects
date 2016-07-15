@@ -1,0 +1,6 @@
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\CrmPackage\bin\Debug\DHIPlugins.Plugins.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\CrmPackage\bin\Debug\DHIPlugins.Workflow.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\CrmPackage\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\CrmPackage\bin\Debug\DHIPlugins.Plugins.pdb
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\CrmPackage\bin\Debug\DHIPlugins.Workflow.pdb
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\CrmPackage\obj\Debug\CrmPackage.csprojResolveAssemblyReference.cache

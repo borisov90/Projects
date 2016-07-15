@@ -1,0 +1,7 @@
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\obj\Debug\Plugins.csprojResolveAssemblyReference.cache
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\bin\Debug\DHIPlugins.Plugins.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\bin\Debug\DHIPlugins.Plugins.pdb
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\obj\Debug\DHIPlugins.Plugins.dll
+D:\Work\CRM\Plgn-2016-test\DHIPlugins\DHIPlugins\Plugins\obj\Debug\DHIPlugins.Plugins.pdb

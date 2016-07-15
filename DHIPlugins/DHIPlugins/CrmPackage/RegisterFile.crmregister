@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="DHIPlugins.Plugins.dll" Id="00000000-0000-0000-0000-000000000000" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <Plugin Description="Plug-in to PaymentActioOnUpdate" FriendlyName="PaymentActioOnUpdate" Name="DHIPlugins.Plugins.PaymentActioOnUpdate" Id="00000000-0000-0000-0000-000000000000" TypeName="DHIPlugins.Plugins.PaymentActioOnUpdate">
+          <Steps>
+            <clear />
+            <Step CustomConfiguration="" Name="PaymentActioOnUpdate" Description="Post-Operation of Quote Update on the payment action" FilteringAttributes="new_actionforpayment" Id="00000000-0000-0000-0000-000000000000" MessageName="Update" Mode="Synchronous" PrimaryEntityName="quote" Rank="1" SecureConfiguration="" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+    <Solution Assembly="DHIPlugins.Workflow.dll" Id="00000000-0000-0000-0000-000000000000" IsolationMode="None" SourceType="Database" />
+  </Solutions>
+  <XamlWorkflows />
+</Register>
