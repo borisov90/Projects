@@ -1,0 +1,1201 @@
+<html><head>
+    <title></title>
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" type="text/javascript"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!--Latest compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!--Optional theme-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script> -->
+
+
+<link rel="stylesheet" type="text/css" href="Scripts/jquery_ui_1.9.2.custom.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+               
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+<script type="text/javascript" src="Scripts/jquery_ui_1.9.2.custom.js"></script>
+<script type="text/javascript" src="Scripts/jqueryResize.js"></script>
+<script type="text/javascript" src="Scripts/teethChild.js"></script>
+<script type="text/javascript" src="Scripts/RESTJQueryContactEditor.js" ></script>
+
+<script src="../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" type="text/javascript"></script>
+<!--<script src="https://raw.githubusercontent.com/ganeshmax/jcarousellite/master/versions/jquery.jcarousellite-1.0.1.min.js" type="text/javascript"></script>-->
+<script src="https://cdn.rawgit.com/ganeshmax/jcarousellite/master/versions/jquery.jcarousellite-1.0.1.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js" type="text/javascript"></script>
+
+
+<script>
+
+var pleaseSelectCommand = -1;
+var currentDivUsed = 0;
+
+function AttachmentsGathered(data, textStatus, XmlHttpRequest)
+{
+    var carouselToCmpare = $("#carousel-To-Compare-ul"); 
+
+    carouselToCmpare.children().remove();
+
+
+     if (data && data.length > 0) {
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "";    
+                        var nameString = "";
+                        var mimeType = "" + data[i].MimeType.toString();
+                        var fileName = "" + data[i].FileName.toString();
+
+                        
+                        nameString = "" + data[i].Body.toString()
+                        idString = "" + data[i].AttachmentId.Id.toString();  
+                        
+
+                       // "XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=AttachmentId eq "
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString, mimeType]
+                        ];
+
+
+                        // Add the results to the carousel ul            
+                    
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + mimeType + ";base64," + nameString;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += fileName + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul                
+                carouselToCmpare.append(img);
+            
+                }
+
+                // Wire-up jCarouselLite to the carousel div            
+            $("#carousel-To-Compare").jCarouselLite({
+                btnNext: "#nextToCompare",
+                btnPrev: "#prevToCompare"
+            });
+                
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+
+}
+
+function AttachmentsGatheredIfMimeTypeUsed(data, textStatus, XmlHttpRequest)
+{
+   
+
+
+
+
+    /*<tr>
+            <td>
+                <button id="prev" class="btn btn-primary">Предишна</button>
+                <button id="next" class="btn btn-primary">Следваща</button>
+
+            </td>
+        </tr>*/
+    
+    
+    
+
+     if (data && data.length > 0) {
+
+                     //this is the div counter for the UL's
+              //currentDivUsed++; 
+                var pictureTable = $("#picturesTable"); 
+
+                //var lastUlFromPictureTable = $("picture-To-Compare-ul");
+                var newDivToAddEverythingTo = document.createElement("div");
+                newDivToAddEverythingTo.setAttribute("id", "ulHolder" + data[0].AttachmentId.Id.toString())
+
+                var newRowToAddToTable = document.createElement("tr");
+                var newTdToAddToRow = document.createElement("td");
+                var newArrowsBackAndForth = document.createElement("tr");
+                var newArrowsRow = document.createElement("td");
+                var backButton = document.createElement("input");
+                backButton.setAttribute("type", "button");
+                backButton.value = "Назад";
+                backButton.name = "Назад"
+                backButton.id = "backButton" + data[0].AttachmentId.Id.toString();
+                backButton.className = "btn btn-primary";
+
+                var forwardButton = document.createElement("input");
+                forwardButton.setAttribute("type", "button");
+                //forwardButton.type = "button";
+                forwardButton.id = "forwardButton" + data[0].AttachmentId.Id.toString();
+                forwardButton.value = "Напред";
+                forwardButton.name = "Напред";
+                forwardButton.className  = "btn btn-primary";
+
+                newArrowsRow.appendChild(backButton);
+                newArrowsRow.appendChild(forwardButton);
+
+                newArrowsBackAndForth.appendChild(newArrowsRow);
+
+
+                var newULHolder = document.createElement("ul");
+                newULHolder.setAttribute("class", "ulHolder_UL" + data[0].AttachmentId.Id.toString());
+                //newULHolder.setAttribute("class", "ulHolder");
+                newTdToAddToRow.appendChild(newULHolder);
+                //newRowToAddToTable.appendChild(newArrowsBackAndForth);
+               
+                newTdToAddToRow.appendChild(newDivToAddEverythingTo);
+                newRowToAddToTable.appendChild(newTdToAddToRow);
+                //newDivToAddEverythingTo.appendChild(newRowToAddToTable);
+                newDivToAddEverythingTo.appendChild(newULHolder);
+                //$('#picturesTable tr:last').after(newRowToAddToTable);
+                var classHolder = ".ulHolder" + data[0].AttachmentId.Id.toString();
+                $("#picturesTable").append(newArrowsBackAndForth);
+                $("#picturesTable").append(newRowToAddToTable);
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "";    
+                        var nameString = "";
+                        var mimeType = "" + data[i].MimeType.toString();
+                        var fileName = "" + data[i].FileName.toString();
+
+                       
+                        nameString = "" + data[i].Body.toString();
+                        idString = "" +  data[i].AttachmentId.Id.toString();
+                        
+                        
+
+                       // "XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=AttachmentId eq "
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString, mimeType]
+                        ];
+
+
+                        // Add the results to the carousel ul            
+                    
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + mimeType + ";base64," + nameString;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += fileName + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul  
+
+
+                //var newULH =document.getElementById("picturesTable").lastChild;
+                //carousel-To-Compare-ul1
+                var newULH = $( ".ulHolder_UL" + data[0].AttachmentId.Id.toString());
+
+
+                //newULHolder.appendChild(img);
+                newULH.append(img);
+            
+                }
+
+                // Wire-up jCarouselLite to the carousel div            
+            $("#ulHolder" + data[0].AttachmentId.Id.toString()).jCarouselLite({
+                btnNext: "#forwardButton" + data[0].AttachmentId.Id.toString(),
+                btnPrev: "#backButton" + data[0].AttachmentId.Id.toString()
+            });
+            //var locatorString = ".ulHolder" + data[0].AttachmentId.Id.toString();
+
+          /*  $(".ulHolder" + data[0].AttachmentId.Id.toString()).jCarouselLite({
+                
+            });*/
+
+
+       
+                
+
+
+        /* $(".ulHolder5eb6e5c2-b241-e611-80d5-00155d0a1501").jCarouselLite({
+                
+            });*/
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+}
+
+function AttachmentsGatheredAnnotation(data, textStatus, XmlHttpRequest)
+{
+    var carouselToCmpare = $("#carousel-To-Compare-ul"); 
+
+    carouselToCmpare.children().remove();
+    
+
+     if (data && data.length > 0) {
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "";    
+                        var nameString = "";
+                        var mimeType = "" + data[i].MimeType.toString();
+                        var fileName = "" + data[i].FileName.toString();
+
+                       
+                        nameString = "" + data[i].DocumentBody.toString();
+                        idString = "" +  data[i].AnnotationId.toString();
+                        
+                        
+
+                       // "XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=AttachmentId eq "
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString, mimeType]
+                        ];
+
+
+                        // Add the results to the carousel ul            
+                    
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + mimeType + ";base64," + nameString;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += fileName + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul                
+                carouselToCmpare.append(img);
+            
+                }
+
+                // Wire-up jCarouselLite to the carousel div            
+            $("#carousel-To-Compare").jCarouselLite({
+                btnNext: "#nextToCompare",
+                btnPrev: "#prevToCompare"
+            });
+                
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+
+}
+
+function AttachmentsGatheredAll(data, textStatus, XmlHttpRequest)
+{
+
+    
+
+
+
+    /*<tr>
+            <td>
+                <button id="prev" class="btn btn-primary">Предишна</button>
+                <button id="next" class="btn btn-primary">Следваща</button>
+
+            </td>
+        </tr>*/
+    
+    
+    
+
+     if (data && data.length > 0) {
+
+            var pictureTable = $("#picturesTable"); 
+
+        //var lastUlFromPictureTable = $("picture-To-Compare-ul");
+        var newDivToAddEverythingTo = document.createElement("div");
+        
+        
+
+        var newRowToAddToTable = document.createElement("tr");
+        var newTdToAddToRow = document.createElement("td");
+        var newArrowsBackAndForth = document.createElement("tr");
+        var newArrowsRow = document.createElement("td");
+        var backButton = document.createElement("input");
+        backButton.setAttribute("type", "button");
+        backButton.value = "Назад";
+        backButton.name = "Назад"
+        
+        backButton.className = "btn btn-primary";
+
+        var forwardButton = document.createElement("input");
+        forwardButton.setAttribute("type", "button");
+        //forwardButton.type = "button";
+        
+        forwardButton.value = "Напред";
+        forwardButton.name = "Напред";
+        forwardButton.className  = "btn btn-primary";
+
+        newArrowsRow.appendChild(backButton);
+        newArrowsRow.appendChild(forwardButton);
+
+        newArrowsBackAndForth.appendChild(newArrowsRow);
+
+
+        var newULHolder = document.createElement("ul");
+
+        //newULHolder.setAttribute("class", "ulHolder");
+        newTdToAddToRow.appendChild(newULHolder);
+        //newRowToAddToTable.appendChild(newArrowsBackAndForth);
+       
+        newTdToAddToRow.appendChild(newDivToAddEverythingTo);
+        newRowToAddToTable.appendChild(newTdToAddToRow);
+        //newDivToAddEverythingTo.appendChild(newRowToAddToTable);
+        newDivToAddEverythingTo.appendChild(newULHolder);
+        //$('#picturesTable tr:last').after(newRowToAddToTable);
+        //var classHolder = ".ulHolder" + data[0].AttachmentId.Id.toString();
+        $("#picturesTable").append(newArrowsBackAndForth);
+        $("#picturesTable").append(newRowToAddToTable);
+
+
+        newULHolder.setAttribute("class", "ulHolder_UL" + data[0].AnnotationId.toString());
+        forwardButton.id = "forwardButton" + data[0].AnnotationId.toString();
+        backButton.id = "backButton" + data[0].AnnotationId.toString();
+        newDivToAddEverythingTo.setAttribute("id", "ulHolder" + data[0].AnnotationId.toString())
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "";    
+                        var nameString = "";
+                        var mimeType = "" + data[i].MimeType.toString();
+                        var fileName = "" + data[i].FileName.toString();
+
+                       
+                        nameString = "" + data[i].DocumentBody.toString();
+                        idString = "" +  data[i].AnnotationId.toString();
+                        
+                        
+
+                       // "XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=AttachmentId eq "
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString, mimeType]
+                        ];
+
+
+                        // Add the results to the carousel ul            
+                    
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + mimeType + ";base64," + nameString;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += fileName + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul  
+
+
+                //var newULH =document.getElementById("picturesTable").lastChild;
+              /*  var newULH = $( "#picturesTable ul:last-child" );
+                var newUL = $(".ulHolder" + data[0].AnnotationId.toString());
+*/
+
+                var newULH = $( ".ulHolder_UL" + data[0].AnnotationId.toString());
+
+
+                //newULHolder.appendChild(img);
+                newULH.append(img);
+
+                }
+
+                    // Wire-up jCarouselLite to the carousel div            
+            $("#ulHolder" + data[0].AnnotationId.toString()).jCarouselLite({
+                btnNext: "#forwardButton" + data[0].AnnotationId.toString(),
+                btnPrev: "#backButton" + data[0].AnnotationId.toString()
+            });
+
+          /*           // Wire-up jCarouselLite to the carousel div            
+            $("#carousel-To-Compare-ul1").jCarouselLite({
+                btnNext: "#nextToCompare1",
+                btnPrev: "#prevToCompare1"
+            });*/
+
+                // Wire-up jCarouselLite to the carousel div            
+            /*$("#carousel-To-Compare").jCarouselLite({
+                btnNext: "#nextToCompare",
+                btnPrev: "#prevToCompare"
+            });*/
+
+           /* $("#ulHolder" + data[0].AnnotationId.toString()).jCarouselLite({
+                btnNext: "#backButton" + + data[0].AnnotationId.toString(),
+                btnPrev: "#forwardButton" + + data[0].AnnotationId.toString(),
+            });
+                */
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+
+}
+
+function GatherAttachmentsToCompare(data, textStatus, XmlHttpRequest)
+{
+     var carouselToCmpare = $("#carousel-ul"); 
+
+    carouselToCmpare.children().remove();
+    
+
+     if (data && data.length > 0) {
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "";    
+                        var nameString = "";
+                        var mimeType = "" + data[i].MimeType.toString();
+                        var fileName = "" + data[i].FileName.toString();
+
+                      
+                        nameString = "" + data[i].Body.toString()
+                        idString = "" + data[i].AttachmentId.Id.toString();   
+                       
+
+
+                       // "XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=AttachmentId eq "
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString, mimeType]
+                        ];
+
+
+                        // Add the results to the carousel ul            
+                    
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + mimeType + ";base64," + nameString;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += fileName + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul                
+                carouselToCmpare.append(img);
+            
+                }
+
+                // Wire-up jCarouselLite to the carousel div            
+            $("#carousel").jCarouselLite({
+                btnNext: "#next",
+                btnPrev: "#prev"
+            });
+                
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+}
+
+function GatherAttachmentsToCompareAnnotation(data, textStatus, XmlHttpRequest)
+{
+     var carouselToCmpare = $("#carousel-ul"); 
+
+    carouselToCmpare.children().remove();
+    
+
+     if (data && data.length > 0) {
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "";    
+                        var nameString = "";
+                        var mimeType = "" + data[i].MimeType.toString();
+                        var fileName = "" + data[i].FileName.toString();
+
+                        
+                        nameString = "" + data[i].DocumentBody.toString();
+                        idString = "" + data[i].AnnotationId.toString();  
+                       
+                       
+
+                       // "XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=AttachmentId eq "
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString, mimeType]
+                        ];
+
+
+                        // Add the results to the carousel ul            
+                    
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + mimeType + ";base64," + nameString;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += fileName + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul                
+                carouselToCmpare.append(img);
+            
+                }
+
+                // Wire-up jCarouselLite to the carousel div            
+            $("#carousel").jCarouselLite({
+                btnNext: "#next",
+                btnPrev: "#prev"
+            });
+                
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+}
+
+function SearchCompleted(data, textStatus, XmlHttpRequest) {
+
+
+            //Clear out all Contacts in the grid.
+
+            var entityId = window.parent.Xrm.Page.data.entity.getId();
+
+
+            //Re-populate the grid with results, if any
+            if (data && data.length > 0) {
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "" + data[i].ActivityId.toString() + "#" + data[i].ActivityTypeCode.toString();    
+                        var nameString = "" + data[i].Subject.toString();
+
+
+                       /* var option = document.createElement("option");
+                        option.text = nameString;
+                        select.add(option);*/
+
+                       /* var optionToAdd = new Option(idString, nameString);
+                        /// jquerify the DOM object 'o' so we can use the html method
+                        $(optionToAdd).html(nameString);
+                        $(".selectpicker").append(optionToAdd);*/
+                         /*$(".selectpicker").selectpicker('refresh');*/
+                        var optionToAdd = [
+                        [idString, nameString]
+                        ];
+
+                        loadSelectBox(optionToAdd); 
+                        loadFirstSelectBox(optionToAdd);
+
+                        
+                            //Generates all the HTML for a new row and populates
+                            //it with data based on the Contact object
+                }
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+        
+      
+    }
+
+    function CreateMultiRowPictures(data, textStatus, XmlHttpRequest) {
+
+
+            //Clear out all Contacts in the grid.
+
+            var entityId = window.parent.Xrm.Page.data.entity.getId();
+            currentDivUsed = 0;
+
+
+            //Re-populate the grid with results, if any
+            if (data && data.length > 0) {
+
+                //var select = document.getElementById('selectBox');
+
+                for (var i = 0; i < data.length; i++) {
+
+
+                        var idString = "" + data[i].ActivityId.toString() + "#" + data[i].ActivityTypeCode.toString();    
+                        var nameString = "" + data[i].Subject.toString();
+
+
+                        var odataSecondOptionFilter = "ObjectId/Id eq guid'" + data[i].ActivityId.toString() + "'";
+
+
+
+                           if (data[i].ActivityId != null && data[i].ActivityId != pleaseSelectCommand) {
+                            if (data[i].ActivityTypeCode.toString() == 'serviceappointment') {
+                                retrieveMultiple("AnnotationSet", odataSecondOptionFilter, AttachmentsGatheredAll, null);
+                            }
+                            else {
+                             retrieveMultiple("ActivityMimeAttachmentSet", odataSecondOptionFilter, AttachmentsGatheredIfMimeTypeUsed, null);
+                            }
+                        }
+
+                }
+
+                
+            
+               
+                //Hide the empty message
+               
+            }
+            //Or display the empty table message if no results
+        else {
+
+            
+        }
+        
+      
+    }
+
+function loadSelectBox(options)
+{
+        var select = document.getElementById('selectBox');
+        for (var i = 0; i < options.length; i++) {
+            var select = document.getElementById('selectBox');
+            select.options[select.options.length] = new Option(options[i][1], options[i][0], false, false);
+        }
+        
+}
+
+function loadFirstSelectBox(options)
+{
+        var select = document.getElementById('selectBoxToCompare');
+        for (var i = 0; i < options.length; i++) {
+            var select = document.getElementById('selectBoxToCompare');
+            select.options[select.options.length] = new Option(options[i][1], options[i][0], false, false);
+        }
+        
+}
+
+function getData()
+{
+    console.log("Onchange was triggered");
+
+    var selectBox = document.getElementById("selectBox");
+    var selectedIndex = selectBox.options[selectBox.selectedIndex].value;
+/*/XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=FileName eq ('" + fileName + "') 
+*/
+   /* var oDataQuery = clientUrl   + "/XRMServices/2011/OrganizationData.svc" +            
+        "/AnnotationSet?$select=AnnotationId,Subject,DocumentBody,MimeType&" +            
+        "$orderby=ModifiedOn desc&$filter=ObjectId/Id eq guid'{" + selectedExaminationID +            
+        "}' and IsDocument eq true and startswith(MimeType,'image/jpeg') ";*/
+        var selectedEntityType = selectedIndex.split("#").pop();
+        var selectedExaminationID = selectedIndex.split("#").shift();
+      
+
+        var odataSecondOptionFilter = "ObjectId/Id eq guid'" + selectedExaminationID + "'";
+
+
+    var carouselToCmpare = $("#carousel-To-Compare-ul");    
+    var attachmentIDList = new Array();
+   
+
+    carouselToCmpare.children().remove();
+
+       if (selectedExaminationID != null && selectedExaminationID != pleaseSelectCommand) {
+        if (selectedEntityType == 'serviceappointment') {
+            retrieveMultiple("AnnotationSet", odataSecondOptionFilter, AttachmentsGatheredAnnotation, null);
+        }
+        else {
+         retrieveMultiple("ActivityMimeAttachmentSet", odataSecondOptionFilter, AttachmentsGathered, null);
+        }
+    }
+    
+
+
+    // Execute the OData query for the images        
+       /* $.getJSON(oDataQuery, function (data) {            
+            var results = data.d.results; 
+
+            for (var i = 0; i < results.length; i++) {
+               attachmentIDList.push(results[i].AttachmentId)
+           }                       
+            
+            // Add the results to the carousel ul            
+            for (var i = 0; i < results.length; i++) {                
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + results[i].MimeType + ";base64," + results[i].DocumentBody;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += results[i].Subject + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul                
+                carouselToCmpare.append(img);
+            }
+ 
+            // Wire-up jCarouselLite to the carousel div            
+            $("#carousel-To-Compare").jCarouselLite({
+                btnNext: "#nextToCompare",
+                btnPrev: "#prevToCompare"
+            });
+        });*/
+
+}
+
+
+function getDataToCompare()
+{
+    var selectBox = document.getElementById("selectBoxToCompare");
+    var selectedIndex = selectBox.options[selectBox.selectedIndex].value;
+/*/XrmServices/2011/OrganizationData.svc/ActivityMimeAttachmentSet?$select=Body,MimeType&$filter=FileName eq ('" + fileName + "') 
+*/
+   /* var oDataQuery = clientUrl   + "/XRMServices/2011/OrganizationData.svc" +            
+        "/AnnotationSet?$select=AnnotationId,Subject,DocumentBody,MimeType&" +            
+        "$orderby=ModifiedOn desc&$filter=ObjectId/Id eq guid'{" + selectedExaminationID +            
+        "}' and IsDocument eq true and startswith(MimeType,'image/jpeg') ";*/
+
+    var selectedEntityType = selectedIndex.split("#").pop();
+    var selectedExaminationID = selectedIndex.split("#").shift();
+      
+
+    var odataSecondOptionFilter = "ObjectId/Id eq guid'" + selectedExaminationID + "'";
+
+
+    var carouselToCmpare = $("#carousel-ul");    
+
+    carouselToCmpare.children().remove();
+
+    if (selectedEntityType == 'serviceappointment') {
+           if (selectedExaminationID != null && selectedExaminationID != pleaseSelectCommand) {
+                 retrieveMultiple("AnnotationSet", odataSecondOptionFilter, GatherAttachmentsToCompareAnnotation, null);
+                }   
+    }
+    else{
+            if (selectedExaminationID != null && selectedExaminationID != pleaseSelectCommand) {
+             retrieveMultiple("ActivityMimeAttachmentSet", odataSecondOptionFilter, GatherAttachmentsToCompare, null);
+            }   
+    }
+
+       
+    
+
+}
+
+function getTypeOfComparison() {
+
+    var selectBox = document.getElementById("typeOfPictureSelect");
+    var selectedIndex = selectBox.options[selectBox.selectedIndex].value;
+
+    if (selectedIndex == 'All') {
+        console.log("all");
+
+         document.getElementById("selectBoxToCompare").disabled = true;
+         document.getElementById("selectBox").disabled = true;
+
+         var backAndForthButtons = $(".BackAndForthArrows");
+        backAndForthButtons.css('visibility', 'hidden');
+
+
+    var carouselToCmpare = $("#carousel-ul");    
+    var secondCarousel = $("#carousel-To-Compare-ul");    
+    carouselToCmpare.children().remove();
+    secondCarousel.children().remove();
+    var pictureTab = $("#picturesTable");  
+    pictureTab.children().remove();
+
+    var entityId = window.parent.Xrm.Page.data.entity.getId();
+    var options = "RegardingObjectId/Id eq guid'" + entityId + "'and (ActivityTypeCode eq 'appointment' or ActivityTypeCode eq'serviceappointment')";
+      if (entityId != null && entityId != "") {
+             retrieveMultiple("ActivityPointerSet", options, CreateMultiRowPictures, errorCallback);
+        }
+
+
+    }
+    else if(selectedIndex == "None"){
+        console.log("show none!");
+
+        document.getElementById("selectBoxToCompare").disabled = true;
+        document.getElementById("selectBox").disabled = true;
+
+        var backAndForthButtons = $(".BackAndForthArrows");
+        backAndForthButtons.css('visibility', 'hidden');
+
+        carouselToCmpare.children().remove();
+        secondCarousel.children().remove();
+        var pictureTab = $("#picturesTable");  
+        pictureTab.children().remove();
+
+    }
+    else{
+        console.log("compare");
+        document.getElementById("selectBoxToCompare").disabled = false;
+        document.getElementById("selectBox").disabled = false;
+
+        var carouselToCmpare = $("#carousel-ul");    
+        var secondCarousel = $("#carousel-To-Compare-ul"); 
+
+        var backAndForthButtons = $(".BackAndForthArrows");
+        backAndForthButtons.css('visibility', 'visible');
+
+        carouselToCmpare.children().remove();
+        secondCarousel.children().remove();
+        var pictureTab = $("#picturesTable");  
+        pictureTab.children().remove();
+
+    }
+
+
+
+}
+
+function errorCallback(data, textStatus, XmlHttpRequest) {
+    console.log(textStatus);
+}
+
+ $(document).ready(function () {   
+
+    //var context =  window.parent.Xrm.Page.context;
+    var context = GetGlobalContext();  //--for 2016 
+    var select = document.getElementById('selectBox');
+    var optionsPleaseSelect = [['-1', 'Изберете']];
+
+
+
+  var clientUrl = context.getClientUrl();   
+    
+    // Get the entity id    
+    //var entityId = context.getQueryStringParameters().id;   
+
+    var entityId = window.parent.Xrm.Page.data.entity.getId();
+
+
+    //var currentPatientID = window.parent.Xrm.Page.getAttribute("new_patientLookup").getValue();
+    /*var currentPatientID = '';
+    try{
+        currentPatientID = window.parent.Xrm.Page.getAttribute('regardingobjectid').getValue()[0].id;
+    }catch(e){
+        currentPatientID = null;
+    }*/
+
+    //currentPatientID = currentPatientID.replace(/[{()}]/g, '');
+    //var options = "$filter=new_patientLookup eq '" + currentPatientID + "'";
+    //&$filter=ObjectId/Id eq guid'" + entityId 
+    var options = "RegardingObjectId/Id eq guid'" + entityId + "'and (ActivityTypeCode eq 'appointment' or ActivityTypeCode eq'serviceappointment')";
+    //service_appointment
+
+    /*ActivityPointerSet?$select=Subject,activitypointer_activity_parties/ParticipationTypeMask&$expand=activitypointer_activity_parties&$filter= RegardingObjectId/Id eq guid'" + id + "'and ActivityTypeCode eq 'phonecall'");
+
+*/    if (entityId != null && entityId != "") {
+         retrieveMultiple("ActivityPointerSet", options, SearchCompleted, errorCallback);
+    }
+
+
+    //retrieveMultiple("hcr_dentalprofileSet", null, SearchCompleted, null);
+
+    
+
+    loadSelectBox(optionsPleaseSelect); 
+    loadFirstSelectBox(optionsPleaseSelect);
+
+
+    //var quoteId = window.parent.Xrm.Page.data.entity.getId();
+
+    console.log("jcarouselBreakpoint");
+    
+    var entityName = window.parent.Xrm.Page.data.entity.getEntityName();
+
+         
+    
+ 
+    /*if (entityId) {        
+    
+        // Build the OData query to get all the images attached to the current entity
+
+        var oDataQuery = clientUrl   + "/XRMServices/2011/OrganizationData.svc" +            
+        "/AnnotationSet?$select=AnnotationId,Subject,DocumentBody,MimeType&" +            
+        "$orderby=ModifiedOn desc&$filter=ObjectId/Id eq guid'" + entityId +            
+        "' and IsDocument eq true and startswith(MimeType,'image/jpeg') ";
+
+        //var oDataQuery = clientUrl   + "/XRMServices/2011/OrganizationData.svc/AnnotationSet?$select=Subject,Subject,DocumentBody,MimeType";      
+        
+        // Get a reference to the carousel ul        
+        var carouselul = $("#carousel-ul");         
+ 
+        // Execute the OData query for the images        
+        $.getJSON(oDataQuery, function (data) {            
+            var results = data.d.results;                        
+            
+            // Add the results to the carousel ul            
+            for (var i = 0; i < results.length; i++) {                
+                // Build up an img tag surrounded by a li tag to add to the carousel ul                
+                var img = "<li><img src='";                                
+ 
+                // set src attribute of default profile picture web resource.                                    
+                // here we use DataURI schema which has 32kb limit in IE8 and doesn't support IE <= 7.                                    
+                var src = "data:" + results[i].MimeType + ";base64," + results[i].DocumentBody;                                
+ 
+                img += src;                
+                img += "'class='thumbnail'   style='border: 1px solid; margin: 1px; height: 300px; width: 400px; overflow: hidden;' alt='";
+                img += results[i].Subject + "'></li>";                                
+ 
+                // Add the li with imag inside to the carousel ul                
+                carouselul.append(img);
+            }
+ 
+            // Wire-up jCarouselLite to the carousel div            
+            $("#carousel").jCarouselLite({
+                btnNext: "#next",
+                btnPrev: "#prev"
+            });
+        });
+    } else {
+        console.log("could not get entity id");    
+}*/});</script>
+
+
+
+<meta><meta><meta><meta><meta><meta></head>
+
+<body style="border-width: 0px; margin: 0px; padding-left: 0px; padding-top: 0px; word-wrap: break-word; background-color: rgb(246, 248, 250);">
+
+
+<form class="comparerForm">
+<!-- class="selectpicker show-tick" -->
+    <select id="selectBoxToCompare" onchange="getDataToCompare()"></select>
+    <select id="selectBox" onchange="getData()"></select>
+    <select id="typeOfPictureSelect" onchange="getTypeOfComparison()">
+        <option value="None">Изберете</option>
+        <option value="All">Всички посещения</option>
+        <option value="Compare">Сравни посещения</option>
+    </select>
+   
+    
+
+</form>
+    <table class="container">
+        <tbody >
+        <tr>
+            <td class="BackAndForthArrows" visibility="hidden">
+                <button id="prev" class="btn btn-primary">Предишна</button>
+                <button id="next" class="btn btn-primary">Следваща</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="carousel">
+                    <ul id="carousel-ul">
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="BackAndForthArrows" visibility="hidden">
+                <button id="prevToCompare" class="btn btn-primary">Предишна</button>
+                <button id="nextToCompare" class="btn btn-primary">Следваща</button>
+
+            </td>
+            
+        </tr>
+        <tr>  
+            <td>
+                <div id="carousel-To-Compare">
+                    <ul id="carousel-To-Compare-ul">
+                    </ul>
+                </div>
+            </td>  
+        </tr>
+       <!--  <tr>
+          <td>
+               <button id="prevToCompare1" class="btn btn-primary">Предишна</button>
+               <button id="nextToCompare1" class="btn btn-primary">Следваща</button>
+       
+           </td>
+       </tr>
+       <tr>  
+           <td>
+               <div id="carousel-To-Compare1">
+                   <ul id="carousel-To-Compare-ul1">
+                   </ul>
+               </div>
+           </td>  
+       </tr>
+       <tr>
+          <td>
+               <button id="prevToCompare2" class="btn btn-primary">Предишна</button>
+               <button id="nextToCompare2" class="btn btn-primary">Следваща</button>
+       
+           </td>
+       </tr>
+       <tr>  
+           <td>
+               <div id="carousel-To-Compare2">
+                   <ul id="carousel-To-Compare-ul2">
+                   </ul>
+               </div>
+           </td>  
+       </tr>
+        <tr>
+          <td>
+               <button id="prevToCompare3" class="btn btn-primary">Предишна</button>
+               <button id="nextToCompare3" class="btn btn-primary">Следваща</button>
+       
+           </td>
+       </tr>
+       <tr>  
+           <td>
+               <div id="carousel-To-Compare3">
+                   <ul id="carousel-To-Compare-ul3">
+                   </ul>
+               </div>
+           </td>  
+       </tr> -->
+        </tbody>
+
+    </table>
+
+     <table id="picturesTable"> 
+        
+    </table>
+    
+
+
+
+
+
+
+
+
+</body></html>
