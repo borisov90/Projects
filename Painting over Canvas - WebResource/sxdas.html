@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<style>
+#main {
+}
+  #sidebar {
+  float:left;
+  width:60px;
+}
+  #pencilSize{
+
+}
+</style>
+<div id="sidebar">
+  <svg id="swatches" width="60px" height="200px" viewBox="-4 -4 60 200" style="stroke: #000;stroke-width: 2; stroke-opacity: 0.1">
+     <rect style="fill:#000"    x="0"  y="0" width="20" height="20"/>
+     <rect style="fill:#AD5C51" x="25" y="0" width="20" height="20"/>
+     <rect style="fill:#F4CBB2" x="0"  y="25" width="20" height="20"/>
+     <rect style="fill:#734631" x="25" y="25" width="20" height="20"/>
+     <rect style="fill:#DBB38F" x="0"  y="50" width="20" height="20"/>
+     <rect style="fill:#A36E4C" x="25" y="50" width="20" height="20"/>
+     <!-- <rect style="fill:#C3E4D8" x="0"  y="75" width="20" height="20"/>
+     <rect style="fill:#fff"    x="25" y="75" width="20" height="20"/> -->
+     <rect id="selection" style="stroke:#0000ff; stroke-opacity: 1;fill:none" x="0" y="0" width="20" height="20"/>
+  </svg>
+</div>
+<!-- <input type="button" id="svg-save">Save</input> -->
+<input type="button" id="downloadLnk" value="Запамети"></input>
+<select name="Pencils" id="pencilSize" value="Размер">
+    <option value="2pxOption">2px</option>
+    <option value="5pxOption">5px</option>
+    <option value="10pxOption">10px</option>
+</select>
+
+<div id="main">
+
+ <!--  <svg id="octocat" xmlns="http://www.w3.org/2000/svg" width="400px" height="340px" viewBox="-60 0 420 320" style="fill:#fff;stroke: #000; stroke-opacity: 0.1">
+ 
+   <ellipse class="shadow-legs" cx="200" cy="190" rx="70" ry="100" style="fill:white;stroke:black;stroke-width:1" />
+   <ellipse class="cat" cx="200" cy="200" rx="49" ry="70" style="fill:white;stroke:black;stroke-width:1" />
+   <polygon class="puddle" points="200,70 210,90 190,90" style="fill:white;stroke:black;stroke-width:1"  />
+   <path id="mouth" d = "M 160 240 a 60 30 0 1 1 1 50"/>
+   <ellipse class="puddle" cx="200" cy="185" rx="50" ry="35"/>
+   <ellipse class="puddle" cx="200" cy="215" rx="48" ry="30"/>
+   <ellipse class="puddle" cx="200" cy="245" rx="40" ry="25"/>
+   <path d="M 160 120 l 20 0"  />
+   <path d="M 220 120 l 20 0"  />
+  
+         
+ </svg> -->
+  <canvas id="myCanvas" width="400px" height="340px"  style="position: absolute; 
+              left: 200px; 
+              top:0px;
+              z-index: 2;
+              width: 400px;
+              height:340px"></canvas> 
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+
+        var imageWidth;
+        var imageHeight;
+
+        var lineWidth = 2;
+
+        var tartar = '#CBA735';
+        var violet = '#cb3594'
+
+        var $tempCanvas, $gum = $('.gum'), canvas, tempCanvas, maskCanvas, ctx, tempCtx, maskCtx, outlineCtx, tooth, toolType, toolData, service="", $id, $tooth, listedPaint = new Array("OP", "CVTY", "DCY"), listedSymbol = new Array("EXT"), maskDataUrl;
+        var imageObj2;
+
+
+        var curTooth = new Array();
+        var clickX = new Array();
+        var clickY = new Array();
+        var clickDrag = new Array();
+        var clickColor = new Array();
+        var clickTool = new Array();
+        var curTool = "crayon";
+        var curColor;
+        var paint;
+
+
+// color swatches
+/*
+      #cat          { fill:   #000; }
+      #pupils       { fill:   #AD5C51; }
+      #mouth       { fill:   #AD5C51; }
+      #face         { fill:   #F4CBB2; }
+      #nose       { fill:   #F00; }
+      #shadow-legs  { fill:   #7DBBE6; }
+      #eyes         { fill:   #FFF; }
+      #puddle     { fill:   #9CDAF1; }
+      #drop       { fill:   #9CDAF1; }
+      #octo       { fill:   #C3E4D8; }
+*/
+/*  var _currentFill = "fill:#000";
+    $("#octocat").click(function (event) { $(event.target).attr('style', _currentFill); })
+    var $swatches = $("#swatches");
+    $swatches.click(function (event) { 
+      $swatch = $(event.target);
+      loc = [parseInt($swatch.attr('x'), 10), parseInt($swatch.attr('y'), 10)]
+      $("#selection", $swatches).attr('x', loc[0]);
+      $("#selection", $swatches).attr('y', loc[1]);
+      _currentFill = $swatch.attr('style'); ; 
+    })*/
+function createHead() {
+
+var canvas = document.getElementById("myCanvas");
+
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.ellipse(200, 190, 70, 100, 180 * Math.PI/180, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFFFFF";
+ctx.fill();
+//ctx.globalCompositeOperation = 'source-over';
+ctx.stroke();
+
+ctx.beginPath();
+ctx.ellipse(200, 200, 49, 70, 180 * Math.PI/180, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFFFFF";
+ctx.fill();
+//ctx.globalCompositeOperation = 'source-over';
+ctx.stroke();
+
+//nose "200,70 210,90 190,90"
+ctx.beginPath();
+ctx.moveTo(200,70);
+ctx.lineTo(210,90);
+ctx.lineTo(190,90);
+ctx.strokeStyle = 'black';
+ctx.stroke();
+ctx.fillStyle = "#4D4C4C";
+ctx.fill();
+
+
+
+
+
+
+//eyes
+ctx.beginPath();
+ctx.moveTo(220,120);
+ctx.lineTo(240,120);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(160,120);
+ctx.lineTo(180,120);
+ctx.stroke();
+
+
+ctx.fillText("C1",135,210);
+ctx.fillText("A1",255,210);
+ctx.fillText("B1",195,285);
+
+
+ctx.beginPath();
+ctx.ellipse(200, 185, 35, 50, 90 * Math.PI/180, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFFFFF";
+ctx.fill();
+ctx.fillStyle = "#000";
+ctx.fillText("A",195,180);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.ellipse(200, 215, 30, 48, 90 * Math.PI/180, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFFFFF";
+ctx.fill();
+ctx.fillStyle = "#000";
+ctx.fillText("B",195,210);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.ellipse(200, 245, 25, 40, 90 * Math.PI/180, 0, 2 * Math.PI);
+ctx.fillStyle = "#FFFFFF";
+ctx.fill();
+ctx.fillStyle = "#000";
+ctx.fillText("C",195,240);
+ctx.stroke();
+
+}
+
+
+$( document ).ready(function() {
+    createHead();
+});
+
+
+$('#downloadLnk').click(function(e){
+    var dt = document.getElementById('myCanvas');
+    var dataURL = dt.toDataURL("image/png");
+    var b      = document.createElement('a');
+        
+    b.href     = dataURL;
+    //document.write('<img src="'+img+'"/>');
+    b.download = 'plot.jpeg';
+    b.target   = '_blank';
+    document.body.appendChild(b); 
+    b.click();
+    document.body.removeChild(b);
+});
+
+
+$('#pencilSize').change(function(){
+     var pencilSize = document.getElementById("pencilSize");
+    var pencilSizeIndex = pencilSize.options[pencilSize.selectedIndex].value;
+    //alert(pencilSizeIndex);
+    var pencilArgumentsArray = pencilSizeIndex.split("px");
+    lineWidth = pencilArgumentsArray[0];
+    
+});
+
+
+
+
+
+  $('#svg-save').click(function(){
+        var a      = document.createElement('a');
+        var octoc   =  $('#octocat');
+        var img    = octoc.html();
+        a.href     = 'data:image/svg+xml;utf8,' +  $('#main')[0].outerHTML;
+        //document.write('<img src="'+img+'"/>');
+        a.download = 'plot.svg';
+        a.target   = '_blank';
+
+        document.body.appendChild(a); 
+        a.click();
+        document.body.removeChild(a);
+
+    });
+
+function clearPaint() {
+            $('#myCanvas').width = $('#myCanvas').width;
+            clickX = new Array();
+            clickY = new Array();
+            clickDrag = new Array();
+            clickColor = new Array();
+
+           
+           
+        };
+
+
+  function setPaint(tooth, imageWidth, imageHeight) {
+                
+                $(tooth).prepend("<div class='absolute'><canvas id='canvas"+tooth+"' width='"+imageWidth+"' height='"+imageHeight+"'></canvas></div>");
+                setVariables(tooth);
+                redefineFunctions();
+        };
+
+
+    function setVariables(tooth) {
+        $tempCanvas = $("#canvas"+tooth);
+        //error handler if clicked again
+        var canvas = document.getElementById("myCanvas");
+        //ctx = canvas.getContext('2d')
+        tempCtx = canvas.getContext('2d');
+        
+    };
+
+
+    function addClick(x, y, dragging) {
+        clickX.push(x);
+        clickY.push(y);
+        clickDrag.push(dragging);
+
+        /*$swatch = $(event.target);
+        curColor = $swatch.attr('style');*/
+        if(curTool == "eraser"){
+            clickColor.push(curColor);
+        } else {
+            clickColor.push(curColor);
+        }
+    };
+
+function redraw() {
+
+
+    $('#myCanvas').width = $('#myCanvas').width; //Clears the canvas
+
+    var canvas = document.getElementById("myCanvas");
+            //ctx = canvas.getContext('2d')
+    tempCtx = canvas.getContext('2d');
+ 
+    tempCtx.lineJoin = "round";
+
+    tempCtx.lineWidth = lineWidth;
+
+    for (var i = 0; i < clickX.length; i++) {
+        tempCtx.beginPath();
+        if (clickDrag[i] && i) {
+            tempCtx.moveTo(clickX[i-2], clickY[i-2]);
+        } else {
+            tempCtx.moveTo(clickX[i]-2, clickY[i]);
+        }
+        tempCtx.lineTo(clickX[i], clickY[i]);
+        tempCtx.closePath();
+        tempCtx.strokeStyle = clickColor[i];
+        tempCtx.stroke();
+    }
+    //tempImageDataUrl = tempCanvas.toDataURL(); ///KABOOOM!  
+};
+
+
+$('#swatches').mousedown(function(e){
+
+    $swatch = $(e.target);
+    curColorNotReal = $swatch.attr('style');
+    var curColorArr = curColorNotReal.split(":");
+    curColor = curColorArr[1];
+clickColor.push(curColor);
+
+});
+
+
+$('#myCanvas').mousemove(function(e) {
+                    if (paint) {
+                         addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+                                        redraw();
+                    }
+            });
+
+    $('#myCanvas').mouseup(function(e) {
+        
+            //console.log("posibleng i-save sa db x:"+clickX+" at y:"+clickY); //for printing the click Array
+            paint = false;
+            clickX = new Array();
+            clickY = new Array();
+            clickDrag = new Array();
+            clickColor = new Array();
+
+            clearPaint();
+            //loadPaint(tooth);
+        
+    });
+
+    $('#myCanvas').mouseleave(function(e) {
+            paint = false;
+            clearPaint();
+       
+    });
+
+    $('#myCanvas').mousedown(function(e) {
+            var $this = $(this);
+            tooth = $this.parent().attr('id');
+            imageWidth = $this.attr('width');
+            imageHeight = $this.attr('height');
+
+            var mouseX = e.pageX - this.offsetLeft;
+            var mouseY = e.pageY - this.offsetTop;
+
+            /*if( tooth != -1){
+               
+                setPaint(tooth,imageWidth, imageHeight);
+                     
+            }*/
+
+            paint = true;
+            addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
+            redraw();
+        });
+
+
+function redefineFunctions() {
+
+            /*$("#myCanvas").mousedown(function(e){
+                
+            //console.log('mousedown'+toolData);
+
+            
+            var mouseX = e.pageX - this.offsetLeft;
+            var mouseY = e.pageY - this.offsetTop;
+                        
+            paint = true;
+            addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+            redraw();
+                
+            });*/
+
+
+
+        }
+
+
+
+</script>
+<!-- <p>Credits: <a href="https://gist.github.com/1007813">Octocat SVG</a>.</p>
+ 
+<p>Tested on Safari, Chrome, Firefox.</p> -->
+</body>
+</html>
